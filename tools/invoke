@@ -1,0 +1,30 @@
+#!/bin/bash
+
+DIR="$(dirname "$0")"
+. "${DIR}/config"
+
+set -o errexit
+set -o pipefail
+
+# Requires:
+# gcloud run services add-iam-policy-binding $ROOT_NAME \
+# --member "user:<user used for gcloud auth>" \
+# --region $REGION --role=roles/run.invoker
+
+SERVICE_URL=$1
+
+# If no service URL is provided, get it from gcloud
+if [[ -z "$SERVICE_URL" ]]
+then
+  SERVICE_URL=$(gcloud run services describe $ROOT_NAME \
+    --region $REGION --format="value(status.url)")
+fi
+
+# Set the sbomer endpoint
+SERVICE_URL="${SERVICE_URL}/sbomer"
+
+# Make the request
+curl -sS -H "Authorization: Bearer $(gcloud auth print-identity-token)" \
+     -H "Content-Type: application/json" \
+     -H "X-Goog-User-Project: ${PROJECT_ID}" \
+     "${SERVICE_URL}"

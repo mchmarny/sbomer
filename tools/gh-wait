@@ -1,0 +1,33 @@
+#!/bin/bash
+
+DIR="$(dirname "$0")"
+. "${DIR}/config"
+
+set -o errexit
+set -o pipefail
+
+echo "Waiting for GitHub workflow to start..."
+sleep 5
+
+STATUS=""
+while [ "$STATUS" != "completed" ]
+do
+	sleep 7
+  	STATUS=$(curl -Ss -H "Accept: application/vnd.github.v3+json" \
+	         -H "Authorization: token $GITHUB_ACCESS_TOKEN" \
+			 https://api.github.com/repos/mchmarny/sbomer/actions/runs | \
+			 jq -r '[.workflow_runs[] | select(.name == "tag")] | .[0].status')
+	echo "Status: $STATUS"
+done
+
+CODE=$(curl -Ss -H "Accept: application/vnd.github.v3+json" \
+        -H "Authorization: token $GITHUB_ACCESS_TOKEN" \
+		https://api.github.com/repos/mchmarny/sbomer/actions/runs | \
+		jq -r '[.workflow_runs[] | select(.name == "tag")] | .[0].conclusion')
+
+if [ "$CODE" != "success" ]
+then
+	echo "Publish failed. See github logs for details:"
+	echo "https://github.com/mchmarny/sbomer/actions/workflows/on-tag.yaml"
+	exit 1
+fi

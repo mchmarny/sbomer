@@ -1,15 +1,38 @@
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
+# Mac 
+.DS_Store
 
-# Test binary, built with `go test -c`
+# Test binaries
 *.test
+tmp
+/*.json
+*.tmp
 
-# Output of the go coverage tool, specifically when used with LiteIDE
+# Coverage
 *.out
 
-# Dependency directories (remove the comment below to include it)
-# vendor/
+# Binaries
+bin
+dist
+
+# Keys 
+cosign.*
+*.pem
+
+# IDEs
+.idea/*
+.vscode/*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Test binaries
+*.test
+tmp
+
+# Coverage
+*.out
+
+# terminalizer 
+/config.yml
+/sbomer.yml

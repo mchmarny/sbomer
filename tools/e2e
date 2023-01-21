@@ -1,0 +1,32 @@
+#!/bin/bash
+
+set -e
+
+msg () {
+   echo "====== running $1 tests ======"
+}
+
+msg "root"
+bin/sbomer -v
+bin/sbomer -h
+
+msg "img"
+bin/sbomer img -o images.tmp
+
+msg "vul"
+bin/sbomer vul --file images.tmp
+bin/sbomer vul --file images.tmp --min-severity high
+bin/sbomer vul --file images.tmp --cve CVE-2020-8911
+bin/sbomer vul --file images.tmp --target "bq://cloudy-demos.sbomer_test.vulnerabilities"
+
+msg "lic"
+bin/sbomer lic
+bin/sbomer lic --file images.tmp
+bin/sbomer lic --file images.tmp --type MIT
+bin/sbomer lic --file images.tmp --target "bq://cloudy-demos.sbomer_test.licenses"
+
+msg "pkg"
+bin/sbomer pkg
+bin/sbomer pkg --file images.tmp
+bin/sbomer pkg --file images.tmp --name express
+bin/sbomer pkg --file images.tmp --target "bq://cloudy-demos.sbomer_test.packages"
