@@ -11,6 +11,7 @@ require (
 	github.com/stretchr/testify v1.8.1
 	github.com/urfave/cli/v2 v2.23.7
 	google.golang.org/api v0.108.0
+	gopkg.in/yaml.v3 v3.0.1
 )
 
 require (
@@ -42,5 +43,4 @@ require (
 	google.golang.org/genproto v0.0.0-20230119192704-9d59e20e5cd1 // indirect
 	google.golang.org/grpc v1.52.0 // indirect
 	google.golang.org/protobuf v1.28.1 // indirect
-	gopkg.in/yaml.v3 v3.0.1 // indirect
 )

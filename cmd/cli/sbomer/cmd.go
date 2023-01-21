@@ -28,7 +28,7 @@ var (
 	fileFlag = &c.StringFlag{
 		Name:    "file",
 		Aliases: []string{"f"},
-		Usage:   "sbom file location (e.g. ./sbom.json, gs://bucket/sbom.json, http://null.io/sbom.json)",
+		Usage:   "sbom file location (e.g. ./sbom.json, ./dir, gs://bucket/sbom.json, http://null.io/sbom.json)",
 	}
 
 	quietFlag = &c.BoolFlag{

@@ -2,6 +2,7 @@ package sbomer
 
 import (
 	"context"
+	"os"
 
 	"github.com/mchmarny/sbomer/pkg/file"
 	"github.com/mchmarny/sbomer/pkg/sbom"
@@ -31,7 +32,9 @@ func Process(ctx context.Context, req *Request) error {
 			return errors.Wrapf(err, "error processing item: %s", k)
 		}
 		log.Debug().Msgf("found %s with %d items", doc.Subject, len(doc.Items))
-		// TODO: process doc
+		if err := write(os.Stdout, doc, JSONFormat); err != nil {
+			return errors.Wrapf(err, "error writing item: %s", k)
+		}
 	}
 
 	return nil

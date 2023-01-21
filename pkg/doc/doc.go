@@ -1,6 +1,9 @@
 package doc
 
-import "time"
+import (
+	"sync"
+	"time"
+)
 
 func NewDoc() *Document {
 	return &Document{
@@ -45,12 +48,18 @@ type Item struct {
 	PURL string `json:"purl"` // components.purl
 
 	Contexts []*Context `json:"pkgContexts"` // components.externalReferences or components.properties
+
+	mu sync.Mutex
 }
 
 func (p *Item) AddContext(t, k, v string) {
+	p.mu.Lock()
+	defer p.mu.Unlock()
+
 	if p.Contexts == nil {
 		p.Contexts = make([]*Context, 0)
 	}
+
 	p.Contexts = append(p.Contexts, &Context{
 		Type:  t,
 		Key:   k,
