@@ -5,7 +5,6 @@ import (
 	"time"
 
 	"github.com/mchmarny/sbomer/pkg/config"
-	"github.com/mchmarny/sbomer/pkg/sbomer"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
@@ -17,38 +16,6 @@ const (
 	metaKeyVersion = "version"
 	metaKeyCommit  = "commit"
 	metaKeyDate    = "date"
-)
-
-var (
-	targetFlag = &c.StringFlag{
-		Name:    "target",
-		Aliases: []string{"t"},
-		Usage:   "data store to save results to (e.g. bq://my-project)",
-	}
-
-	fileFlag = &c.StringFlag{
-		Name:    "file",
-		Aliases: []string{"f"},
-		Usage:   "sbom file location (e.g. ./sbom.json, ./dir, gs://bucket/sbom.json, http://null.io/sbom.json)",
-	}
-
-	quietFlag = &c.BoolFlag{
-		Name:    "quiet",
-		Aliases: []string{"q"},
-		Usage:   "suppress output unless error",
-	}
-
-	execCmd = &c.Command{
-		Name:    "import",
-		Aliases: []string{"imp"},
-		Usage:   "imports sbom data from file or image",
-		Action:  execute,
-		Flags: []c.Flag{
-			fileFlag,
-			targetFlag,
-			quietFlag,
-		},
-	}
 )
 
 func Execute(version, commit, date string, args []string) error {
@@ -117,7 +84,7 @@ func newApp(version, commit, date string) (*c.App, error) {
 			metaKeyDate:    date,
 		},
 		Commands: []*c.Command{
-			execCmd,
+			importCmd,
 		},
 	}
 
@@ -131,21 +98,4 @@ func isQuiet(c *c.Context) bool {
 	}
 
 	return ok
-}
-
-func execute(c *c.Context) error {
-	r := &sbomer.Request{
-		Path:   c.String(fileFlag.Name),
-		Target: c.String(targetFlag.Name),
-		Quiet:  c.Bool(quietFlag.Name),
-	}
-
-	isQuiet(c)
-	log.Info().Msgf(c.App.Version)
-
-	if err := sbomer.Process(c.Context, r); err != nil {
-		return errors.Wrap(err, "error executing")
-	}
-
-	return nil
 }
