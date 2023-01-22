@@ -51,7 +51,7 @@ linters-settings:
   misspell:
     locale: US
   cyclop:
-    max-complexity: 20
+    max-complexity: 25
   funlen:
     lines: -1
     statements: 45

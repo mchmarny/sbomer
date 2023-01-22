@@ -10,11 +10,6 @@ import (
 	"github.com/spdx/tools-golang/spdx/v2_3"
 )
 
-const (
-	pkgURLAbr    = "purl"
-	spdxSpecName = "SPDX"
-)
-
 func spdx22ToDoc(bom *v2_2.Document) (*doc.Document, error) {
 	if bom == nil {
 		return nil, errors.New("invalid SPDX doc")
@@ -28,17 +23,13 @@ func spdx22ToDoc(bom *v2_2.Document) (*doc.Document, error) {
 
 	for _, p := range bom.Packages {
 		item := &doc.Item{
-			ID:         string(p.PackageSPDXIdentifier),
-			Originator: parseSPDXOriginator(p.PackageOriginator, p.PackageSupplier),
-			Name:       p.PackageName,
-			Version:    p.PackageVersion,
-			License:    firstNonEmpty(p.PackageLicenseConcluded, p.PackageLicenseDeclared),
-			PURL:       getSPDX22RefValue(pkgURLAbr, p),
-			// CPE:      ?,
-			// SWID:     ?,
+			ID:      string(p.PackageSPDXIdentifier),
+			Name:    p.PackageName,
+			Version: firstNonEmpty(p.PackageVersion, missingValueDefault),
 		}
 		parseSPDXAttributeContext(item, p.PackageAttributionTexts)
 		parseSPDX22Refs(item, p.PackageExternalReferences)
+		parseSPDX22Ctx(item, p)
 		d.Items = append(d.Items, item)
 	}
 
@@ -58,57 +49,121 @@ func spdx23ToDoc(bom *v2_3.Document) (*doc.Document, error) {
 
 	for _, p := range bom.Packages {
 		item := &doc.Item{
-			ID:         string(p.PackageSPDXIdentifier),
-			Originator: parseSPDXOriginator(p.PackageOriginator, p.PackageSupplier),
-			Name:       p.PackageName,
-			Version:    p.PackageVersion,
-			License:    firstNonEmpty(p.PackageLicenseConcluded, p.PackageLicenseDeclared),
-			PURL:       getSPDX23RefValue(pkgURLAbr, p),
-			// CPE:      ?,
-			// SWID:     ?,
+			ID:      string(p.PackageSPDXIdentifier),
+			Name:    p.PackageName,
+			Version: firstNonEmpty(p.PackageVersion, missingValueDefault),
 		}
 		parseSPDXAttributeContext(item, p.PackageAttributionTexts)
 		parseSPDX23Refs(item, p.PackageExternalReferences)
+		parseSPDX23Ctx(item, p)
 		d.Items = append(d.Items, item)
 	}
 
 	return d, nil
 }
 
-func parseSPDXOriginator(org *common.Originator, sup *common.Supplier) string {
-	if org != nil {
-		return org.Originator
+func parseSPDX23Ctx(item *doc.Item, p *v2_3.Package) {
+	if p.PackageFileName != "" {
+		item.AddContext(ctxTypeComponent, "file", p.PackageFileName)
 	}
 
-	if sup != nil {
-		return sup.Supplier
+	if p.PackageOriginator != nil {
+		item.AddContext(ctxTypeComponent, p.PackageOriginator.OriginatorType,
+			p.PackageOriginator.Originator)
 	}
 
-	return ""
-}
-
-func getSPDX23RefValue(k string, p *v2_3.Package) string {
-	if p == nil || len(p.PackageExternalReferences) == 0 {
-		return ""
+	if p.PackageSupplier != nil {
+		item.AddContext(ctxTypeComponent, p.PackageSupplier.SupplierType,
+			p.PackageSupplier.Supplier)
 	}
-	for _, r := range p.PackageExternalReferences {
-		if strings.EqualFold(r.RefType, k) {
-			return r.Locator
+
+	if p.PackageDownloadLocation != "" {
+		item.AddContext(ctxTypeComponent, string(doc.ContextKindDownloadLocation), p.PackageDownloadLocation)
+	}
+
+	if len(p.PackageChecksums) > 0 {
+		for _, c := range p.PackageChecksums {
+			item.AddContext(ctxTypeChecksum, string(c.Algorithm), c.Value)
 		}
 	}
-	return ""
-}
 
-func getSPDX22RefValue(k string, p *v2_2.Package) string {
-	if p == nil || len(p.PackageExternalReferences) == 0 {
-		return ""
+	if p.PackageHomePage != "" {
+		item.AddContext(ctxTypeComponent, string(doc.ContextKindHomepage), p.PackageHomePage)
 	}
-	for _, r := range p.PackageExternalReferences {
-		if strings.EqualFold(r.RefType, k) {
-			return r.Locator
+
+	if p.PackageSourceInfo != "" {
+		item.AddContext(ctxTypeComponent, string(doc.ContextKindSourceInfo), p.PackageSourceInfo)
+	}
+
+	if p.PackageSummary != "" {
+		item.AddContext(ctxTypeComponent, string(doc.ContextKindSummary), p.PackageSummary)
+	}
+
+	if p.PrimaryPackagePurpose != "" {
+		item.AddContext(ctxTypeComponent, string(doc.ContextKindPurpose), p.PrimaryPackagePurpose)
+	}
+
+	if p.ReleaseDate != "" {
+		item.AddContext(ctxTypeComponent, string(doc.ContextKindReleaseDate), p.ReleaseDate)
+	}
+
+	if p.BuiltDate != "" {
+		item.AddContext(ctxTypeComponent, string(doc.ContextKindBuildDate), p.BuiltDate)
+	}
+
+	if len(p.Files) > 0 {
+		for _, f := range p.Files {
+			item.AddContext(ctxTypeChecksum, f.FileName, string(f.FileSPDXIdentifier))
 		}
 	}
-	return ""
+}
+
+func parseSPDX22Ctx(item *doc.Item, p *v2_2.Package) {
+	if p.PackageFileName != "" {
+		item.AddContext(ctxTypeComponent, "file", p.PackageFileName)
+	}
+
+	if p.PackageOriginator != nil {
+		item.AddContext(ctxTypeComponent, p.PackageOriginator.OriginatorType,
+			p.PackageOriginator.Originator)
+	}
+
+	if p.PackageSupplier != nil {
+		item.AddContext(ctxTypeComponent, p.PackageSupplier.SupplierType,
+			p.PackageSupplier.Supplier)
+	}
+
+	if p.PackageDownloadLocation != "" {
+		item.AddContext(ctxTypeComponent, string(doc.ContextKindDownloadLocation), p.PackageDownloadLocation)
+	}
+
+	if len(p.PackageChecksums) > 0 {
+		for _, c := range p.PackageChecksums {
+			item.AddContext(ctxTypeChecksum, string(c.Algorithm), c.Value)
+		}
+	}
+
+	if p.PackageHomePage != "" {
+		item.AddContext(ctxTypeComponent, string(doc.ContextKindHomepage), p.PackageHomePage)
+	}
+
+	if p.PackageSourceInfo != "" {
+		item.AddContext(ctxTypeComponent, string(doc.ContextKindSourceInfo), p.PackageSourceInfo)
+	}
+
+	if p.PackageSummary != "" {
+		item.AddContext(ctxTypeComponent, string(doc.ContextKindSummary), p.PackageSummary)
+	}
+
+	if len(p.Files) > 0 {
+		for _, f := range p.Files {
+			item.AddContext(ctxTypeChecksum, f.FileName, string(f.FileSPDXIdentifier))
+		}
+	}
+
+	if p.PackageVerificationCode.Value != "" {
+		item.AddContext(ctxTypeComponent, string(doc.ContextKindVerificationCode), p.PackageVerificationCode.Value)
+	}
 }
 
 const expectedAttributionParts = 2

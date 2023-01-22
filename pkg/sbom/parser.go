@@ -15,8 +15,12 @@ import (
 )
 
 const (
+	ctxTypeComponent = "component"
+	ctxTypeChecksum  = "checksum"
 	ctxTypeReference = "reference"
 	ctxTypeProperty  = "property"
+
+	missingValueDefault = "none"
 )
 
 func ParseDoc(b []byte) (*doc.Document, error) {
@@ -103,8 +107,9 @@ func parseTime(val string) time.Time {
 
 func firstNonEmpty(vals ...string) string {
 	for _, v := range vals {
-		if v != "" {
-			return v
+		r := strings.TrimSpace(v)
+		if r != "" {
+			return r
 		}
 	}
 	return ""

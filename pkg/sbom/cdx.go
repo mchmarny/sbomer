@@ -2,6 +2,7 @@ package sbom
 
 import (
 	"errors"
+	"fmt"
 	"strings"
 
 	cdx "github.com/CycloneDX/cyclonedx-go"
@@ -23,15 +24,11 @@ func cycloneToDoc(bom *cdx.BOM) (*doc.Document, error) {
 
 	for _, c := range *bom.Components {
 		item := &doc.Item{
-			ID:         c.BOMRef,
-			Originator: firstNonEmpty(c.Author, c.Publisher),
-			Name:       c.Name,
-			Version:    c.Version,
-			License:    parseLicenses(c.Licenses),
-			CPE:        c.CPE,
-			SWID:       parseCDXSWID(c.SWID),
-			PURL:       c.PackageURL,
+			ID:      firstNonEmpty(c.BOMRef, fmt.Sprintf("%s-%s-%s", c.Type, c.Name, c.Version)),
+			Name:    c.Name,
+			Version: firstNonEmpty(c.Version, missingValueDefault),
 		}
+
 		parseCDXContext(item, c)
 		d.Items = append(d.Items, item)
 	}
@@ -65,6 +62,14 @@ func parseLicenses(list *cdx.Licenses) string {
 		}
 		if l.License != nil {
 			sb.WriteString(l.License.ID)
+			if l.License.Name != "" {
+				sb.WriteString(" - ")
+				sb.WriteString(l.License.Name)
+			}
+			if l.License.URL != "" {
+				sb.WriteString(" - ")
+				sb.WriteString(l.License.URL)
+			}
 		}
 	}
 	return sb.String()
@@ -73,13 +78,69 @@ func parseLicenses(list *cdx.Licenses) string {
 func parseCDXContext(item *doc.Item, c cdx.Component) {
 	if c.ExternalReferences != nil && len(*c.ExternalReferences) > 0 {
 		for _, r := range *c.ExternalReferences {
-			item.AddContext(ctxTypeReference, string(r.Type), r.URL)
+			if r.URL != "" {
+				item.AddContext(ctxTypeReference, string(r.Type), r.URL)
+			}
 		}
 	}
 
 	if c.Properties != nil && len(*c.Properties) > 0 {
 		for _, r := range *c.Properties {
-			item.AddContext(ctxTypeProperty, r.Name, r.Value)
+			if r.Value != "" {
+				item.AddContext(ctxTypeProperty, r.Name, r.Value)
+			}
+		}
+	}
+
+	if lic := parseLicenses(c.Licenses); lic != "" {
+		item.AddContext(ctxTypeComponent, string(doc.ContextKindLicense), lic)
+	}
+
+	if c.CPE != "" {
+		item.AddContext(ctxTypeComponent, string(doc.ContextKindCPE), c.CPE)
+	}
+
+	if swid := parseCDXSWID(c.SWID); swid != "" {
+		item.AddContext(ctxTypeComponent, string(doc.ContextKindSWID), swid)
+	}
+
+	if c.PackageURL != "" {
+		item.AddContext(ctxTypeComponent, string(doc.ContextKindPURL), c.PackageURL)
+	}
+
+	if c.Type != "" {
+		item.AddContext(ctxTypeComponent, string(doc.ContextKindType), string(c.Type))
+	}
+
+	if c.Supplier != nil && c.Supplier.Name != "" {
+		item.AddContext(ctxTypeComponent, string(doc.ContextKindSupplier), c.Supplier.Name)
+	}
+
+	if c.Author != "" {
+		item.AddContext(ctxTypeComponent, string(doc.ContextKindAuthor), c.Author)
+	}
+
+	if c.Publisher != "" {
+		item.AddContext(ctxTypeComponent, string(doc.ContextKindPublisher), c.Publisher)
+	}
+
+	if c.Group != "" {
+		item.AddContext(ctxTypeComponent, string(doc.ContextKindGroup), c.Group)
+	}
+
+	if c.Description != "" {
+		item.AddContext(ctxTypeComponent, string(doc.ContextKindDescription), c.Description)
+	}
+
+	if c.Scope != "" {
+		item.AddContext(ctxTypeComponent, string(doc.ContextKindScope), string(c.Scope))
+	}
+
+	if c.Hashes != nil && len(*c.Hashes) > 0 {
+		for _, h := range *c.Hashes {
+			if h.Value != "" {
+				item.AddContext(ctxTypeProperty, string(h.Algorithm), h.Value)
+			}
 		}
 	}
 }
