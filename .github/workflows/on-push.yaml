@@ -9,3 +9,6 @@ on:
 jobs:
   test:
     uses: ./.github/workflows/test.yaml
+    permissions:
+      security-events: write
+      id-token: write
