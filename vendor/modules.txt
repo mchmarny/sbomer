@@ -1,17 +1,9 @@
 # cloud.google.com/go v0.109.0
 ## explicit; go 1.19
-cloud.google.com/go/civil
 cloud.google.com/go/internal
-cloud.google.com/go/internal/detect
-cloud.google.com/go/internal/fields
 cloud.google.com/go/internal/optional
 cloud.google.com/go/internal/trace
-cloud.google.com/go/internal/uid
 cloud.google.com/go/internal/version
-# cloud.google.com/go/bigquery v1.45.0
-## explicit; go 1.19
-cloud.google.com/go/bigquery
-cloud.google.com/go/bigquery/internal
 # cloud.google.com/go/compute v1.15.1
 ## explicit; go 1.19
 cloud.google.com/go/compute/internal
@@ -76,6 +68,9 @@ github.com/mattn/go-colorable
 # github.com/mattn/go-isatty v0.0.17
 ## explicit; go 1.15
 github.com/mattn/go-isatty
+# github.com/mattn/go-sqlite3 v1.14.16
+## explicit; go 1.16
+github.com/mattn/go-sqlite3
 # github.com/pkg/errors v0.9.1
 ## explicit
 github.com/pkg/errors
@@ -175,7 +170,6 @@ golang.org/x/xerrors
 golang.org/x/xerrors/internal
 # google.golang.org/api v0.108.0
 ## explicit; go 1.19
-google.golang.org/api/bigquery/v2
 google.golang.org/api/googleapi
 google.golang.org/api/googleapi/transport
 google.golang.org/api/iamcredentials/v1

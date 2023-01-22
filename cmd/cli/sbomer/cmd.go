@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/mchmarny/sbomer/pkg/config"
 	"github.com/mchmarny/sbomer/pkg/sbomer"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"
@@ -51,6 +52,17 @@ var (
 )
 
 func Execute(version, commit, date string, args []string) error {
+	homeDir, created, err := config.GetOrCreateHomeDir(name)
+	if err != nil {
+		return errors.Wrap(err, "failed to get home dir")
+	}
+	log.Debug().Msgf("home dir (created: %v): %s", created, homeDir)
+
+	cfg, err := config.ReadOrCreate(homeDir)
+	if err != nil {
+		return errors.Wrap(err, "failed to read config")
+	}
+
 	app, err := newApp(version, commit, date)
 	if err != nil {
 		return err
@@ -59,6 +71,13 @@ func Execute(version, commit, date string, args []string) error {
 	if err := app.Run(args); err != nil {
 		return errors.Wrap(err, "error running app")
 	}
+
+	cfg.LastExec = time.Now()
+	cfg.LastVersion = version
+	if err := config.Save(homeDir, cfg); err != nil {
+		return errors.Wrap(err, "failed to save config")
+	}
+
 	return nil
 }
 

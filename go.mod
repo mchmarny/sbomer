@@ -3,10 +3,10 @@ module github.com/mchmarny/sbomer
 go 1.19
 
 require (
-	cloud.google.com/go/bigquery v1.45.0
 	cloud.google.com/go/storage v1.29.0
 	github.com/CycloneDX/cyclonedx-go v0.7.0
 	github.com/google/uuid v1.3.0
+	github.com/mattn/go-sqlite3 v1.14.16
 	github.com/pkg/errors v0.9.1
 	github.com/rs/zerolog v1.28.0
 	github.com/spdx/tools-golang v0.4.0

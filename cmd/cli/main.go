@@ -20,8 +20,7 @@ var (
 
 func main() {
 	initLogging()
-	err := sbomer.Execute(version, commit, date, os.Args)
-	if err != nil {
+	if err := sbomer.Execute(version, commit, date, os.Args); err != nil {
 		log.Error().Msg(err.Error())
 	}
 }

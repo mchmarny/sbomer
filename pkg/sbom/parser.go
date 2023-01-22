@@ -92,17 +92,17 @@ func getImageParts(val string, d *doc.Document) {
 	d.Subject = parts[0]
 }
 
-func parseTime(val string) time.Time {
+func parseTime(val string) int64 {
 	if val == "" {
-		return time.Now().UTC()
+		return time.Now().Unix()
 	}
 
 	// 2021-07-01T00:00:00Z
 	v, err := time.Parse("2006-01-02T15:04:05Z", val)
 	if err != nil {
-		return time.Now().UTC()
+		return time.Now().Unix()
 	}
-	return v
+	return v.Unix()
 }
 
 func firstNonEmpty(vals ...string) string {

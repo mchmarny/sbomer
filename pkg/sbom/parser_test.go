@@ -18,7 +18,7 @@ func testDoc(t *testing.T, d *doc.Document, path string) {
 	assert.NotEmpty(t, d.Format, "Format: %s", path)
 	assert.NotEmpty(t, d.FormatVersion, "FormatVersion: %s", path)
 	assert.NotEmpty(t, d.Provider, "Provider: %s", path)
-	assert.Greater(t, d.Created, time.Time{}, "Created: %s", path)
+	assert.Greater(t, d.Created, time.Now().AddDate(-1, 0, 0).Unix(), "Created: %s", path)
 	assert.NotEmpty(t, d.Items, "Items: %s", path)
 
 	for i, p := range d.Items {

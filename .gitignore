@@ -36,3 +36,6 @@ tmp
 # terminalizer 
 /config.yml
 /sbomer.yml
+
+# DB
+*.db

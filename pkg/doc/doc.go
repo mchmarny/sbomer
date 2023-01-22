@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"strings"
 	"sync"
-	"time"
 
 	"github.com/google/uuid"
 )
@@ -19,14 +18,14 @@ func NewDoc() *Document {
 // Document is the top level struct for the SBOM document:
 // https://www.ntia.doc.gov/files/ntia/publications/sbom_minimum_elements_report.pdf.
 type Document struct {
-	ID             string    `json:"id"`             // uuid
-	Subject        string    `json:"subject"`        // memcached or gcr.io/image
-	SubjectVersion string    `json:"subjectVersion"` // 1.6.9 or sha256:1234
-	Format         string    `json:"format"`         // CycloneDX or SPDX
-	FormatVersion  string    `json:"formatVersion"`  // 1.4 or 2.2 or 2.3
-	Provider       string    `json:"provider"`       // syft, trivy
-	Created        time.Time `json:"created"`        // 2021-07-01T00:00:00Z
-	Items          []*Item   `json:"items"`
+	ID             string  `json:"id"`             // uuid
+	Subject        string  `json:"subject"`        // memcached or gcr.io/image
+	SubjectVersion string  `json:"subjectVersion"` // 1.6.9 or sha256:1234
+	Format         string  `json:"format"`         // CycloneDX or SPDX
+	FormatVersion  string  `json:"formatVersion"`  // 1.4 or 2.2 or 2.3
+	Provider       string  `json:"provider"`       // syft, trivy
+	Created        int64   `json:"created"`        // epoch
+	Items          []*Item `json:"items"`
 }
 
 type Item struct {
