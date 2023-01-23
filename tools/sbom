@@ -27,7 +27,7 @@ make_report () {
 	sbom=$1
 	if [ -f "${sbom}" ];then
 		if [ -s "${sbom}" ];then
-			./sbom-scorecard score $sbom \
+			bin/sbom-scorecard score $sbom \
 				--outputFormat json > "${report_dir}/$(basename ${sbom})"
 		else
 			rm -f $sbom
