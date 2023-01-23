@@ -6,10 +6,6 @@ ifndef RELEASE_VERSION
 	$(error RELEASE_VERSION is not set)
 endif
 
-ifndef COMMIT
-	$(error COMMIT is not set)
-endif
-
 all: help
 
 .PHONY: version

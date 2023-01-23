@@ -2,65 +2,79 @@
 
 set -eo pipefail
 
-# input parameters
-image=$1
+img=$1
 
-# validate input parameters
-if [[ -z "${image}" ]]; then
-  echo "image uri required"
-  exit 1
-fi
+# input validation
+[ -z "$img" ] && echo "arg img not provided\n" && exit 1
+
+# dependencies
+trivy=$(which trivy) || ( echo "trivy not installed" && exit 1 )
+syft=$(which syft) || ( echo "syft not installed" && exit 1 )
 
 # constants
 sbom_dir="data"
-trivy_install="https://aquasecurity.github.io/trivy/v0.18.3/installation"
-syft_install="https://github.com/anchore/syft"
-
-# environment dependencies
-trivy=$(which trivy) || ( echo "trivy CLI not found, see $trivy_install" && exit 1 )
-syft=$(which syft) || ( echo "syft CLI not found, see $syft_install" && exit 1 )
-img_name=$(echo $image | sed -e 's/[^A-Za-z0-9._-]/_/g')
-
-# init operations
 mkdir -p $sbom_dir
+report_dir="report"
+mkdir -p $report_dir
 
-echo "=================================================================="
-echo "Generating SBOMs for $image"
-echo "=================================================================="
-echo "trivy cli : ${trivy}"
-echo "syft cli  : ${syft}"
-echo "img name  : ${img_name}"
+# clean_name replaces any non-alphanumeric characters with an underscore.
+clean_name () {
+	echo $1 | sed -e 's/[^A-Za-z0-9._-]/_/g'
+}
 
+# make_report scores sbom or removes the file if it is empty.
+make_report () {
+	sbom=$1
+	if [ -f "${sbom}" ];then
+		if [ -s "${sbom}" ];then
+			./sbom-scorecard score $sbom \
+				--outputFormat json > "${report_dir}/$(basename ${sbom})"
+		else
+			rm -f $sbom
+		fi
+	else
+		echo "${sbom} not found"
+	fi
+}
 
-# generate sboms
-trivy image --quiet \
-            --format spdx-json \
-			--no-progress \
-			--list-all-pkgs \
-			--output "${sbom_dir}/${img_name}-trivy-spdx.json" \
-			$image
+# sbom_trivy generates a sbom for the given image.
+# on error, trivy returns a non-zero exit code, which is ignored.
+sbom_trivy () {
+	img=$1
+	name=$(clean_name $img)
+	
+	declare -a formats=(
+		"spdx-json"
+		"cyclonedx"
+	)
 
-trivy image --quiet \
-            --format cyclonedx \
-			--no-progress \
-			--list-all-pkgs \
-			--output "${sbom_dir}/${img_name}-trivy-cyclonedx.json" \
-			$image
+	for f in "${formats[@]}"
+	do
+		report="${sbom_dir}/${name}-${f}-trivy.json"
+		trivy image -q --format "$f" --list-all-pkgs -o "$report" "$img" || true
+		make_report $report
+	done
+}
 
-syft packages $image \
-			-q \
-			-s AllLayers \
-			-o spdx-json \
-			--file "${sbom_dir}/${img_name}-syft-spdx.json"
+# sbom_syft generates a Software Bill of Materials (SBOM) for the given image.
+# on error, syft returns a non-zero exit code, which is ignored.
+sbom_syft () {
+	img=$1
+	name=$(clean_name $img)
 
-syft packages $image \
-			-q \
-			-s AllLayers \
-			-o cyclonedx-xml \
-			--file "${sbom_dir}/${img_name}-syft-cyclonedx.xml"
+	declare -a formats=(
+		"spdx-json"
+		"cyclonedx-json"
+	)
 
-syft packages $image \
-			-q \
-			-s AllLayers \
-			-o cyclonedx-json \
-			--file "${sbom_dir}/${img_name}-syft-cyclonedx.json"
+	for f in "${formats[@]}"
+	do
+		report="${sbom_dir}/${name}-${f}-syft.json"
+		syft packages "$img" -q -o "$f" --file "$report" || true
+		make_report $report
+	done
+}
+
+# main
+sbom_trivy $img
+sbom_syft $img

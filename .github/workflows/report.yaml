@@ -7,6 +7,10 @@ on:
     branches:
       - main
 
+env:
+  scorecard_version: "0.0.5"
+  image_count: 3
+
 jobs:
   report:
     runs-on: ubuntu-latest
@@ -32,6 +36,22 @@ jobs:
         sudo apt-get update
         sudo apt-get install trivy
 
-    - name: Generate Report 
+    - name: Install SBOM Scorecard
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        tools/sbom-report
+        set -euo pipefail
+        gh -R eBay/sbom-scorecard \
+          release download ${{ env.scorecard_version }} -p sbom-scorecard-linux-amd64
+        mv sbom-scorecard-linux-amd64 sbom-scorecard
+        chmod ug+x sbom-scorecard
+        COMPUTED_HASH=$(sha256sum sbom-scorecard | cut -d ' ' -f1)
+        EXPECTED_HASH="648c4de39e9eb7a113ac0443f1f52e914c2b77546aae20ff9d95ffd180c22b7f"
+        if [[ "$EXPECTED_HASH" != "$COMPUTED_HASH" ]];then
+            echo "error: expected $EXPECTED_HASH, computed $COMPUTED_HASH"
+            exit 1
+        fi
+
+    - name: Generate Report
+      run: |
+        tools/images ${{ env.image_count }}

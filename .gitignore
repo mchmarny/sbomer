@@ -39,3 +39,10 @@ tmp
 
 # DB
 *.db
+
+# Bin 
+sbom-scorecard
+
+# Dirs 
+/report
+/data
