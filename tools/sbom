@@ -14,21 +14,18 @@ syft=$(which syft) || ( echo "syft not installed" && exit 1 )
 # constants
 sbom_dir="data"
 mkdir -p $sbom_dir
-report_dir="report"
-mkdir -p $report_dir
 
 # clean_name replaces any non-alphanumeric characters with an underscore.
 clean_name () {
 	echo $1 | sed -e 's/[^A-Za-z0-9._-]/_/g'
 }
 
-# make_report scores sbom or removes the file if it is empty.
-make_report () {
+# check_file makes sure the sbom is not empty.
+check_file () {
 	sbom=$1
 	if [ -f "${sbom}" ];then
 		if [ -s "${sbom}" ];then
-			bin/sbom-scorecard score $sbom \
-				--outputFormat json > "${report_dir}/$(basename ${sbom})"
+			echo $sbom
 		else
 			rm -f $sbom
 		fi
@@ -50,9 +47,9 @@ sbom_trivy () {
 
 	for f in "${formats[@]}"
 	do
-		report="${sbom_dir}/${name}-${f}-trivy.json"
-		trivy image -q --format "$f" --list-all-pkgs -o "$report" "$img" || true
-		make_report $report
+		file="${sbom_dir}/${name}-${f}-trivy.json"
+		trivy image -q --format "$f" --list-all-pkgs -o "$file" "$img" || true
+		check_file $file
 	done
 }
 
@@ -69,9 +66,9 @@ sbom_syft () {
 
 	for f in "${formats[@]}"
 	do
-		report="${sbom_dir}/${name}-${f}-syft.json"
-		syft packages "$img" -q -o "$f" --file "$report" || true
-		make_report $report
+		file="${sbom_dir}/${name}-${f}-syft.json"
+		syft packages "$img" -q -o "$f" --file "$file" || true
+		check_file $file
 	done
 }
 

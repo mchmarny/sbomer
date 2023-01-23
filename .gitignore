@@ -11,6 +11,7 @@ tmp
 *.out
 
 # Binaries
+bin
 dist
 
 # Keys 
@@ -38,10 +39,3 @@ tmp
 
 # DB
 *.db
-
-# Bin 
-sbom-scorecard
-
-# Dirs 
-/report
-/data
