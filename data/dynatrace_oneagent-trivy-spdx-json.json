@@ -1,0 +1,2763 @@
+{
+	"SPDXID": "SPDXRef-DOCUMENT",
+	"creationInfo": {
+		"created": "2023-01-23T13:00:21.698143Z",
+		"creators": [
+			"Tool: trivy",
+			"Organization: aquasecurity"
+		]
+	},
+	"dataLicense": "CC0-1.0",
+	"documentDescribes": [
+		"SPDXRef-ContainerImage-e34fdd252a3ef99a"
+	],
+	"documentNamespace": "http://aquasecurity.github.io/trivy/container_image/dynatrace/oneagent-96056e9f-0014-462d-ba2b-0fc3b10bbd34",
+	"name": "dynatrace/oneagent",
+	"packages": [
+		{
+			"SPDXID": "SPDXRef-ContainerImage-e34fdd252a3ef99a",
+			"attributionTexts": [
+				"SchemaVersion: 2",
+				"ImageID: sha256:1e79a30b9b839024065f524daefe455958eb78aa7c699aea64853cd7c23db031",
+				"RepoDigest: dynatrace/oneagent@sha256:b124e753481fadc68078e9e179b2f2cbe46ba84df6b3d1e3da8b4f4a4489f22d",
+				"DiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35",
+				"DiffID: sha256:0baf179a01ad4496e48b248664491106973a049b1b4df60e3162d618be595c15",
+				"DiffID: sha256:a15c52e1aff29411a9f9d1fb34f18a30092161ce4ebf1d1a9905393cfadddbc6",
+				"DiffID: sha256:09366c6bcb83eff3ebb6ad845a6487f1147d23d3234251970c5fbf6878e17a6b",
+				"RepoTag: dynatrace/oneagent:latest"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:oci/oneagent@sha256:b124e753481fadc68078e9e179b2f2cbe46ba84df6b3d1e3da8b4f4a4489f22d?repository_url=index.docker.io%2Fdynatrace%2Foneagent\u0026arch=amd64",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"name": "dynatrace/oneagent"
+		},
+		{
+			"SPDXID": "SPDXRef-OperatingSystem-2f8b75c755dc0f03",
+			"filesAnalyzed": false,
+			"name": "redhat",
+			"versionInfo": "8.7"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-123fe9a3e74ba54b",
+			"attributionTexts": [
+				"PkgID: gpg-pubkey@fd431d51-4ae0493b.",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/gpg-pubkey@fd431d51-4ae0493b?arch=None\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "pubkey",
+			"licenseDeclared": "pubkey",
+			"name": "gpg-pubkey",
+			"sourceInfo": "built package from:  ",
+			"versionInfo": "fd431d51"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-166d33a982ca91fe",
+			"attributionTexts": [
+				"PkgID: glibc@2.28-211.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/glibc@2.28-211.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL",
+			"licenseDeclared": "LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL",
+			"name": "glibc",
+			"sourceInfo": "built package from: glibc 2.28-211.el8",
+			"versionInfo": "2.28"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-1e02a0beb294607f",
+			"attributionTexts": [
+				"PkgID: libacl@2.2.53-1.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libacl@2.2.53-1.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv2+",
+			"licenseDeclared": "LGPLv2+",
+			"name": "libacl",
+			"sourceInfo": "built package from: acl 2.2.53-1.el8",
+			"versionInfo": "2.2.53"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-1e2404787607d0a6",
+			"attributionTexts": [
+				"PkgID: gnupg2@2.2.20-3.el8_6.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/gnupg2@2.2.20-3.el8_6?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPLv3+",
+			"licenseDeclared": "GPLv3+",
+			"name": "gnupg2",
+			"sourceInfo": "built package from: gnupg2 2.2.20-3.el8_6",
+			"versionInfo": "2.2.20"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-1f394ef2bd7bc275",
+			"attributionTexts": [
+				"PkgID: sed@4.5-5.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/sed@4.5-5.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPLv3+",
+			"licenseDeclared": "GPLv3+",
+			"name": "sed",
+			"sourceInfo": "built package from: sed 4.5-5.el8",
+			"versionInfo": "4.5"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-20c024be3c8502ad",
+			"attributionTexts": [
+				"PkgID: ca-certificates@2022.2.54-80.2.el8_6.noarch",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/ca-certificates@2022.2.54-80.2.el8_6?arch=noarch\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "Public Domain",
+			"licenseDeclared": "Public Domain",
+			"name": "ca-certificates",
+			"sourceInfo": "built package from: ca-certificates 2022.2.54-80.2.el8_6",
+			"versionInfo": "2022.2.54"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-218f018c05b2116e",
+			"attributionTexts": [
+				"PkgID: file-libs@5.33-21.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/file-libs@5.33-21.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "BSD",
+			"licenseDeclared": "BSD",
+			"name": "file-libs",
+			"sourceInfo": "built package from: file 5.33-21.el8",
+			"versionInfo": "5.33"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-22d038ee739de6ea",
+			"attributionTexts": [
+				"PkgID: librhsm@0.0.3-4.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/librhsm@0.0.3-4.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv2+",
+			"licenseDeclared": "LGPLv2+",
+			"name": "librhsm",
+			"sourceInfo": "built package from: librhsm 0.0.3-4.el8",
+			"versionInfo": "0.0.3"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-261185dde97f0a69",
+			"attributionTexts": [
+				"PkgID: setup@2.12.2-7.el8.noarch",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/setup@2.12.2-7.el8?arch=noarch\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "Public Domain",
+			"licenseDeclared": "Public Domain",
+			"name": "setup",
+			"sourceInfo": "built package from: setup 2.12.2-7.el8",
+			"versionInfo": "2.12.2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-27b5246837241982",
+			"attributionTexts": [
+				"PkgID: gobject-introspection@1.56.1-1.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/gobject-introspection@1.56.1-1.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPLv2+, LGPLv2+, MIT",
+			"licenseDeclared": "GPLv2+, LGPLv2+, MIT",
+			"name": "gobject-introspection",
+			"sourceInfo": "built package from: gobject-introspection 1.56.1-1.el8",
+			"versionInfo": "1.56.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-299eac5afcda9523",
+			"attributionTexts": [
+				"PkgID: libgcc@8.5.0-15.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libgcc@8.5.0-15.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD",
+			"licenseDeclared": "GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD",
+			"name": "libgcc",
+			"sourceInfo": "built package from: gcc 8.5.0-15.el8",
+			"versionInfo": "8.5.0"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-30e2597a7aceb465",
+			"attributionTexts": [
+				"PkgID: libcap-ng@0.7.11-1.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libcap-ng@0.7.11-1.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv2+",
+			"licenseDeclared": "LGPLv2+",
+			"name": "libcap-ng",
+			"sourceInfo": "built package from: libcap-ng 0.7.11-1.el8",
+			"versionInfo": "0.7.11"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-318bd1b9be448dab",
+			"attributionTexts": [
+				"PkgID: libssh@0.9.6-3.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libssh@0.9.6-3.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv2+",
+			"licenseDeclared": "LGPLv2+",
+			"name": "libssh",
+			"sourceInfo": "built package from: libssh 0.9.6-3.el8",
+			"versionInfo": "0.9.6"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-321b7934f317b6e9",
+			"attributionTexts": [
+				"PkgID: langpacks-en@1.0-12.el8.noarch",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/langpacks-en@1.0-12.el8?arch=noarch\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPLv2+",
+			"licenseDeclared": "GPLv2+",
+			"name": "langpacks-en",
+			"sourceInfo": "built package from: langpacks 1.0-12.el8",
+			"versionInfo": "1.0"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-366b68e06cd403ed",
+			"attributionTexts": [
+				"PkgID: libssh-config@0.9.6-3.el8.noarch",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libssh-config@0.9.6-3.el8?arch=noarch\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv2+",
+			"licenseDeclared": "LGPLv2+",
+			"name": "libssh-config",
+			"sourceInfo": "built package from: libssh 0.9.6-3.el8",
+			"versionInfo": "0.9.6"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-385af0a431b53a42",
+			"attributionTexts": [
+				"PkgID: libblkid@2.32.1-38.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libblkid@2.32.1-38.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv2+",
+			"licenseDeclared": "LGPLv2+",
+			"name": "libblkid",
+			"sourceInfo": "built package from: util-linux 2.32.1-38.el8",
+			"versionInfo": "2.32.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-3b2c180411f6a64c",
+			"attributionTexts": [
+				"PkgID: popt@1.18-1.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/popt@1.18-1.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "MIT",
+			"licenseDeclared": "MIT",
+			"name": "popt",
+			"sourceInfo": "built package from: popt 1.18-1.el8",
+			"versionInfo": "1.18"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-3bbe22534295f875",
+			"attributionTexts": [
+				"PkgID: microdnf@3.8.0-2.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/microdnf@3.8.0-2.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPLv2+",
+			"licenseDeclared": "GPLv2+",
+			"name": "microdnf",
+			"sourceInfo": "built package from: microdnf 3.8.0-2.el8",
+			"versionInfo": "3.8.0"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-459c8f0a2a2e995c",
+			"attributionTexts": [
+				"PkgID: tzdata@2022f-1.el8.noarch",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/tzdata@2022f-1.el8?arch=noarch\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "Public Domain",
+			"licenseDeclared": "Public Domain",
+			"name": "tzdata",
+			"sourceInfo": "built package from: tzdata 2022f-1.el8",
+			"versionInfo": "2022f"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-45cd0f81472bf3d8",
+			"attributionTexts": [
+				"PkgID: lua-libs@5.3.4-12.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/lua-libs@5.3.4-12.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "MIT",
+			"licenseDeclared": "MIT",
+			"name": "lua-libs",
+			"sourceInfo": "built package from: lua 5.3.4-12.el8",
+			"versionInfo": "5.3.4"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-45e0539476804b05",
+			"attributionTexts": [
+				"PkgID: libcurl@7.61.1-25.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libcurl@7.61.1-25.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "MIT",
+			"licenseDeclared": "MIT",
+			"name": "libcurl",
+			"sourceInfo": "built package from: curl 7.61.1-25.el8",
+			"versionInfo": "7.61.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-46b3743c391fe6e8",
+			"attributionTexts": [
+				"PkgID: npth@1.5-4.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/npth@1.5-4.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv2+",
+			"licenseDeclared": "LGPLv2+",
+			"name": "npth",
+			"sourceInfo": "built package from: npth 1.5-4.el8",
+			"versionInfo": "1.5"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-5130c1fa08a64b9",
+			"attributionTexts": [
+				"PkgID: rpm@4.14.3-24.el8_7.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/rpm@4.14.3-24.el8_7?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPLv2+",
+			"licenseDeclared": "GPLv2+",
+			"name": "rpm",
+			"sourceInfo": "built package from: rpm 4.14.3-24.el8_7",
+			"versionInfo": "4.14.3"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-515fe03fc3c7980d",
+			"attributionTexts": [
+				"PkgID: xz-libs@5.2.4-4.el8_6.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/xz-libs@5.2.4-4.el8_6?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "Public Domain",
+			"licenseDeclared": "Public Domain",
+			"name": "xz-libs",
+			"sourceInfo": "built package from: xz 5.2.4-4.el8_6",
+			"versionInfo": "5.2.4"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-522a4ec4cdb34e7",
+			"attributionTexts": [
+				"PkgID: info@6.5-7.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/info@6.5-7.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPLv3+",
+			"licenseDeclared": "GPLv3+",
+			"name": "info",
+			"sourceInfo": "built package from: texinfo 6.5-7.el8",
+			"versionInfo": "6.5"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-532be736d25e8335",
+			"attributionTexts": [
+				"PkgID: openldap@2.4.46-18.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/openldap@2.4.46-18.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "OpenLDAP",
+			"licenseDeclared": "OpenLDAP",
+			"name": "openldap",
+			"sourceInfo": "built package from: openldap 2.4.46-18.el8",
+			"versionInfo": "2.4.46"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-54390ed0f13f9c64",
+			"attributionTexts": [
+				"PkgID: libmodulemd@2.13.0-1.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libmodulemd@2.13.0-1.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "MIT",
+			"licenseDeclared": "MIT",
+			"name": "libmodulemd",
+			"sourceInfo": "built package from: libmodulemd 2.13.0-1.el8",
+			"versionInfo": "2.13.0"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-5498c8e9e69e1db",
+			"attributionTexts": [
+				"PkgID: gpgme@1.13.1-11.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/gpgme@1.13.1-11.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv2+ and GPLv3+",
+			"licenseDeclared": "LGPLv2+ and GPLv3+",
+			"name": "gpgme",
+			"sourceInfo": "built package from: gpgme 1.13.1-11.el8",
+			"versionInfo": "1.13.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-54d6bc0500138cc6",
+			"attributionTexts": [
+				"PkgID: openssl-libs@1.1.1k-7.el8_6.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/openssl-libs@1:1.1.1k-7.el8_6?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "OpenSSL and ASL 2.0",
+			"licenseDeclared": "OpenSSL and ASL 2.0",
+			"name": "openssl-libs",
+			"sourceInfo": "built package from: openssl 1:1.1.1k-7.el8_6",
+			"versionInfo": "1.1.1k"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-5544705eb3c1e0fd",
+			"attributionTexts": [
+				"PkgID: librepo@1.14.2-3.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/librepo@1.14.2-3.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv2+",
+			"licenseDeclared": "LGPLv2+",
+			"name": "librepo",
+			"sourceInfo": "built package from: librepo 1.14.2-3.el8",
+			"versionInfo": "1.14.2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-57a6e32ee63980ed",
+			"attributionTexts": [
+				"PkgID: glibc-common@2.28-211.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/glibc-common@2.28-211.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL",
+			"licenseDeclared": "LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL",
+			"name": "glibc-common",
+			"sourceInfo": "built package from: glibc 2.28-211.el8",
+			"versionInfo": "2.28"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-582a46efeefeba2",
+			"attributionTexts": [
+				"PkgID: systemd-libs@239-68.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/systemd-libs@239-68.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv2+ and MIT",
+			"licenseDeclared": "LGPLv2+ and MIT",
+			"name": "systemd-libs",
+			"sourceInfo": "built package from: systemd 239-68.el8",
+			"versionInfo": "239"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-596aedd06d303b7",
+			"attributionTexts": [
+				"PkgID: krb5-libs@1.18.2-22.el8_7.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/krb5-libs@1.18.2-22.el8_7?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "MIT",
+			"licenseDeclared": "MIT",
+			"name": "krb5-libs",
+			"sourceInfo": "built package from: krb5 1.18.2-22.el8_7",
+			"versionInfo": "1.18.2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-59f2856fbfb451f2",
+			"attributionTexts": [
+				"PkgID: libgcrypt@1.8.5-7.el8_6.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libgcrypt@1.8.5-7.el8_6?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv2+",
+			"licenseDeclared": "LGPLv2+",
+			"name": "libgcrypt",
+			"sourceInfo": "built package from: libgcrypt 1.8.5-7.el8_6",
+			"versionInfo": "1.8.5"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-5ef515a881788924",
+			"attributionTexts": [
+				"PkgID: sqlite-libs@3.26.0-16.el8_6.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/sqlite-libs@3.26.0-16.el8_6?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "Public Domain",
+			"licenseDeclared": "Public Domain",
+			"name": "sqlite-libs",
+			"sourceInfo": "built package from: sqlite 3.26.0-16.el8_6",
+			"versionInfo": "3.26.0"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-5f0af2e675ee9f92",
+			"attributionTexts": [
+				"PkgID: ncurses-libs@6.1-9.20180224.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/ncurses-libs@6.1-9.20180224.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "MIT",
+			"licenseDeclared": "MIT",
+			"name": "ncurses-libs",
+			"sourceInfo": "built package from: ncurses 6.1-9.20180224.el8",
+			"versionInfo": "6.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-6040e5a3f5b7ef6b",
+			"attributionTexts": [
+				"PkgID: libattr@2.4.48-3.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libattr@2.4.48-3.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv2+",
+			"licenseDeclared": "LGPLv2+",
+			"name": "libattr",
+			"sourceInfo": "built package from: attr 2.4.48-3.el8",
+			"versionInfo": "2.4.48"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-60a8e2b0e410a46b",
+			"attributionTexts": [
+				"PkgID: audit-libs@3.0.7-4.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/audit-libs@3.0.7-4.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv2+",
+			"licenseDeclared": "LGPLv2+",
+			"name": "audit-libs",
+			"sourceInfo": "built package from: audit 3.0.7-4.el8",
+			"versionInfo": "3.0.7"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-61952cabc419f817",
+			"attributionTexts": [
+				"PkgID: libksba@1.3.5-8.el8_6.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libksba@1.3.5-8.el8_6?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "(LGPLv3+ or GPLv2+) and GPLv3+",
+			"licenseDeclared": "(LGPLv3+ or GPLv2+) and GPLv3+",
+			"name": "libksba",
+			"sourceInfo": "built package from: libksba 1.3.5-8.el8_6",
+			"versionInfo": "1.3.5"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-622ad0bfb2187cdb",
+			"attributionTexts": [
+				"PkgID: libtasn1@4.13-3.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libtasn1@4.13-3.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPLv3+ and LGPLv2+",
+			"licenseDeclared": "GPLv3+ and LGPLv2+",
+			"name": "libtasn1",
+			"sourceInfo": "built package from: libtasn1 4.13-3.el8",
+			"versionInfo": "4.13"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-6a1b2559ba257e68",
+			"attributionTexts": [
+				"PkgID: libpeas@1.22.0-6.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libpeas@1.22.0-6.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv2+",
+			"licenseDeclared": "LGPLv2+",
+			"name": "libpeas",
+			"sourceInfo": "built package from: libpeas 1.22.0-6.el8",
+			"versionInfo": "1.22.0"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-6a2f0647b8b4a758",
+			"attributionTexts": [
+				"PkgID: openssl@1.1.1k-7.el8_6.x86_64",
+				"LayerDigest: sha256:cfbe5ae335d3c10ced23ef2ced96a6f1ae7768df1dad052f403944ba5c57ca31",
+				"LayerDiffID: sha256:09366c6bcb83eff3ebb6ad845a6487f1147d23d3234251970c5fbf6878e17a6b"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/openssl@1:1.1.1k-7.el8_6?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "OpenSSL and ASL 2.0",
+			"licenseDeclared": "OpenSSL and ASL 2.0",
+			"name": "openssl",
+			"sourceInfo": "built package from: openssl 1:1.1.1k-7.el8_6",
+			"versionInfo": "1.1.1k"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-6d89ec2162f3bda4",
+			"attributionTexts": [
+				"PkgID: libdb-utils@5.3.28-42.el8_4.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libdb-utils@5.3.28-42.el8_4?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "BSD and LGPLv2 and Sleepycat",
+			"licenseDeclared": "BSD and LGPLv2 and Sleepycat",
+			"name": "libdb-utils",
+			"sourceInfo": "built package from: libdb 5.3.28-42.el8_4",
+			"versionInfo": "5.3.28"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-6ea6675e334ffc64",
+			"attributionTexts": [
+				"PkgID: publicsuffix-list-dafsa@20180723-1.el8.noarch",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/publicsuffix-list-dafsa@20180723-1.el8?arch=noarch\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "MPLv2.0",
+			"licenseDeclared": "MPLv2.0",
+			"name": "publicsuffix-list-dafsa",
+			"sourceInfo": "built package from: publicsuffix-list 20180723-1.el8",
+			"versionInfo": "20180723"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-7582b8d86e66c2a4",
+			"attributionTexts": [
+				"PkgID: libdb@5.3.28-42.el8_4.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libdb@5.3.28-42.el8_4?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "BSD and LGPLv2 and Sleepycat",
+			"licenseDeclared": "BSD and LGPLv2 and Sleepycat",
+			"name": "libdb",
+			"sourceInfo": "built package from: libdb 5.3.28-42.el8_4",
+			"versionInfo": "5.3.28"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-76dd346fa06f7ec1",
+			"attributionTexts": [
+				"PkgID: elfutils-libelf@0.187-4.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/elfutils-libelf@0.187-4.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPLv2+ or LGPLv3+",
+			"licenseDeclared": "GPLv2+ or LGPLv3+",
+			"name": "elfutils-libelf",
+			"sourceInfo": "built package from: elfutils 0.187-4.el8",
+			"versionInfo": "0.187"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-770434420e7865b5",
+			"attributionTexts": [
+				"PkgID: gpg-pubkey@d4082792-5b32db75.",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/gpg-pubkey@d4082792-5b32db75?arch=None\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "pubkey",
+			"licenseDeclared": "pubkey",
+			"name": "gpg-pubkey",
+			"sourceInfo": "built package from:  ",
+			"versionInfo": "d4082792"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-787bee266f07dcf4",
+			"attributionTexts": [
+				"PkgID: libstdc++@8.5.0-15.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libstdc++@8.5.0-15.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD",
+			"licenseDeclared": "GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD",
+			"name": "libstdc++",
+			"sourceInfo": "built package from: gcc 8.5.0-15.el8",
+			"versionInfo": "8.5.0"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-79207004e0c8d1c3",
+			"attributionTexts": [
+				"PkgID: bzip2-libs@1.0.6-26.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/bzip2-libs@1.0.6-26.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "BSD",
+			"licenseDeclared": "BSD",
+			"name": "bzip2-libs",
+			"sourceInfo": "built package from: bzip2 1.0.6-26.el8",
+			"versionInfo": "1.0.6"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-7a4ba48cbda92579",
+			"attributionTexts": [
+				"PkgID: coreutils-single@8.30-13.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/coreutils-single@8.30-13.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPLv3+",
+			"licenseDeclared": "GPLv3+",
+			"name": "coreutils-single",
+			"sourceInfo": "built package from: coreutils 8.30-13.el8",
+			"versionInfo": "8.30"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-7c98c27316a2c740",
+			"attributionTexts": [
+				"PkgID: mpfr@3.1.6-1.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/mpfr@3.1.6-1.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv3+ and GPLv3+ and GFDL",
+			"licenseDeclared": "LGPLv3+ and GPLv3+ and GFDL",
+			"name": "mpfr",
+			"sourceInfo": "built package from: mpfr 3.1.6-1.el8",
+			"versionInfo": "3.1.6"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-7d4cdd95be3b48a8",
+			"attributionTexts": [
+				"PkgID: curl@7.61.1-25.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/curl@7.61.1-25.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "MIT",
+			"licenseDeclared": "MIT",
+			"name": "curl",
+			"sourceInfo": "built package from: curl 7.61.1-25.el8",
+			"versionInfo": "7.61.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-7e78da4b98ae05ae",
+			"attributionTexts": [
+				"PkgID: bash@4.4.20-4.el8_6.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/bash@4.4.20-4.el8_6?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPLv3+",
+			"licenseDeclared": "GPLv3+",
+			"name": "bash",
+			"sourceInfo": "built package from: bash 4.4.20-4.el8_6",
+			"versionInfo": "4.4.20"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-7f8a0c099019b5fe",
+			"attributionTexts": [
+				"PkgID: libnghttp2@1.33.0-3.el8_2.1.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libnghttp2@1.33.0-3.el8_2.1?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "MIT",
+			"licenseDeclared": "MIT",
+			"name": "libnghttp2",
+			"sourceInfo": "built package from: nghttp2 1.33.0-3.el8_2.1",
+			"versionInfo": "1.33.0"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-8399329faa898a08",
+			"attributionTexts": [
+				"PkgID: libarchive@3.3.3-4.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libarchive@3.3.3-4.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "BSD",
+			"licenseDeclared": "BSD",
+			"name": "libarchive",
+			"sourceInfo": "built package from: libarchive 3.3.3-4.el8",
+			"versionInfo": "3.3.3"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-83b41d782233a8dc",
+			"attributionTexts": [
+				"PkgID: libverto@0.3.2-2.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libverto@0.3.2-2.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "MIT",
+			"licenseDeclared": "MIT",
+			"name": "libverto",
+			"sourceInfo": "built package from: libverto 0.3.2-2.el8",
+			"versionInfo": "0.3.2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-854f8b631f80b972",
+			"attributionTexts": [
+				"PkgID: lz4-libs@1.8.3-3.el8_4.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/lz4-libs@1.8.3-3.el8_4?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPLv2+ and BSD",
+			"licenseDeclared": "GPLv2+ and BSD",
+			"name": "lz4-libs",
+			"sourceInfo": "built package from: lz4 1.8.3-3.el8_4",
+			"versionInfo": "1.8.3"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-85b1c9cff48c3ab4",
+			"attributionTexts": [
+				"PkgID: libsigsegv@2.11-5.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libsigsegv@2.11-5.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPLv2+",
+			"licenseDeclared": "GPLv2+",
+			"name": "libsigsegv",
+			"sourceInfo": "built package from: libsigsegv 2.11-5.el8",
+			"versionInfo": "2.11"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-85e13934b7dd3f69",
+			"attributionTexts": [
+				"PkgID: libdnf@0.63.0-11.1.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libdnf@0.63.0-11.1.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv2+",
+			"licenseDeclared": "LGPLv2+",
+			"name": "libdnf",
+			"sourceInfo": "built package from: libdnf 0.63.0-11.1.el8",
+			"versionInfo": "0.63.0"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-88ad7adc33f0ea58",
+			"attributionTexts": [
+				"PkgID: libcap@2.48-4.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libcap@2.48-4.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "BSD or GPLv2",
+			"licenseDeclared": "BSD or GPLv2",
+			"name": "libcap",
+			"sourceInfo": "built package from: libcap 2.48-4.el8",
+			"versionInfo": "2.48"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-88c6e4fab421085c",
+			"attributionTexts": [
+				"PkgID: cyrus-sasl-lib@2.1.27-6.el8_5.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/cyrus-sasl-lib@2.1.27-6.el8_5?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "BSD with advertising",
+			"licenseDeclared": "BSD with advertising",
+			"name": "cyrus-sasl-lib",
+			"sourceInfo": "built package from: cyrus-sasl 2.1.27-6.el8_5",
+			"versionInfo": "2.1.27"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-89ea98cea9725365",
+			"attributionTexts": [
+				"PkgID: libsolv@0.7.20-3.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libsolv@0.7.20-3.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "BSD",
+			"licenseDeclared": "BSD",
+			"name": "libsolv",
+			"sourceInfo": "built package from: libsolv 0.7.20-3.el8",
+			"versionInfo": "0.7.20"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-8a285b89c97599d4",
+			"attributionTexts": [
+				"PkgID: libcom_err@1.45.6-5.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libcom_err@1.45.6-5.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "MIT",
+			"licenseDeclared": "MIT",
+			"name": "libcom_err",
+			"sourceInfo": "built package from: e2fsprogs 1.45.6-5.el8",
+			"versionInfo": "1.45.6"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-8d0f889dca488dfd",
+			"attributionTexts": [
+				"PkgID: basesystem@11-5.el8.noarch",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/basesystem@11-5.el8?arch=noarch\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "Public Domain",
+			"licenseDeclared": "Public Domain",
+			"name": "basesystem",
+			"sourceInfo": "built package from: basesystem 11-5.el8",
+			"versionInfo": "11"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-8ef51a0c76d0fce7",
+			"attributionTexts": [
+				"PkgID: p11-kit-trust@0.23.22-1.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/p11-kit-trust@0.23.22-1.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "BSD",
+			"licenseDeclared": "BSD",
+			"name": "p11-kit-trust",
+			"sourceInfo": "built package from: p11-kit 0.23.22-1.el8",
+			"versionInfo": "0.23.22"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-91120fbf3400fe6c",
+			"attributionTexts": [
+				"PkgID: libgpg-error@1.31-1.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libgpg-error@1.31-1.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv2+",
+			"licenseDeclared": "LGPLv2+",
+			"name": "libgpg-error",
+			"sourceInfo": "built package from: libgpg-error 1.31-1.el8",
+			"versionInfo": "1.31"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-9381f3fc7a2c9774",
+			"attributionTexts": [
+				"PkgID: readline@7.0-10.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/readline@7.0-10.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPLv3+",
+			"licenseDeclared": "GPLv3+",
+			"name": "readline",
+			"sourceInfo": "built package from: readline 7.0-10.el8",
+			"versionInfo": "7.0"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-9538b526565c092a",
+			"attributionTexts": [
+				"PkgID: libselinux@2.9-6.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libselinux@2.9-6.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "Public Domain",
+			"licenseDeclared": "Public Domain",
+			"name": "libselinux",
+			"sourceInfo": "built package from: libselinux 2.9-6.el8",
+			"versionInfo": "2.9"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-97034c163315eb56",
+			"attributionTexts": [
+				"PkgID: glibc-minimal-langpack@2.28-211.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/glibc-minimal-langpack@2.28-211.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL",
+			"licenseDeclared": "LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL",
+			"name": "glibc-minimal-langpack",
+			"sourceInfo": "built package from: glibc 2.28-211.el8",
+			"versionInfo": "2.28"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-99b2d7829bcc05c6",
+			"attributionTexts": [
+				"PkgID: libunistring@0.9.9-3.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libunistring@0.9.9-3.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPLv2+ or LGPLv3+",
+			"licenseDeclared": "GPLv2+ or LGPLv3+",
+			"name": "libunistring",
+			"sourceInfo": "built package from: libunistring 0.9.9-3.el8",
+			"versionInfo": "0.9.9"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-9ab7e0adda14d46d",
+			"attributionTexts": [
+				"PkgID: libzstd@1.4.4-1.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libzstd@1.4.4-1.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "BSD and GPLv2",
+			"licenseDeclared": "BSD and GPLv2",
+			"name": "libzstd",
+			"sourceInfo": "built package from: zstd 1.4.4-1.el8",
+			"versionInfo": "1.4.4"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-9dc1d52bf23fc37a",
+			"attributionTexts": [
+				"PkgID: filesystem@3.8-6.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/filesystem@3.8-6.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "Public Domain",
+			"licenseDeclared": "Public Domain",
+			"name": "filesystem",
+			"sourceInfo": "built package from: filesystem 3.8-6.el8",
+			"versionInfo": "3.8"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-9dead5831a8ae5cc",
+			"attributionTexts": [
+				"PkgID: gnutls@3.6.16-5.el8_6.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/gnutls@3.6.16-5.el8_6?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPLv3+ and LGPLv2+",
+			"licenseDeclared": "GPLv3+ and LGPLv2+",
+			"name": "gnutls",
+			"sourceInfo": "built package from: gnutls 3.6.16-5.el8_6",
+			"versionInfo": "3.6.16"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-9ef32b84bc265b47",
+			"attributionTexts": [
+				"PkgID: ncurses-base@6.1-9.20180224.el8.noarch",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/ncurses-base@6.1-9.20180224.el8?arch=noarch\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "MIT",
+			"licenseDeclared": "MIT",
+			"name": "ncurses-base",
+			"sourceInfo": "built package from: ncurses 6.1-9.20180224.el8",
+			"versionInfo": "6.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-a6e618267a653009",
+			"attributionTexts": [
+				"PkgID: libusbx@1.0.23-4.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libusbx@1.0.23-4.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv2+",
+			"licenseDeclared": "LGPLv2+",
+			"name": "libusbx",
+			"sourceInfo": "built package from: libusbx 1.0.23-4.el8",
+			"versionInfo": "1.0.23"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-a71ada174a997b35",
+			"attributionTexts": [
+				"PkgID: redhat-release@8.7-0.3.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/redhat-release@8.7-0.3.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPLv2",
+			"licenseDeclared": "GPLv2",
+			"name": "redhat-release",
+			"sourceInfo": "built package from: redhat-release 8.7-0.3.el8",
+			"versionInfo": "8.7"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-a74bbf1886bd6539",
+			"attributionTexts": [
+				"PkgID: libyaml@0.1.7-5.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libyaml@0.1.7-5.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "MIT",
+			"licenseDeclared": "MIT",
+			"name": "libyaml",
+			"sourceInfo": "built package from: libyaml 0.1.7-5.el8",
+			"versionInfo": "0.1.7"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-aa9239fa8a53a39c",
+			"attributionTexts": [
+				"PkgID: libmount@2.32.1-38.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libmount@2.32.1-38.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv2+",
+			"licenseDeclared": "LGPLv2+",
+			"name": "libmount",
+			"sourceInfo": "built package from: util-linux 2.32.1-38.el8",
+			"versionInfo": "2.32.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-ac2676452cc41c33",
+			"attributionTexts": [
+				"PkgID: brotli@1.0.6-3.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/brotli@1.0.6-3.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "MIT",
+			"licenseDeclared": "MIT",
+			"name": "brotli",
+			"sourceInfo": "built package from: brotli 1.0.6-3.el8",
+			"versionInfo": "1.0.6"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-aec7addedca3c072",
+			"attributionTexts": [
+				"PkgID: keyutils-libs@1.5.10-9.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/keyutils-libs@1.5.10-9.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPLv2+ and LGPLv2+",
+			"licenseDeclared": "GPLv2+ and LGPLv2+",
+			"name": "keyutils-libs",
+			"sourceInfo": "built package from: keyutils 1.5.10-9.el8",
+			"versionInfo": "1.5.10"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-b6cc415f0a63596d",
+			"attributionTexts": [
+				"PkgID: zlib@1.2.11-20.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/zlib@1.2.11-20.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "zlib and Boost",
+			"licenseDeclared": "zlib and Boost",
+			"name": "zlib",
+			"sourceInfo": "built package from: zlib 1.2.11-20.el8",
+			"versionInfo": "1.2.11"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-b9045e63b6186e55",
+			"attributionTexts": [
+				"PkgID: grep@3.1-6.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/grep@3.1-6.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPLv3+",
+			"licenseDeclared": "GPLv3+",
+			"name": "grep",
+			"sourceInfo": "built package from: grep 3.1-6.el8",
+			"versionInfo": "3.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-bda4a558060dd54d",
+			"attributionTexts": [
+				"PkgID: libffi@3.1-23.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libffi@3.1-23.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "MIT",
+			"licenseDeclared": "MIT",
+			"name": "libffi",
+			"sourceInfo": "built package from: libffi 3.1-23.el8",
+			"versionInfo": "3.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-c7d129eb7a0962cd",
+			"attributionTexts": [
+				"PkgID: libsepol@2.9-3.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libsepol@2.9-3.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv2+",
+			"licenseDeclared": "LGPLv2+",
+			"name": "libsepol",
+			"sourceInfo": "built package from: libsepol 2.9-3.el8",
+			"versionInfo": "2.9"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-c9fb73bd9358e7f2",
+			"attributionTexts": [
+				"PkgID: pcre@8.42-6.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/pcre@8.42-6.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "BSD",
+			"licenseDeclared": "BSD",
+			"name": "pcre",
+			"sourceInfo": "built package from: pcre 8.42-6.el8",
+			"versionInfo": "8.42"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-ca34a1931a647539",
+			"attributionTexts": [
+				"PkgID: p11-kit@0.23.22-1.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/p11-kit@0.23.22-1.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "BSD",
+			"licenseDeclared": "BSD",
+			"name": "p11-kit",
+			"sourceInfo": "built package from: p11-kit 0.23.22-1.el8",
+			"versionInfo": "0.23.22"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-cb9ca620c71ae35d",
+			"attributionTexts": [
+				"PkgID: gawk@4.2.1-4.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/gawk@4.2.1-4.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPLv3+ and GPLv2+ and LGPLv2+ and BSD",
+			"licenseDeclared": "GPLv3+ and GPLv2+ and LGPLv2+ and BSD",
+			"name": "gawk",
+			"sourceInfo": "built package from: gawk 4.2.1-4.el8",
+			"versionInfo": "4.2.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-cbfd3e705592e91",
+			"attributionTexts": [
+				"PkgID: libassuan@2.5.1-3.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libassuan@2.5.1-3.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv2+ and GPLv3+",
+			"licenseDeclared": "LGPLv2+ and GPLv3+",
+			"name": "libassuan",
+			"sourceInfo": "built package from: libassuan 2.5.1-3.el8",
+			"versionInfo": "2.5.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-ce706a6187e57b94",
+			"attributionTexts": [
+				"PkgID: rootfiles@8.1-22.el8.noarch",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/rootfiles@8.1-22.el8?arch=noarch\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "Public Domain",
+			"licenseDeclared": "Public Domain",
+			"name": "rootfiles",
+			"sourceInfo": "built package from: rootfiles 8.1-22.el8",
+			"versionInfo": "8.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-d2462b8d3ef8394b",
+			"attributionTexts": [
+				"PkgID: libxcrypt@4.1.1-6.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libxcrypt@4.1.1-6.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv2+ and BSD and Public Domain",
+			"licenseDeclared": "LGPLv2+ and BSD and Public Domain",
+			"name": "libxcrypt",
+			"sourceInfo": "built package from: libxcrypt 4.1.1-6.el8",
+			"versionInfo": "4.1.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-d79bcd30d552c065",
+			"attributionTexts": [
+				"PkgID: libxml2@2.9.7-15.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libxml2@2.9.7-15.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "MIT",
+			"licenseDeclared": "MIT",
+			"name": "libxml2",
+			"sourceInfo": "built package from: libxml2 2.9.7-15.el8",
+			"versionInfo": "2.9.7"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-db8ba7e86685f893",
+			"attributionTexts": [
+				"PkgID: chkconfig@1.19.1-1.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/chkconfig@1.19.1-1.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPLv2",
+			"licenseDeclared": "GPLv2",
+			"name": "chkconfig",
+			"sourceInfo": "built package from: chkconfig 1.19.1-1.el8",
+			"versionInfo": "1.19.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-dc682f1a4b8b5d00",
+			"attributionTexts": [
+				"PkgID: libpsl@0.20.2-6.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libpsl@0.20.2-6.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "MIT",
+			"licenseDeclared": "MIT",
+			"name": "libpsl",
+			"sourceInfo": "built package from: libpsl 0.20.2-6.el8",
+			"versionInfo": "0.20.2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-de36afed5bd12552",
+			"attributionTexts": [
+				"PkgID: gmp@6.1.2-10.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/gmp@1:6.1.2-10.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv3+ or GPLv2+",
+			"licenseDeclared": "LGPLv3+ or GPLv2+",
+			"name": "gmp",
+			"sourceInfo": "built package from: gmp 1:6.1.2-10.el8",
+			"versionInfo": "6.1.2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-e07a8e846c20b693",
+			"attributionTexts": [
+				"PkgID: libsmartcols@2.32.1-38.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libsmartcols@2.32.1-38.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv2+",
+			"licenseDeclared": "LGPLv2+",
+			"name": "libsmartcols",
+			"sourceInfo": "built package from: util-linux 2.32.1-38.el8",
+			"versionInfo": "2.32.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-e269f9aa7d7bae7e",
+			"attributionTexts": [
+				"PkgID: crypto-policies@20211116-1.gitae470d6.el8.noarch",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/crypto-policies@20211116-1.gitae470d6.el8?arch=noarch\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv2+",
+			"licenseDeclared": "LGPLv2+",
+			"name": "crypto-policies",
+			"sourceInfo": "built package from: crypto-policies 20211116-1.gitae470d6.el8",
+			"versionInfo": "20211116"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-f0557fda8145ae18",
+			"attributionTexts": [
+				"PkgID: json-c@0.13.1-3.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/json-c@0.13.1-3.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "MIT",
+			"licenseDeclared": "MIT",
+			"name": "json-c",
+			"sourceInfo": "built package from: json-c 0.13.1-3.el8",
+			"versionInfo": "0.13.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-f05d7b649a2e05d8",
+			"attributionTexts": [
+				"PkgID: nettle@3.4.1-7.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/nettle@3.4.1-7.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv3+ or GPLv2+",
+			"licenseDeclared": "LGPLv3+ or GPLv2+",
+			"name": "nettle",
+			"sourceInfo": "built package from: nettle 3.4.1-7.el8",
+			"versionInfo": "3.4.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-f45fa685be0ea389",
+			"attributionTexts": [
+				"PkgID: glib2@2.56.4-159.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/glib2@2.56.4-159.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv2+",
+			"licenseDeclared": "LGPLv2+",
+			"name": "glib2",
+			"sourceInfo": "built package from: glib2 2.56.4-159.el8",
+			"versionInfo": "2.56.4"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-f538911df694b9bb",
+			"attributionTexts": [
+				"PkgID: rpm-libs@4.14.3-24.el8_7.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/rpm-libs@4.14.3-24.el8_7?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPLv2+ and LGPLv2+ with exceptions",
+			"licenseDeclared": "GPLv2+ and LGPLv2+ with exceptions",
+			"name": "rpm-libs",
+			"sourceInfo": "built package from: rpm 4.14.3-24.el8_7",
+			"versionInfo": "4.14.3"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-fa2aa8206eb945e7",
+			"attributionTexts": [
+				"PkgID: pcre2@10.32-3.el8_6.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/pcre2@10.32-3.el8_6?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "BSD",
+			"licenseDeclared": "BSD",
+			"name": "pcre2",
+			"sourceInfo": "built package from: pcre2 10.32-3.el8_6",
+			"versionInfo": "10.32"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-fe4c51fa94ab0f4d",
+			"attributionTexts": [
+				"PkgID: libuuid@2.32.1-38.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libuuid@2.32.1-38.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "BSD",
+			"licenseDeclared": "BSD",
+			"name": "libuuid",
+			"sourceInfo": "built package from: util-linux 2.32.1-38.el8",
+			"versionInfo": "2.32.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-ff662b1f95733241",
+			"attributionTexts": [
+				"PkgID: libidn2@2.2.0-1.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/libidn2@2.2.0-1.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "(GPLv2+ or LGPLv3+) and GPLv3+",
+			"licenseDeclared": "(GPLv2+ or LGPLv3+) and GPLv3+",
+			"name": "libidn2",
+			"sourceInfo": "built package from: libidn2 2.2.0-1.el8",
+			"versionInfo": "2.2.0"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-ff9a1a6ffb3ea7ed",
+			"attributionTexts": [
+				"PkgID: json-glib@1.4.4-1.el8.x86_64",
+				"LayerDigest: sha256:1d6f30850896f753a6c4c5d8ecc7086f0290ce90a34d92449c30d1257f44979f",
+				"LayerDiffID: sha256:00a3d7f85a7283b4833ceb32f361408e8e7eebe6d75e9ce5b9525f0106075e35"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:rpm/redhat/json-glib@1.4.4-1.el8?arch=x86_64\u0026distro=redhat-8.7",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPLv2+",
+			"licenseDeclared": "LGPLv2+",
+			"name": "json-glib",
+			"sourceInfo": "built package from: json-glib 1.4.4-1.el8",
+			"versionInfo": "1.4.4"
+		}
+	],
+	"relationships": [
+		{
+			"relatedSpdxElement": "SPDXRef-ContainerImage-e34fdd252a3ef99a",
+			"relationshipType": "DESCRIBES",
+			"spdxElementId": "SPDXRef-DOCUMENT"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-OperatingSystem-2f8b75c755dc0f03",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-ContainerImage-e34fdd252a3ef99a"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-60a8e2b0e410a46b",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-8d0f889dca488dfd",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-7e78da4b98ae05ae",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-ac2676452cc41c33",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-79207004e0c8d1c3",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-20c024be3c8502ad",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-db8ba7e86685f893",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-7a4ba48cbda92579",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-e269f9aa7d7bae7e",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-7d4cdd95be3b48a8",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-88c6e4fab421085c",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-76dd346fa06f7ec1",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-218f018c05b2116e",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-9dc1d52bf23fc37a",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-cb9ca620c71ae35d",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-f45fa685be0ea389",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-166d33a982ca91fe",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-57a6e32ee63980ed",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-97034c163315eb56",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-de36afed5bd12552",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-1e2404787607d0a6",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-9dead5831a8ae5cc",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-27b5246837241982",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-770434420e7865b5",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-123fe9a3e74ba54b",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-5498c8e9e69e1db",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-b9045e63b6186e55",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-522a4ec4cdb34e7",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-f0557fda8145ae18",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-ff9a1a6ffb3ea7ed",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-aec7addedca3c072",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-596aedd06d303b7",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-321b7934f317b6e9",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-1e02a0beb294607f",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-8399329faa898a08",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-cbfd3e705592e91",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-6040e5a3f5b7ef6b",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-385af0a431b53a42",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-88ad7adc33f0ea58",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-30e2597a7aceb465",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-8a285b89c97599d4",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-45e0539476804b05",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-7582b8d86e66c2a4",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-6d89ec2162f3bda4",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-85e13934b7dd3f69",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-bda4a558060dd54d",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-299eac5afcda9523",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-59f2856fbfb451f2",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-91120fbf3400fe6c",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-ff662b1f95733241",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-61952cabc419f817",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-54390ed0f13f9c64",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-aa9239fa8a53a39c",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-7f8a0c099019b5fe",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-6a1b2559ba257e68",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-dc682f1a4b8b5d00",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-5544705eb3c1e0fd",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-22d038ee739de6ea",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-9538b526565c092a",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-c7d129eb7a0962cd",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-85b1c9cff48c3ab4",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-e07a8e846c20b693",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-89ea98cea9725365",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-318bd1b9be448dab",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-366b68e06cd403ed",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-787bee266f07dcf4",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-622ad0bfb2187cdb",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-99b2d7829bcc05c6",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-a6e618267a653009",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-fe4c51fa94ab0f4d",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-83b41d782233a8dc",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-d2462b8d3ef8394b",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-d79bcd30d552c065",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-a74bbf1886bd6539",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-9ab7e0adda14d46d",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-45cd0f81472bf3d8",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-854f8b631f80b972",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-3bbe22534295f875",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-7c98c27316a2c740",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-9ef32b84bc265b47",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-5f0af2e675ee9f92",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-f05d7b649a2e05d8",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-46b3743c391fe6e8",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-532be736d25e8335",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-6a2f0647b8b4a758",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-54d6bc0500138cc6",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-ca34a1931a647539",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-8ef51a0c76d0fce7",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-c9fb73bd9358e7f2",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-fa2aa8206eb945e7",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-3b2c180411f6a64c",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-6ea6675e334ffc64",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-9381f3fc7a2c9774",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-a71ada174a997b35",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-ce706a6187e57b94",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-5130c1fa08a64b9",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-f538911df694b9bb",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-1f394ef2bd7bc275",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-261185dde97f0a69",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-5ef515a881788924",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-582a46efeefeba2",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-459c8f0a2a2e995c",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-515fe03fc3c7980d",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-b6cc415f0a63596d",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-2f8b75c755dc0f03"
+		}
+	],
+	"spdxVersion": "SPDX-2.2"
+}

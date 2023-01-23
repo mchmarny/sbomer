@@ -1,0 +1,45 @@
+{
+	"SPDXID": "SPDXRef-DOCUMENT",
+	"creationInfo": {
+		"created": "2023-01-23T13:14:46.35818Z",
+		"creators": [
+			"Tool: trivy",
+			"Organization: aquasecurity"
+		]
+	},
+	"dataLicense": "CC0-1.0",
+	"documentDescribes": [
+		"SPDXRef-ContainerImage-f9919f6cdd61be3e"
+	],
+	"documentNamespace": "http://aquasecurity.github.io/trivy/container_image/docker/ecs-searchdomain-sidecar-1d21ded6-e61b-496f-afc8-6f51b73b0a4e",
+	"name": "docker/ecs-searchdomain-sidecar",
+	"packages": [
+		{
+			"SPDXID": "SPDXRef-ContainerImage-f9919f6cdd61be3e",
+			"attributionTexts": [
+				"SchemaVersion: 2",
+				"ImageID: sha256:b22d0ed8553d86f6a45aa03f474ebadaac85ab3fb5061e92ffa297510eda023d",
+				"RepoDigest: docker/ecs-searchdomain-sidecar@sha256:e5df9e83edb74f1fb1715f50493283052028aeabb3dc3accaf08f532c2bda290",
+				"DiffID: sha256:4de9d43023310a82caab7197e3cad19c61be626d7b34363090645e4d6ba4da9e",
+				"RepoTag: docker/ecs-searchdomain-sidecar:latest"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:oci/ecs-searchdomain-sidecar@sha256:e5df9e83edb74f1fb1715f50493283052028aeabb3dc3accaf08f532c2bda290?repository_url=index.docker.io%2Fdocker%2Fecs-searchdomain-sidecar\u0026arch=amd64",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"name": "docker/ecs-searchdomain-sidecar"
+		}
+	],
+	"relationships": [
+		{
+			"relatedSpdxElement": "SPDXRef-ContainerImage-f9919f6cdd61be3e",
+			"relationshipType": "DESCRIBES",
+			"spdxElementId": "SPDXRef-DOCUMENT"
+		}
+	],
+	"spdxVersion": "SPDX-2.2"
+}

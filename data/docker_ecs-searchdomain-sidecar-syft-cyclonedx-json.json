@@ -1,0 +1,23 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:252fe3ef-516b-452c-9743-7d128f09e7bb",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-01-23T05:14:51-08:00",
+    "tools": [
+      {
+        "vendor": "anchore",
+        "name": "syft",
+        "version": "0.66.2"
+      }
+    ],
+    "component": {
+      "bom-ref": "e7224db8ed7a2bc8",
+      "type": "container",
+      "name": "docker/ecs-searchdomain-sidecar",
+      "version": "sha256:e5df9e83edb74f1fb1715f50493283052028aeabb3dc3accaf08f532c2bda290"
+    }
+  },
+  "components": []
+}

@@ -1,0 +1,52 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:f4862a7f-2b96-4b4f-b4b7-dfb6d7210b5d",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-01-23T13:14:47+00:00",
+    "tools": [
+      {
+        "vendor": "aquasecurity",
+        "name": "trivy",
+        "version": "0.36.1"
+      }
+    ],
+    "component": {
+      "bom-ref": "pkg:oci/ecs-searchdomain-sidecar@sha256:e5df9e83edb74f1fb1715f50493283052028aeabb3dc3accaf08f532c2bda290?repository_url=index.docker.io%2Fdocker%2Fecs-searchdomain-sidecar\u0026arch=amd64",
+      "type": "container",
+      "name": "docker/ecs-searchdomain-sidecar",
+      "purl": "pkg:oci/ecs-searchdomain-sidecar@sha256:e5df9e83edb74f1fb1715f50493283052028aeabb3dc3accaf08f532c2bda290?repository_url=index.docker.io%2Fdocker%2Fecs-searchdomain-sidecar\u0026arch=amd64",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SchemaVersion",
+          "value": "2"
+        },
+        {
+          "name": "aquasecurity:trivy:ImageID",
+          "value": "sha256:b22d0ed8553d86f6a45aa03f474ebadaac85ab3fb5061e92ffa297510eda023d"
+        },
+        {
+          "name": "aquasecurity:trivy:RepoDigest",
+          "value": "docker/ecs-searchdomain-sidecar@sha256:e5df9e83edb74f1fb1715f50493283052028aeabb3dc3accaf08f532c2bda290"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:4de9d43023310a82caab7197e3cad19c61be626d7b34363090645e4d6ba4da9e"
+        },
+        {
+          "name": "aquasecurity:trivy:RepoTag",
+          "value": "docker/ecs-searchdomain-sidecar:latest"
+        }
+      ]
+    }
+  },
+  "components": null,
+  "dependencies": [
+    {
+      "ref": "pkg:oci/ecs-searchdomain-sidecar@sha256:e5df9e83edb74f1fb1715f50493283052028aeabb3dc3accaf08f532c2bda290?repository_url=index.docker.io%2Fdocker%2Fecs-searchdomain-sidecar\u0026arch=amd64",
+      "dependsOn": null
+    }
+  ],
+  "vulnerabilities": []
+}

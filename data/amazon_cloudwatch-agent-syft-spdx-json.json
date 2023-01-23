@@ -1,0 +1,5017 @@
+{
+ "spdxVersion": "SPDX-2.3",
+ "dataLicense": "CC0-1.0",
+ "SPDXID": "SPDXRef-DOCUMENT",
+ "name": "amazon/cloudwatch-agent",
+ "documentNamespace": "https://anchore.com/syft/image/amazon/cloudwatch-agent-d6fbadae-b530-4dc8-a20c-44e6de5fc255",
+ "creationInfo": {
+  "licenseListVersion": "3.19",
+  "creators": [
+   "Organization: Anchore, Inc",
+   "Tool: syft-0.66.2"
+  ],
+  "created": "2023-01-23T12:59:01Z",
+  "comment": ""
+ },
+ "packages": [
+  {
+   "name": "cloud.google.com/go/compute",
+   "SPDXID": "SPDXRef-Package-go-module-cloud.google.com-go-compute-ae450c2ba32ce6dd",
+   "versionInfo": "v1.6.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:go:compute:v1.6.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/cloud.google.com/go/compute@v1.6.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "collectd.org",
+   "SPDXID": "SPDXRef-Package-go-module-collectd.org-13320a12cb003b1",
+   "versionInfo": "v0.4.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/collectd.org@v0.4.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/Azure/azure-sdk-for-go",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-Azure-azure-sdk-for-go-7f5bbb87eb54ef25",
+   "versionInfo": "v67.1.0+incompatible",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:Azure:azure-sdk-for-go:v67.1.0\\+incompatible:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:Azure:azure_sdk_for_go:v67.1.0\\+incompatible:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/Azure/azure-sdk-for-go@v67.1.0+incompatible",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/Azure/go-autorest/autorest",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-Azure-go-autorest-autorest-1c1fef3b64792760",
+   "versionInfo": "v0.11.25",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:Azure:go-autorest\\/autorest:v0.11.25:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:Azure:go_autorest\\/autorest:v0.11.25:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/Azure/go-autorest/autorest@v0.11.25",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/Azure/go-autorest/autorest/adal",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-Azure-go-autorest-autorest-adal-73bfd84f07aefcad",
+   "versionInfo": "v0.9.18",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:Azure:go-autorest\\/autorest\\/adal:v0.9.18:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:Azure:go_autorest\\/autorest\\/adal:v0.9.18:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/Azure/go-autorest/autorest/adal@v0.9.18",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/Azure/go-autorest/autorest/date",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-Azure-go-autorest-autorest-date-5b60d440e3b58b8b",
+   "versionInfo": "v0.3.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:Azure:go-autorest\\/autorest\\/date:v0.3.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:Azure:go_autorest\\/autorest\\/date:v0.3.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/Azure/go-autorest/autorest/date@v0.3.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/Azure/go-autorest/autorest/to",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-Azure-go-autorest-autorest-to-a785b0d78395e5f1",
+   "versionInfo": "v0.4.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:Azure:go-autorest\\/autorest\\/to:v0.4.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:Azure:go_autorest\\/autorest\\/to:v0.4.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/Azure/go-autorest/autorest/to@v0.4.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/Azure/go-autorest/autorest/validation",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-Azure-go-autorest-autorest-validation-18b4582c63dac141",
+   "versionInfo": "v0.3.1",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:Azure:go-autorest\\/autorest\\/validation:v0.3.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:Azure:go_autorest\\/autorest\\/validation:v0.3.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/Azure/go-autorest/autorest/validation@v0.3.1",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/Azure/go-autorest/logger",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-Azure-go-autorest-logger-fe5f70263cfa6ad4",
+   "versionInfo": "v0.2.1",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:Azure:go-autorest\\/logger:v0.2.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:Azure:go_autorest\\/logger:v0.2.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/Azure/go-autorest/logger@v0.2.1",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/Azure/go-autorest/tracing",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-Azure-go-autorest-tracing-24f0fece5da6231e",
+   "versionInfo": "v0.6.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:Azure:go-autorest\\/tracing:v0.6.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:Azure:go_autorest\\/tracing:v0.6.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/Azure/go-autorest/tracing@v0.6.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/BurntSushi/toml",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-BurntSushi-toml-2b6cc12abc6f627b",
+   "versionInfo": "v0.3.1",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:BurntSushi:toml:v0.3.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/BurntSushi/toml@v0.3.1",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/BurntSushi/toml",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-BurntSushi-toml-3039d859faa92240",
+   "versionInfo": "v0.3.1",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/config-translator",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:BurntSushi:toml:v0.3.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/BurntSushi/toml@v0.3.1",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/BurntSushi/toml",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-BurntSushi-toml-cad731ed525b16c6",
+   "versionInfo": "v0.3.1",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/start-amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:BurntSushi:toml:v0.3.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/BurntSushi/toml@v0.3.1",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/Rican7/retry",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-Rican7-retry-31cee7f249374753",
+   "versionInfo": "v0.1.1-0.20160712041035-272ad122d6e5",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:Rican7:retry:v0.1.1-0.20160712041035-272ad122d6e5:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/Rican7/retry@v0.1.1-0.20160712041035-272ad122d6e5",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/alecthomas/participle",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-alecthomas-participle-aa13826d58bd8d3",
+   "versionInfo": "v0.4.1",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:alecthomas:participle:v0.4.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/alecthomas/participle@v0.4.1",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/alecthomas/units",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-alecthomas-units-475998600fd17dbf",
+   "versionInfo": "v0.0.0-20211218093645-b94a6e3cc137",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:alecthomas:units:v0.0.0-20211218093645-b94a6e3cc137:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/alecthomas/units@v0.0.0-20211218093645-b94a6e3cc137",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/antchfx/jsonquery",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-antchfx-jsonquery-ec6bc6a912011f8c",
+   "versionInfo": "v1.1.5",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:antchfx:jsonquery:v1.1.5:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/antchfx/jsonquery@v1.1.5",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/antchfx/xmlquery",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-antchfx-xmlquery-fb6400243e64b2a5",
+   "versionInfo": "v1.3.9",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:antchfx:xmlquery:v1.3.9:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/antchfx/xmlquery@v1.3.9",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/antchfx/xpath",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-antchfx-xpath-ace0e154af9cd988",
+   "versionInfo": "v1.2.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:antchfx:xpath:v1.2.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/antchfx/xpath@v1.2.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/armon/go-metrics",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-armon-go-metrics-2b60ca64260ec948",
+   "versionInfo": "v0.3.10",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:armon:go-metrics:v0.3.10:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:armon:go_metrics:v0.3.10:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/armon/go-metrics@v0.3.10",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/aws/amazon-cloudwatch-agent",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-aws-amazon-cloudwatch-agent-8a9a555766d7502e",
+   "versionInfo": "(devel)",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:aws:amazon-cloudwatch-agent:\\(devel\\):*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:aws:amazon_cloudwatch_agent:\\(devel\\):*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/aws/amazon-cloudwatch-agent@(devel)",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/aws/amazon-cloudwatch-agent",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-aws-amazon-cloudwatch-agent-7a4220b5ff3872a1",
+   "versionInfo": "(devel)",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/config-translator",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:aws:amazon-cloudwatch-agent:\\(devel\\):*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:aws:amazon_cloudwatch_agent:\\(devel\\):*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/aws/amazon-cloudwatch-agent@(devel)",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/aws/amazon-cloudwatch-agent",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-aws-amazon-cloudwatch-agent-98164b769dffa428",
+   "versionInfo": "(devel)",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/start-amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:aws:amazon-cloudwatch-agent:\\(devel\\):*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:aws:amazon_cloudwatch_agent:\\(devel\\):*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/aws/amazon-cloudwatch-agent@(devel)",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/aws/aws-sdk-go",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-aws-aws-sdk-go-ee00210da87bc1cc",
+   "versionInfo": "v1.44.106",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:aws:aws-sdk-go:v1.44.106:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:aws:aws_sdk_go:v1.44.106:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/aws/aws-sdk-go@v1.44.106",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/aws/aws-sdk-go",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-aws-aws-sdk-go-3216c61d6a614183",
+   "versionInfo": "v1.44.106",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/config-translator",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:aws:aws-sdk-go:v1.44.106:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:aws:aws_sdk_go:v1.44.106:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/aws/aws-sdk-go@v1.44.106",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/aws/aws-sdk-go",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-aws-aws-sdk-go-a5dee0b6711ab10d",
+   "versionInfo": "v1.44.106",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/start-amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:aws:aws-sdk-go:v1.44.106:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:aws:aws_sdk_go:v1.44.106:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/aws/aws-sdk-go@v1.44.106",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/aws/telegraf",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-aws-telegraf-9323f17f25998b73",
+   "versionInfo": "v0.10.2-0.20220502160831-c20ebe67c5ef",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:aws:telegraf:v0.10.2-0.20220502160831-c20ebe67c5ef:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/aws/telegraf@v0.10.2-0.20220502160831-c20ebe67c5ef",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/aws/telegraf/patches/gopsutil/v3",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-aws-telegraf-patches-gopsutil-v3-51c0bf5eeb3152a5",
+   "versionInfo": "v3.0.0-20220502160831-c20ebe67c5ef",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:aws:telegraf\\/patches\\/gopsutil\\/v3:v3.0.0-20220502160831-c20ebe67c5ef:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/aws/telegraf/patches/gopsutil/v3@v3.0.0-20220502160831-c20ebe67c5ef",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/benbjohnson/clock",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-benbjohnson-clock-60fa872a52ecef1c",
+   "versionInfo": "v1.3.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:benbjohnson:clock:v1.3.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/benbjohnson/clock@v1.3.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/beorn7/perks",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-beorn7-perks-770945787c578bc9",
+   "versionInfo": "v1.0.1",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:beorn7:perks:v1.0.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/beorn7/perks@v1.0.1",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/blang/semver",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-blang-semver-541276d30c1086b5",
+   "versionInfo": "v3.5.1+incompatible",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:blang:semver:v3.5.1\\+incompatible:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/blang/semver@v3.5.1+incompatible",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/caio/go-tdigest",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-caio-go-tdigest-65c43658f46b4229",
+   "versionInfo": "v3.1.0+incompatible",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:caio:go-tdigest:v3.1.0\\+incompatible:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:caio:go_tdigest:v3.1.0\\+incompatible:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/caio/go-tdigest@v3.1.0+incompatible",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/cespare/xxhash/v2",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-cespare-xxhash-v2-6f4e025e9500c431",
+   "versionInfo": "v2.1.2",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:cespare:xxhash\\/v2:v2.1.2:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/cespare/xxhash/v2@v2.1.2",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/checkpoint-restore/go-criu/v5",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-checkpoint-restore-go-criu-v5-456196d233835790",
+   "versionInfo": "v5.3.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:checkpoint-restore:go-criu\\/v5:v5.3.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:checkpoint-restore:go_criu\\/v5:v5.3.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:checkpoint_restore:go-criu\\/v5:v5.3.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:checkpoint_restore:go_criu\\/v5:v5.3.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:checkpoint:go-criu\\/v5:v5.3.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:checkpoint:go_criu\\/v5:v5.3.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/checkpoint-restore/go-criu/v5@v5.3.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/cilium/ebpf",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-cilium-ebpf-f36510f3b19a808a",
+   "versionInfo": "v0.7.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:cilium:ebpf:v0.7.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/cilium/ebpf@v0.7.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/cncf/xds/go",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-cncf-xds-go-73e94352c3a8af13",
+   "versionInfo": "v0.0.0-20211130200136-a8f946100490",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:cncf:xds\\/go:v0.0.0-20211130200136-a8f946100490:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/cncf/xds/go@v0.0.0-20211130200136-a8f946100490",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/containerd/console",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-containerd-console-c300d9ca589f273b",
+   "versionInfo": "v1.0.3",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:containerd:console:v1.0.3:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/containerd/console@v1.0.3",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/containerd/containerd",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-containerd-containerd-6780ba9b884b3563",
+   "versionInfo": "v1.6.8",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:containerd:containerd:v1.6.8:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/containerd/containerd@v1.6.8",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/containerd/ttrpc",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-containerd-ttrpc-39aceeb6082c1bca",
+   "versionInfo": "v1.1.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:containerd:ttrpc:v1.1.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/containerd/ttrpc@v1.1.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/coreos/go-semver",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-coreos-go-semver-4cff30a701552b72",
+   "versionInfo": "v0.3.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:coreos:go-semver:v0.3.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:coreos:go_semver:v0.3.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/coreos/go-semver@v0.3.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/coreos/go-systemd/v22",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-coreos-go-systemd-v22-3aa2880367576ab1",
+   "versionInfo": "v22.3.2",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:coreos:go-systemd\\/v22:v22.3.2:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:coreos:go_systemd\\/v22:v22.3.2:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/coreos/go-systemd/v22@v22.3.2",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/cyphar/filepath-securejoin",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-cyphar-filepath-securejoin-f74d5d9c6902b131",
+   "versionInfo": "v0.2.3",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:cyphar:filepath-securejoin:v0.2.3:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:cyphar:filepath_securejoin:v0.2.3:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/cyphar/filepath-securejoin@v0.2.3",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/davecgh/go-spew",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-davecgh-go-spew-aeb37a19cd8bc087",
+   "versionInfo": "v1.1.1",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:davecgh:go-spew:v1.1.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:davecgh:go_spew:v1.1.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/davecgh/go-spew@v1.1.1",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/dennwc/varint",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-dennwc-varint-8ba5f32e70681f16",
+   "versionInfo": "v1.0.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:dennwc:varint:v1.0.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/dennwc/varint@v1.0.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/digitalocean/godo",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-digitalocean-godo-85691bb3c213815c",
+   "versionInfo": "v1.78.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:digitalocean:godo:v1.78.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/digitalocean/godo@v1.78.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/docker/distribution",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-docker-distribution-3c582a1afde9958e",
+   "versionInfo": "v2.8.1+incompatible",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:docker:distribution:v2.8.1\\+incompatible:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/docker/distribution@v2.8.1+incompatible",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/docker/docker",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-docker-docker-ddb8dd512d660b0b",
+   "versionInfo": "v20.10.14+incompatible",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:docker:docker:v20.10.14\\+incompatible:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/docker/docker@v20.10.14+incompatible",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/docker/go-connections",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-docker-go-connections-bbef0594b6f43965",
+   "versionInfo": "v0.4.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:docker:go-connections:v0.4.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:docker:go_connections:v0.4.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/docker/go-connections@v0.4.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/docker/go-units",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-docker-go-units-5b3064f1d077ccb0",
+   "versionInfo": "v0.4.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:docker:go-units:v0.4.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:docker:go_units:v0.4.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/docker/go-units@v0.4.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/doclambda/protobufquery",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-doclambda-protobufquery-b2038ae1aec6197",
+   "versionInfo": "v0.0.0-20210317203640-88ffabe06a60",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:doclambda:protobufquery:v0.0.0-20210317203640-88ffabe06a60:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/doclambda/protobufquery@v0.0.0-20210317203640-88ffabe06a60",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/envoyproxy/go-control-plane",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-envoyproxy-go-control-plane-d2679279f9a0b12d",
+   "versionInfo": "v0.10.2-0.20220325020618-49ff273808a1",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:envoyproxy:go-control-plane:v0.10.2-0.20220325020618-49ff273808a1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:envoyproxy:go_control_plane:v0.10.2-0.20220325020618-49ff273808a1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/envoyproxy/go-control-plane@v0.10.2-0.20220325020618-49ff273808a1",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/envoyproxy/protoc-gen-validate",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-envoyproxy-protoc-gen-validate-864cf773dae89116",
+   "versionInfo": "v0.6.7",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:envoyproxy:protoc-gen-validate:v0.6.7:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:envoyproxy:protoc_gen_validate:v0.6.7:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/envoyproxy/protoc-gen-validate@v0.6.7",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/euank/go-kmsg-parser",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-euank-go-kmsg-parser-a78fc4655ab624b3",
+   "versionInfo": "v2.0.0+incompatible",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:euank:go-kmsg-parser:v2.0.0\\+incompatible:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:euank:go_kmsg_parser:v2.0.0\\+incompatible:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/euank/go-kmsg-parser@v2.0.0+incompatible",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/fatih/color",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-fatih-color-40a5d3098686ea29",
+   "versionInfo": "v1.13.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:fatih:color:v1.13.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/fatih/color@v1.13.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/fsnotify/fsnotify",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-fsnotify-fsnotify-4a80dc27d6c65be",
+   "versionInfo": "v1.5.1",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:fsnotify:fsnotify:v1.5.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/fsnotify/fsnotify@v1.5.1",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/go-kit/kit",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-go-kit-kit-cf76e6664a78a066",
+   "versionInfo": "v0.12.1-0.20220808180842-62c81a0f3047",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:go-kit:kit:v0.12.1-0.20220808180842-62c81a0f3047:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:go_kit:kit:v0.12.1-0.20220808180842-62c81a0f3047:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:go:kit:v0.12.1-0.20220808180842-62c81a0f3047:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/go-kit/kit@v0.12.1-0.20220808180842-62c81a0f3047",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/go-kit/log",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-go-kit-log-fbbde17a6e2cd1e4",
+   "versionInfo": "v0.2.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:go-kit:log:v0.2.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:go_kit:log:v0.2.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:go:log:v0.2.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/go-kit/log@v0.2.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/go-logfmt/logfmt",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-go-logfmt-logfmt-3ff88c4ef22111e5",
+   "versionInfo": "v0.5.1",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:go-logfmt:logfmt:v0.5.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:go_logfmt:logfmt:v0.5.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:go:logfmt:v0.5.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/go-logfmt/logfmt@v0.5.1",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/go-logr/logr",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-go-logr-logr-e650c2c57e7ca68",
+   "versionInfo": "v1.2.3",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:go-logr:logr:v1.2.3:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:go_logr:logr:v1.2.3:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:go:logr:v1.2.3:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/go-logr/logr@v1.2.3",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/go-resty/resty/v2",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-go-resty-resty-v2-304e8c53ba08fa40",
+   "versionInfo": "v2.1.1-0.20191201195748-d7b97669fe48",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:go-resty:resty\\/v2:v2.1.1-0.20191201195748-d7b97669fe48:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:go_resty:resty\\/v2:v2.1.1-0.20191201195748-d7b97669fe48:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:go:resty\\/v2:v2.1.1-0.20191201195748-d7b97669fe48:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/go-resty/resty/v2@v2.1.1-0.20191201195748-d7b97669fe48",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/go-zookeeper/zk",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-go-zookeeper-zk-fa63652010a32b26",
+   "versionInfo": "v1.0.2",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:go-zookeeper:zk:v1.0.2:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:go_zookeeper:zk:v1.0.2:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:go:zk:v1.0.2:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/go-zookeeper/zk@v1.0.2",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/gobwas/glob",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-gobwas-glob-cdaef1537d831c7f",
+   "versionInfo": "v0.2.3",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:gobwas:glob:v0.2.3:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/gobwas/glob@v0.2.3",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/godbus/dbus/v5",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-godbus-dbus-v5-5c55db2c8b48b513",
+   "versionInfo": "v5.0.6",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:godbus:dbus\\/v5:v5.0.6:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/godbus/dbus/v5@v5.0.6",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/gogo/protobuf",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-gogo-protobuf-67fa9344b1f89bc3",
+   "versionInfo": "v1.3.2",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:gogo:protobuf:v1.3.2:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/gogo/protobuf@v1.3.2",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/golang-jwt/jwt/v4",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-golang-jwt-jwt-v4-ce0d517461a85c62",
+   "versionInfo": "v4.2.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:golang-jwt:jwt\\/v4:v4.2.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:golang_jwt:jwt\\/v4:v4.2.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:golang:jwt\\/v4:v4.2.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/golang-jwt/jwt/v4@v4.2.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/golang/groupcache",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-golang-groupcache-61fa9f3b386a2ef8",
+   "versionInfo": "v0.0.0-20210331224755-41bb18bfe9da",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:golang:groupcache:v0.0.0-20210331224755-41bb18bfe9da:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/golang/groupcache@v0.0.0-20210331224755-41bb18bfe9da",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/golang/protobuf",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-golang-protobuf-816ab6bd9b49d91c",
+   "versionInfo": "v1.5.2",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:golang:protobuf:v1.5.2:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/golang/protobuf@v1.5.2",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/golang/snappy",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-golang-snappy-7156dfa85173c02c",
+   "versionInfo": "v0.0.4",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:golang:snappy:v0.0.4:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/golang/snappy@v0.0.4",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/google/cadvisor",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-google-cadvisor-599d8abc73138409",
+   "versionInfo": "v0.44.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:google:cadvisor:v0.44.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/google/cadvisor@v0.44.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/google/go-cmp",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-google-go-cmp-d6ddca96aea98bd6",
+   "versionInfo": "v0.5.8",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:google:go-cmp:v0.5.8:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:google:go_cmp:v0.5.8:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/google/go-cmp@v0.5.8",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/google/go-querystring",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-google-go-querystring-e0218b15f0525113",
+   "versionInfo": "v1.0.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:google:go-querystring:v1.0.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:google:go_querystring:v1.0.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/google/go-querystring@v1.0.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/google/gofuzz",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-google-gofuzz-8a691734b0553a94",
+   "versionInfo": "v1.2.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:google:gofuzz:v1.2.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/google/gofuzz@v1.2.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/google/uuid",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-google-uuid-34406280339acd7d",
+   "versionInfo": "v1.3.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:google:uuid:v1.3.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/google/uuid@v1.3.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/googleapis/gax-go/v2",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-googleapis-gax-go-v2-9f45eb8a06ed49c0",
+   "versionInfo": "v2.3.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:googleapis:gax-go\\/v2:v2.3.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:googleapis:gax_go\\/v2:v2.3.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/googleapis/gax-go/v2@v2.3.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/googleapis/gnostic",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-googleapis-gnostic-f0b8ead386942b4c",
+   "versionInfo": "v0.5.5",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:googleapis:gnostic:v0.5.5:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/googleapis/gnostic@v0.5.5",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/gophercloud/gophercloud",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-gophercloud-gophercloud-7930eb94a5af9030",
+   "versionInfo": "v0.24.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:gophercloud:gophercloud:v0.24.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/gophercloud/gophercloud@v0.24.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/gosnmp/gosnmp",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-gosnmp-gosnmp-aa4287be485ab363",
+   "versionInfo": "v1.34.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:gosnmp:gosnmp:v1.34.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/gosnmp/gosnmp@v1.34.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/grafana/regexp",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-grafana-regexp-99db7fec2faaf185",
+   "versionInfo": "v0.0.0-20220304095617-2e8d9baf4ac2",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:grafana:regexp:v0.0.0-20220304095617-2e8d9baf4ac2:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/grafana/regexp@v0.0.0-20220304095617-2e8d9baf4ac2",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/hashicorp/consul/api",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-hashicorp-consul-api-a5757316c061e5a6",
+   "versionInfo": "v1.12.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:hashicorp:consul\\/api:v1.12.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/hashicorp/consul/api@v1.12.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/hashicorp/go-cleanhttp",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-hashicorp-go-cleanhttp-63e23ca63bef15cc",
+   "versionInfo": "v0.5.2",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:hashicorp:go-cleanhttp:v0.5.2:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:hashicorp:go_cleanhttp:v0.5.2:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/hashicorp/go-cleanhttp@v0.5.2",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/hashicorp/go-hclog",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-hashicorp-go-hclog-170f516719fc8c8b",
+   "versionInfo": "v1.2.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:hashicorp:go-hclog:v1.2.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:hashicorp:go_hclog:v1.2.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/hashicorp/go-hclog@v1.2.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/hashicorp/go-immutable-radix",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-hashicorp-go-immutable-radix-483f5d7c13fbc9cc",
+   "versionInfo": "v1.3.1",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:hashicorp:go-immutable-radix:v1.3.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:hashicorp:go_immutable_radix:v1.3.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/hashicorp/go-immutable-radix@v1.3.1",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/hashicorp/go-rootcerts",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-hashicorp-go-rootcerts-69338efc2dfa83f9",
+   "versionInfo": "v1.0.2",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:hashicorp:go-rootcerts:v1.0.2:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:hashicorp:go_rootcerts:v1.0.2:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/hashicorp/go-rootcerts@v1.0.2",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/hashicorp/golang-lru",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-hashicorp-golang-lru-f7b1f3105f9fba7b",
+   "versionInfo": "v0.5.4",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:hashicorp:golang-lru:v0.5.4:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:hashicorp:golang_lru:v0.5.4:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/hashicorp/golang-lru@v0.5.4",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/hashicorp/serf",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-hashicorp-serf-25a5e191574aad0c",
+   "versionInfo": "v0.9.6",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:hashicorp:serf:v0.9.6:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/hashicorp/serf@v0.9.6",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/hetznercloud/hcloud-go",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-hetznercloud-hcloud-go-deec649479f88ba8",
+   "versionInfo": "v1.33.1",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:hetznercloud:hcloud-go:v1.33.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:hetznercloud:hcloud_go:v1.33.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/hetznercloud/hcloud-go@v1.33.1",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/imdario/mergo",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-imdario-mergo-b7a3176890915dc5",
+   "versionInfo": "v0.3.12",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:imdario:mergo:v0.3.12:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/imdario/mergo@v0.3.12",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/influxdata/line-protocol/v2",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-influxdata-line-protocol-v2-2f5070640d12b308",
+   "versionInfo": "v2.2.1",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:influxdata:line-protocol\\/v2:v2.2.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:influxdata:line_protocol\\/v2:v2.2.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/influxdata/line-protocol/v2@v2.2.1",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/influxdata/toml",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-influxdata-toml-17cc148162d0bc88",
+   "versionInfo": "v0.0.0-20190415235208-270119a8ce65",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:influxdata:toml:v0.0.0-20190415235208-270119a8ce65:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/influxdata/toml@v0.0.0-20190415235208-270119a8ce65",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/influxdata/wlog",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-influxdata-wlog-55a83bd46fbed0bc",
+   "versionInfo": "v0.0.0-20160411224016-7c63b0a71ef8",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:influxdata:wlog:v0.0.0-20160411224016-7c63b0a71ef8:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/influxdata/wlog@v0.0.0-20160411224016-7c63b0a71ef8",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/jhump/protoreflect",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-jhump-protoreflect-d3b96bbd7ca2b119",
+   "versionInfo": "v1.8.3-0.20210616212123-6cc1efa697ca",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jhump:protoreflect:v1.8.3-0.20210616212123-6cc1efa697ca:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/jhump/protoreflect@v1.8.3-0.20210616212123-6cc1efa697ca",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/jmespath/go-jmespath",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-jmespath-go-jmespath-c852be9d0f92331f",
+   "versionInfo": "v0.4.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jmespath:go-jmespath:v0.4.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jmespath:go_jmespath:v0.4.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/jmespath/go-jmespath@v0.4.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/jmespath/go-jmespath",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-jmespath-go-jmespath-93c38cac563230f5",
+   "versionInfo": "v0.4.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/config-translator",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jmespath:go-jmespath:v0.4.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jmespath:go_jmespath:v0.4.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/jmespath/go-jmespath@v0.4.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/jmespath/go-jmespath",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-jmespath-go-jmespath-38455fc6b26ea1f6",
+   "versionInfo": "v0.4.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/start-amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jmespath:go-jmespath:v0.4.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jmespath:go_jmespath:v0.4.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/jmespath/go-jmespath@v0.4.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/jpillora/backoff",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-jpillora-backoff-dc5e5c15cac17992",
+   "versionInfo": "v1.0.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jpillora:backoff:v1.0.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/jpillora/backoff@v1.0.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/json-iterator/go",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-json-iterator-go-5d27bc9d00d6fd41",
+   "versionInfo": "v1.1.12",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:json-iterator:go:v1.1.12:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:json_iterator:go:v1.1.12:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:json:go:v1.1.12:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/json-iterator/go@v1.1.12",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/kardianos/service",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-kardianos-service-3eb798a2088301ee",
+   "versionInfo": "v1.2.1",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:kardianos:service:v1.2.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/kardianos/service@v1.2.1",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/karrick/godirwalk",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-karrick-godirwalk-5163a81ec20222db",
+   "versionInfo": "v1.12.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:karrick:godirwalk:v1.12.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/karrick/godirwalk@v1.12.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/kolo/xmlrpc",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-kolo-xmlrpc-80a7cc3e1fa61258",
+   "versionInfo": "v0.0.0-20201022064351-38db28db192b",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:kolo:xmlrpc:v0.0.0-20201022064351-38db28db192b:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/kolo/xmlrpc@v0.0.0-20201022064351-38db28db192b",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/linode/linodego",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-linode-linodego-1e255db9c2308491",
+   "versionInfo": "v1.4.1",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:linode:linodego:v1.4.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/linode/linodego@v1.4.1",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/mattn/go-colorable",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-mattn-go-colorable-654d594180b6ea54",
+   "versionInfo": "v0.1.12",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:mattn:go-colorable:v0.1.12:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:mattn:go_colorable:v0.1.12:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/mattn/go-colorable@v0.1.12",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/mattn/go-isatty",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-mattn-go-isatty-3d85c7727f7f1b4",
+   "versionInfo": "v0.0.14",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:mattn:go-isatty:v0.0.14:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:mattn:go_isatty:v0.0.14:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/mattn/go-isatty@v0.0.14",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/matttproud/golang_protobuf_extensions",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-matttproud-golang-protobuf-extensions-ac5d722e513f6379",
+   "versionInfo": "v1.0.2-0.20181231171920-c182affec369",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:matttproud:golang-protobuf-extensions:v1.0.2-0.20181231171920-c182affec369:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:matttproud:golang_protobuf_extensions:v1.0.2-0.20181231171920-c182affec369:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/matttproud/golang_protobuf_extensions@v1.0.2-0.20181231171920-c182affec369",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/mesos/mesos-go",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-mesos-mesos-go-76abd422182687ec",
+   "versionInfo": "v0.0.7-0.20180413204204-29de6ff97b48",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:mesos:mesos-go:v0.0.7-0.20180413204204-29de6ff97b48:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:mesos:mesos_go:v0.0.7-0.20180413204204-29de6ff97b48:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/mesos/mesos-go@v0.0.7-0.20180413204204-29de6ff97b48",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/miekg/dns",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-miekg-dns-92ea430b00c874b2",
+   "versionInfo": "v1.1.48",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:miekg:dns:v1.1.48:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/miekg/dns@v1.1.48",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/mindprince/gonvml",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-mindprince-gonvml-ee5c2accef41fa9b",
+   "versionInfo": "v0.0.0-20190828220739-9ebdce4bb989",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:mindprince:gonvml:v0.0.0-20190828220739-9ebdce4bb989:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/mindprince/gonvml@v0.0.0-20190828220739-9ebdce4bb989",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/mistifyio/go-zfs",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-mistifyio-go-zfs-292f34fc2b91fdb3",
+   "versionInfo": "v2.1.2-0.20190413222219-f784269be439+incompatible",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:mistifyio:go-zfs:v2.1.2-0.20190413222219-f784269be439\\+incompatible:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:mistifyio:go_zfs:v2.1.2-0.20190413222219-f784269be439\\+incompatible:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/mistifyio/go-zfs@v2.1.2-0.20190413222219-f784269be439+incompatible",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/mitchellh/mapstructure",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-mitchellh-mapstructure-f93ed41f7cc1206",
+   "versionInfo": "v1.4.3",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:mitchellh:mapstructure:v1.4.3:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/mitchellh/mapstructure@v1.4.3",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/moby/sys/mountinfo",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-moby-sys-mountinfo-2b941c30ecc82776",
+   "versionInfo": "v0.5.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:moby:sys\\/mountinfo:v0.5.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/moby/sys/mountinfo@v0.5.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/modern-go/concurrent",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-modern-go-concurrent-21147ad6a41b3bff",
+   "versionInfo": "v0.0.0-20180306012644-bacd9c7ef1dd",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:modern-go:concurrent:v0.0.0-20180306012644-bacd9c7ef1dd:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:modern_go:concurrent:v0.0.0-20180306012644-bacd9c7ef1dd:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:modern:concurrent:v0.0.0-20180306012644-bacd9c7ef1dd:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/modern-go/concurrent@v0.0.0-20180306012644-bacd9c7ef1dd",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/modern-go/reflect2",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-modern-go-reflect2-bc955ac4f54f7616",
+   "versionInfo": "v1.0.2",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:modern-go:reflect2:v1.0.2:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:modern_go:reflect2:v1.0.2:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:modern:reflect2:v1.0.2:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/modern-go/reflect2@v1.0.2",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/mrunalp/fileutils",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-mrunalp-fileutils-910c9216d2a2ff01",
+   "versionInfo": "v0.5.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:mrunalp:fileutils:v0.5.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/mrunalp/fileutils@v0.5.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/mwitkow/go-conntrack",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-mwitkow-go-conntrack-688a7d641a260ca9",
+   "versionInfo": "v0.0.0-20190716064945-2f068394615f",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:mwitkow:go-conntrack:v0.0.0-20190716064945-2f068394615f:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:mwitkow:go_conntrack:v0.0.0-20190716064945-2f068394615f:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/mwitkow/go-conntrack@v0.0.0-20190716064945-2f068394615f",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/naoina/go-stringutil",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-naoina-go-stringutil-7438bcefd1d238c3",
+   "versionInfo": "v0.1.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:naoina:go-stringutil:v0.1.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:naoina:go_stringutil:v0.1.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/naoina/go-stringutil@v0.1.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/oklog/run",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-oklog-run-efdcb1d83e086742",
+   "versionInfo": "v1.1.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:oklog:run:v1.1.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/oklog/run@v1.1.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/opencontainers/go-digest",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-opencontainers-go-digest-9d4f967cf3fc541d",
+   "versionInfo": "v1.0.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:opencontainers:go-digest:v1.0.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:opencontainers:go_digest:v1.0.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/opencontainers/go-digest@v1.0.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/opencontainers/image-spec",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-opencontainers-image-spec-38367124074005c0",
+   "versionInfo": "v1.0.3-0.20211202183452-c5a74bcca799",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:opencontainers:image-spec:v1.0.3-0.20211202183452-c5a74bcca799:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:opencontainers:image_spec:v1.0.3-0.20211202183452-c5a74bcca799:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/opencontainers/image-spec@v1.0.3-0.20211202183452-c5a74bcca799",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/opencontainers/runc",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-opencontainers-runc-2fa60b813fb2c4c2",
+   "versionInfo": "v1.1.4",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:opencontainers:runc:v1.1.4:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/opencontainers/runc@v1.1.4",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/opencontainers/runtime-spec",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-opencontainers-runtime-spec-1db01098dfe6d4ef",
+   "versionInfo": "v1.0.3-0.20210326190908-1c3f411f0417",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:opencontainers:runtime-spec:v1.0.3-0.20210326190908-1c3f411f0417:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:opencontainers:runtime_spec:v1.0.3-0.20210326190908-1c3f411f0417:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/opencontainers/runtime-spec@v1.0.3-0.20210326190908-1c3f411f0417",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/opencontainers/selinux",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-opencontainers-selinux-a4d1348afb04229f",
+   "versionInfo": "v1.10.1",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:opencontainers:selinux:v1.10.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/opencontainers/selinux@v1.10.1",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/philhofer/fwd",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-philhofer-fwd-583f36b151372cc3",
+   "versionInfo": "v1.1.1",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:philhofer:fwd:v1.1.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/philhofer/fwd@v1.1.1",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/pkg/errors",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-pkg-errors-554a691cad68c7c6",
+   "versionInfo": "v0.9.1",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:pkg:errors:v0.9.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/pkg/errors@v0.9.1",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/pmezard/go-difflib",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-pmezard-go-difflib-1ceabb8a68958f72",
+   "versionInfo": "v1.0.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:pmezard:go-difflib:v1.0.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:pmezard:go_difflib:v1.0.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/pmezard/go-difflib@v1.0.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/pquerna/ffjson",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-pquerna-ffjson-9611155a23826696",
+   "versionInfo": "v0.0.0-20190930134022-aa0246cd15f7",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:pquerna:ffjson:v0.0.0-20190930134022-aa0246cd15f7:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/pquerna/ffjson@v0.0.0-20190930134022-aa0246cd15f7",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/prometheus/client_golang",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-prometheus-client-golang-85308befac47a5db",
+   "versionInfo": "v1.12.1",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:prometheus:client-golang:v1.12.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:prometheus:client_golang:v1.12.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/prometheus/client_golang@v1.12.1",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/prometheus/client_model",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-prometheus-client-model-9300e70b0a35cb9d",
+   "versionInfo": "v0.2.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:prometheus:client-model:v0.2.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:prometheus:client_model:v0.2.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/prometheus/client_model@v0.2.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/prometheus/common",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-prometheus-common-31a03bfe865eeeb3",
+   "versionInfo": "v0.34.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:prometheus:common:v0.34.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/prometheus/common@v0.34.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/prometheus/common/sigv4",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-prometheus-common-sigv4-c692cac0985e2b60",
+   "versionInfo": "v0.1.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:prometheus:common\\/sigv4:v0.1.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/prometheus/common/sigv4@v0.1.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/prometheus/procfs",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-prometheus-procfs-ebaf6a3ae89df3f",
+   "versionInfo": "v0.7.3",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:prometheus:procfs:v0.7.3:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/prometheus/procfs@v0.7.3",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/prometheus/prometheus",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-prometheus-prometheus-443421c5c0dc15dc",
+   "versionInfo": "v0.35.1-0.20220503184552-2381d7be5731",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:prometheus:prometheus:v0.35.1-0.20220503184552-2381d7be5731:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/prometheus/prometheus@v0.35.1-0.20220503184552-2381d7be5731",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/safchain/ethtool",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-safchain-ethtool-172e494f59a87a1d",
+   "versionInfo": "v0.0.0-20210803160452-9aa261dae9b1",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:safchain:ethtool:v0.0.0-20210803160452-9aa261dae9b1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/safchain/ethtool@v0.0.0-20210803160452-9aa261dae9b1",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/scaleway/scaleway-sdk-go",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-scaleway-scaleway-sdk-go-2ada11d0fdb073d8",
+   "versionInfo": "v1.0.0-beta.9",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:scaleway:scaleway-sdk-go:v1.0.0-beta.9:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:scaleway:scaleway_sdk_go:v1.0.0-beta.9:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/scaleway/scaleway-sdk-go@v1.0.0-beta.9",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/sirupsen/logrus",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-sirupsen-logrus-e72c9ccacfbda483",
+   "versionInfo": "v1.8.1",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:sirupsen:logrus:v1.8.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/sirupsen/logrus@v1.8.1",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/sleepinggenius2/gosmi",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-sleepinggenius2-gosmi-30631614e88a9f8e",
+   "versionInfo": "v0.4.4",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:sleepinggenius2:gosmi:v0.4.4:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/sleepinggenius2/gosmi@v0.4.4",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/spf13/pflag",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-spf13-pflag-3b911baf14c61baa",
+   "versionInfo": "v1.0.5",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spf13:pflag:v1.0.5:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/spf13/pflag@v1.0.5",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/stretchr/objx",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-stretchr-objx-406df452cf9c6a97",
+   "versionInfo": "v0.2.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:stretchr:objx:v0.2.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/stretchr/objx@v0.2.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/stretchr/testify",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-stretchr-testify-45f77a37f5cbc597",
+   "versionInfo": "v1.7.1",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:stretchr:testify:v1.7.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/stretchr/testify@v1.7.1",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/syndtr/gocapability",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-syndtr-gocapability-4468483b62d4bc5a",
+   "versionInfo": "v0.0.0-20200815063812-42c35b437635",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:syndtr:gocapability:v0.0.0-20200815063812-42c35b437635:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/syndtr/gocapability@v0.0.0-20200815063812-42c35b437635",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/tidwall/gjson",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-tidwall-gjson-9e9ed32859693c44",
+   "versionInfo": "v1.10.2",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:tidwall:gjson:v1.10.2:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/tidwall/gjson@v1.10.2",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/tidwall/match",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-tidwall-match-a39ed417c5069bba",
+   "versionInfo": "v1.1.1",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:tidwall:match:v1.1.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/tidwall/match@v1.1.1",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/tidwall/pretty",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-tidwall-pretty-6df09d21f55d391e",
+   "versionInfo": "v1.2.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:tidwall:pretty:v1.2.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/tidwall/pretty@v1.2.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/tinylib/msgp",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-tinylib-msgp-61b7a0e6dec68ce3",
+   "versionInfo": "v1.1.6",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:tinylib:msgp:v1.1.6:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/tinylib/msgp@v1.1.6",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/tklauser/go-sysconf",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-tklauser-go-sysconf-389f450f90a5549",
+   "versionInfo": "v0.3.10",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:tklauser:go-sysconf:v0.3.10:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:tklauser:go_sysconf:v0.3.10:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/tklauser/go-sysconf@v0.3.10",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/tklauser/numcpus",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-tklauser-numcpus-55871e0fdfc27133",
+   "versionInfo": "v0.4.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:tklauser:numcpus:v0.4.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/tklauser/numcpus@v0.4.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/vishvananda/netlink",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-vishvananda-netlink-d499c838ad9cff82",
+   "versionInfo": "v1.1.1-0.20210330154013-f5de75959ad5",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:vishvananda:netlink:v1.1.1-0.20210330154013-f5de75959ad5:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/vishvananda/netlink@v1.1.1-0.20210330154013-f5de75959ad5",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/vishvananda/netns",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-vishvananda-netns-b80242ca18d3a6b9",
+   "versionInfo": "v0.0.0-20210104183010-2eb08e3e575f",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:vishvananda:netns:v0.0.0-20210104183010-2eb08e3e575f:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/vishvananda/netns@v0.0.0-20210104183010-2eb08e3e575f",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/vjeantet/grok",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-vjeantet-grok-6688682fafc4f80b",
+   "versionInfo": "v1.0.1",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:vjeantet:grok:v1.0.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/vjeantet/grok@v1.0.1",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/wavefronthq/wavefront-sdk-go",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-wavefronthq-wavefront-sdk-go-93b328a2372e78b7",
+   "versionInfo": "v0.9.10",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:wavefronthq:wavefront-sdk-go:v0.9.10:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:wavefronthq:wavefront_sdk_go:v0.9.10:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/wavefronthq/wavefront-sdk-go@v0.9.10",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/xeipuuv/gojsonpointer",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-xeipuuv-gojsonpointer-6741e5406ea2f18d",
+   "versionInfo": "v0.0.0-20180127040702-4e3ac2762d5f",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/config-translator",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:xeipuuv:gojsonpointer:v0.0.0-20180127040702-4e3ac2762d5f:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/xeipuuv/gojsonpointer@v0.0.0-20180127040702-4e3ac2762d5f",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/xeipuuv/gojsonpointer",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-xeipuuv-gojsonpointer-61e9cd8d98e8426e",
+   "versionInfo": "v0.0.0-20180127040702-4e3ac2762d5f",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/start-amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:xeipuuv:gojsonpointer:v0.0.0-20180127040702-4e3ac2762d5f:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/xeipuuv/gojsonpointer@v0.0.0-20180127040702-4e3ac2762d5f",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/xeipuuv/gojsonreference",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-xeipuuv-gojsonreference-8421c44f507c6651",
+   "versionInfo": "v0.0.0-20180127040603-bd5ef7bd5415",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/config-translator",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:xeipuuv:gojsonreference:v0.0.0-20180127040603-bd5ef7bd5415:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/xeipuuv/gojsonreference@v0.0.0-20180127040603-bd5ef7bd5415",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/xeipuuv/gojsonreference",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-xeipuuv-gojsonreference-44a0b05f012757fb",
+   "versionInfo": "v0.0.0-20180127040603-bd5ef7bd5415",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/start-amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:xeipuuv:gojsonreference:v0.0.0-20180127040603-bd5ef7bd5415:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/xeipuuv/gojsonreference@v0.0.0-20180127040603-bd5ef7bd5415",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/xeipuuv/gojsonschema",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-xeipuuv-gojsonschema-721e25bb091a0b1f",
+   "versionInfo": "v1.2.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/config-translator",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:xeipuuv:gojsonschema:v1.2.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/xeipuuv/gojsonschema@v1.2.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "github.com/xeipuuv/gojsonschema",
+   "SPDXID": "SPDXRef-Package-go-module-github.com-xeipuuv-gojsonschema-6013a6b271ece38b",
+   "versionInfo": "v1.2.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/start-amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:xeipuuv:gojsonschema:v1.2.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/github.com/xeipuuv/gojsonschema@v1.2.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "go.opencensus.io",
+   "SPDXID": "SPDXRef-Package-go-module-go.opencensus.io-57c46fe24a9ea17e",
+   "versionInfo": "v0.23.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/go.opencensus.io@v0.23.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "go.uber.org/atomic",
+   "SPDXID": "SPDXRef-Package-go-module-go.uber.org-atomic-aeb05f229264e19d",
+   "versionInfo": "v1.9.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/go.uber.org/atomic@v1.9.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "go.uber.org/goleak",
+   "SPDXID": "SPDXRef-Package-go-module-go.uber.org-goleak-f9ba32890166e171",
+   "versionInfo": "v1.1.12",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/go.uber.org/goleak@v1.1.12",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "go.uber.org/multierr",
+   "SPDXID": "SPDXRef-Package-go-module-go.uber.org-multierr-31c6ceaf15e34a16",
+   "versionInfo": "v1.7.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/go.uber.org/multierr@v1.7.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "golang.org/x/crypto",
+   "SPDXID": "SPDXRef-Package-go-module-golang.org-x-crypto-dbbecba6e3f850b5",
+   "versionInfo": "v0.0.0-20220315160706-3147a52a75dd",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:golang:x\\/crypto:v0.0.0-20220315160706-3147a52a75dd:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/golang.org/x/crypto@v0.0.0-20220315160706-3147a52a75dd",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "golang.org/x/net",
+   "SPDXID": "SPDXRef-Package-go-module-golang.org-x-net-dc2029851e9ef55c",
+   "versionInfo": "v0.0.0-20220412020605-290c469a71a5",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:golang:x\\/net:v0.0.0-20220412020605-290c469a71a5:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/golang.org/x/net@v0.0.0-20220412020605-290c469a71a5",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "golang.org/x/net",
+   "SPDXID": "SPDXRef-Package-go-module-golang.org-x-net-9c5710cd98241d01",
+   "versionInfo": "v0.0.0-20220412020605-290c469a71a5",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/config-translator",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:golang:x\\/net:v0.0.0-20220412020605-290c469a71a5:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/golang.org/x/net@v0.0.0-20220412020605-290c469a71a5",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "golang.org/x/net",
+   "SPDXID": "SPDXRef-Package-go-module-golang.org-x-net-4468fcfb6ad222bf",
+   "versionInfo": "v0.0.0-20220412020605-290c469a71a5",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/start-amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:golang:x\\/net:v0.0.0-20220412020605-290c469a71a5:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/golang.org/x/net@v0.0.0-20220412020605-290c469a71a5",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "golang.org/x/oauth2",
+   "SPDXID": "SPDXRef-Package-go-module-golang.org-x-oauth2-d69a955b388ace5",
+   "versionInfo": "v0.0.0-20220411215720-9780585627b5",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:golang:x\\/oauth2:v0.0.0-20220411215720-9780585627b5:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/golang.org/x/oauth2@v0.0.0-20220411215720-9780585627b5",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "golang.org/x/sync",
+   "SPDXID": "SPDXRef-Package-go-module-golang.org-x-sync-574fedfff8cf3ea4",
+   "versionInfo": "v0.0.0-20210220032951-036812b2e83c",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:golang:x\\/sync:v0.0.0-20210220032951-036812b2e83c:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/golang.org/x/sync@v0.0.0-20210220032951-036812b2e83c",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "golang.org/x/sys",
+   "SPDXID": "SPDXRef-Package-go-module-golang.org-x-sys-2c542e599d8cb96b",
+   "versionInfo": "v0.0.0-20220412211240-33da011f77ad",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:golang:x\\/sys:v0.0.0-20220412211240-33da011f77ad:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/golang.org/x/sys@v0.0.0-20220412211240-33da011f77ad",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "golang.org/x/sys",
+   "SPDXID": "SPDXRef-Package-go-module-golang.org-x-sys-8587fffee97efd4c",
+   "versionInfo": "v0.0.0-20220412211240-33da011f77ad",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/config-translator",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:golang:x\\/sys:v0.0.0-20220412211240-33da011f77ad:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/golang.org/x/sys@v0.0.0-20220412211240-33da011f77ad",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "golang.org/x/sys",
+   "SPDXID": "SPDXRef-Package-go-module-golang.org-x-sys-4139fd9fb765bc54",
+   "versionInfo": "v0.0.0-20220412211240-33da011f77ad",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/start-amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:golang:x\\/sys:v0.0.0-20220412211240-33da011f77ad:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/golang.org/x/sys@v0.0.0-20220412211240-33da011f77ad",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "golang.org/x/term",
+   "SPDXID": "SPDXRef-Package-go-module-golang.org-x-term-69e426dfc74ed88c",
+   "versionInfo": "v0.0.0-20210927222741-03fcf44c2211",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:golang:x\\/term:v0.0.0-20210927222741-03fcf44c2211:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/golang.org/x/term@v0.0.0-20210927222741-03fcf44c2211",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "golang.org/x/text",
+   "SPDXID": "SPDXRef-Package-go-module-golang.org-x-text-32425f831a4b7751",
+   "versionInfo": "v0.3.7",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:golang:x\\/text:v0.3.7:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/golang.org/x/text@v0.3.7",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "golang.org/x/text",
+   "SPDXID": "SPDXRef-Package-go-module-golang.org-x-text-95d50ed2b246e811",
+   "versionInfo": "v0.3.7",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/config-translator",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:golang:x\\/text:v0.3.7:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/golang.org/x/text@v0.3.7",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "golang.org/x/text",
+   "SPDXID": "SPDXRef-Package-go-module-golang.org-x-text-1897b4ecb1b38d77",
+   "versionInfo": "v0.3.7",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/start-amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:golang:x\\/text:v0.3.7:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/golang.org/x/text@v0.3.7",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "golang.org/x/time",
+   "SPDXID": "SPDXRef-Package-go-module-golang.org-x-time-5eb5987b90ced496",
+   "versionInfo": "v0.0.0-20220224211638-0e9765cccd65",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:golang:x\\/time:v0.0.0-20220224211638-0e9765cccd65:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/golang.org/x/time@v0.0.0-20220224211638-0e9765cccd65",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "google.golang.org/api",
+   "SPDXID": "SPDXRef-Package-go-module-google.golang.org-api-42b41277a52dd160",
+   "versionInfo": "v0.77.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:google:api:v0.77.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/google.golang.org/api@v0.77.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "google.golang.org/genproto",
+   "SPDXID": "SPDXRef-Package-go-module-google.golang.org-genproto-3e1866d9e694d542",
+   "versionInfo": "v0.0.0-20220414192740-2d67ff6cf2b4",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:google:genproto:v0.0.0-20220414192740-2d67ff6cf2b4:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/google.golang.org/genproto@v0.0.0-20220414192740-2d67ff6cf2b4",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "google.golang.org/grpc",
+   "SPDXID": "SPDXRef-Package-go-module-google.golang.org-grpc-dfcb27b5e10db8c1",
+   "versionInfo": "v1.46.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:google:grpc:v1.46.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/google.golang.org/grpc@v1.46.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "google.golang.org/protobuf",
+   "SPDXID": "SPDXRef-Package-go-module-google.golang.org-protobuf-faefc6c6d6d7da4c",
+   "versionInfo": "v1.28.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:google:protobuf:v1.28.0:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/google.golang.org/protobuf@v1.28.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "gopkg.in/fsnotify.v1",
+   "SPDXID": "SPDXRef-Package-go-module-gopkg.in-fsnotify.v1-636b7a1f067b113b",
+   "versionInfo": "v1.4.7",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/gopkg.in/fsnotify.v1@v1.4.7",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "gopkg.in/inf.v0",
+   "SPDXID": "SPDXRef-Package-go-module-gopkg.in-inf.v0-e0941110818534ea",
+   "versionInfo": "v0.9.1",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/gopkg.in/inf.v0@v0.9.1",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "gopkg.in/natefinch/lumberjack.v2",
+   "SPDXID": "SPDXRef-Package-go-module-gopkg.in-natefinch-lumberjack.v2-50811149b92ec4c2",
+   "versionInfo": "v2.0.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/gopkg.in/natefinch/lumberjack.v2@v2.0.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "gopkg.in/natefinch/lumberjack.v2",
+   "SPDXID": "SPDXRef-Package-go-module-gopkg.in-natefinch-lumberjack.v2-824bbd533938d87c",
+   "versionInfo": "v2.0.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/start-amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/gopkg.in/natefinch/lumberjack.v2@v2.0.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "gopkg.in/tomb.v1",
+   "SPDXID": "SPDXRef-Package-go-module-gopkg.in-tomb.v1-4774281ac2f1ac6e",
+   "versionInfo": "v1.0.0-20141024135613-dd632973f1e7",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/gopkg.in/tomb.v1@v1.0.0-20141024135613-dd632973f1e7",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "gopkg.in/yaml.v2",
+   "SPDXID": "SPDXRef-Package-go-module-gopkg.in-yaml.v2-c862fa4807673779",
+   "versionInfo": "v2.4.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "gopkg.in/yaml.v3",
+   "SPDXID": "SPDXRef-Package-go-module-gopkg.in-yaml.v3-fc51e08f6804a667",
+   "versionInfo": "v3.0.0-20210107192922-496545a6307b",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/gopkg.in/yaml.v3@v3.0.0-20210107192922-496545a6307b",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "k8s.io/api",
+   "SPDXID": "SPDXRef-Package-go-module-k8s.io-api-819a681f180338ff",
+   "versionInfo": "v0.23.6",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/k8s.io/api@v0.23.6",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "k8s.io/apimachinery",
+   "SPDXID": "SPDXRef-Package-go-module-k8s.io-apimachinery-52f6deec5bdcd689",
+   "versionInfo": "v0.23.6",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/k8s.io/apimachinery@v0.23.6",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "k8s.io/client-go",
+   "SPDXID": "SPDXRef-Package-go-module-k8s.io-client-go-e967ab70e524bbe5",
+   "versionInfo": "v0.23.5",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/k8s.io/client-go@v0.23.5",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "k8s.io/klog/v2",
+   "SPDXID": "SPDXRef-Package-go-module-k8s.io-klog-v2-c416745aeaa12b23",
+   "versionInfo": "v2.40.1",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:klog:v2:v2.40.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/k8s.io/klog/v2@v2.40.1",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "k8s.io/kube-openapi",
+   "SPDXID": "SPDXRef-Package-go-module-k8s.io-kube-openapi-a36a8b6d4418d820",
+   "versionInfo": "v0.0.0-20211115234752-e816edb12b65",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/k8s.io/kube-openapi@v0.0.0-20211115234752-e816edb12b65",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "k8s.io/utils",
+   "SPDXID": "SPDXRef-Package-go-module-k8s.io-utils-da5a3a02bed26a07",
+   "versionInfo": "v0.0.0-20211116205334-6203023598ed",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/k8s.io/utils@v0.0.0-20211116205334-6203023598ed",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "sigs.k8s.io/json",
+   "SPDXID": "SPDXRef-Package-go-module-sigs.k8s.io-json-461863b8032ca7b7",
+   "versionInfo": "v0.0.0-20211020170558-c049b76a60c6",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/sigs.k8s.io/json@v0.0.0-20211020170558-c049b76a60c6",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "sigs.k8s.io/structured-merge-diff/v4",
+   "SPDXID": "SPDXRef-Package-go-module-sigs.k8s.io-structured-merge-diff-v4-5e2534a1e88c42b1",
+   "versionInfo": "v4.2.1",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:structured-merge-diff:v4:v4.2.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:structured_merge_diff:v4:v4.2.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:structured-merge:v4:v4.2.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:structured_merge:v4:v4.2.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:structured:v4:v4.2.1:*:*:*:*:*:*:*",
+     "comment": ""
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/sigs.k8s.io/structured-merge-diff/v4@v4.2.1",
+     "comment": ""
+    }
+   ]
+  },
+  {
+   "name": "sigs.k8s.io/yaml",
+   "SPDXID": "SPDXRef-Package-go-module-sigs.k8s.io-yaml-1c110cfc6c89a04c",
+   "versionInfo": "v1.2.0",
+   "downloadLocation": "NOASSERTION",
+   "sourceInfo": "acquired package info from go module information: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent",
+   "licenseConcluded": "NONE",
+   "licenseDeclared": "NONE",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:golang/sigs.k8s.io/yaml@v1.2.0",
+     "comment": ""
+    }
+   ]
+  }
+ ],
+ "relationships": [
+  {
+   "spdxElementId": "SPDXRef-DOCUMENT",
+   "relatedSpdxElement": "SPDXRef-DOCUMENT",
+   "relationshipType": "DESCRIBES"
+  }
+ ]
+}

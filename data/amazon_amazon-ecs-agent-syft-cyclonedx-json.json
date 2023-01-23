@@ -1,0 +1,246 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:441ccae5-4b90-4e48-83e7-c791e8f83df2",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-01-23T04:58:29-08:00",
+    "tools": [
+      {
+        "vendor": "anchore",
+        "name": "syft",
+        "version": "0.66.2"
+      }
+    ],
+    "component": {
+      "bom-ref": "4d234d7157db809f",
+      "type": "container",
+      "name": "amazon/amazon-ecs-agent",
+      "version": "sha256:898c86bcca1f029ffff5cbd004c1c5c648e1f325676728583918bd1f379df1ae"
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "pkg:golang/github.com/aws/amazon-vpc-cni-plugins@(devel)?package-id=ab944e5493e9639",
+      "type": "library",
+      "name": "github.com/aws/amazon-vpc-cni-plugins",
+      "version": "(devel)",
+      "cpe": "cpe:2.3:a:aws:amazon-vpc-cni-plugins:\\(devel\\):*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/aws/amazon-vpc-cni-plugins@(devel)",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:aws:amazon_vpc_cni_plugins:\\(devel\\):*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:3190c00272846a8029f22e591c118fcd47a0e7ce04f0bb4c04e327f55e377606"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/amazon-ecs-cni-plugins/aws-appmesh"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:-compiler",
+          "value": "gc"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:-ldflags",
+          "value": " -X github.com/aws/amazon-vpc-cni-plugins/version.Version=1.3 -X github.com/aws/amazon-vpc-cni-plugins/version.GitShortHash=24d6bd8 -X github.com/aws/amazon-vpc-cni-plugins/version.BuildTime=2023-01-06T22:53:53+0000 -s"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:CGO_ENABLED",
+          "value": "0"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:GOAMD64",
+          "value": "v1"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:GOARCH",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:GOOS",
+          "value": "linux"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.19.1"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/aws/amazon-vpc-cni-plugins"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/aws/amazon-vpc-cni-plugins@(devel)?package-id=37e734d330ed724f",
+      "type": "library",
+      "name": "github.com/aws/amazon-vpc-cni-plugins",
+      "version": "(devel)",
+      "cpe": "cpe:2.3:a:aws:amazon-vpc-cni-plugins:\\(devel\\):*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/aws/amazon-vpc-cni-plugins@(devel)",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:aws:amazon_vpc_cni_plugins:\\(devel\\):*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:3190c00272846a8029f22e591c118fcd47a0e7ce04f0bb4c04e327f55e377606"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/amazon-ecs-cni-plugins/ecs-serviceconnect"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:-compiler",
+          "value": "gc"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:-ldflags",
+          "value": " -X github.com/aws/amazon-vpc-cni-plugins/version.Version=1.3 -X github.com/aws/amazon-vpc-cni-plugins/version.GitShortHash=24d6bd8 -X github.com/aws/amazon-vpc-cni-plugins/version.BuildTime=2023-01-06T22:54:25+0000 -s"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:CGO_ENABLED",
+          "value": "0"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:GOAMD64",
+          "value": "v1"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:GOARCH",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:GOOS",
+          "value": "linux"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.19.1"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/aws/amazon-vpc-cni-plugins"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/aws/amazon-vpc-cni-plugins@(devel)?package-id=898c5f2259217630",
+      "type": "library",
+      "name": "github.com/aws/amazon-vpc-cni-plugins",
+      "version": "(devel)",
+      "cpe": "cpe:2.3:a:aws:amazon-vpc-cni-plugins:\\(devel\\):*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/aws/amazon-vpc-cni-plugins@(devel)",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:aws:amazon_vpc_cni_plugins:\\(devel\\):*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:3190c00272846a8029f22e591c118fcd47a0e7ce04f0bb4c04e327f55e377606"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/amazon-ecs-cni-plugins/vpc-branch-eni"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:-compiler",
+          "value": "gc"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:-ldflags",
+          "value": " -X github.com/aws/amazon-vpc-cni-plugins/version.Version=1.3 -X github.com/aws/amazon-vpc-cni-plugins/version.GitShortHash=24d6bd8 -X github.com/aws/amazon-vpc-cni-plugins/version.BuildTime=2023-01-06T22:54:08+0000 -s"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:CGO_ENABLED",
+          "value": "0"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:GOAMD64",
+          "value": "v1"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:GOARCH",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goBuildSettings:GOOS",
+          "value": "linux"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.19.1"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/aws/amazon-vpc-cni-plugins"
+        }
+      ]
+    }
+  ]
+}

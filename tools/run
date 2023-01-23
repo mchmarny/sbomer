@@ -1,9 +1,0 @@
-#!/bin/bash
-
-DIR="$(dirname "$0")"
-. "${DIR}/config"
-
-set -o errexit
-set -o pipefail
-
-docker container run --rm -it --entrypoint /bin/bash $IMAGE_URI

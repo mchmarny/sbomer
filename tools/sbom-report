@@ -1,0 +1,85 @@
+#!/bin/bash
+
+# sbompop generates Software Bill of Materials (SBOM) for 
+# 100 most popular images in the Docker Hub.
+# usage: sbompop
+
+set -eo pipefail
+
+# dependencies
+trivy=$(which trivy) || ( echo "trivy not installed" && exit 1 )
+syft=$(which syft) || ( echo "syft not installed" && exit 1 )
+curl=$(which curl) || ( echo "curl not installed" && exit 1 )
+
+# constants
+img_src_url="https://hub.docker.com/api/content/v1/products/search?page=1&page_size=100&q=%2B&source=community&type=image%2Cbundle"
+sbom_dir="data"
+mkdir -p $sbom_dir
+
+# clean_name replaces any non-alphanumeric characters with an underscore.
+clean_name () {
+	echo $1 | sed -e 's/[^A-Za-z0-9._-]/_/g'
+}
+
+# check_file removes the file if it is empty.
+# some if the scanner can't find the manifest it will generate an
+# empty file; this is a workaround for that.
+check_file () {
+	file=$1
+	if [ -f "${file}" ];then
+		if [ -s "${file}" ];then
+			echo "report: ${file}"
+		else
+			rm -f $file
+		fi
+	else
+		echo "${file} not found"
+	fi
+}
+
+# sbom_trivy generates a sbom for the given image.
+# on error, trivy returns a non-zero exit code, which is ignored.
+sbom_trivy () {
+	img=$1
+	name=$(clean_name $img)
+	
+	declare -a formats=(
+		"spdx-json"
+		"cyclonedx"
+	)
+
+	for f in "${formats[@]}"
+	do
+		report="${sbom_dir}/${name}-trivy-${f}.json"
+		trivy image -q --format "$f" --list-all-pkgs -o "$report" "$img" || true
+	done
+
+	check_file $report
+}
+
+# sbom_syft generates a Software Bill of Materials (SBOM) for the given image.
+# on error, syft returns a non-zero exit code, which is ignored.
+sbom_syft () {
+	img=$1
+	name=$(clean_name $img)
+
+	declare -a formats=(
+		"spdx-json"
+		"cyclonedx-json"
+	)
+
+	for f in "${formats[@]}"
+	do
+		report="${sbom_dir}/${name}-syft-${f}.json"
+		syft packages "$img" -q -o "$f" --file "$report" || true
+	done
+
+	check_file $report
+}
+
+# main
+curl -sS "$img_src_url" | jq -r '.summaries[].name' | while read img; do
+	echo "image: $img"
+	sbom_trivy $img
+	sbom_syft $img
+done

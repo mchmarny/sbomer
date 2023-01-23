@@ -1,0 +1,4953 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:c5a478bf-3e20-4916-9105-5279292ce60c",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-01-23T13:01:17+00:00",
+    "tools": [
+      {
+        "vendor": "aquasecurity",
+        "name": "trivy",
+        "version": "0.36.1"
+      }
+    ],
+    "component": {
+      "bom-ref": "pkg:oci/datacollector@sha256:9be65d877d712dbdac14525cc1f1b1e81ca8c366665adf3ba811d4da2e0e47ef?repository_url=index.docker.io%2Flacework%2Fdatacollector\u0026arch=amd64",
+      "type": "container",
+      "name": "lacework/datacollector",
+      "purl": "pkg:oci/datacollector@sha256:9be65d877d712dbdac14525cc1f1b1e81ca8c366665adf3ba811d4da2e0e47ef?repository_url=index.docker.io%2Flacework%2Fdatacollector\u0026arch=amd64",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SchemaVersion",
+          "value": "2"
+        },
+        {
+          "name": "aquasecurity:trivy:ImageID",
+          "value": "sha256:f2cd0d9a10ddc8a4d0a718b30953fe8e1e2163c2f7170c971c392f6f973a6022"
+        },
+        {
+          "name": "aquasecurity:trivy:RepoDigest",
+          "value": "lacework/datacollector@sha256:9be65d877d712dbdac14525cc1f1b1e81ca8c366665adf3ba811d4da2e0e47ef"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:a52b3207e8e67d71464636e71cf19ba1973aa0c201600ca7bdfb615a87847561"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:2afd68ef54bb183c91a9f67423065343b4251f20affb3f0ba33addc5efac5d75"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        },
+        {
+          "name": "aquasecurity:trivy:RepoTag",
+          "value": "lacework/datacollector:latest"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "pkg:deb/ubuntu/adduser@3.118ubuntu5?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "adduser",
+      "version": "3.118ubuntu5",
+      "purl": "pkg:deb/ubuntu/adduser@3.118ubuntu5?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "adduser@3.118ubuntu5"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "adduser"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.118ubuntu5"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/apt@2.4.8?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "apt",
+      "version": "2.4.8",
+      "purl": "pkg:deb/ubuntu/apt@2.4.8?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "apt@2.4.8"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "apt"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.4.8"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/base-files@12ubuntu4.2?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "base-files",
+      "version": "12ubuntu4.2",
+      "purl": "pkg:deb/ubuntu/base-files@12ubuntu4.2?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "base-files@12ubuntu4.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "base-files"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "12ubuntu4.2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/base-passwd@3.5.52build1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "base-passwd",
+      "version": "3.5.52build1",
+      "purl": "pkg:deb/ubuntu/base-passwd@3.5.52build1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "base-passwd@3.5.52build1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "base-passwd"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.5.52build1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/bash@5.1-6ubuntu1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "bash",
+      "version": "5.1-6ubuntu1",
+      "purl": "pkg:deb/ubuntu/bash@5.1-6ubuntu1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "bash@5.1-6ubuntu1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "bash"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "5.1-6ubuntu1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/bsdutils@1:2.37.2-4ubuntu3?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "bsdutils",
+      "version": "1:2.37.2-4ubuntu3",
+      "purl": "pkg:deb/ubuntu/bsdutils@1:2.37.2-4ubuntu3?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "bsdutils@1:2.37.2-4ubuntu3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "util-linux"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.37.2-4ubuntu3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/ca-certificates@20211016?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "ca-certificates",
+      "version": "20211016",
+      "purl": "pkg:deb/ubuntu/ca-certificates@20211016?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "ca-certificates@20211016"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "ca-certificates"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "20211016"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:abd7859c73891007fb995cbf7dc304de7ff48678aa030825f4c1251563e51557"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:a52b3207e8e67d71464636e71cf19ba1973aa0c201600ca7bdfb615a87847561"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "coreutils",
+      "version": "8.32-4.1ubuntu1",
+      "purl": "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "coreutils@8.32-4.1ubuntu1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "coreutils"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "8.32-4.1ubuntu1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/dash@0.5.11+git20210903+057cd650a4ed-3build1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "dash",
+      "version": "0.5.11+git20210903+057cd650a4ed-3build1",
+      "purl": "pkg:deb/ubuntu/dash@0.5.11+git20210903+057cd650a4ed-3build1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "dash@0.5.11+git20210903+057cd650a4ed-3build1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "dash"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "0.5.11+git20210903+057cd650a4ed-3build1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/debconf@1.5.79ubuntu1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "debconf",
+      "version": "1.5.79ubuntu1",
+      "purl": "pkg:deb/ubuntu/debconf@1.5.79ubuntu1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "debconf@1.5.79ubuntu1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "debconf"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.5.79ubuntu1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/debianutils@5.5-1ubuntu2?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "debianutils",
+      "version": "5.5-1ubuntu2",
+      "purl": "pkg:deb/ubuntu/debianutils@5.5-1ubuntu2?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "debianutils@5.5-1ubuntu2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "debianutils"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "5.5-1ubuntu2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/diffutils@1:3.8-0ubuntu2?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "diffutils",
+      "version": "1:3.8-0ubuntu2",
+      "purl": "pkg:deb/ubuntu/diffutils@1:3.8-0ubuntu2?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "diffutils@1:3.8-0ubuntu2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "diffutils"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1:3.8-0ubuntu2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/dpkg@1.21.1ubuntu2.1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "dpkg",
+      "version": "1.21.1ubuntu2.1",
+      "purl": "pkg:deb/ubuntu/dpkg@1.21.1ubuntu2.1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "dpkg@1.21.1ubuntu2.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "dpkg"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.21.1ubuntu2.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/e2fsprogs@1.46.5-2ubuntu1.1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "e2fsprogs",
+      "version": "1.46.5-2ubuntu1.1",
+      "purl": "pkg:deb/ubuntu/e2fsprogs@1.46.5-2ubuntu1.1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "e2fsprogs@1.46.5-2ubuntu1.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "e2fsprogs"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.46.5-2ubuntu1.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/findutils@4.8.0-1ubuntu3?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "findutils",
+      "version": "4.8.0-1ubuntu3",
+      "purl": "pkg:deb/ubuntu/findutils@4.8.0-1ubuntu3?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "findutils@4.8.0-1ubuntu3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "findutils"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "4.8.0-1ubuntu3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/gcc-12-base@12.1.0-2ubuntu1~22.04?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "gcc-12-base",
+      "version": "12.1.0-2ubuntu1~22.04",
+      "purl": "pkg:deb/ubuntu/gcc-12-base@12.1.0-2ubuntu1~22.04?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "gcc-12-base@12.1.0-2ubuntu1~22.04"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "gcc-12"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "12.1.0-2ubuntu1~22.04"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/gpgv@2.2.27-3ubuntu2.1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "gpgv",
+      "version": "2.2.27-3ubuntu2.1",
+      "purl": "pkg:deb/ubuntu/gpgv@2.2.27-3ubuntu2.1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "gpgv@2.2.27-3ubuntu2.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "gnupg2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.2.27-3ubuntu2.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/grep@3.7-1build1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "grep",
+      "version": "3.7-1build1",
+      "purl": "pkg:deb/ubuntu/grep@3.7-1build1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "grep@3.7-1build1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "grep"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.7-1build1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/gzip@1.10-4ubuntu4.1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "gzip",
+      "version": "1.10-4ubuntu4.1",
+      "purl": "pkg:deb/ubuntu/gzip@1.10-4ubuntu4.1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "gzip@1.10-4ubuntu4.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "gzip"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.10-4ubuntu4.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/hostname@3.23ubuntu2?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "hostname",
+      "version": "3.23ubuntu2",
+      "purl": "pkg:deb/ubuntu/hostname@3.23ubuntu2?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "hostname@3.23ubuntu2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "hostname"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.23ubuntu2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/init-system-helpers@1.62?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "init-system-helpers",
+      "version": "1.62",
+      "purl": "pkg:deb/ubuntu/init-system-helpers@1.62?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "init-system-helpers@1.62"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "init-system-helpers"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.62"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libacl1@2.3.1-1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libacl1",
+      "version": "2.3.1-1",
+      "purl": "pkg:deb/ubuntu/libacl1@2.3.1-1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libacl1@2.3.1-1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "acl"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.3.1-1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libapt-pkg6.0@2.4.8?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libapt-pkg6.0",
+      "version": "2.4.8",
+      "purl": "pkg:deb/ubuntu/libapt-pkg6.0@2.4.8?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libapt-pkg6.0@2.4.8"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "apt"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.4.8"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libattr1@1:2.5.1-1build1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libattr1",
+      "version": "1:2.5.1-1build1",
+      "purl": "pkg:deb/ubuntu/libattr1@1:2.5.1-1build1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libattr1@1:2.5.1-1build1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "attr"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1:2.5.1-1build1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libaudit-common@1:3.0.7-1build1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libaudit-common",
+      "version": "1:3.0.7-1build1",
+      "purl": "pkg:deb/ubuntu/libaudit-common@1:3.0.7-1build1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libaudit-common@1:3.0.7-1build1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "audit"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1:3.0.7-1build1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libaudit1@1:3.0.7-1build1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libaudit1",
+      "version": "1:3.0.7-1build1",
+      "purl": "pkg:deb/ubuntu/libaudit1@1:3.0.7-1build1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libaudit1@1:3.0.7-1build1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "audit"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1:3.0.7-1build1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libblkid1@2.37.2-4ubuntu3?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libblkid1",
+      "version": "2.37.2-4ubuntu3",
+      "purl": "pkg:deb/ubuntu/libblkid1@2.37.2-4ubuntu3?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libblkid1@2.37.2-4ubuntu3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "util-linux"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.37.2-4ubuntu3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libbz2-1.0@1.0.8-5build1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libbz2-1.0",
+      "version": "1.0.8-5build1",
+      "purl": "pkg:deb/ubuntu/libbz2-1.0@1.0.8-5build1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libbz2-1.0@1.0.8-5build1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "bzip2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.0.8-5build1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libc-bin",
+      "version": "2.35-0ubuntu3.1",
+      "purl": "pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libc-bin@2.35-0ubuntu3.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "glibc"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.35-0ubuntu3.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libc6@2.35-0ubuntu3.1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libc6",
+      "version": "2.35-0ubuntu3.1",
+      "purl": "pkg:deb/ubuntu/libc6@2.35-0ubuntu3.1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libc6@2.35-0ubuntu3.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "glibc"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.35-0ubuntu3.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libcap-ng0@0.7.9-2.2build3?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libcap-ng0",
+      "version": "0.7.9-2.2build3",
+      "purl": "pkg:deb/ubuntu/libcap-ng0@0.7.9-2.2build3?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libcap-ng0@0.7.9-2.2build3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libcap-ng"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "0.7.9-2.2build3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libcap2@1:2.44-1build3?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libcap2",
+      "version": "1:2.44-1build3",
+      "purl": "pkg:deb/ubuntu/libcap2@1:2.44-1build3?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libcap2@1:2.44-1build3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libcap2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1:2.44-1build3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libcom-err2@1.46.5-2ubuntu1.1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libcom-err2",
+      "version": "1.46.5-2ubuntu1.1",
+      "purl": "pkg:deb/ubuntu/libcom-err2@1.46.5-2ubuntu1.1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libcom-err2@1.46.5-2ubuntu1.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "e2fsprogs"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.46.5-2ubuntu1.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libcrypt1@1:4.4.27-1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libcrypt1",
+      "version": "1:4.4.27-1",
+      "purl": "pkg:deb/ubuntu/libcrypt1@1:4.4.27-1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libcrypt1@1:4.4.27-1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libxcrypt"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1:4.4.27-1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libdb5.3@5.3.28+dfsg1-0.8ubuntu3?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libdb5.3",
+      "version": "5.3.28+dfsg1-0.8ubuntu3",
+      "purl": "pkg:deb/ubuntu/libdb5.3@5.3.28+dfsg1-0.8ubuntu3?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libdb5.3@5.3.28+dfsg1-0.8ubuntu3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "db5.3"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "5.3.28+dfsg1-0.8ubuntu3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libdebconfclient0@0.261ubuntu1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libdebconfclient0",
+      "version": "0.261ubuntu1",
+      "purl": "pkg:deb/ubuntu/libdebconfclient0@0.261ubuntu1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libdebconfclient0@0.261ubuntu1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "cdebconf"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "0.261ubuntu1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libext2fs2@1.46.5-2ubuntu1.1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libext2fs2",
+      "version": "1.46.5-2ubuntu1.1",
+      "purl": "pkg:deb/ubuntu/libext2fs2@1.46.5-2ubuntu1.1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libext2fs2@1.46.5-2ubuntu1.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "e2fsprogs"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.46.5-2ubuntu1.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libffi8@3.4.2-4?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libffi8",
+      "version": "3.4.2-4",
+      "purl": "pkg:deb/ubuntu/libffi8@3.4.2-4?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libffi8@3.4.2-4"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libffi"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.4.2-4"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libgcc-s1@12.1.0-2ubuntu1~22.04?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libgcc-s1",
+      "version": "12.1.0-2ubuntu1~22.04",
+      "purl": "pkg:deb/ubuntu/libgcc-s1@12.1.0-2ubuntu1~22.04?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libgcc-s1@12.1.0-2ubuntu1~22.04"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "gcc-12"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "12.1.0-2ubuntu1~22.04"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libgcrypt20@1.9.4-3ubuntu3?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libgcrypt20",
+      "version": "1.9.4-3ubuntu3",
+      "purl": "pkg:deb/ubuntu/libgcrypt20@1.9.4-3ubuntu3?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libgcrypt20@1.9.4-3ubuntu3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libgcrypt20"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.9.4-3ubuntu3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libgmp10@2:6.2.1+dfsg-3ubuntu1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libgmp10",
+      "version": "2:6.2.1+dfsg-3ubuntu1",
+      "purl": "pkg:deb/ubuntu/libgmp10@2:6.2.1+dfsg-3ubuntu1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libgmp10@2:6.2.1+dfsg-3ubuntu1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "gmp"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2:6.2.1+dfsg-3ubuntu1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libgnutls30@3.7.3-4ubuntu1.1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libgnutls30",
+      "version": "3.7.3-4ubuntu1.1",
+      "purl": "pkg:deb/ubuntu/libgnutls30@3.7.3-4ubuntu1.1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libgnutls30@3.7.3-4ubuntu1.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "gnutls28"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.7.3-4ubuntu1.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libgpg-error0@1.43-3?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libgpg-error0",
+      "version": "1.43-3",
+      "purl": "pkg:deb/ubuntu/libgpg-error0@1.43-3?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libgpg-error0@1.43-3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libgpg-error"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.43-3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libgssapi-krb5-2@1.19.2-2?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libgssapi-krb5-2",
+      "version": "1.19.2-2",
+      "purl": "pkg:deb/ubuntu/libgssapi-krb5-2@1.19.2-2?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libgssapi-krb5-2@1.19.2-2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "krb5"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.19.2-2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libhogweed6@3.7.3-1build2?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libhogweed6",
+      "version": "3.7.3-1build2",
+      "purl": "pkg:deb/ubuntu/libhogweed6@3.7.3-1build2?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libhogweed6@3.7.3-1build2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "nettle"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.7.3-1build2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libidn2-0@2.3.2-2build1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libidn2-0",
+      "version": "2.3.2-2build1",
+      "purl": "pkg:deb/ubuntu/libidn2-0@2.3.2-2build1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libidn2-0@2.3.2-2build1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libidn2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.3.2-2build1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libk5crypto3@1.19.2-2?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libk5crypto3",
+      "version": "1.19.2-2",
+      "purl": "pkg:deb/ubuntu/libk5crypto3@1.19.2-2?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libk5crypto3@1.19.2-2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "krb5"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.19.2-2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libkeyutils1@1.6.1-2ubuntu3?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libkeyutils1",
+      "version": "1.6.1-2ubuntu3",
+      "purl": "pkg:deb/ubuntu/libkeyutils1@1.6.1-2ubuntu3?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libkeyutils1@1.6.1-2ubuntu3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "keyutils"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.6.1-2ubuntu3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libkrb5-3@1.19.2-2?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libkrb5-3",
+      "version": "1.19.2-2",
+      "purl": "pkg:deb/ubuntu/libkrb5-3@1.19.2-2?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libkrb5-3@1.19.2-2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "krb5"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.19.2-2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libkrb5support0@1.19.2-2?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libkrb5support0",
+      "version": "1.19.2-2",
+      "purl": "pkg:deb/ubuntu/libkrb5support0@1.19.2-2?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libkrb5support0@1.19.2-2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "krb5"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.19.2-2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/liblz4-1@1.9.3-2build2?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "liblz4-1",
+      "version": "1.9.3-2build2",
+      "purl": "pkg:deb/ubuntu/liblz4-1@1.9.3-2build2?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "liblz4-1@1.9.3-2build2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "lz4"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.9.3-2build2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/liblzma5@5.2.5-2ubuntu1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "liblzma5",
+      "version": "5.2.5-2ubuntu1",
+      "purl": "pkg:deb/ubuntu/liblzma5@5.2.5-2ubuntu1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "liblzma5@5.2.5-2ubuntu1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "xz-utils"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "5.2.5-2ubuntu1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libmount1@2.37.2-4ubuntu3?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libmount1",
+      "version": "2.37.2-4ubuntu3",
+      "purl": "pkg:deb/ubuntu/libmount1@2.37.2-4ubuntu3?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libmount1@2.37.2-4ubuntu3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "util-linux"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.37.2-4ubuntu3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libncurses6@6.3-2?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libncurses6",
+      "version": "6.3-2",
+      "purl": "pkg:deb/ubuntu/libncurses6@6.3-2?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libncurses6@6.3-2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "ncurses"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "6.3-2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libncursesw6@6.3-2?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libncursesw6",
+      "version": "6.3-2",
+      "purl": "pkg:deb/ubuntu/libncursesw6@6.3-2?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libncursesw6@6.3-2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "ncurses"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "6.3-2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libnettle8@3.7.3-1build2?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libnettle8",
+      "version": "3.7.3-1build2",
+      "purl": "pkg:deb/ubuntu/libnettle8@3.7.3-1build2?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libnettle8@3.7.3-1build2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "nettle"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.7.3-1build2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libnsl2@1.3.0-2build2?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libnsl2",
+      "version": "1.3.0-2build2",
+      "purl": "pkg:deb/ubuntu/libnsl2@1.3.0-2build2?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libnsl2@1.3.0-2build2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libnsl"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.3.0-2build2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libp11-kit0@0.24.0-6build1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libp11-kit0",
+      "version": "0.24.0-6build1",
+      "purl": "pkg:deb/ubuntu/libp11-kit0@0.24.0-6build1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libp11-kit0@0.24.0-6build1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "p11-kit"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "0.24.0-6build1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libpam-modules@1.4.0-11ubuntu2?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libpam-modules",
+      "version": "1.4.0-11ubuntu2",
+      "purl": "pkg:deb/ubuntu/libpam-modules@1.4.0-11ubuntu2?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libpam-modules@1.4.0-11ubuntu2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "pam"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.4.0-11ubuntu2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libpam-modules-bin@1.4.0-11ubuntu2?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libpam-modules-bin",
+      "version": "1.4.0-11ubuntu2",
+      "purl": "pkg:deb/ubuntu/libpam-modules-bin@1.4.0-11ubuntu2?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libpam-modules-bin@1.4.0-11ubuntu2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "pam"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.4.0-11ubuntu2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libpam-runtime@1.4.0-11ubuntu2?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libpam-runtime",
+      "version": "1.4.0-11ubuntu2",
+      "purl": "pkg:deb/ubuntu/libpam-runtime@1.4.0-11ubuntu2?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libpam-runtime@1.4.0-11ubuntu2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "pam"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.4.0-11ubuntu2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libpam0g@1.4.0-11ubuntu2?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libpam0g",
+      "version": "1.4.0-11ubuntu2",
+      "purl": "pkg:deb/ubuntu/libpam0g@1.4.0-11ubuntu2?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libpam0g@1.4.0-11ubuntu2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "pam"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.4.0-11ubuntu2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libpcre2-8-0",
+      "version": "10.39-3ubuntu0.1",
+      "purl": "pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libpcre2-8-0@10.39-3ubuntu0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "pcre2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "10.39-3ubuntu0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libpcre3@2:8.39-13ubuntu0.22.04.1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libpcre3",
+      "version": "2:8.39-13ubuntu0.22.04.1",
+      "purl": "pkg:deb/ubuntu/libpcre3@2:8.39-13ubuntu0.22.04.1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libpcre3@2:8.39-13ubuntu0.22.04.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "pcre3"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2:8.39-13ubuntu0.22.04.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libprocps8@2:3.3.17-6ubuntu2?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libprocps8",
+      "version": "2:3.3.17-6ubuntu2",
+      "purl": "pkg:deb/ubuntu/libprocps8@2:3.3.17-6ubuntu2?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libprocps8@2:3.3.17-6ubuntu2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "procps"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2:3.3.17-6ubuntu2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libseccomp2@2.5.3-2ubuntu2?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libseccomp2",
+      "version": "2.5.3-2ubuntu2",
+      "purl": "pkg:deb/ubuntu/libseccomp2@2.5.3-2ubuntu2?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libseccomp2@2.5.3-2ubuntu2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libseccomp"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.5.3-2ubuntu2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libselinux1@3.3-1build2?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libselinux1",
+      "version": "3.3-1build2",
+      "purl": "pkg:deb/ubuntu/libselinux1@3.3-1build2?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libselinux1@3.3-1build2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libselinux"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.3-1build2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libsemanage-common@3.3-1build2?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libsemanage-common",
+      "version": "3.3-1build2",
+      "purl": "pkg:deb/ubuntu/libsemanage-common@3.3-1build2?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libsemanage-common@3.3-1build2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libsemanage"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.3-1build2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libsemanage2@3.3-1build2?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libsemanage2",
+      "version": "3.3-1build2",
+      "purl": "pkg:deb/ubuntu/libsemanage2@3.3-1build2?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libsemanage2@3.3-1build2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libsemanage"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.3-1build2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libsepol2@3.3-1build1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libsepol2",
+      "version": "3.3-1build1",
+      "purl": "pkg:deb/ubuntu/libsepol2@3.3-1build1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libsepol2@3.3-1build1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libsepol"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.3-1build1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libsmartcols1@2.37.2-4ubuntu3?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libsmartcols1",
+      "version": "2.37.2-4ubuntu3",
+      "purl": "pkg:deb/ubuntu/libsmartcols1@2.37.2-4ubuntu3?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libsmartcols1@2.37.2-4ubuntu3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "util-linux"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.37.2-4ubuntu3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libss2@1.46.5-2ubuntu1.1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libss2",
+      "version": "1.46.5-2ubuntu1.1",
+      "purl": "pkg:deb/ubuntu/libss2@1.46.5-2ubuntu1.1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libss2@1.46.5-2ubuntu1.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "e2fsprogs"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.46.5-2ubuntu1.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.7?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libssl3",
+      "version": "3.0.2-0ubuntu1.7",
+      "purl": "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.7?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libssl3@3.0.2-0ubuntu1.7"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "openssl"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.0.2-0ubuntu1.7"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libstdc++6@12.1.0-2ubuntu1~22.04?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libstdc++6",
+      "version": "12.1.0-2ubuntu1~22.04",
+      "purl": "pkg:deb/ubuntu/libstdc++6@12.1.0-2ubuntu1~22.04?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libstdc++6@12.1.0-2ubuntu1~22.04"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "gcc-12"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "12.1.0-2ubuntu1~22.04"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libsystemd0@249.11-0ubuntu3.6?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libsystemd0",
+      "version": "249.11-0ubuntu3.6",
+      "purl": "pkg:deb/ubuntu/libsystemd0@249.11-0ubuntu3.6?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libsystemd0@249.11-0ubuntu3.6"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "systemd"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "249.11-0ubuntu3.6"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libtasn1-6@4.18.0-4build1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libtasn1-6",
+      "version": "4.18.0-4build1",
+      "purl": "pkg:deb/ubuntu/libtasn1-6@4.18.0-4build1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libtasn1-6@4.18.0-4build1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libtasn1-6"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "4.18.0-4build1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libtinfo6@6.3-2?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libtinfo6",
+      "version": "6.3-2",
+      "purl": "pkg:deb/ubuntu/libtinfo6@6.3-2?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libtinfo6@6.3-2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "ncurses"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "6.3-2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libtirpc-common@1.3.2-2ubuntu0.1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libtirpc-common",
+      "version": "1.3.2-2ubuntu0.1",
+      "purl": "pkg:deb/ubuntu/libtirpc-common@1.3.2-2ubuntu0.1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libtirpc-common@1.3.2-2ubuntu0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libtirpc"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.3.2-2ubuntu0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libtirpc3@1.3.2-2ubuntu0.1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libtirpc3",
+      "version": "1.3.2-2ubuntu0.1",
+      "purl": "pkg:deb/ubuntu/libtirpc3@1.3.2-2ubuntu0.1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libtirpc3@1.3.2-2ubuntu0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libtirpc"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.3.2-2ubuntu0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libudev1@249.11-0ubuntu3.6?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libudev1",
+      "version": "249.11-0ubuntu3.6",
+      "purl": "pkg:deb/ubuntu/libudev1@249.11-0ubuntu3.6?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libudev1@249.11-0ubuntu3.6"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "systemd"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "249.11-0ubuntu3.6"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libunistring2@1.0-1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libunistring2",
+      "version": "1.0-1",
+      "purl": "pkg:deb/ubuntu/libunistring2@1.0-1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libunistring2@1.0-1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libunistring"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.0-1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libuuid1@2.37.2-4ubuntu3?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libuuid1",
+      "version": "2.37.2-4ubuntu3",
+      "purl": "pkg:deb/ubuntu/libuuid1@2.37.2-4ubuntu3?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libuuid1@2.37.2-4ubuntu3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "util-linux"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.37.2-4ubuntu3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libxxhash0@0.8.1-1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libxxhash0",
+      "version": "0.8.1-1",
+      "purl": "pkg:deb/ubuntu/libxxhash0@0.8.1-1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libxxhash0@0.8.1-1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "xxhash"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "0.8.1-1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/libzstd1@1.4.8+dfsg-3build1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "libzstd1",
+      "version": "1.4.8+dfsg-3build1",
+      "purl": "pkg:deb/ubuntu/libzstd1@1.4.8+dfsg-3build1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libzstd1@1.4.8+dfsg-3build1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libzstd"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.4.8+dfsg-3build1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/login@1:4.8.1-2ubuntu2.1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "login",
+      "version": "1:4.8.1-2ubuntu2.1",
+      "purl": "pkg:deb/ubuntu/login@1:4.8.1-2ubuntu2.1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "login@1:4.8.1-2ubuntu2.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "shadow"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1:4.8.1-2ubuntu2.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:abd7859c73891007fb995cbf7dc304de7ff48678aa030825f4c1251563e51557"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:a52b3207e8e67d71464636e71cf19ba1973aa0c201600ca7bdfb615a87847561"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/logsave@1.46.5-2ubuntu1.1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "logsave",
+      "version": "1.46.5-2ubuntu1.1",
+      "purl": "pkg:deb/ubuntu/logsave@1.46.5-2ubuntu1.1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "logsave@1.46.5-2ubuntu1.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "e2fsprogs"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.46.5-2ubuntu1.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/lsb-base@11.1.0ubuntu4?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "lsb-base",
+      "version": "11.1.0ubuntu4",
+      "purl": "pkg:deb/ubuntu/lsb-base@11.1.0ubuntu4?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "lsb-base@11.1.0ubuntu4"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "lsb"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "11.1.0ubuntu4"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/mawk@1.3.4.20200120-3?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "mawk",
+      "version": "1.3.4.20200120-3",
+      "purl": "pkg:deb/ubuntu/mawk@1.3.4.20200120-3?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "mawk@1.3.4.20200120-3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "mawk"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.3.4.20200120-3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/mount@2.37.2-4ubuntu3?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "mount",
+      "version": "2.37.2-4ubuntu3",
+      "purl": "pkg:deb/ubuntu/mount@2.37.2-4ubuntu3?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "mount@2.37.2-4ubuntu3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "util-linux"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.37.2-4ubuntu3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/ncurses-base@6.3-2?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "ncurses-base",
+      "version": "6.3-2",
+      "purl": "pkg:deb/ubuntu/ncurses-base@6.3-2?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "ncurses-base@6.3-2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "ncurses"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "6.3-2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/ncurses-bin@6.3-2?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "ncurses-bin",
+      "version": "6.3-2",
+      "purl": "pkg:deb/ubuntu/ncurses-bin@6.3-2?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "ncurses-bin@6.3-2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "ncurses"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "6.3-2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/openssl@3.0.2-0ubuntu1.7?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "openssl",
+      "version": "3.0.2-0ubuntu1.7",
+      "purl": "pkg:deb/ubuntu/openssl@3.0.2-0ubuntu1.7?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "openssl@3.0.2-0ubuntu1.7"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "openssl"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.0.2-0ubuntu1.7"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:abd7859c73891007fb995cbf7dc304de7ff48678aa030825f4c1251563e51557"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:a52b3207e8e67d71464636e71cf19ba1973aa0c201600ca7bdfb615a87847561"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/passwd@1:4.8.1-2ubuntu2.1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "passwd",
+      "version": "1:4.8.1-2ubuntu2.1",
+      "purl": "pkg:deb/ubuntu/passwd@1:4.8.1-2ubuntu2.1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "passwd@1:4.8.1-2ubuntu2.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "shadow"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1:4.8.1-2ubuntu2.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:abd7859c73891007fb995cbf7dc304de7ff48678aa030825f4c1251563e51557"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:a52b3207e8e67d71464636e71cf19ba1973aa0c201600ca7bdfb615a87847561"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "perl-base",
+      "version": "5.34.0-3ubuntu1.1",
+      "purl": "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "perl-base@5.34.0-3ubuntu1.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "perl"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "5.34.0-3ubuntu1.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/procps@2:3.3.17-6ubuntu2?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "procps",
+      "version": "2:3.3.17-6ubuntu2",
+      "purl": "pkg:deb/ubuntu/procps@2:3.3.17-6ubuntu2?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "procps@2:3.3.17-6ubuntu2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "procps"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2:3.3.17-6ubuntu2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/sed@4.8-1ubuntu2?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "sed",
+      "version": "4.8-1ubuntu2",
+      "purl": "pkg:deb/ubuntu/sed@4.8-1ubuntu2?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "sed@4.8-1ubuntu2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "sed"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "4.8-1ubuntu2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/sensible-utils@0.0.17?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "sensible-utils",
+      "version": "0.0.17",
+      "purl": "pkg:deb/ubuntu/sensible-utils@0.0.17?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "sensible-utils@0.0.17"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "sensible-utils"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "0.0.17"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/sysvinit-utils@3.01-1ubuntu1?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "sysvinit-utils",
+      "version": "3.01-1ubuntu1",
+      "purl": "pkg:deb/ubuntu/sysvinit-utils@3.01-1ubuntu1?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "sysvinit-utils@3.01-1ubuntu1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "sysvinit"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.01-1ubuntu1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/tar@1.34+dfsg-1build3?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "tar",
+      "version": "1.34+dfsg-1build3",
+      "purl": "pkg:deb/ubuntu/tar@1.34+dfsg-1build3?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "tar@1.34+dfsg-1build3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "tar"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.34+dfsg-1build3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/ubuntu-keyring@2021.03.26?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "ubuntu-keyring",
+      "version": "2021.03.26",
+      "purl": "pkg:deb/ubuntu/ubuntu-keyring@2021.03.26?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "ubuntu-keyring@2021.03.26"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "ubuntu-keyring"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2021.03.26"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/usrmerge@25ubuntu2?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "usrmerge",
+      "version": "25ubuntu2",
+      "purl": "pkg:deb/ubuntu/usrmerge@25ubuntu2?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "usrmerge@25ubuntu2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "usrmerge"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "25ubuntu2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/util-linux@2.37.2-4ubuntu3?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "util-linux",
+      "version": "2.37.2-4ubuntu3",
+      "purl": "pkg:deb/ubuntu/util-linux@2.37.2-4ubuntu3?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "util-linux@2.37.2-4ubuntu3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "util-linux"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.37.2-4ubuntu3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/zlib1g@1:1.2.11.dfsg-2ubuntu9.2?distro=ubuntu-22.04",
+      "type": "library",
+      "name": "zlib1g",
+      "version": "1:1.2.11.dfsg-2ubuntu9.2",
+      "purl": "pkg:deb/ubuntu/zlib1g@1:1.2.11.dfsg-2ubuntu9.2?distro=ubuntu-22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "zlib1g@1:1.2.11.dfsg-2ubuntu9.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "zlib"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1:1.2.11.dfsg-2ubuntu9.2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e96e057aae67380a4ddb16c337c5c3669d97fdff69ec537f02aa2cc30d814281"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f4a670ac65b68f8757aea863ac0de19e627c0ea57165abad8094eae512ca7dad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "7e81de66-df6e-486b-9bee-5538369ab0ba",
+      "type": "operating-system",
+      "name": "ubuntu",
+      "version": "22.04",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "ubuntu"
+        },
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "os-pkgs"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/./pcap@%28devel%29",
+      "type": "library",
+      "name": "./pcap",
+      "version": "(devel)",
+      "purl": "pkg:golang/./pcap@%28devel%29",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/aead.dev/minisign@v0.2.0",
+      "type": "library",
+      "name": "aead.dev/minisign",
+      "version": "v0.2.0",
+      "purl": "pkg:golang/aead.dev/minisign@v0.2.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/cloud.google.com/go/compute@v1.7.0",
+      "type": "library",
+      "name": "cloud.google.com/go/compute",
+      "version": "v1.7.0",
+      "purl": "pkg:golang/cloud.google.com/go/compute@v1.7.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/aws/aws-sdk-go@v1.44.111",
+      "type": "library",
+      "name": "github.com/aws/aws-sdk-go",
+      "version": "v1.44.111",
+      "purl": "pkg:golang/github.com/aws/aws-sdk-go@v1.44.111",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/containerd/typeurl@v1.0.2",
+      "type": "library",
+      "name": "github.com/containerd/typeurl",
+      "version": "v1.0.2",
+      "purl": "pkg:golang/github.com/containerd/typeurl@v1.0.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/davecgh/go-spew@v1.1.1",
+      "type": "library",
+      "name": "github.com/davecgh/go-spew",
+      "version": "v1.1.1",
+      "purl": "pkg:golang/github.com/davecgh/go-spew@v1.1.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/docker/distribution@v2.8.0+incompatible",
+      "type": "library",
+      "name": "github.com/docker/distribution",
+      "version": "v2.8.0+incompatible",
+      "purl": "pkg:golang/github.com/docker/distribution@v2.8.0+incompatible",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/docker/docker@v20.10.15+incompatible",
+      "type": "library",
+      "name": "github.com/docker/docker",
+      "version": "v20.10.15+incompatible",
+      "purl": "pkg:golang/github.com/docker/docker@v20.10.15+incompatible",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/docker/go-connections@v0.4.0",
+      "type": "library",
+      "name": "github.com/docker/go-connections",
+      "version": "v0.4.0",
+      "purl": "pkg:golang/github.com/docker/go-connections@v0.4.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/docker/go-units@v0.4.0",
+      "type": "library",
+      "name": "github.com/docker/go-units",
+      "version": "v0.4.0",
+      "purl": "pkg:golang/github.com/docker/go-units@v0.4.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/gabriel-vasile/mimetype@v1.4.0",
+      "type": "library",
+      "name": "github.com/gabriel-vasile/mimetype",
+      "version": "v1.4.0",
+      "purl": "pkg:golang/github.com/gabriel-vasile/mimetype@v1.4.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/go-logr/logr@v1.2.0",
+      "type": "library",
+      "name": "github.com/go-logr/logr",
+      "version": "v1.2.0",
+      "purl": "pkg:golang/github.com/go-logr/logr@v1.2.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/gogo/protobuf@v1.3.2",
+      "type": "library",
+      "name": "github.com/gogo/protobuf",
+      "version": "v1.3.2",
+      "purl": "pkg:golang/github.com/gogo/protobuf@v1.3.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/golang/groupcache@v0.0.0-20210331224755-41bb18bfe9da",
+      "type": "library",
+      "name": "github.com/golang/groupcache",
+      "version": "v0.0.0-20210331224755-41bb18bfe9da",
+      "purl": "pkg:golang/github.com/golang/groupcache@v0.0.0-20210331224755-41bb18bfe9da",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/golang/protobuf@v1.5.2",
+      "type": "library",
+      "name": "github.com/golang/protobuf",
+      "version": "v1.5.2",
+      "purl": "pkg:golang/github.com/golang/protobuf@v1.5.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/google/go-cmp@v0.5.8",
+      "type": "library",
+      "name": "github.com/google/go-cmp",
+      "version": "v0.5.8",
+      "purl": "pkg:golang/github.com/google/go-cmp@v0.5.8",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/google/gofuzz@v1.2.0",
+      "type": "library",
+      "name": "github.com/google/gofuzz",
+      "version": "v1.2.0",
+      "purl": "pkg:golang/github.com/google/gofuzz@v1.2.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/google/uuid@v1.3.0",
+      "type": "library",
+      "name": "github.com/google/uuid",
+      "version": "v1.3.0",
+      "purl": "pkg:golang/github.com/google/uuid@v1.3.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/googleapis/enterprise-certificate-proxy@v0.1.0",
+      "type": "library",
+      "name": "github.com/googleapis/enterprise-certificate-proxy",
+      "version": "v0.1.0",
+      "purl": "pkg:golang/github.com/googleapis/enterprise-certificate-proxy@v0.1.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/googleapis/gax-go/v2@v2.5.1",
+      "type": "library",
+      "name": "github.com/googleapis/gax-go/v2",
+      "version": "v2.5.1",
+      "purl": "pkg:golang/github.com/googleapis/gax-go/v2@v2.5.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/gorilla/mux@v1.8.0",
+      "type": "library",
+      "name": "github.com/gorilla/mux",
+      "version": "v1.8.0",
+      "purl": "pkg:golang/github.com/gorilla/mux@v1.8.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/jmespath/go-jmespath@v0.4.0",
+      "type": "library",
+      "name": "github.com/jmespath/go-jmespath",
+      "version": "v0.4.0",
+      "purl": "pkg:golang/github.com/jmespath/go-jmespath@v0.4.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/json-iterator/go@v1.1.12",
+      "type": "library",
+      "name": "github.com/json-iterator/go",
+      "version": "v1.1.12",
+      "purl": "pkg:golang/github.com/json-iterator/go@v1.1.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/klauspost/compress@v1.15.4",
+      "type": "library",
+      "name": "github.com/klauspost/compress",
+      "version": "v1.15.4",
+      "purl": "pkg:golang/github.com/klauspost/compress@v1.15.4",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/lacework/conntrack@v0.0.0-20210812163929-c9e4ef49253e",
+      "type": "library",
+      "name": "github.com/lacework/conntrack",
+      "version": "v0.0.0-20210812163929-c9e4ef49253e",
+      "purl": "pkg:golang/github.com/lacework/conntrack@v0.0.0-20210812163929-c9e4ef49253e",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/lacework/ebpf@v0.7.1-0.20220630222456-0efdbe73fea1",
+      "type": "library",
+      "name": "github.com/lacework/ebpf",
+      "version": "v0.7.1-0.20220630222456-0efdbe73fea1",
+      "purl": "pkg:golang/github.com/lacework/ebpf@v0.7.1-0.20220630222456-0efdbe73fea1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/lacework/go-avro@v0.0.0-20170119191930-e2d751e5ad39",
+      "type": "library",
+      "name": "github.com/lacework/go-avro",
+      "version": "v0.0.0-20170119191930-e2d751e5ad39",
+      "purl": "pkg:golang/github.com/lacework/go-avro@v0.0.0-20170119191930-e2d751e5ad39",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/lacework/go-metrics@v0.0.0-20150907035206-330096136270",
+      "type": "library",
+      "name": "github.com/lacework/go-metrics",
+      "version": "v0.0.0-20150907035206-330096136270",
+      "purl": "pkg:golang/github.com/lacework/go-metrics@v0.0.0-20150907035206-330096136270",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/lacework/gopacket@v0.0.0-20220810144506-32ee38206866",
+      "type": "library",
+      "name": "github.com/lacework/gopacket",
+      "version": "v0.0.0-20220810144506-32ee38206866",
+      "purl": "pkg:golang/github.com/lacework/gopacket@v0.0.0-20220810144506-32ee38206866",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/lacework/libaudit-go@v0.0.0-20220131231527-e86f3d3d3156",
+      "type": "library",
+      "name": "github.com/lacework/libaudit-go",
+      "version": "v0.0.0-20220131231527-e86f3d3d3156",
+      "purl": "pkg:golang/github.com/lacework/libaudit-go@v0.0.0-20220131231527-e86f3d3d3156",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/lunixbochs/struc@v0.0.0-20200521075829-a4cb8d33dbbe",
+      "type": "library",
+      "name": "github.com/lunixbochs/struc",
+      "version": "v0.0.0-20200521075829-a4cb8d33dbbe",
+      "purl": "pkg:golang/github.com/lunixbochs/struc@v0.0.0-20200521075829-a4cb8d33dbbe",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/modern-go/concurrent@v0.0.0-20180306012644-bacd9c7ef1dd",
+      "type": "library",
+      "name": "github.com/modern-go/concurrent",
+      "version": "v0.0.0-20180306012644-bacd9c7ef1dd",
+      "purl": "pkg:golang/github.com/modern-go/concurrent@v0.0.0-20180306012644-bacd9c7ef1dd",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/modern-go/reflect2@v1.0.2",
+      "type": "library",
+      "name": "github.com/modern-go/reflect2",
+      "version": "v1.0.2",
+      "purl": "pkg:golang/github.com/modern-go/reflect2@v1.0.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/opencontainers/go-digest@v1.0.0",
+      "type": "library",
+      "name": "github.com/opencontainers/go-digest",
+      "version": "v1.0.0",
+      "purl": "pkg:golang/github.com/opencontainers/go-digest@v1.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/opencontainers/image-spec@v1.0.2",
+      "type": "library",
+      "name": "github.com/opencontainers/image-spec",
+      "version": "v1.0.2",
+      "purl": "pkg:golang/github.com/opencontainers/image-spec@v1.0.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/pkg/errors@v0.9.1",
+      "type": "library",
+      "name": "github.com/pkg/errors",
+      "version": "v0.9.1",
+      "purl": "pkg:golang/github.com/pkg/errors@v0.9.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/pkg/profile@v1.5.0",
+      "type": "library",
+      "name": "github.com/pkg/profile",
+      "version": "v1.5.0",
+      "purl": "pkg:golang/github.com/pkg/profile@v1.5.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/pmezard/go-difflib@v1.0.0",
+      "type": "library",
+      "name": "github.com/pmezard/go-difflib",
+      "version": "v1.0.0",
+      "purl": "pkg:golang/github.com/pmezard/go-difflib@v1.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/sirupsen/logrus@v1.8.1",
+      "type": "library",
+      "name": "github.com/sirupsen/logrus",
+      "version": "v1.8.1",
+      "purl": "pkg:golang/github.com/sirupsen/logrus@v1.8.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/stretchr/testify@v1.7.1",
+      "type": "library",
+      "name": "github.com/stretchr/testify",
+      "version": "v1.7.1",
+      "purl": "pkg:golang/github.com/stretchr/testify@v1.7.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/go.opencensus.io@v0.23.0",
+      "type": "library",
+      "name": "go.opencensus.io",
+      "version": "v0.23.0",
+      "purl": "pkg:golang/go.opencensus.io@v0.23.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/crypto@v0.0.0-20220622213112-05595931fe9d",
+      "type": "library",
+      "name": "golang.org/x/crypto",
+      "version": "v0.0.0-20220622213112-05595931fe9d",
+      "purl": "pkg:golang/golang.org/x/crypto@v0.0.0-20220622213112-05595931fe9d",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/net@v0.0.0-20220909164309-bea034e7d591",
+      "type": "library",
+      "name": "golang.org/x/net",
+      "version": "v0.0.0-20220909164309-bea034e7d591",
+      "purl": "pkg:golang/golang.org/x/net@v0.0.0-20220909164309-bea034e7d591",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/oauth2@v0.0.0-20220909003341-f21342109be1",
+      "type": "library",
+      "name": "golang.org/x/oauth2",
+      "version": "v0.0.0-20220909003341-f21342109be1",
+      "purl": "pkg:golang/golang.org/x/oauth2@v0.0.0-20220909003341-f21342109be1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/sys@v0.0.0-20220728004956-3c1f35247d10",
+      "type": "library",
+      "name": "golang.org/x/sys",
+      "version": "v0.0.0-20220728004956-3c1f35247d10",
+      "purl": "pkg:golang/golang.org/x/sys@v0.0.0-20220728004956-3c1f35247d10",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/text@v0.3.7",
+      "type": "library",
+      "name": "golang.org/x/text",
+      "version": "v0.3.7",
+      "purl": "pkg:golang/golang.org/x/text@v0.3.7",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/google.golang.org/api@v0.96.0",
+      "type": "library",
+      "name": "google.golang.org/api",
+      "version": "v0.96.0",
+      "purl": "pkg:golang/google.golang.org/api@v0.96.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/google.golang.org/genproto@v0.0.0-20220920201722-2b89144ce006",
+      "type": "library",
+      "name": "google.golang.org/genproto",
+      "version": "v0.0.0-20220920201722-2b89144ce006",
+      "purl": "pkg:golang/google.golang.org/genproto@v0.0.0-20220920201722-2b89144ce006",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/google.golang.org/grpc@v1.49.0",
+      "type": "library",
+      "name": "google.golang.org/grpc",
+      "version": "v1.49.0",
+      "purl": "pkg:golang/google.golang.org/grpc@v1.49.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/google.golang.org/protobuf@v1.28.1",
+      "type": "library",
+      "name": "google.golang.org/protobuf",
+      "version": "v1.28.1",
+      "purl": "pkg:golang/google.golang.org/protobuf@v1.28.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/gopkg.in/inf.v0@v0.9.1",
+      "type": "library",
+      "name": "gopkg.in/inf.v0",
+      "version": "v0.9.1",
+      "purl": "pkg:golang/gopkg.in/inf.v0@v0.9.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
+      "type": "library",
+      "name": "gopkg.in/yaml.v2",
+      "version": "v2.4.0",
+      "purl": "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
+      "type": "library",
+      "name": "gopkg.in/yaml.v3",
+      "version": "v3.0.1",
+      "purl": "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/k8s.io/api@v0.23.6",
+      "type": "library",
+      "name": "k8s.io/api",
+      "version": "v0.23.6",
+      "purl": "pkg:golang/k8s.io/api@v0.23.6",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/k8s.io/apimachinery@v0.23.6",
+      "type": "library",
+      "name": "k8s.io/apimachinery",
+      "version": "v0.23.6",
+      "purl": "pkg:golang/k8s.io/apimachinery@v0.23.6",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/k8s.io/klog/v2@v2.30.0",
+      "type": "library",
+      "name": "k8s.io/klog/v2",
+      "version": "v2.30.0",
+      "purl": "pkg:golang/k8s.io/klog/v2@v2.30.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/k8s.io/utils@v0.0.0-20211116205334-6203023598ed",
+      "type": "library",
+      "name": "k8s.io/utils",
+      "version": "v0.0.0-20211116205334-6203023598ed",
+      "purl": "pkg:golang/k8s.io/utils@v0.0.0-20211116205334-6203023598ed",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/kernel.org/pub/linux/libs/security/libcap/cap@v1.2.60",
+      "type": "library",
+      "name": "kernel.org/pub/linux/libs/security/libcap/cap",
+      "version": "v1.2.60",
+      "purl": "pkg:golang/kernel.org/pub/linux/libs/security/libcap/cap@v1.2.60",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/kernel.org/pub/linux/libs/security/libcap/psx@v1.2.60",
+      "type": "library",
+      "name": "kernel.org/pub/linux/libs/security/libcap/psx",
+      "version": "v1.2.60",
+      "purl": "pkg:golang/kernel.org/pub/linux/libs/security/libcap/psx@v1.2.60",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/sigs.k8s.io/json@v0.0.0-20211020170558-c049b76a60c6",
+      "type": "library",
+      "name": "sigs.k8s.io/json",
+      "version": "v0.0.0-20211020170558-c049b76a60c6",
+      "purl": "pkg:golang/sigs.k8s.io/json@v0.0.0-20211020170558-c049b76a60c6",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/sigs.k8s.io/structured-merge-diff/v4@v4.2.1",
+      "type": "library",
+      "name": "sigs.k8s.io/structured-merge-diff/v4",
+      "version": "v4.2.1",
+      "purl": "pkg:golang/sigs.k8s.io/structured-merge-diff/v4@v4.2.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:8d46c154140be89e9cb01092d153073abdad20524d5198d5cb5ed31418af046d"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:eb0bbb8eaebef9132eeb0d7ce7a0bd98f453cf026a1cbb7b45c99333adfc1676"
+        }
+      ]
+    },
+    {
+      "bom-ref": "ae71ab65-a5a9-4409-9b18-55a5069963cd",
+      "type": "application",
+      "name": "var/lib/backup/6.2.0.10049/datacollector",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "gobinary"
+        },
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "7e81de66-df6e-486b-9bee-5538369ab0ba",
+      "dependsOn": [
+        "pkg:deb/ubuntu/adduser@3.118ubuntu5?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/apt@2.4.8?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/base-files@12ubuntu4.2?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/base-passwd@3.5.52build1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/bash@5.1-6ubuntu1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/bsdutils@1:2.37.2-4ubuntu3?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/ca-certificates@20211016?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/dash@0.5.11+git20210903+057cd650a4ed-3build1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/debconf@1.5.79ubuntu1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/debianutils@5.5-1ubuntu2?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/diffutils@1:3.8-0ubuntu2?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/dpkg@1.21.1ubuntu2.1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/e2fsprogs@1.46.5-2ubuntu1.1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/findutils@4.8.0-1ubuntu3?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/gcc-12-base@12.1.0-2ubuntu1~22.04?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/gpgv@2.2.27-3ubuntu2.1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/grep@3.7-1build1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/gzip@1.10-4ubuntu4.1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/hostname@3.23ubuntu2?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/init-system-helpers@1.62?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libacl1@2.3.1-1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libapt-pkg6.0@2.4.8?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libattr1@1:2.5.1-1build1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libaudit-common@1:3.0.7-1build1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libaudit1@1:3.0.7-1build1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libblkid1@2.37.2-4ubuntu3?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libbz2-1.0@1.0.8-5build1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libc6@2.35-0ubuntu3.1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libcap-ng0@0.7.9-2.2build3?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libcap2@1:2.44-1build3?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libcom-err2@1.46.5-2ubuntu1.1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libcrypt1@1:4.4.27-1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libdb5.3@5.3.28+dfsg1-0.8ubuntu3?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libdebconfclient0@0.261ubuntu1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libext2fs2@1.46.5-2ubuntu1.1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libffi8@3.4.2-4?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libgcc-s1@12.1.0-2ubuntu1~22.04?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libgcrypt20@1.9.4-3ubuntu3?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libgmp10@2:6.2.1+dfsg-3ubuntu1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libgnutls30@3.7.3-4ubuntu1.1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libgpg-error0@1.43-3?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libgssapi-krb5-2@1.19.2-2?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libhogweed6@3.7.3-1build2?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libidn2-0@2.3.2-2build1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libk5crypto3@1.19.2-2?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libkeyutils1@1.6.1-2ubuntu3?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libkrb5-3@1.19.2-2?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libkrb5support0@1.19.2-2?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/liblz4-1@1.9.3-2build2?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/liblzma5@5.2.5-2ubuntu1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libmount1@2.37.2-4ubuntu3?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libncurses6@6.3-2?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libncursesw6@6.3-2?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libnettle8@3.7.3-1build2?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libnsl2@1.3.0-2build2?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libp11-kit0@0.24.0-6build1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libpam-modules@1.4.0-11ubuntu2?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libpam-modules-bin@1.4.0-11ubuntu2?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libpam-runtime@1.4.0-11ubuntu2?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libpam0g@1.4.0-11ubuntu2?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libpcre2-8-0@10.39-3ubuntu0.1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libpcre3@2:8.39-13ubuntu0.22.04.1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libprocps8@2:3.3.17-6ubuntu2?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libseccomp2@2.5.3-2ubuntu2?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libselinux1@3.3-1build2?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libsemanage-common@3.3-1build2?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libsemanage2@3.3-1build2?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libsepol2@3.3-1build1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libsmartcols1@2.37.2-4ubuntu3?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libss2@1.46.5-2ubuntu1.1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.7?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libstdc++6@12.1.0-2ubuntu1~22.04?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libsystemd0@249.11-0ubuntu3.6?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libtasn1-6@4.18.0-4build1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libtinfo6@6.3-2?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libtirpc-common@1.3.2-2ubuntu0.1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libtirpc3@1.3.2-2ubuntu0.1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libudev1@249.11-0ubuntu3.6?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libunistring2@1.0-1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libuuid1@2.37.2-4ubuntu3?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libxxhash0@0.8.1-1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/libzstd1@1.4.8+dfsg-3build1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/login@1:4.8.1-2ubuntu2.1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/logsave@1.46.5-2ubuntu1.1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/lsb-base@11.1.0ubuntu4?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/mawk@1.3.4.20200120-3?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/mount@2.37.2-4ubuntu3?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/ncurses-base@6.3-2?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/ncurses-bin@6.3-2?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/openssl@3.0.2-0ubuntu1.7?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/passwd@1:4.8.1-2ubuntu2.1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/perl-base@5.34.0-3ubuntu1.1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/procps@2:3.3.17-6ubuntu2?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/sed@4.8-1ubuntu2?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/sensible-utils@0.0.17?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/sysvinit-utils@3.01-1ubuntu1?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/tar@1.34+dfsg-1build3?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/ubuntu-keyring@2021.03.26?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/usrmerge@25ubuntu2?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/util-linux@2.37.2-4ubuntu3?distro=ubuntu-22.04",
+        "pkg:deb/ubuntu/zlib1g@1:1.2.11.dfsg-2ubuntu9.2?distro=ubuntu-22.04"
+      ]
+    },
+    {
+      "ref": "ae71ab65-a5a9-4409-9b18-55a5069963cd",
+      "dependsOn": [
+        "pkg:golang/./pcap@%28devel%29",
+        "pkg:golang/aead.dev/minisign@v0.2.0",
+        "pkg:golang/cloud.google.com/go/compute@v1.7.0",
+        "pkg:golang/github.com/aws/aws-sdk-go@v1.44.111",
+        "pkg:golang/github.com/containerd/typeurl@v1.0.2",
+        "pkg:golang/github.com/davecgh/go-spew@v1.1.1",
+        "pkg:golang/github.com/docker/distribution@v2.8.0+incompatible",
+        "pkg:golang/github.com/docker/docker@v20.10.15+incompatible",
+        "pkg:golang/github.com/docker/go-connections@v0.4.0",
+        "pkg:golang/github.com/docker/go-units@v0.4.0",
+        "pkg:golang/github.com/gabriel-vasile/mimetype@v1.4.0",
+        "pkg:golang/github.com/go-logr/logr@v1.2.0",
+        "pkg:golang/github.com/gogo/protobuf@v1.3.2",
+        "pkg:golang/github.com/golang/groupcache@v0.0.0-20210331224755-41bb18bfe9da",
+        "pkg:golang/github.com/golang/protobuf@v1.5.2",
+        "pkg:golang/github.com/google/go-cmp@v0.5.8",
+        "pkg:golang/github.com/google/gofuzz@v1.2.0",
+        "pkg:golang/github.com/google/uuid@v1.3.0",
+        "pkg:golang/github.com/googleapis/enterprise-certificate-proxy@v0.1.0",
+        "pkg:golang/github.com/googleapis/gax-go/v2@v2.5.1",
+        "pkg:golang/github.com/gorilla/mux@v1.8.0",
+        "pkg:golang/github.com/jmespath/go-jmespath@v0.4.0",
+        "pkg:golang/github.com/json-iterator/go@v1.1.12",
+        "pkg:golang/github.com/klauspost/compress@v1.15.4",
+        "pkg:golang/github.com/lacework/conntrack@v0.0.0-20210812163929-c9e4ef49253e",
+        "pkg:golang/github.com/lacework/ebpf@v0.7.1-0.20220630222456-0efdbe73fea1",
+        "pkg:golang/github.com/lacework/go-avro@v0.0.0-20170119191930-e2d751e5ad39",
+        "pkg:golang/github.com/lacework/go-metrics@v0.0.0-20150907035206-330096136270",
+        "pkg:golang/github.com/lacework/gopacket@v0.0.0-20220810144506-32ee38206866",
+        "pkg:golang/github.com/lacework/libaudit-go@v0.0.0-20220131231527-e86f3d3d3156",
+        "pkg:golang/github.com/lunixbochs/struc@v0.0.0-20200521075829-a4cb8d33dbbe",
+        "pkg:golang/github.com/modern-go/concurrent@v0.0.0-20180306012644-bacd9c7ef1dd",
+        "pkg:golang/github.com/modern-go/reflect2@v1.0.2",
+        "pkg:golang/github.com/opencontainers/go-digest@v1.0.0",
+        "pkg:golang/github.com/opencontainers/image-spec@v1.0.2",
+        "pkg:golang/github.com/pkg/errors@v0.9.1",
+        "pkg:golang/github.com/pkg/profile@v1.5.0",
+        "pkg:golang/github.com/pmezard/go-difflib@v1.0.0",
+        "pkg:golang/github.com/sirupsen/logrus@v1.8.1",
+        "pkg:golang/github.com/stretchr/testify@v1.7.1",
+        "pkg:golang/go.opencensus.io@v0.23.0",
+        "pkg:golang/golang.org/x/crypto@v0.0.0-20220622213112-05595931fe9d",
+        "pkg:golang/golang.org/x/net@v0.0.0-20220909164309-bea034e7d591",
+        "pkg:golang/golang.org/x/oauth2@v0.0.0-20220909003341-f21342109be1",
+        "pkg:golang/golang.org/x/sys@v0.0.0-20220728004956-3c1f35247d10",
+        "pkg:golang/golang.org/x/text@v0.3.7",
+        "pkg:golang/google.golang.org/api@v0.96.0",
+        "pkg:golang/google.golang.org/genproto@v0.0.0-20220920201722-2b89144ce006",
+        "pkg:golang/google.golang.org/grpc@v1.49.0",
+        "pkg:golang/google.golang.org/protobuf@v1.28.1",
+        "pkg:golang/gopkg.in/inf.v0@v0.9.1",
+        "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
+        "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
+        "pkg:golang/k8s.io/api@v0.23.6",
+        "pkg:golang/k8s.io/apimachinery@v0.23.6",
+        "pkg:golang/k8s.io/klog/v2@v2.30.0",
+        "pkg:golang/k8s.io/utils@v0.0.0-20211116205334-6203023598ed",
+        "pkg:golang/kernel.org/pub/linux/libs/security/libcap/cap@v1.2.60",
+        "pkg:golang/kernel.org/pub/linux/libs/security/libcap/psx@v1.2.60",
+        "pkg:golang/sigs.k8s.io/json@v0.0.0-20211020170558-c049b76a60c6",
+        "pkg:golang/sigs.k8s.io/structured-merge-diff/v4@v4.2.1"
+      ]
+    },
+    {
+      "ref": "pkg:oci/datacollector@sha256:9be65d877d712dbdac14525cc1f1b1e81ca8c366665adf3ba811d4da2e0e47ef?repository_url=index.docker.io%2Flacework%2Fdatacollector\u0026arch=amd64",
+      "dependsOn": [
+        "7e81de66-df6e-486b-9bee-5538369ab0ba",
+        "ae71ab65-a5a9-4409-9b18-55a5069963cd"
+      ]
+    }
+  ],
+  "vulnerabilities": []
+}

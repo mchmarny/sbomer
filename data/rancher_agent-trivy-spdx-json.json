@@ -1,0 +1,4381 @@
+{
+	"SPDXID": "SPDXRef-DOCUMENT",
+	"creationInfo": {
+		"created": "2023-01-23T13:22:39.849365Z",
+		"creators": [
+			"Tool: trivy",
+			"Organization: aquasecurity"
+		]
+	},
+	"dataLicense": "CC0-1.0",
+	"documentDescribes": [
+		"SPDXRef-ContainerImage-9ddf36711a5af6f6"
+	],
+	"documentNamespace": "http://aquasecurity.github.io/trivy/container_image/rancher/agent-a2022c7a-0254-48d1-92cc-6d4ff2c37d01",
+	"files": [
+		{
+			"SPDXID": "SPDXRef-File-1b97a7aba1afd455",
+			"fileName": "usr/local/lib/python2.7/dist-packages/wheel-0.29.0.dist-info/METADATA"
+		},
+		{
+			"SPDXID": "SPDXRef-File-26e3d0f96f55cec0",
+			"fileName": "usr/local/lib/python2.7/dist-packages/argcomplete-1.7.0.dist-info/METADATA"
+		},
+		{
+			"SPDXID": "SPDXRef-File-345362166aa99b48",
+			"fileName": "usr/local/lib/python2.7/dist-packages/requests-2.12.4.dist-info/METADATA"
+		},
+		{
+			"SPDXID": "SPDXRef-File-8f14ade7db8ac033",
+			"fileName": "usr/local/lib/python2.7/dist-packages/cattle-0.5.4.dist-info/METADATA"
+		},
+		{
+			"SPDXID": "SPDXRef-File-c16c696053cf3514",
+			"fileName": "usr/local/lib/python2.7/dist-packages/setuptools-32.2.0.dist-info/METADATA"
+		},
+		{
+			"SPDXID": "SPDXRef-File-ee4ca0eb354ea659",
+			"fileName": "usr/local/lib/python2.7/dist-packages/six-1.10.0.dist-info/METADATA"
+		},
+		{
+			"SPDXID": "SPDXRef-File-f149a82367990f0c",
+			"fileName": "usr/local/lib/python2.7/dist-packages/pip-9.0.1.dist-info/METADATA"
+		},
+		{
+			"SPDXID": "SPDXRef-File-ffb2616252babe39",
+			"fileName": "usr/local/lib/python2.7/dist-packages/gdapi_python-0.5.3.dist-info/METADATA"
+		}
+	],
+	"name": "rancher/agent",
+	"packages": [
+		{
+			"SPDXID": "SPDXRef-Application-ace32df0b6bdbf7",
+			"filesAnalyzed": false,
+			"name": "python-pkg",
+			"sourceInfo": "Python"
+		},
+		{
+			"SPDXID": "SPDXRef-ContainerImage-9ddf36711a5af6f6",
+			"attributionTexts": [
+				"SchemaVersion: 2",
+				"ImageID: sha256:1cc7591af4f5461cf56a9b9ff39c791b0ecf1c8fa39595148c863a2687edd091",
+				"RepoDigest: rancher/agent@sha256:0fba3fb10108f7821596dc5ad4bfa30e93426d034cd3471f6ccd3afb5f87a963",
+				"DiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f",
+				"DiffID: sha256:87f743c2412350e3e953ec14ce2f1cb6291e2b04a96a0bf214f1ee140372d8de",
+				"DiffID: sha256:bbe6cef52379e34ecf08ef1c79eabceaca39bb42369790735b13da0318e71441",
+				"DiffID: sha256:3d515508d4ebd92a9177b62c9ce33848038975bf5dda8bb264cae294af7bbaba",
+				"DiffID: sha256:5972ebe5b524bf28d2240b4e501fde667485a43c4ce7c332b20ddda485d6fb24",
+				"DiffID: sha256:34c32605199e52c8b1577778e4e8ffb1138f61ac3d8d2ea71bdd67a787e07191",
+				"DiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d",
+				"DiffID: sha256:e2089e1b53431d65c6c2a795c508520b5d326ef85c61f3044879e6f453b1107e",
+				"DiffID: sha256:4859d97e661c428ccfd6f953cf00615baf5f139c821c66ed5e8d778802ae8552",
+				"RepoTag: rancher/agent:latest"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:oci/agent@sha256:0fba3fb10108f7821596dc5ad4bfa30e93426d034cd3471f6ccd3afb5f87a963?repository_url=index.docker.io%2Francher%2Fagent\u0026arch=amd64",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"name": "rancher/agent"
+		},
+		{
+			"SPDXID": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd",
+			"filesAnalyzed": false,
+			"name": "ubuntu",
+			"versionInfo": "16.04"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-1022fc7b5452d13",
+			"attributionTexts": [
+				"PkgID: libc-bin@2.23-0ubuntu5",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libc-bin@2.23-0ubuntu5?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPL-2.1, GPL-2.0",
+			"licenseDeclared": "LGPL-2.1, GPL-2.0",
+			"name": "libc-bin",
+			"sourceInfo": "built package from: glibc 2.23-0ubuntu5",
+			"versionInfo": "2.23-0ubuntu5"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-11e619def2417de2",
+			"attributionTexts": [
+				"PkgID: libblkid1@2.27.1-6ubuntu3.1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libblkid1@2.27.1-6ubuntu3.1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0, public-domain, BSD-4-Clause, MIT, BSD-2-Clause, BSD-3-Clause, LGPL-2.0, LGPL-2.1, GPL-3.0, LGPL-3.0",
+			"licenseDeclared": "GPL-2.0, public-domain, BSD-4-Clause, MIT, BSD-2-Clause, BSD-3-Clause, LGPL-2.0, LGPL-2.1, GPL-3.0, LGPL-3.0",
+			"name": "libblkid1",
+			"sourceInfo": "built package from: util-linux 2.27.1-6ubuntu3.1",
+			"versionInfo": "2.27.1-6ubuntu3.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-12f10758b1a89545",
+			"attributionTexts": [
+				"PkgID: base-files@9.4ubuntu4.3",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/base-files@9.4ubuntu4.3?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-3.0",
+			"licenseDeclared": "GPL-3.0",
+			"name": "base-files",
+			"sourceInfo": "built package from: base-files 9.4ubuntu4.3",
+			"versionInfo": "9.4ubuntu4.3"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-136a91d15052bd4a",
+			"attributionTexts": [
+				"PkgID: tar@1.28-2.1ubuntu0.1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/tar@1.28-2.1ubuntu0.1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-3.0, GPL-2.0",
+			"licenseDeclared": "GPL-3.0, GPL-2.0",
+			"name": "tar",
+			"sourceInfo": "built package from: tar 1.28-2.1ubuntu0.1",
+			"versionInfo": "1.28-2.1ubuntu0.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-1788195ccc16209e",
+			"attributionTexts": [
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:pypi/setuptools@32.2.0",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"hasFiles": [
+				"SPDXRef-File-c16c696053cf3514"
+			],
+			"licenseConcluded": "UNKNOWN",
+			"licenseDeclared": "UNKNOWN",
+			"name": "setuptools",
+			"versionInfo": "32.2.0"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-17ef02b32af8fc99",
+			"attributionTexts": [
+				"PkgID: libidn11@1.32-3ubuntu1.1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libidn11@1.32-3ubuntu1.1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-3.0, GFDL-1.3+, GFDL-1.3, LGPL-3.0, GPL-2.0, LGPL-2.0, LGPL-2.1, GAP",
+			"licenseDeclared": "GPL-3.0, GFDL-1.3+, GFDL-1.3, LGPL-3.0, GPL-2.0, LGPL-2.0, LGPL-2.1, GAP",
+			"name": "libidn11",
+			"sourceInfo": "built package from: libidn 1.32-3ubuntu1.1",
+			"versionInfo": "1.32-3ubuntu1.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-18cd00b50314acf4",
+			"attributionTexts": [
+				"PkgID: ca-certificates@20160104ubuntu1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/ca-certificates@20160104ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "...",
+			"licenseDeclared": "...",
+			"name": "ca-certificates",
+			"sourceInfo": "built package from: ca-certificates 20160104ubuntu1",
+			"versionInfo": "20160104ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-19722bdc17ff9c8a",
+			"attributionTexts": [
+				"PkgID: libpam-modules@1.1.8-3.2ubuntu2",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libpam-modules@1.1.8-3.2ubuntu2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-3.0",
+			"licenseDeclared": "GPL-3.0",
+			"name": "libpam-modules",
+			"sourceInfo": "built package from: pam 1.1.8-3.2ubuntu2",
+			"versionInfo": "1.1.8-3.2ubuntu2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-1d6f282518e05dd",
+			"attributionTexts": [
+				"PkgID: libdb5.3@5.3.28-11",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libdb5.3@5.3.28-11?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "libdb5.3",
+			"sourceInfo": "built package from: db5.3 5.3.28-11",
+			"versionInfo": "5.3.28-11"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-1e70973d2bf7983",
+			"attributionTexts": [
+				"PkgID: grep@2.25-1~16.04.1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/grep@2.25-1~16.04.1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-3.0",
+			"licenseDeclared": "GPL-3.0",
+			"name": "grep",
+			"sourceInfo": "built package from: grep 2.25-1~16.04.1",
+			"versionInfo": "2.25-1~16.04.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-1ee3c23f8523bf05",
+			"attributionTexts": [
+				"PkgID: libc6@2.23-0ubuntu5",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libc6@2.23-0ubuntu5?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPL-2.1, GPL-2.0",
+			"licenseDeclared": "LGPL-2.1, GPL-2.0",
+			"name": "libc6",
+			"sourceInfo": "built package from: glibc 2.23-0ubuntu5",
+			"versionInfo": "2.23-0ubuntu5"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-1ee4ead6a47088ca",
+			"attributionTexts": [
+				"PkgID: libnettle6@3.2-1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libnettle6@3.2-1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPL-2.1, LGPL-2.0, other, GPL-2.0, GPL-2.0-with-autoconf-exception, public-domain, GAP, LGPL-3.0, GPL-3.0",
+			"licenseDeclared": "LGPL-2.1, LGPL-2.0, other, GPL-2.0, GPL-2.0-with-autoconf-exception, public-domain, GAP, LGPL-3.0, GPL-3.0",
+			"name": "libnettle6",
+			"sourceInfo": "built package from: nettle 3.2-1",
+			"versionInfo": "3.2-1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-20db4047b36b0d2b",
+			"attributionTexts": [
+				"PkgID: debconf@1.5.58ubuntu1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/debconf@1.5.58ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "BSD-2-Clause",
+			"licenseDeclared": "BSD-2-Clause",
+			"name": "debconf",
+			"sourceInfo": "built package from: debconf 1.5.58ubuntu1",
+			"versionInfo": "1.5.58ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-24e97f8ddb99eac7",
+			"attributionTexts": [
+				"PkgID: gnupg@1.4.20-1ubuntu3.1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/gnupg@1.4.20-1ubuntu3.1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-3+ with OpenSSL exception, GPL-3.0, RFC-Reference",
+			"licenseDeclared": "GPL-3+ with OpenSSL exception, GPL-3.0, RFC-Reference",
+			"name": "gnupg",
+			"sourceInfo": "built package from: gnupg 1.4.20-1ubuntu3.1",
+			"versionInfo": "1.4.20-1ubuntu3.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-26683ac0d77785bf",
+			"attributionTexts": [
+				"PkgID: libattr1@1:2.4.47-2",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libattr1@1:2.4.47-2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPL-2.1, GPL-2.0",
+			"licenseDeclared": "LGPL-2.1, GPL-2.0",
+			"name": "libattr1",
+			"sourceInfo": "built package from: attr 1:2.4.47-2",
+			"versionInfo": "1:2.4.47-2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-280d64749e059eb8",
+			"attributionTexts": [
+				"PkgID: libdevmapper1.02.1@2:1.02.110-1ubuntu10",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libdevmapper1.02.1@2:1.02.110-1ubuntu10?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPL-2.1, GPL-2.0",
+			"licenseDeclared": "LGPL-2.1, GPL-2.0",
+			"name": "libdevmapper1.02.1",
+			"sourceInfo": "built package from: lvm2 2.02.133-1ubuntu10",
+			"versionInfo": "2:1.02.110-1ubuntu10"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-28306edf3d051c5",
+			"attributionTexts": [
+				"PkgID: iptables@1.6.0-2ubuntu3",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/iptables@1.6.0-2ubuntu3?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0, Artistic-2, custom",
+			"licenseDeclared": "GPL-2.0, Artistic-2, custom",
+			"name": "iptables",
+			"sourceInfo": "built package from: iptables 1.6.0-2ubuntu3",
+			"versionInfo": "1.6.0-2ubuntu3"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-2836d6beebf74a25",
+			"attributionTexts": [
+				"PkgID: libaudit-common@1:2.4.5-1ubuntu2",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libaudit-common@1:2.4.5-1ubuntu2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPL-2.1, GPL-3.0",
+			"licenseDeclared": "LGPL-2.1, GPL-3.0",
+			"name": "libaudit-common",
+			"sourceInfo": "built package from: audit 1:2.4.5-1ubuntu2",
+			"versionInfo": "1:2.4.5-1ubuntu2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-29469f51bac5b14a",
+			"attributionTexts": [
+				"PkgID: sysvinit-utils@2.88dsf-59.3ubuntu2",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/sysvinit-utils@2.88dsf-59.3ubuntu2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0",
+			"licenseDeclared": "GPL-2.0",
+			"name": "sysvinit-utils",
+			"sourceInfo": "built package from: sysvinit 2.88dsf-59.3ubuntu2",
+			"versionInfo": "2.88dsf-59.3ubuntu2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-297458dc678ec38b",
+			"attributionTexts": [
+				"PkgID: libuuid1@2.27.1-6ubuntu3.1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libuuid1@2.27.1-6ubuntu3.1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0, public-domain, BSD-4-Clause, MIT, BSD-2-Clause, BSD-3-Clause, LGPL-2.0, LGPL-2.1, GPL-3.0, LGPL-3.0",
+			"licenseDeclared": "GPL-2.0, public-domain, BSD-4-Clause, MIT, BSD-2-Clause, BSD-3-Clause, LGPL-2.0, LGPL-2.1, GPL-3.0, LGPL-3.0",
+			"name": "libuuid1",
+			"sourceInfo": "built package from: util-linux 2.27.1-6ubuntu3.1",
+			"versionInfo": "2.27.1-6ubuntu3.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-2ae6a9d1a75ebbe8",
+			"attributionTexts": [
+				"PkgID: libtinfo5@6.0+20160213-1ubuntu1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libtinfo5@6.0+20160213-1ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "libtinfo5",
+			"sourceInfo": "built package from: ncurses 6.0+20160213-1ubuntu1",
+			"versionInfo": "6.0+20160213-1ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-2f25dfc95f11b1c6",
+			"attributionTexts": [
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:pypi/pip@9.0.1",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"hasFiles": [
+				"SPDXRef-File-f149a82367990f0c"
+			],
+			"licenseConcluded": "MIT",
+			"licenseDeclared": "MIT",
+			"name": "pip",
+			"versionInfo": "9.0.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-3006b34c34a63232",
+			"attributionTexts": [
+				"PkgID: libpython2.7-minimal@2.7.12-1ubuntu0~16.04.1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libpython2.7-minimal@2.7.12-1ubuntu0~16.04.1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0, # Licensed to PSF under a Contributor Agreement, Apache-2.0, This software is provided 'as-is', without any express, implied, Permission is hereby granted, free of charge, to any person obtaining, This software is provided as-is, without express, * Permission to use this software in any way is granted without, see above, some license as Python., Expat, PSF-2, Apache-2, Python, ISC, LGPL-2.1",
+			"licenseDeclared": "GPL-2.0, # Licensed to PSF under a Contributor Agreement, Apache-2.0, This software is provided 'as-is', without any express, implied, Permission is hereby granted, free of charge, to any person obtaining, This software is provided as-is, without express, * Permission to use this software in any way is granted without, see above, some license as Python., Expat, PSF-2, Apache-2, Python, ISC, LGPL-2.1",
+			"name": "libpython2.7-minimal",
+			"sourceInfo": "built package from: python2.7 2.7.12-1ubuntu0~16.04.1",
+			"versionInfo": "2.7.12-1ubuntu0~16.04.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-33c9c02e31b13970",
+			"attributionTexts": [
+				"PkgID: libmount1@2.27.1-6ubuntu3.1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libmount1@2.27.1-6ubuntu3.1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0, public-domain, BSD-4-Clause, MIT, BSD-2-Clause, BSD-3-Clause, LGPL-2.0, LGPL-2.1, GPL-3.0, LGPL-3.0",
+			"licenseDeclared": "GPL-2.0, public-domain, BSD-4-Clause, MIT, BSD-2-Clause, BSD-3-Clause, LGPL-2.0, LGPL-2.1, GPL-3.0, LGPL-3.0",
+			"name": "libmount1",
+			"sourceInfo": "built package from: util-linux 2.27.1-6ubuntu3.1",
+			"versionInfo": "2.27.1-6ubuntu3.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-34c15f4faf449c7e",
+			"attributionTexts": [
+				"PkgID: libkmod2@22-1ubuntu4",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libkmod2@22-1ubuntu4?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0",
+			"licenseDeclared": "GPL-2.0",
+			"name": "libkmod2",
+			"sourceInfo": "built package from: kmod 22-1ubuntu4",
+			"versionInfo": "22-1ubuntu4"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-35e6100462abbbda",
+			"attributionTexts": [
+				"PkgID: libudev1@229-4ubuntu12",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libudev1@229-4ubuntu12?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPL-2.1, CC0, GPL-2.0, Expat, public-domain",
+			"licenseDeclared": "LGPL-2.1, CC0, GPL-2.0, Expat, public-domain",
+			"name": "libudev1",
+			"sourceInfo": "built package from: systemd 229-4ubuntu12",
+			"versionInfo": "229-4ubuntu12"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-383bc4bac746e8d7",
+			"attributionTexts": [
+				"PkgID: libexpat1@2.1.0-7ubuntu0.16.04.2",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libexpat1@2.1.0-7ubuntu0.16.04.2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "libexpat1",
+			"sourceInfo": "built package from: expat 2.1.0-7ubuntu0.16.04.2",
+			"versionInfo": "2.1.0-7ubuntu0.16.04.2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-383f40ce13160f8c",
+			"attributionTexts": [
+				"PkgID: ubuntu-keyring@2012.05.19",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/ubuntu-keyring@2012.05.19?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-3.0",
+			"licenseDeclared": "GPL-3.0",
+			"name": "ubuntu-keyring",
+			"sourceInfo": "built package from: ubuntu-keyring 2012.05.19",
+			"versionInfo": "2012.05.19"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-38ca125457567f80",
+			"attributionTexts": [
+				"PkgID: tcpdump@4.7.4-1ubuntu1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/tcpdump@4.7.4-1ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "tcpdump",
+			"sourceInfo": "built package from: tcpdump 4.7.4-1ubuntu1",
+			"versionInfo": "4.7.4-1ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-3b23a6937cc6ecd4",
+			"attributionTexts": [
+				"PkgID: libgssapi-krb5-2@1.13.2+dfsg-5",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libgssapi-krb5-2@1.13.2+dfsg-5?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0",
+			"licenseDeclared": "GPL-2.0",
+			"name": "libgssapi-krb5-2",
+			"sourceInfo": "built package from: krb5 1.13.2+dfsg-5",
+			"versionInfo": "1.13.2+dfsg-5"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-3b6ef2df02d592b2",
+			"attributionTexts": [
+				"PkgID: conntrack@1:1.4.3-3",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/conntrack@1:1.4.3-3?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0",
+			"licenseDeclared": "GPL-2.0",
+			"name": "conntrack",
+			"sourceInfo": "built package from: conntrack-tools 1:1.4.3-3",
+			"versionInfo": "1:1.4.3-3"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-3ece1dd697ae0b1a",
+			"attributionTexts": [
+				"PkgID: libasn1-8-heimdal@1.7~git20150920+dfsg-4ubuntu1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libasn1-8-heimdal@1.7~git20150920+dfsg-4ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "libasn1-8-heimdal",
+			"sourceInfo": "built package from: heimdal 1.7~git20150920+dfsg-4ubuntu1",
+			"versionInfo": "1.7~git20150920+dfsg-4ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-3f29496cdaeb2542",
+			"attributionTexts": [
+				"PkgID: libaudit1@1:2.4.5-1ubuntu2",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libaudit1@1:2.4.5-1ubuntu2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPL-2.1, GPL-3.0",
+			"licenseDeclared": "LGPL-2.1, GPL-3.0",
+			"name": "libaudit1",
+			"sourceInfo": "built package from: audit 1:2.4.5-1ubuntu2",
+			"versionInfo": "1:2.4.5-1ubuntu2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-41125d353f95bb07",
+			"attributionTexts": [
+				"PkgID: libsmartcols1@2.27.1-6ubuntu3.1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libsmartcols1@2.27.1-6ubuntu3.1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0, public-domain, BSD-4-Clause, MIT, BSD-2-Clause, BSD-3-Clause, LGPL-2.0, LGPL-2.1, GPL-3.0, LGPL-3.0",
+			"licenseDeclared": "GPL-2.0, public-domain, BSD-4-Clause, MIT, BSD-2-Clause, BSD-3-Clause, LGPL-2.0, LGPL-2.1, GPL-3.0, LGPL-3.0",
+			"name": "libsmartcols1",
+			"sourceInfo": "built package from: util-linux 2.27.1-6ubuntu3.1",
+			"versionInfo": "2.27.1-6ubuntu3.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-4220ff3d5d0aba8",
+			"attributionTexts": [
+				"PkgID: mawk@1.3.3-17ubuntu2",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/mawk@1.3.3-17ubuntu2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0",
+			"licenseDeclared": "GPL-2.0",
+			"name": "mawk",
+			"sourceInfo": "built package from: mawk 1.3.3-17ubuntu2",
+			"versionInfo": "1.3.3-17ubuntu2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-46005691a54e773e",
+			"attributionTexts": [
+				"PkgID: jq@1.5+dfsg-1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/jq@1.5+dfsg-1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "MIT, CC-BY-3.0, Apache-2.0, Expat, GPL-2.0",
+			"licenseDeclared": "MIT, CC-BY-3.0, Apache-2.0, Expat, GPL-2.0",
+			"name": "jq",
+			"sourceInfo": "built package from: jq 1.5+dfsg-1",
+			"versionInfo": "1.5+dfsg-1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-46ac75232fe1c650",
+			"attributionTexts": [
+				"PkgID: libssl1.0.0@1.0.2g-1ubuntu4.5",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libssl1.0.0@1.0.2g-1ubuntu4.5?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "libssl1.0.0",
+			"sourceInfo": "built package from: openssl 1.0.2g-1ubuntu4.5",
+			"versionInfo": "1.0.2g-1ubuntu4.5"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-48250fd60b2e780b",
+			"attributionTexts": [
+				"PkgID: libselinux1@2.4-3build2",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libselinux1@2.4-3build2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPL-2.1, GPL-2.0",
+			"licenseDeclared": "LGPL-2.1, GPL-2.0",
+			"name": "libselinux1",
+			"sourceInfo": "built package from: libselinux 2.4-3build2",
+			"versionInfo": "2.4-3build2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-4953c37c46bf50e8",
+			"attributionTexts": [
+				"PkgID: hostname@3.16ubuntu2",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/hostname@3.16ubuntu2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0",
+			"licenseDeclared": "GPL-2.0",
+			"name": "hostname",
+			"sourceInfo": "built package from: hostname 3.16ubuntu2",
+			"versionInfo": "3.16ubuntu2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-496620f200bc174f",
+			"attributionTexts": [
+				"PkgID: dpkg@1.18.4ubuntu1.1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/dpkg@1.18.4ubuntu1.1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0, BSD-2-Clause, public-domain-s-s-d, public-domain-md5",
+			"licenseDeclared": "GPL-2.0, BSD-2-Clause, public-domain-s-s-d, public-domain-md5",
+			"name": "dpkg",
+			"sourceInfo": "built package from: dpkg 1.18.4ubuntu1.1",
+			"versionInfo": "1.18.4ubuntu1.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-4a749a0a4e99fec4",
+			"attributionTexts": [
+				"PkgID: libsystemd0@229-4ubuntu12",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libsystemd0@229-4ubuntu12?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPL-2.1, CC0, GPL-2.0, Expat, public-domain",
+			"licenseDeclared": "LGPL-2.1, CC0, GPL-2.0, Expat, public-domain",
+			"name": "libsystemd0",
+			"sourceInfo": "built package from: systemd 229-4ubuntu12",
+			"versionInfo": "229-4ubuntu12"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-4b2527bd2eff8190",
+			"attributionTexts": [
+				"PkgID: libgpg-error0@1.21-2ubuntu1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libgpg-error0@1.21-2ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.1+, LGPL-2.1",
+			"licenseDeclared": "GPL-2.1+, LGPL-2.1",
+			"name": "libgpg-error0",
+			"sourceInfo": "built package from: libgpg-error 1.21-2ubuntu1",
+			"versionInfo": "1.21-2ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-4e982da1a59c86be",
+			"attributionTexts": [
+				"PkgID: init-system-helpers@1.29ubuntu3",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/init-system-helpers@1.29ubuntu3?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "BSD-3-Clause, GPL-3.0",
+			"licenseDeclared": "BSD-3-Clause, GPL-3.0",
+			"name": "init-system-helpers",
+			"sourceInfo": "built package from: init-system-helpers 1.29ubuntu3",
+			"versionInfo": "1.29ubuntu3"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-51c788f0a9380e7b",
+			"attributionTexts": [
+				"PkgID: debianutils@4.7",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/debianutils@4.7?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-3.0",
+			"licenseDeclared": "GPL-3.0",
+			"name": "debianutils",
+			"sourceInfo": "built package from: debianutils 4.7",
+			"versionInfo": "4.7"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-51e871beee3834bd",
+			"attributionTexts": [
+				"PkgID: libsqlite3-0@3.11.0-1ubuntu1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libsqlite3-0@3.11.0-1ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "public-domain, GPL-2.0",
+			"licenseDeclared": "public-domain, GPL-2.0",
+			"name": "libsqlite3-0",
+			"sourceInfo": "built package from: sqlite3 3.11.0-1ubuntu1",
+			"versionInfo": "3.11.0-1ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-532177153a79687f",
+			"attributionTexts": [
+				"PkgID: libffi6@3.2.1-4",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libffi6@3.2.1-4?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-3.0",
+			"licenseDeclared": "GPL-3.0",
+			"name": "libffi6",
+			"sourceInfo": "built package from: libffi 3.2.1-4",
+			"versionInfo": "3.2.1-4"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-539392b28fbde1",
+			"attributionTexts": [
+				"PkgID: libhogweed4@3.2-1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libhogweed4@3.2-1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "libhogweed4",
+			"sourceInfo": "built package from: nettle 3.2-1",
+			"versionInfo": "3.2-1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-55e260cef852f92",
+			"attributionTexts": [
+				"PkgID: liblzma5@5.1.1alpha+20120614-2ubuntu2",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/liblzma5@5.1.1alpha+20120614-2ubuntu2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "PD, probably-PD, GPL-2.0, LGPL-2.1, permissive-fsf, Autoconf, none, permissive-nowarranty, config-h, LGPL-2.0, noderivs, PD-debian, GPL-3.0",
+			"licenseDeclared": "PD, probably-PD, GPL-2.0, LGPL-2.1, permissive-fsf, Autoconf, none, permissive-nowarranty, config-h, LGPL-2.0, noderivs, PD-debian, GPL-3.0",
+			"name": "liblzma5",
+			"sourceInfo": "built package from: xz-utils 5.1.1alpha+20120614-2ubuntu2",
+			"versionInfo": "5.1.1alpha+20120614-2ubuntu2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-595162c98dd4eff0",
+			"attributionTexts": [
+				"PkgID: systemd-sysv@229-4ubuntu12",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/systemd-sysv@229-4ubuntu12?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPL-2.1, CC0, GPL-2.0, Expat, public-domain",
+			"licenseDeclared": "LGPL-2.1, CC0, GPL-2.0, Expat, public-domain",
+			"name": "systemd-sysv",
+			"sourceInfo": "built package from: systemd 229-4ubuntu12",
+			"versionInfo": "229-4ubuntu12"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-597ad49b495ff394",
+			"attributionTexts": [
+				"PkgID: python2.7-minimal@2.7.12-1ubuntu0~16.04.1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/python2.7-minimal@2.7.12-1ubuntu0~16.04.1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0, # Licensed to PSF under a Contributor Agreement, Apache-2.0, This software is provided 'as-is', without any express, implied, Permission is hereby granted, free of charge, to any person obtaining, This software is provided as-is, without express, * Permission to use this software in any way is granted without, see above, some license as Python., Expat, PSF-2, Apache-2, Python, ISC, LGPL-2.1",
+			"licenseDeclared": "GPL-2.0, # Licensed to PSF under a Contributor Agreement, Apache-2.0, This software is provided 'as-is', without any express, implied, Permission is hereby granted, free of charge, to any person obtaining, This software is provided as-is, without express, * Permission to use this software in any way is granted without, see above, some license as Python., Expat, PSF-2, Apache-2, Python, ISC, LGPL-2.1",
+			"name": "python2.7-minimal",
+			"sourceInfo": "built package from: python2.7 2.7.12-1ubuntu0~16.04.1",
+			"versionInfo": "2.7.12-1ubuntu0~16.04.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-5ba93c7659ea16ce",
+			"attributionTexts": [
+				"PkgID: libusb-0.1-4@2:0.1.12-28",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libusb-0.1-4@2:0.1.12-28?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPL-2.0",
+			"licenseDeclared": "LGPL-2.0",
+			"name": "libusb-0.1-4",
+			"sourceInfo": "built package from: libusb 2:0.1.12-28",
+			"versionInfo": "2:0.1.12-28"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-5e3be3a871fec247",
+			"attributionTexts": [
+				"PkgID: systemd@229-4ubuntu12",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/systemd@229-4ubuntu12?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPL-2.1, CC0, GPL-2.0, Expat, public-domain",
+			"licenseDeclared": "LGPL-2.1, CC0, GPL-2.0, Expat, public-domain",
+			"name": "systemd",
+			"sourceInfo": "built package from: systemd 229-4ubuntu12",
+			"versionInfo": "229-4ubuntu12"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-5f49a5aac367fa1a",
+			"attributionTexts": [
+				"PkgID: adduser@3.113+nmu3ubuntu4",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/adduser@3.113+nmu3ubuntu4?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0",
+			"licenseDeclared": "GPL-2.0",
+			"name": "adduser",
+			"sourceInfo": "built package from: adduser 3.113+nmu3ubuntu4",
+			"versionInfo": "3.113+nmu3ubuntu4"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-5ff7f44160afe490",
+			"attributionTexts": [
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:pypi/six@1.10.0",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"hasFiles": [
+				"SPDXRef-File-ee4ca0eb354ea659"
+			],
+			"licenseConcluded": "MIT",
+			"licenseDeclared": "MIT",
+			"name": "six",
+			"versionInfo": "1.10.0"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-6115dd91267aecb1",
+			"attributionTexts": [
+				"PkgID: gcc-6-base@6.0.1-0ubuntu1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/gcc-6-base@6.0.1-0ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-3.0, GFDL-1.2, GPL-2.0, Artistic",
+			"licenseDeclared": "GPL-3.0, GFDL-1.2, GPL-2.0, Artistic",
+			"name": "gcc-6-base",
+			"sourceInfo": "built package from: gccgo-6 6.0.1-0ubuntu1",
+			"versionInfo": "6.0.1-0ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-6227ffea5ce9ba28",
+			"attributionTexts": [
+				"PkgID: kmod@22-1ubuntu4",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/kmod@22-1ubuntu4?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "kmod",
+			"sourceInfo": "built package from: kmod 22-1ubuntu4",
+			"versionInfo": "22-1ubuntu4"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-626c52ca08114c30",
+			"attributionTexts": [
+				"PkgID: vim-tiny@2:7.4.1689-3ubuntu1.2",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/vim-tiny@2:7.4.1689-3ubuntu1.2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "vim-tiny",
+			"sourceInfo": "built package from: vim 2:7.4.1689-3ubuntu1.2",
+			"versionInfo": "2:7.4.1689-3ubuntu1.2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-64aa11f817355f04",
+			"attributionTexts": [
+				"PkgID: bash@4.3-14ubuntu1.1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/bash@4.3-14ubuntu1.1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-3.0",
+			"licenseDeclared": "GPL-3.0",
+			"name": "bash",
+			"sourceInfo": "built package from: bash 4.3-14ubuntu1.1",
+			"versionInfo": "4.3-14ubuntu1.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-6742c0ea6e8a3213",
+			"attributionTexts": [
+				"PkgID: libxtables11@1.6.0-2ubuntu3",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libxtables11@1.6.0-2ubuntu3?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0, Artistic-2, custom",
+			"licenseDeclared": "GPL-2.0, Artistic-2, custom",
+			"name": "libxtables11",
+			"sourceInfo": "built package from: iptables 1.6.0-2ubuntu3",
+			"versionInfo": "1.6.0-2ubuntu3"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-6816324c031ace36",
+			"attributionTexts": [
+				"PkgID: libcap2@1:2.24-12",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libcap2@1:2.24-12?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "BSD-3-Clause, GPL-2.0",
+			"licenseDeclared": "BSD-3-Clause, GPL-2.0",
+			"name": "libcap2",
+			"sourceInfo": "built package from: libcap2 1:2.24-12",
+			"versionInfo": "1:2.24-12"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-683b036b4f727f49",
+			"attributionTexts": [
+				"PkgID: bsdutils@1:2.27.1-6ubuntu3.1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/bsdutils@1:2.27.1-6ubuntu3.1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0, public-domain, BSD-4-Clause, MIT, BSD-2-Clause, BSD-3-Clause, LGPL-2.0, LGPL-2.1, GPL-3.0, LGPL-3.0",
+			"licenseDeclared": "GPL-2.0, public-domain, BSD-4-Clause, MIT, BSD-2-Clause, BSD-3-Clause, LGPL-2.0, LGPL-2.1, GPL-3.0, LGPL-3.0",
+			"name": "bsdutils",
+			"sourceInfo": "built package from: util-linux 2.27.1-6ubuntu3.1",
+			"versionInfo": "1:2.27.1-6ubuntu3.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-6b85a2671bd34a18",
+			"attributionTexts": [
+				"PkgID: diffutils@1:3.3-3",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/diffutils@1:3.3-3?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-3.0, GFDL",
+			"licenseDeclared": "GPL-3.0, GFDL",
+			"name": "diffutils",
+			"sourceInfo": "built package from: diffutils 1:3.3-3",
+			"versionInfo": "1:3.3-3"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-6cc4b2ef95ba7140",
+			"attributionTexts": [
+				"PkgID: sysv-rc@2.88dsf-59.3ubuntu2",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/sysv-rc@2.88dsf-59.3ubuntu2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0",
+			"licenseDeclared": "GPL-2.0",
+			"name": "sysv-rc",
+			"sourceInfo": "built package from: sysvinit 2.88dsf-59.3ubuntu2",
+			"versionInfo": "2.88dsf-59.3ubuntu2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-6d0a296366d12801",
+			"attributionTexts": [
+				"PkgID: apt@1.2.15ubuntu0.2",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/apt@1.2.15ubuntu0.2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0",
+			"licenseDeclared": "GPL-2.0",
+			"name": "apt",
+			"sourceInfo": "built package from: apt 1.2.15ubuntu0.2",
+			"versionInfo": "1.2.15ubuntu0.2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-6db2dd10315b42d2",
+			"attributionTexts": [
+				"PkgID: passwd@1:4.2-3.1ubuntu5",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/passwd@1:4.2-3.1ubuntu5?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0",
+			"licenseDeclared": "GPL-2.0",
+			"name": "passwd",
+			"sourceInfo": "built package from: shadow 1:4.2-3.1ubuntu5",
+			"versionInfo": "1:4.2-3.1ubuntu5"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-6de905c9b4a1e8a",
+			"attributionTexts": [
+				"PkgID: multiarch-support@2.23-0ubuntu5",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/multiarch-support@2.23-0ubuntu5?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPL-2.1, GPL-2.0",
+			"licenseDeclared": "LGPL-2.1, GPL-2.0",
+			"name": "multiarch-support",
+			"sourceInfo": "built package from: glibc 2.23-0ubuntu5",
+			"versionInfo": "2.23-0ubuntu5"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-6f0b1291a57ca6f8",
+			"attributionTexts": [
+				"PkgID: libapparmor1@2.10.95-0ubuntu2.5",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libapparmor1@2.10.95-0ubuntu2.5?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0, BSD-3-Clause, LGPL-2.1",
+			"licenseDeclared": "GPL-2.0, BSD-3-Clause, LGPL-2.1",
+			"name": "libapparmor1",
+			"sourceInfo": "built package from: apparmor 2.10.95-0ubuntu2.5",
+			"versionInfo": "2.10.95-0ubuntu2.5"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-70616bf672375e43",
+			"attributionTexts": [
+				"PkgID: libgcrypt20@1.6.5-2ubuntu0.2",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libgcrypt20@1.6.5-2ubuntu0.2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPL-3.0, GPL-2.0",
+			"licenseDeclared": "LGPL-3.0, GPL-2.0",
+			"name": "libgcrypt20",
+			"sourceInfo": "built package from: libgcrypt20 1.6.5-2ubuntu0.2",
+			"versionInfo": "1.6.5-2ubuntu0.2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-70fe2ff26afc1c01",
+			"attributionTexts": [
+				"PkgID: sensible-utils@0.0.9",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/sensible-utils@0.0.9?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0",
+			"licenseDeclared": "GPL-2.0",
+			"name": "sensible-utils",
+			"sourceInfo": "built package from: sensible-utils 0.0.9",
+			"versionInfo": "0.0.9"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-716338e099a982f",
+			"attributionTexts": [
+				"PkgID: libsasl2-modules-db@2.1.26.dfsg1-14build1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libsasl2-modules-db@2.1.26.dfsg1-14build1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "BSD-4-Clause, GPL-2.0, BSD-2-Clause, GPL-3.0",
+			"licenseDeclared": "BSD-4-Clause, GPL-2.0, BSD-2-Clause, GPL-3.0",
+			"name": "libsasl2-modules-db",
+			"sourceInfo": "built package from: cyrus-sasl2 2.1.26.dfsg1-14build1",
+			"versionInfo": "2.1.26.dfsg1-14build1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-7444a5fb8426a5c7",
+			"attributionTexts": [
+				"PkgID: libsepol1@2.4-2",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libsepol1@2.4-2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPL-3.0, GPL-3.0",
+			"licenseDeclared": "LGPL-3.0, GPL-3.0",
+			"name": "libsepol1",
+			"sourceInfo": "built package from: libsepol 2.4-2",
+			"versionInfo": "2.4-2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-74f73c79d4200afb",
+			"attributionTexts": [
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:pypi/argcomplete@1.7.0",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"hasFiles": [
+				"SPDXRef-File-26e3d0f96f55cec0"
+			],
+			"licenseConcluded": "Apache Software License",
+			"licenseDeclared": "Apache Software License",
+			"name": "argcomplete",
+			"versionInfo": "1.7.0"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-7587d541b7694cb",
+			"attributionTexts": [
+				"PkgID: bridge-utils@1.5-9ubuntu1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/bridge-utils@1.5-9ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0",
+			"licenseDeclared": "GPL-2.0",
+			"name": "bridge-utils",
+			"sourceInfo": "built package from: bridge-utils 1.5-9ubuntu1",
+			"versionInfo": "1.5-9ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-78d52576dc907e10",
+			"attributionTexts": [
+				"PkgID: libpython2.7-stdlib@2.7.12-1ubuntu0~16.04.1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libpython2.7-stdlib@2.7.12-1ubuntu0~16.04.1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "libpython2.7-stdlib",
+			"sourceInfo": "built package from: python2.7 2.7.12-1ubuntu0~16.04.1",
+			"versionInfo": "2.7.12-1ubuntu0~16.04.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-7c6afd48c044990f",
+			"attributionTexts": [
+				"PkgID: libgmp10@2:6.1.0+dfsg-2",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libgmp10@2:6.1.0+dfsg-2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPL-3.0, GPL-2.0, GPL-3.0",
+			"licenseDeclared": "LGPL-3.0, GPL-2.0, GPL-3.0",
+			"name": "libgmp10",
+			"sourceInfo": "built package from: gmp 2:6.1.0+dfsg-2",
+			"versionInfo": "2:6.1.0+dfsg-2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-7f895b114db3da98",
+			"attributionTexts": [
+				"PkgID: initscripts@2.88dsf-59.3ubuntu2",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/initscripts@2.88dsf-59.3ubuntu2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0",
+			"licenseDeclared": "GPL-2.0",
+			"name": "initscripts",
+			"sourceInfo": "built package from: sysvinit 2.88dsf-59.3ubuntu2",
+			"versionInfo": "2.88dsf-59.3ubuntu2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-8061e44baeac6e1b",
+			"attributionTexts": [
+				"PkgID: libpam-modules-bin@1.1.8-3.2ubuntu2",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libpam-modules-bin@1.1.8-3.2ubuntu2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-3.0",
+			"licenseDeclared": "GPL-3.0",
+			"name": "libpam-modules-bin",
+			"sourceInfo": "built package from: pam 1.1.8-3.2ubuntu2",
+			"versionInfo": "1.1.8-3.2ubuntu2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-809cea5555d7c7ba",
+			"attributionTexts": [
+				"PkgID: lsb-base@9.20160110ubuntu0.2",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/lsb-base@9.20160110ubuntu0.2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0, BSD-3-Clause",
+			"licenseDeclared": "GPL-2.0, BSD-3-Clause",
+			"name": "lsb-base",
+			"sourceInfo": "built package from: lsb 9.20160110ubuntu0.2",
+			"versionInfo": "9.20160110ubuntu0.2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-83c31c3a94579b18",
+			"attributionTexts": [
+				"PkgID: python2.7@2.7.12-1ubuntu0~16.04.1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/python2.7@2.7.12-1ubuntu0~16.04.1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0, # Licensed to PSF under a Contributor Agreement, Apache-2.0, This software is provided 'as-is', without any express, implied, Permission is hereby granted, free of charge, to any person obtaining, This software is provided as-is, without express, * Permission to use this software in any way is granted without, see above, some license as Python., Expat, PSF-2, Apache-2, Python, ISC, LGPL-2.1",
+			"licenseDeclared": "GPL-2.0, # Licensed to PSF under a Contributor Agreement, Apache-2.0, This software is provided 'as-is', without any express, implied, Permission is hereby granted, free of charge, to any person obtaining, This software is provided as-is, without express, * Permission to use this software in any way is granted without, see above, some license as Python., Expat, PSF-2, Apache-2, Python, ISC, LGPL-2.1",
+			"name": "python2.7",
+			"sourceInfo": "built package from: python2.7 2.7.12-1ubuntu0~16.04.1",
+			"versionInfo": "2.7.12-1ubuntu0~16.04.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-854720b0ded92e7c",
+			"attributionTexts": [
+				"PkgID: libpam-runtime@1.1.8-3.2ubuntu2",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libpam-runtime@1.1.8-3.2ubuntu2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-3.0",
+			"licenseDeclared": "GPL-3.0",
+			"name": "libpam-runtime",
+			"sourceInfo": "built package from: pam 1.1.8-3.2ubuntu2",
+			"versionInfo": "1.1.8-3.2ubuntu2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-8656b5acdf5d845a",
+			"attributionTexts": [
+				"PkgID: libstdc++6@5.4.0-6ubuntu1~16.04.4",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libstdc++6@5.4.0-6ubuntu1~16.04.4?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "libstdc++6",
+			"sourceInfo": "built package from: gcc-5 5.4.0-6ubuntu1~16.04.4",
+			"versionInfo": "5.4.0-6ubuntu1~16.04.4"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-866a70b6427e2c41",
+			"attributionTexts": [
+				"PkgID: libmnl0@1.0.3-5",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libmnl0@1.0.3-5?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0",
+			"licenseDeclared": "GPL-2.0",
+			"name": "libmnl0",
+			"sourceInfo": "built package from: libmnl 1.0.3-5",
+			"versionInfo": "1.0.3-5"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-87708c9d5499ea0",
+			"attributionTexts": [
+				"PkgID: libkrb5support0@1.13.2+dfsg-5",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libkrb5support0@1.13.2+dfsg-5?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0",
+			"licenseDeclared": "GPL-2.0",
+			"name": "libkrb5support0",
+			"sourceInfo": "built package from: krb5 1.13.2+dfsg-5",
+			"versionInfo": "1.13.2+dfsg-5"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-888094a0eb8ed045",
+			"attributionTexts": [
+				"PkgID: mount@2.27.1-6ubuntu3.1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/mount@2.27.1-6ubuntu3.1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0, public-domain, BSD-4-Clause, MIT, BSD-2-Clause, BSD-3-Clause, LGPL-2.0, LGPL-2.1, GPL-3.0, LGPL-3.0",
+			"licenseDeclared": "GPL-2.0, public-domain, BSD-4-Clause, MIT, BSD-2-Clause, BSD-3-Clause, LGPL-2.0, LGPL-2.1, GPL-3.0, LGPL-3.0",
+			"name": "mount",
+			"sourceInfo": "built package from: util-linux 2.27.1-6ubuntu3.1",
+			"versionInfo": "2.27.1-6ubuntu3.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-8b3967ce3dbbc706",
+			"attributionTexts": [
+				"PkgID: libcap2-bin@1:2.24-12",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libcap2-bin@1:2.24-12?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "BSD-3-Clause, GPL-2.0",
+			"licenseDeclared": "BSD-3-Clause, GPL-2.0",
+			"name": "libcap2-bin",
+			"sourceInfo": "built package from: libcap2 1:2.24-12",
+			"versionInfo": "1:2.24-12"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-8b80329aa49134d0",
+			"attributionTexts": [
+				"PkgID: util-linux@2.27.1-6ubuntu3.1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/util-linux@2.27.1-6ubuntu3.1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0, public-domain, BSD-4-Clause, MIT, BSD-2-Clause, BSD-3-Clause, LGPL-2.0, LGPL-2.1, GPL-3.0, LGPL-3.0",
+			"licenseDeclared": "GPL-2.0, public-domain, BSD-4-Clause, MIT, BSD-2-Clause, BSD-3-Clause, LGPL-2.0, LGPL-2.1, GPL-3.0, LGPL-3.0",
+			"name": "util-linux",
+			"sourceInfo": "built package from: util-linux 2.27.1-6ubuntu3.1",
+			"versionInfo": "2.27.1-6ubuntu3.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-8bd57b1009d67f41",
+			"attributionTexts": [
+				"PkgID: libkeyutils1@1.5.9-8ubuntu1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libkeyutils1@1.5.9-8ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0, LGPL-2.0",
+			"licenseDeclared": "GPL-2.0, LGPL-2.0",
+			"name": "libkeyutils1",
+			"sourceInfo": "built package from: keyutils 1.5.9-8ubuntu1",
+			"versionInfo": "1.5.9-8ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-8d5a630ba05817b9",
+			"attributionTexts": [
+				"PkgID: libroken18-heimdal@1.7~git20150920+dfsg-4ubuntu1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libroken18-heimdal@1.7~git20150920+dfsg-4ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "libroken18-heimdal",
+			"sourceInfo": "built package from: heimdal 1.7~git20150920+dfsg-4ubuntu1",
+			"versionInfo": "1.7~git20150920+dfsg-4ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-8e382dd6f6b4e9ef",
+			"attributionTexts": [
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:pypi/cattle@0.5.4",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"hasFiles": [
+				"SPDXRef-File-8f14ade7db8ac033"
+			],
+			"licenseConcluded": "MIT Style",
+			"licenseDeclared": "MIT Style",
+			"name": "cattle",
+			"versionInfo": "0.5.4"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-8e657e8ad4d44377",
+			"attributionTexts": [
+				"PkgID: insserv@1.14.0-5ubuntu3",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/insserv@1.14.0-5ubuntu3?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0",
+			"licenseDeclared": "GPL-2.0",
+			"name": "insserv",
+			"sourceInfo": "built package from: insserv 1.14.0-5ubuntu3",
+			"versionInfo": "1.14.0-5ubuntu3"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-9816c106ad17e015",
+			"attributionTexts": [
+				"PkgID: psmisc@22.21-2.1build1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/psmisc@22.21-2.1build1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0",
+			"licenseDeclared": "GPL-2.0",
+			"name": "psmisc",
+			"sourceInfo": "built package from: psmisc 22.21-2.1build1",
+			"versionInfo": "22.21-2.1build1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-9a8f7f8c09d96afa",
+			"attributionTexts": [
+				"PkgID: libhx509-5-heimdal@1.7~git20150920+dfsg-4ubuntu1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libhx509-5-heimdal@1.7~git20150920+dfsg-4ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "libhx509-5-heimdal",
+			"sourceInfo": "built package from: heimdal 1.7~git20150920+dfsg-4ubuntu1",
+			"versionInfo": "1.7~git20150920+dfsg-4ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-9b40f6db06ea4404",
+			"attributionTexts": [
+				"PkgID: base-passwd@3.5.39",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/base-passwd@3.5.39?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0, PD",
+			"licenseDeclared": "GPL-2.0, PD",
+			"name": "base-passwd",
+			"sourceInfo": "built package from: base-passwd 3.5.39",
+			"versionInfo": "3.5.39"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-9b7e7f08815ba0ce",
+			"attributionTexts": [
+				"PkgID: libgssapi3-heimdal@1.7~git20150920+dfsg-4ubuntu1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libgssapi3-heimdal@1.7~git20150920+dfsg-4ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "libgssapi3-heimdal",
+			"sourceInfo": "built package from: heimdal 1.7~git20150920+dfsg-4ubuntu1",
+			"versionInfo": "1.7~git20150920+dfsg-4ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-9c666e5fd1cb4f2e",
+			"attributionTexts": [
+				"PkgID: zlib1g@1:1.2.8.dfsg-2ubuntu4",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/zlib1g@1:1.2.8.dfsg-2ubuntu4?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "zlib1g",
+			"sourceInfo": "built package from: zlib 1:1.2.8.dfsg-2ubuntu4",
+			"versionInfo": "1:1.2.8.dfsg-2ubuntu4"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-9c737a6b197abd3f",
+			"attributionTexts": [
+				"PkgID: libkrb5-3@1.13.2+dfsg-5",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libkrb5-3@1.13.2+dfsg-5?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0",
+			"licenseDeclared": "GPL-2.0",
+			"name": "libkrb5-3",
+			"sourceInfo": "built package from: krb5 1.13.2+dfsg-5",
+			"versionInfo": "1.13.2+dfsg-5"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-9ef538474b0b4c28",
+			"attributionTexts": [
+				"PkgID: libpam0g@1.1.8-3.2ubuntu2",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libpam0g@1.1.8-3.2ubuntu2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-3.0",
+			"licenseDeclared": "GPL-3.0",
+			"name": "libpam0g",
+			"sourceInfo": "built package from: pam 1.1.8-3.2ubuntu2",
+			"versionInfo": "1.1.8-3.2ubuntu2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-a3b64155e419a704",
+			"attributionTexts": [
+				"PkgID: e2fsprogs@1.42.13-1ubuntu1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/e2fsprogs@1.42.13-1ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0, LGPL-2.0",
+			"licenseDeclared": "GPL-2.0, LGPL-2.0",
+			"name": "e2fsprogs",
+			"sourceInfo": "built package from: e2fsprogs 1.42.13-1ubuntu1",
+			"versionInfo": "1.42.13-1ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-a41b4e3a0b5c4dba",
+			"attributionTexts": [
+				"PkgID: libcryptsetup4@2:1.6.6-5ubuntu2",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libcryptsetup4@2:1.6.6-5ubuntu2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0",
+			"licenseDeclared": "GPL-2.0",
+			"name": "libcryptsetup4",
+			"sourceInfo": "built package from: cryptsetup 2:1.6.6-5ubuntu2",
+			"versionInfo": "2:1.6.6-5ubuntu2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-a83381049b56f35e",
+			"attributionTexts": [
+				"PkgID: libgcc1@1:6.0.1-0ubuntu1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libgcc1@1:6.0.1-0ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "libgcc1",
+			"sourceInfo": "built package from: gccgo-6 6.0.1-0ubuntu1",
+			"versionInfo": "1:6.0.1-0ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-a950f3c8ae9b9e16",
+			"attributionTexts": [
+				"PkgID: tzdata@2016j-0ubuntu0.16.04",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/tzdata@2016j-0ubuntu0.16.04?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "tzdata",
+			"sourceInfo": "built package from: tzdata 2016j-0ubuntu0.16.04",
+			"versionInfo": "2016j-0ubuntu0.16.04"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-abe910c813f0e532",
+			"attributionTexts": [
+				"PkgID: libpcap0.8@1.7.4-2",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libpcap0.8@1.7.4-2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "libpcap0.8",
+			"sourceInfo": "built package from: libpcap 1.7.4-2",
+			"versionInfo": "1.7.4-2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-acd40ec5f822ea62",
+			"attributionTexts": [
+				"PkgID: libprocps4@2:3.3.10-4ubuntu2.3",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libprocps4@2:3.3.10-4ubuntu2.3?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPL-2.1, LGPL-2.0, GPL-2.0",
+			"licenseDeclared": "LGPL-2.1, LGPL-2.0, GPL-2.0",
+			"name": "libprocps4",
+			"sourceInfo": "built package from: procps 2:3.3.10-4ubuntu2.3",
+			"versionInfo": "2:3.3.10-4ubuntu2.3"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-ad901e457046852f",
+			"attributionTexts": [
+				"PkgID: libreadline6@6.3-8ubuntu2",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libreadline6@6.3-8ubuntu2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-3.0",
+			"licenseDeclared": "GPL-3.0",
+			"name": "libreadline6",
+			"sourceInfo": "built package from: readline6 6.3-8ubuntu2",
+			"versionInfo": "6.3-8ubuntu2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-aeff4308722cac1c",
+			"attributionTexts": [
+				"PkgID: arptables@0.0.3.4-1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/arptables@0.0.3.4-1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-3.0",
+			"licenseDeclared": "GPL-3.0",
+			"name": "arptables",
+			"sourceInfo": "built package from: arptables 0.0.3.4-1",
+			"versionInfo": "0.0.3.4-1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-af2407cfb834b8ce",
+			"attributionTexts": [
+				"PkgID: e2fslibs@1.42.13-1ubuntu1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/e2fslibs@1.42.13-1ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0, LGPL-2.0",
+			"licenseDeclared": "GPL-2.0, LGPL-2.0",
+			"name": "e2fslibs",
+			"sourceInfo": "built package from: e2fsprogs 1.42.13-1ubuntu1",
+			"versionInfo": "1.42.13-1ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-afb4df8ec5b49750",
+			"attributionTexts": [
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:pypi/requests@2.12.4",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"hasFiles": [
+				"SPDXRef-File-345362166aa99b48"
+			],
+			"licenseConcluded": "Apache-2.0",
+			"licenseDeclared": "Apache-2.0",
+			"name": "requests",
+			"versionInfo": "2.12.4"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-b021e722c688b8d1",
+			"attributionTexts": [
+				"PkgID: libtasn1-6@4.7-3ubuntu0.16.04.1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libtasn1-6@4.7-3ubuntu0.16.04.1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPL-3.0, LGPL-2.1, GPL-3.0, GFDL-1.3",
+			"licenseDeclared": "LGPL-3.0, LGPL-2.1, GPL-3.0, GFDL-1.3",
+			"name": "libtasn1-6",
+			"sourceInfo": "built package from: libtasn1-6 4.7-3ubuntu0.16.04.1",
+			"versionInfo": "4.7-3ubuntu0.16.04.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-b02fbc1154fe9cf3",
+			"attributionTexts": [
+				"PkgID: gcc-5-base@5.4.0-6ubuntu1~16.04.4",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/gcc-5-base@5.4.0-6ubuntu1~16.04.4?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-3.0, GFDL-1.2, GPL-2.0, Artistic",
+			"licenseDeclared": "GPL-3.0, GFDL-1.2, GPL-2.0, Artistic",
+			"name": "gcc-5-base",
+			"sourceInfo": "built package from: gcc-5 5.4.0-6ubuntu1~16.04.4",
+			"versionInfo": "5.4.0-6ubuntu1~16.04.4"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-b05f29b5d00ae29",
+			"attributionTexts": [
+				"PkgID: libsemanage-common@2.3-1build3",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libsemanage-common@2.3-1build3?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPL-3.0, GPL-3.0",
+			"licenseDeclared": "LGPL-3.0, GPL-3.0",
+			"name": "libsemanage-common",
+			"sourceInfo": "built package from: libsemanage 2.3-1build3",
+			"versionInfo": "2.3-1build3"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-b1a5f5cf7ac38001",
+			"attributionTexts": [
+				"PkgID: libkrb5-26-heimdal@1.7~git20150920+dfsg-4ubuntu1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libkrb5-26-heimdal@1.7~git20150920+dfsg-4ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "libkrb5-26-heimdal",
+			"sourceInfo": "built package from: heimdal 1.7~git20150920+dfsg-4ubuntu1",
+			"versionInfo": "1.7~git20150920+dfsg-4ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-b26dc1a06d0886c4",
+			"attributionTexts": [
+				"PkgID: libnetfilter-conntrack3@1.0.5-1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libnetfilter-conntrack3@1.0.5-1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0",
+			"licenseDeclared": "GPL-2.0",
+			"name": "libnetfilter-conntrack3",
+			"sourceInfo": "built package from: libnetfilter-conntrack 1.0.5-1",
+			"versionInfo": "1.0.5-1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-b391c19371d0afbd",
+			"attributionTexts": [
+				"PkgID: libhcrypto4-heimdal@1.7~git20150920+dfsg-4ubuntu1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libhcrypto4-heimdal@1.7~git20150920+dfsg-4ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "libhcrypto4-heimdal",
+			"sourceInfo": "built package from: heimdal 1.7~git20150920+dfsg-4ubuntu1",
+			"versionInfo": "1.7~git20150920+dfsg-4ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-b7d8c60ff426b40f",
+			"attributionTexts": [
+				"PkgID: libdebconfclient0@0.198ubuntu1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libdebconfclient0@0.198ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "libdebconfclient0",
+			"sourceInfo": "built package from: cdebconf 0.198ubuntu1",
+			"versionInfo": "0.198ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-b89264647ae03383",
+			"attributionTexts": [
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:pypi/wheel@0.29.0",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"hasFiles": [
+				"SPDXRef-File-1b97a7aba1afd455"
+			],
+			"licenseConcluded": "MIT",
+			"licenseDeclared": "MIT",
+			"name": "wheel",
+			"versionInfo": "0.29.0"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-b8d263c3ac78efad",
+			"attributionTexts": [
+				"PkgID: findutils@4.6.0+git+20160126-2",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/findutils@4.6.0+git+20160126-2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-3.0, GFDL-1.3",
+			"licenseDeclared": "GPL-3.0, GFDL-1.3",
+			"name": "findutils",
+			"sourceInfo": "built package from: findutils 4.6.0+git+20160126-2",
+			"versionInfo": "4.6.0+git+20160126-2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-bc9c204cf3003f18",
+			"attributionTexts": [
+				"PkgID: vim-common@2:7.4.1689-3ubuntu1.2",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/vim-common@2:7.4.1689-3ubuntu1.2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0",
+			"licenseDeclared": "GPL-2.0",
+			"name": "vim-common",
+			"sourceInfo": "built package from: vim 2:7.4.1689-3ubuntu1.2",
+			"versionInfo": "2:7.4.1689-3ubuntu1.2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-bd3d5f57a230960f",
+			"attributionTexts": [
+				"PkgID: libss2@1.42.13-1ubuntu1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libss2@1.42.13-1ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "libss2",
+			"sourceInfo": "built package from: e2fsprogs 1.42.13-1ubuntu1",
+			"versionInfo": "1.42.13-1ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-bdde0853c5724381",
+			"attributionTexts": [
+				"PkgID: libustr-1.0-1@1.0.4-5",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libustr-1.0-1@1.0.4-5?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPL-2.0, BSD-2-Clause, MIT, GPL-2.0, LGPL-2.1",
+			"licenseDeclared": "LGPL-2.0, BSD-2-Clause, MIT, GPL-2.0, LGPL-2.1",
+			"name": "libustr-1.0-1",
+			"sourceInfo": "built package from: ustr 1.0.4-5",
+			"versionInfo": "1.0.4-5"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-bea3cb1540378924",
+			"attributionTexts": [
+				"PkgID: libsemanage1@2.3-1build3",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libsemanage1@2.3-1build3?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPL-3.0, GPL-3.0",
+			"licenseDeclared": "LGPL-3.0, GPL-3.0",
+			"name": "libsemanage1",
+			"sourceInfo": "built package from: libsemanage 2.3-1build3",
+			"versionInfo": "2.3-1build3"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-c0002c3b0d076d",
+			"attributionTexts": [
+				"PkgID: makedev@2.3.1-93ubuntu1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/makedev@2.3.1-93ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-3.0",
+			"licenseDeclared": "GPL-3.0",
+			"name": "makedev",
+			"sourceInfo": "built package from: makedev 2.3.1-93ubuntu1",
+			"versionInfo": "2.3.1-93ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-c044553d8c173a2d",
+			"attributionTexts": [
+				"PkgID: locales@2.23-0ubuntu5",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/locales@2.23-0ubuntu5?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPL-2.1, GPL-2.0",
+			"licenseDeclared": "LGPL-2.1, GPL-2.0",
+			"name": "locales",
+			"sourceInfo": "built package from: glibc 2.23-0ubuntu5",
+			"versionInfo": "2.23-0ubuntu5"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-c0fb5491363fedb6",
+			"attributionTexts": [
+				"PkgID: libonig2@5.9.6-1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libonig2@5.9.6-1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "BSD-2-Clause, GPL-2.0",
+			"licenseDeclared": "BSD-2-Clause, GPL-2.0",
+			"name": "libonig2",
+			"sourceInfo": "built package from: libonig 5.9.6-1",
+			"versionInfo": "5.9.6-1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-c289d19100709d8d",
+			"attributionTexts": [
+				"PkgID: libnfnetlink0@1.0.1-3",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libnfnetlink0@1.0.1-3?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-3.0",
+			"licenseDeclared": "GPL-3.0",
+			"name": "libnfnetlink0",
+			"sourceInfo": "built package from: libnfnetlink 1.0.1-3",
+			"versionInfo": "1.0.1-3"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-c2e41b8a09e5ed5b",
+			"attributionTexts": [
+				"PkgID: ncurses-bin@6.0+20160213-1ubuntu1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/ncurses-bin@6.0+20160213-1ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "ncurses-bin",
+			"sourceInfo": "built package from: ncurses 6.0+20160213-1ubuntu1",
+			"versionInfo": "6.0+20160213-1ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-c3ef7aeb685ff151",
+			"attributionTexts": [
+				"PkgID: liblz4-1@0.0~r131-2ubuntu2",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/liblz4-1@0.0~r131-2ubuntu2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "BSD-2-Clause, GPL-2.0",
+			"licenseDeclared": "BSD-2-Clause, GPL-2.0",
+			"name": "liblz4-1",
+			"sourceInfo": "built package from: lz4 0.0~r131-2ubuntu2",
+			"versionInfo": "0.0~r131-2ubuntu2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-c6230209400adf73",
+			"attributionTexts": [
+				"PkgID: libheimntlm0-heimdal@1.7~git20150920+dfsg-4ubuntu1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libheimntlm0-heimdal@1.7~git20150920+dfsg-4ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "libheimntlm0-heimdal",
+			"sourceInfo": "built package from: heimdal 1.7~git20150920+dfsg-4ubuntu1",
+			"versionInfo": "1.7~git20150920+dfsg-4ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-c6393d93f983f57d",
+			"attributionTexts": [
+				"PkgID: libncursesw5@6.0+20160213-1ubuntu1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libncursesw5@6.0+20160213-1ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "libncursesw5",
+			"sourceInfo": "built package from: ncurses 6.0+20160213-1ubuntu1",
+			"versionInfo": "6.0+20160213-1ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-c8ed91d8b093572f",
+			"attributionTexts": [
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:pypi/gdapi-python@0.5.3",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"hasFiles": [
+				"SPDXRef-File-ffb2616252babe39"
+			],
+			"licenseConcluded": "MIT Style",
+			"licenseDeclared": "MIT Style",
+			"name": "gdapi-python",
+			"versionInfo": "0.5.3"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-cc5aa3dfa1c2519",
+			"attributionTexts": [
+				"PkgID: libldap-2.4-2@2.4.42+dfsg-2ubuntu3.1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libldap-2.4-2@2.4.42+dfsg-2ubuntu3.1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "libldap-2.4-2",
+			"sourceInfo": "built package from: openldap 2.4.42+dfsg-2ubuntu3.1",
+			"versionInfo": "2.4.42+dfsg-2ubuntu3.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-cd0b5bea437cd8b6",
+			"attributionTexts": [
+				"PkgID: gzip@1.6-4ubuntu1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/gzip@1.6-4ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-3.0",
+			"licenseDeclared": "GPL-3.0",
+			"name": "gzip",
+			"sourceInfo": "built package from: gzip 1.6-4ubuntu1",
+			"versionInfo": "1.6-4ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-ce01c8279d2b1ad4",
+			"attributionTexts": [
+				"PkgID: libncurses5@6.0+20160213-1ubuntu1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libncurses5@6.0+20160213-1ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "libncurses5",
+			"sourceInfo": "built package from: ncurses 6.0+20160213-1ubuntu1",
+			"versionInfo": "6.0+20160213-1ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-d55050a2f131df51",
+			"attributionTexts": [
+				"PkgID: libheimbase1-heimdal@1.7~git20150920+dfsg-4ubuntu1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libheimbase1-heimdal@1.7~git20150920+dfsg-4ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "libheimbase1-heimdal",
+			"sourceInfo": "built package from: heimdal 1.7~git20150920+dfsg-4ubuntu1",
+			"versionInfo": "1.7~git20150920+dfsg-4ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-d6f253dc2d3d736a",
+			"attributionTexts": [
+				"PkgID: libfdisk1@2.27.1-6ubuntu3.1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libfdisk1@2.27.1-6ubuntu3.1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0, public-domain, BSD-4-Clause, MIT, BSD-2-Clause, BSD-3-Clause, LGPL-2.0, LGPL-2.1, GPL-3.0, LGPL-3.0",
+			"licenseDeclared": "GPL-2.0, public-domain, BSD-4-Clause, MIT, BSD-2-Clause, BSD-3-Clause, LGPL-2.0, LGPL-2.1, GPL-3.0, LGPL-3.0",
+			"name": "libfdisk1",
+			"sourceInfo": "built package from: util-linux 2.27.1-6ubuntu3.1",
+			"versionInfo": "2.27.1-6ubuntu3.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-d7a888016ce4ecec",
+			"attributionTexts": [
+				"PkgID: ncurses-base@6.0+20160213-1ubuntu1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/ncurses-base@6.0+20160213-1ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "ncurses-base",
+			"sourceInfo": "built package from: ncurses 6.0+20160213-1ubuntu1",
+			"versionInfo": "6.0+20160213-1ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-d8b2bba15e9fe203",
+			"attributionTexts": [
+				"PkgID: libsasl2-2@2.1.26.dfsg1-14build1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libsasl2-2@2.1.26.dfsg1-14build1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "BSD-4-Clause, GPL-2.0, BSD-2-Clause, GPL-3.0",
+			"licenseDeclared": "BSD-4-Clause, GPL-2.0, BSD-2-Clause, GPL-3.0",
+			"name": "libsasl2-2",
+			"sourceInfo": "built package from: cyrus-sasl2 2.1.26.dfsg1-14build1",
+			"versionInfo": "2.1.26.dfsg1-14build1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-da4c757b128a43ae",
+			"attributionTexts": [
+				"PkgID: readline-common@6.3-8ubuntu2",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/readline-common@6.3-8ubuntu2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-3.0",
+			"licenseDeclared": "GPL-3.0",
+			"name": "readline-common",
+			"sourceInfo": "built package from: readline6 6.3-8ubuntu2",
+			"versionInfo": "6.3-8ubuntu2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-db3d0de1bab35d6b",
+			"attributionTexts": [
+				"PkgID: iputils-ping@3:20121221-5ubuntu2",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/iputils-ping@3:20121221-5ubuntu2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-3.0",
+			"licenseDeclared": "GPL-3.0",
+			"name": "iputils-ping",
+			"sourceInfo": "built package from: iputils 3:20121221-5ubuntu2",
+			"versionInfo": "3:20121221-5ubuntu2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-dba028dce4495cd",
+			"attributionTexts": [
+				"PkgID: gpgv@1.4.20-1ubuntu3.1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/gpgv@1.4.20-1ubuntu3.1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-3+ with OpenSSL exception, GPL-3.0, RFC-Reference",
+			"licenseDeclared": "GPL-3+ with OpenSSL exception, GPL-3.0, RFC-Reference",
+			"name": "gpgv",
+			"sourceInfo": "built package from: gnupg 1.4.20-1ubuntu3.1",
+			"versionInfo": "1.4.20-1ubuntu3.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-dc6d75b9b1bd325d",
+			"attributionTexts": [
+				"PkgID: dash@0.5.8-2.1ubuntu2",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/dash@0.5.8-2.1ubuntu2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-3.0",
+			"licenseDeclared": "GPL-3.0",
+			"name": "dash",
+			"sourceInfo": "built package from: dash 0.5.8-2.1ubuntu2",
+			"versionInfo": "0.5.8-2.1ubuntu2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-ddc3a63ff9d93678",
+			"attributionTexts": [
+				"PkgID: libk5crypto3@1.13.2+dfsg-5",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libk5crypto3@1.13.2+dfsg-5?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0",
+			"licenseDeclared": "GPL-2.0",
+			"name": "libk5crypto3",
+			"sourceInfo": "built package from: krb5 1.13.2+dfsg-5",
+			"versionInfo": "1.13.2+dfsg-5"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-ddffc74f2567941b",
+			"attributionTexts": [
+				"PkgID: sed@4.2.2-7",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/sed@4.2.2-7?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-3.0",
+			"licenseDeclared": "GPL-3.0",
+			"name": "sed",
+			"sourceInfo": "built package from: sed 4.2.2-7",
+			"versionInfo": "4.2.2-7"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-e0a794b0f37cec9e",
+			"attributionTexts": [
+				"PkgID: libgnutls30@3.4.10-4ubuntu1.1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libgnutls30@3.4.10-4ubuntu1.1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "The main library is licensed under GNU Lesser, LGPL-3.0, GPL-3.0, GFDL-1.3, nonstandard, see below, LGPL2.1, CC0 license",
+			"licenseDeclared": "The main library is licensed under GNU Lesser, LGPL-3.0, GPL-3.0, GFDL-1.3, nonstandard, see below, LGPL2.1, CC0 license",
+			"name": "libgnutls30",
+			"sourceInfo": "built package from: gnutls28 3.4.10-4ubuntu1.1",
+			"versionInfo": "3.4.10-4ubuntu1.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-e17ba8a460a348af",
+			"attributionTexts": [
+				"PkgID: perl-base@5.22.1-9",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/perl-base@5.22.1-9?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "perl-base",
+			"sourceInfo": "built package from: perl 5.22.1-9",
+			"versionInfo": "5.22.1-9"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-e1cfe21129d8d1ca",
+			"attributionTexts": [
+				"PkgID: libacl1@2.2.52-3",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libacl1@2.2.52-3?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPL-2.1, GPL-3.0",
+			"licenseDeclared": "LGPL-2.1, GPL-3.0",
+			"name": "libacl1",
+			"sourceInfo": "built package from: acl 2.2.52-3",
+			"versionInfo": "2.2.52-3"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-e25973ea9b5a5cb6",
+			"attributionTexts": [
+				"PkgID: coreutils@8.25-2ubuntu2",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/coreutils@8.25-2ubuntu2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-3.0",
+			"licenseDeclared": "GPL-3.0",
+			"name": "coreutils",
+			"sourceInfo": "built package from: coreutils 8.25-2ubuntu2",
+			"versionInfo": "8.25-2ubuntu2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-e602f762346622ec",
+			"attributionTexts": [
+				"PkgID: iproute2@4.3.0-1ubuntu3",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/iproute2@4.3.0-1ubuntu3?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0",
+			"licenseDeclared": "GPL-2.0",
+			"name": "iproute2",
+			"sourceInfo": "built package from: iproute2 4.3.0-1ubuntu3",
+			"versionInfo": "4.3.0-1ubuntu3"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-e668c2acdddd8241",
+			"attributionTexts": [
+				"PkgID: mime-support@3.59ubuntu1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/mime-support@3.59ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "ad-hoc, Bellcore",
+			"licenseDeclared": "ad-hoc, Bellcore",
+			"name": "mime-support",
+			"sourceInfo": "built package from: mime-support 3.59ubuntu1",
+			"versionInfo": "3.59ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-e69425d52cb4776e",
+			"attributionTexts": [
+				"PkgID: libpcre3@2:8.38-3.1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libpcre3@2:8.38-3.1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "libpcre3",
+			"sourceInfo": "built package from: pcre3 2:8.38-3.1",
+			"versionInfo": "2:8.38-3.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-e6b2a02cc4438626",
+			"attributionTexts": [
+				"PkgID: init@1.29ubuntu3",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/init@1.29ubuntu3?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "BSD-3-Clause, GPL-3.0",
+			"licenseDeclared": "BSD-3-Clause, GPL-3.0",
+			"name": "init",
+			"sourceInfo": "built package from: init-system-helpers 1.29ubuntu3",
+			"versionInfo": "1.29ubuntu3"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-e8221f1cb6283e91",
+			"attributionTexts": [
+				"PkgID: procps@2:3.3.10-4ubuntu2.3",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/procps@2:3.3.10-4ubuntu2.3?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPL-2.1, LGPL-2.0, GPL-2.0",
+			"licenseDeclared": "LGPL-2.1, LGPL-2.0, GPL-2.0",
+			"name": "procps",
+			"sourceInfo": "built package from: procps 2:3.3.10-4ubuntu2.3",
+			"versionInfo": "2:3.3.10-4ubuntu2.3"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-eda47d185bf50624",
+			"attributionTexts": [
+				"PkgID: libbz2-1.0@1.0.6-8",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libbz2-1.0@1.0.6-8?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0",
+			"licenseDeclared": "GPL-2.0",
+			"name": "libbz2-1.0",
+			"sourceInfo": "built package from: bzip2 1.0.6-8",
+			"versionInfo": "1.0.6-8"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-ef869c0152288d79",
+			"attributionTexts": [
+				"PkgID: libapt-pkg5.0@1.2.15ubuntu0.2",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libapt-pkg5.0@1.2.15ubuntu0.2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0",
+			"licenseDeclared": "GPL-2.0",
+			"name": "libapt-pkg5.0",
+			"sourceInfo": "built package from: apt 1.2.15ubuntu0.2",
+			"versionInfo": "1.2.15ubuntu0.2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-efdc2d3cb5975b8d",
+			"attributionTexts": [
+				"PkgID: libcomerr2@1.42.13-1ubuntu1",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libcomerr2@1.42.13-1ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "libcomerr2",
+			"sourceInfo": "built package from: e2fsprogs 1.42.13-1ubuntu1",
+			"versionInfo": "1.42.13-1ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-f10140c102117b2d",
+			"attributionTexts": [
+				"PkgID: libp11-kit0@0.23.2-5~ubuntu16.04.1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libp11-kit0@0.23.2-5~ubuntu16.04.1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "BSD-3-Clause, permissive-like-automake-output, ISC, ISC+IBM, same-as-rest-of-p11kit",
+			"licenseDeclared": "BSD-3-Clause, permissive-like-automake-output, ISC, ISC+IBM, same-as-rest-of-p11kit",
+			"name": "libp11-kit0",
+			"sourceInfo": "built package from: p11-kit 0.23.2-5~ubuntu16.04.1",
+			"versionInfo": "0.23.2-5~ubuntu16.04.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-f115e168f50da795",
+			"attributionTexts": [
+				"PkgID: login@1:4.2-3.1ubuntu5",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/login@1:4.2-3.1ubuntu5?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0",
+			"licenseDeclared": "GPL-2.0",
+			"name": "login",
+			"sourceInfo": "built package from: shadow 1:4.2-3.1ubuntu5",
+			"versionInfo": "1:4.2-3.1ubuntu5"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-f200b868894432a0",
+			"attributionTexts": [
+				"PkgID: librtmp1@2.4+20151223.gitfa8646d-1build1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/librtmp1@2.4+20151223.gitfa8646d-1build1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0, LGPL-2.1",
+			"licenseDeclared": "GPL-2.0, LGPL-2.1",
+			"name": "librtmp1",
+			"sourceInfo": "built package from: rtmpdump 2.4+20151223.gitfa8646d-1build1",
+			"versionInfo": "2.4+20151223.gitfa8646d-1build1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-f44e370d60f5994f",
+			"attributionTexts": [
+				"PkgID: libcurl3-gnutls@7.47.0-1ubuntu2.2",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libcurl3-gnutls@7.47.0-1ubuntu2.2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "curl, ISC, BSD-3-Clause, public-domain, BSD-4-Clause, other",
+			"licenseDeclared": "curl, ISC, BSD-3-Clause, public-domain, BSD-4-Clause, other",
+			"name": "libcurl3-gnutls",
+			"sourceInfo": "built package from: curl 7.47.0-1ubuntu2.2",
+			"versionInfo": "7.47.0-1ubuntu2.2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-f646133a7db21c9",
+			"attributionTexts": [
+				"PkgID: openssl@1.0.2g-1ubuntu4.5",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/openssl@1.0.2g-1ubuntu4.5?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "openssl",
+			"sourceInfo": "built package from: openssl 1.0.2g-1ubuntu4.5",
+			"versionInfo": "1.0.2g-1ubuntu4.5"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-f6a4739f1b3a3c0b",
+			"attributionTexts": [
+				"PkgID: libwind0-heimdal@1.7~git20150920+dfsg-4ubuntu1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libwind0-heimdal@1.7~git20150920+dfsg-4ubuntu1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "NONE",
+			"licenseDeclared": "NONE",
+			"name": "libwind0-heimdal",
+			"sourceInfo": "built package from: heimdal 1.7~git20150920+dfsg-4ubuntu1",
+			"versionInfo": "1.7~git20150920+dfsg-4ubuntu1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-f77d0415fb352b14",
+			"attributionTexts": [
+				"PkgID: ethtool@1:4.5-1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/ethtool@1:4.5-1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "GPL-2.0",
+			"licenseDeclared": "GPL-2.0",
+			"name": "ethtool",
+			"sourceInfo": "built package from: ethtool 1:4.5-1",
+			"versionInfo": "1:4.5-1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-f91424e7d0f9cf85",
+			"attributionTexts": [
+				"PkgID: curl@7.47.0-1ubuntu2.2",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/curl@7.47.0-1ubuntu2.2?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "curl, ISC, BSD-3-Clause, public-domain, BSD-4-Clause, other",
+			"licenseDeclared": "curl, ISC, BSD-3-Clause, public-domain, BSD-4-Clause, other",
+			"name": "curl",
+			"sourceInfo": "built package from: curl 7.47.0-1ubuntu2.2",
+			"versionInfo": "7.47.0-1ubuntu2.2"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-ff7c95b43ff1b869",
+			"attributionTexts": [
+				"PkgID: libgnutls-openssl27@3.4.10-4ubuntu1.1",
+				"LayerDigest: sha256:16914729cfd3c495e28cbd9e50f73734d84fdde3023bb2b1489c76316452318c",
+				"LayerDiffID: sha256:131926e86d5ddb9a76c815d4ecad42d95c7412b17a4c5063bbfd107f4032746d"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libgnutls-openssl27@3.4.10-4ubuntu1.1?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "The main library is licensed under GNU Lesser, LGPL-3.0, GPL-3.0, GFDL-1.3, nonstandard, see below, LGPL2.1, CC0 license",
+			"licenseDeclared": "The main library is licensed under GNU Lesser, LGPL-3.0, GPL-3.0, GFDL-1.3, nonstandard, see below, LGPL2.1, CC0 license",
+			"name": "libgnutls-openssl27",
+			"sourceInfo": "built package from: gnutls28 3.4.10-4ubuntu1.1",
+			"versionInfo": "3.4.10-4ubuntu1.1"
+		},
+		{
+			"SPDXID": "SPDXRef-Package-ffdec8706d8ad270",
+			"attributionTexts": [
+				"PkgID: libseccomp2@2.2.3-3ubuntu3",
+				"LayerDigest: sha256:b3e1c725a85f0953e81815b7c7aabfad9ebfd90af53f99248981282b8045d787",
+				"LayerDiffID: sha256:32d75bc97c4173417b54eb2a417ea867637c3014dc1b0dd550f11ab490cbb09f"
+			],
+			"externalRefs": [
+				{
+					"referenceCategory": "PACKAGE-MANAGER",
+					"referenceLocator": "pkg:deb/ubuntu/libseccomp2@2.2.3-3ubuntu3?distro=ubuntu-16.04",
+					"referenceType": "purl"
+				}
+			],
+			"filesAnalyzed": false,
+			"licenseConcluded": "LGPL-2.0",
+			"licenseDeclared": "LGPL-2.0",
+			"name": "libseccomp2",
+			"sourceInfo": "built package from: libseccomp 2.2.3-3ubuntu3",
+			"versionInfo": "2.2.3-3ubuntu3"
+		}
+	],
+	"relationships": [
+		{
+			"relatedSpdxElement": "SPDXRef-ContainerImage-9ddf36711a5af6f6",
+			"relationshipType": "DESCRIBES",
+			"spdxElementId": "SPDXRef-DOCUMENT"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-ContainerImage-9ddf36711a5af6f6"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-5f49a5aac367fa1a",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-6d0a296366d12801",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-aeff4308722cac1c",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-12f10758b1a89545",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-9b40f6db06ea4404",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-64aa11f817355f04",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-7587d541b7694cb",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-683b036b4f727f49",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-18cd00b50314acf4",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-3b6ef2df02d592b2",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-e25973ea9b5a5cb6",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-f91424e7d0f9cf85",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-dc6d75b9b1bd325d",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-20db4047b36b0d2b",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-51c788f0a9380e7b",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-6b85a2671bd34a18",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-496620f200bc174f",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-af2407cfb834b8ce",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-a3b64155e419a704",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-f77d0415fb352b14",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-b8d263c3ac78efad",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-b02fbc1154fe9cf3",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-6115dd91267aecb1",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-24e97f8ddb99eac7",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-dba028dce4495cd",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-1e70973d2bf7983",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-cd0b5bea437cd8b6",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-4953c37c46bf50e8",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-e6b2a02cc4438626",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-4e982da1a59c86be",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-7f895b114db3da98",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-8e657e8ad4d44377",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-e602f762346622ec",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-28306edf3d051c5",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-db3d0de1bab35d6b",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-46005691a54e773e",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-6227ffea5ce9ba28",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-e1cfe21129d8d1ca",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-6f0b1291a57ca6f8",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-ef869c0152288d79",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-3ece1dd697ae0b1a",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-26683ac0d77785bf",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-2836d6beebf74a25",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-3f29496cdaeb2542",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-11e619def2417de2",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-eda47d185bf50624",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-1022fc7b5452d13",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-1ee3c23f8523bf05",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-6816324c031ace36",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-8b3967ce3dbbc706",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-efdc2d3cb5975b8d",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-a41b4e3a0b5c4dba",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-f44e370d60f5994f",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-1d6f282518e05dd",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-b7d8c60ff426b40f",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-280d64749e059eb8",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-383bc4bac746e8d7",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-d6f253dc2d3d736a",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-532177153a79687f",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-a83381049b56f35e",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-70616bf672375e43",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-7c6afd48c044990f",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-ff7c95b43ff1b869",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-e0a794b0f37cec9e",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-4b2527bd2eff8190",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-3b23a6937cc6ecd4",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-9b7e7f08815ba0ce",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-b391c19371d0afbd",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-d55050a2f131df51",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-c6230209400adf73",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-539392b28fbde1",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-9a8f7f8c09d96afa",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-17ef02b32af8fc99",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-ddc3a63ff9d93678",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-8bd57b1009d67f41",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-34c15f4faf449c7e",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-b1a5f5cf7ac38001",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-9c737a6b197abd3f",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-87708c9d5499ea0",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-cc5aa3dfa1c2519",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-c3ef7aeb685ff151",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-55e260cef852f92",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-866a70b6427e2c41",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-33c9c02e31b13970",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-ce01c8279d2b1ad4",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-c6393d93f983f57d",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-b26dc1a06d0886c4",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-1ee4ead6a47088ca",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-c289d19100709d8d",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-c0fb5491363fedb6",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-f10140c102117b2d",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-19722bdc17ff9c8a",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-8061e44baeac6e1b",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-854720b0ded92e7c",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-9ef538474b0b4c28",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-abe910c813f0e532",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-e69425d52cb4776e",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-acd40ec5f822ea62",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-3006b34c34a63232",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-78d52576dc907e10",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-ad901e457046852f",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-8d5a630ba05817b9",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-f200b868894432a0",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-d8b2bba15e9fe203",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-716338e099a982f",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-ffdec8706d8ad270",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-48250fd60b2e780b",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-b05f29b5d00ae29",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-bea3cb1540378924",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-7444a5fb8426a5c7",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-41125d353f95bb07",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-51e871beee3834bd",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-bd3d5f57a230960f",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-46ac75232fe1c650",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-8656b5acdf5d845a",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-4a749a0a4e99fec4",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-b021e722c688b8d1",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-2ae6a9d1a75ebbe8",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-35e6100462abbbda",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-5ba93c7659ea16ce",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-bdde0853c5724381",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-297458dc678ec38b",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-f6a4739f1b3a3c0b",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-6742c0ea6e8a3213",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-c044553d8c173a2d",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-f115e168f50da795",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-809cea5555d7c7ba",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-c0002c3b0d076d",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-4220ff3d5d0aba8",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-e668c2acdddd8241",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-888094a0eb8ed045",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-6de905c9b4a1e8a",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-d7a888016ce4ecec",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-c2e41b8a09e5ed5b",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-f646133a7db21c9",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-6db2dd10315b42d2",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-e17ba8a460a348af",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-e8221f1cb6283e91",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-9816c106ad17e015",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-83c31c3a94579b18",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-597ad49b495ff394",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-da4c757b128a43ae",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-ddffc74f2567941b",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-70fe2ff26afc1c01",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-5e3be3a871fec247",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-595162c98dd4eff0",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-6cc4b2ef95ba7140",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-29469f51bac5b14a",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-136a91d15052bd4a",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-38ca125457567f80",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-a950f3c8ae9b9e16",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-383f40ce13160f8c",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-8b80329aa49134d0",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-bc9c204cf3003f18",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-626c52ca08114c30",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-9c666e5fd1cb4f2e",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-OperatingSystem-e8bf9c77c267c3fd"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Application-ace32df0b6bdbf7",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-ContainerImage-9ddf36711a5af6f6"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-b89264647ae03383",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-Application-ace32df0b6bdbf7"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-74f73c79d4200afb",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-Application-ace32df0b6bdbf7"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-8e382dd6f6b4e9ef",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-Application-ace32df0b6bdbf7"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-c8ed91d8b093572f",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-Application-ace32df0b6bdbf7"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-2f25dfc95f11b1c6",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-Application-ace32df0b6bdbf7"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-afb4df8ec5b49750",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-Application-ace32df0b6bdbf7"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-1788195ccc16209e",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-Application-ace32df0b6bdbf7"
+		},
+		{
+			"relatedSpdxElement": "SPDXRef-Package-5ff7f44160afe490",
+			"relationshipType": "CONTAINS",
+			"spdxElementId": "SPDXRef-Application-ace32df0b6bdbf7"
+		}
+	],
+	"spdxVersion": "SPDX-2.2"
+}

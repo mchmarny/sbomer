@@ -1,0 +1,1465 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:c18ac751-00ed-4988-b466-6cf6014bd7c1",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-01-23T05:13:12-08:00",
+    "tools": [
+      {
+        "vendor": "anchore",
+        "name": "syft",
+        "version": "0.66.2"
+      }
+    ],
+    "component": {
+      "bom-ref": "a072e500dacea6ca",
+      "type": "container",
+      "name": "docker/dockerfile",
+      "version": "sha256:ad87fb03593d1b71f9a1cfc1406c4aafcb253b1dabebf569768d6e6166836f34"
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "pkg:golang/github.com/agext/levenshtein@v1.2.3?package-id=66b23526105ed9c4",
+      "type": "library",
+      "name": "github.com/agext/levenshtein",
+      "version": "v1.2.3",
+      "cpe": "cpe:2.3:a:agext:levenshtein:v1.2.3:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/agext/levenshtein@v1.2.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/containerd/containerd@v1.6.3-0.20220401172941-5ff8fce1fcc6?package-id=35b3259f3c5813e2",
+      "type": "library",
+      "name": "github.com/containerd/containerd",
+      "version": "v1.6.3-0.20220401172941-5ff8fce1fcc6",
+      "cpe": "cpe:2.3:a:containerd:containerd:v1.6.3-0.20220401172941-5ff8fce1fcc6:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/containerd/containerd@v1.6.3-0.20220401172941-5ff8fce1fcc6",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/containerd/ttrpc@v1.1.0?package-id=70a9a708ad4b8815",
+      "type": "library",
+      "name": "github.com/containerd/ttrpc",
+      "version": "v1.1.0",
+      "cpe": "cpe:2.3:a:containerd:ttrpc:v1.1.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/containerd/ttrpc@v1.1.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/containerd/typeurl@v1.0.2?package-id=7f5199dc88c4165",
+      "type": "library",
+      "name": "github.com/containerd/typeurl",
+      "version": "v1.0.2",
+      "cpe": "cpe:2.3:a:containerd:typeurl:v1.0.2:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/containerd/typeurl@v1.0.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/docker/distribution@v2.8.1+incompatible?package-id=d2013f749251d7dc",
+      "type": "library",
+      "name": "github.com/docker/distribution",
+      "version": "v2.8.1+incompatible",
+      "cpe": "cpe:2.3:a:docker:distribution:v2.8.1\\+incompatible:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/docker/distribution@v2.8.1+incompatible",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/docker/docker@v20.10.3-0.20220414164044-61404de7df1a+incompatible?package-id=d7ad4b19828f44d5",
+      "type": "library",
+      "name": "github.com/docker/docker",
+      "version": "v20.10.3-0.20220414164044-61404de7df1a+incompatible",
+      "cpe": "cpe:2.3:a:docker:docker:v20.10.3-0.20220414164044-61404de7df1a\\+incompatible:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/docker/docker@v20.10.3-0.20220414164044-61404de7df1a+incompatible",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/docker/go-connections@v0.4.0?package-id=a88b0d4dec9507ff",
+      "type": "library",
+      "name": "github.com/docker/go-connections",
+      "version": "v0.4.0",
+      "cpe": "cpe:2.3:a:docker:go-connections:v0.4.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/docker/go-connections@v0.4.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:docker:go_connections:v0.4.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/docker/go-units@v0.4.0?package-id=d2b9bd4258b83293",
+      "type": "library",
+      "name": "github.com/docker/go-units",
+      "version": "v0.4.0",
+      "cpe": "cpe:2.3:a:docker:go-units:v0.4.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/docker/go-units@v0.4.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:docker:go_units:v0.4.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/gogo/googleapis@v1.4.1?package-id=e98345baf8565a85",
+      "type": "library",
+      "name": "github.com/gogo/googleapis",
+      "version": "v1.4.1",
+      "cpe": "cpe:2.3:a:gogo:googleapis:v1.4.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/gogo/googleapis@v1.4.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/gogo/protobuf@v1.3.2?package-id=cfda1590e3a6487d",
+      "type": "library",
+      "name": "github.com/gogo/protobuf",
+      "version": "v1.3.2",
+      "cpe": "cpe:2.3:a:gogo:protobuf:v1.3.2:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/gogo/protobuf@v1.3.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/golang/protobuf@v1.5.2?package-id=d1ecd5acd4fc13d1",
+      "type": "library",
+      "name": "github.com/golang/protobuf",
+      "version": "v1.5.2",
+      "cpe": "cpe:2.3:a:golang:protobuf:v1.5.2:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/golang/protobuf@v1.5.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/google/shlex@v0.0.0-20191202100458-e7afc7fbc510?package-id=c0f676669da9fb3b",
+      "type": "library",
+      "name": "github.com/google/shlex",
+      "version": "v0.0.0-20191202100458-e7afc7fbc510",
+      "cpe": "cpe:2.3:a:google:shlex:v0.0.0-20191202100458-e7afc7fbc510:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/google/shlex@v0.0.0-20191202100458-e7afc7fbc510",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/klauspost/compress@v1.15.1?package-id=196a41e7ef4bc4d",
+      "type": "library",
+      "name": "github.com/klauspost/compress",
+      "version": "v1.15.1",
+      "cpe": "cpe:2.3:a:klauspost:compress:v1.15.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/klauspost/compress@v1.15.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/moby/buildkit@(devel)?package-id=b98cb84328b7bb1a",
+      "type": "library",
+      "name": "github.com/moby/buildkit",
+      "version": "(devel)",
+      "cpe": "cpe:2.3:a:moby:buildkit:\\(devel\\):*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/moby/buildkit@(devel)",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/moby/locker@v1.0.1?package-id=b181c67f4c7beb2d",
+      "type": "library",
+      "name": "github.com/moby/locker",
+      "version": "v1.0.1",
+      "cpe": "cpe:2.3:a:moby:locker:v1.0.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/moby/locker@v1.0.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/moby/sys/signal@v0.6.0?package-id=a21777abdb04de3c",
+      "type": "library",
+      "name": "github.com/moby/sys/signal",
+      "version": "v0.6.0",
+      "cpe": "cpe:2.3:a:moby:sys\\/signal:v0.6.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/moby/sys/signal@v0.6.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/opencontainers/go-digest@v1.0.0?package-id=50fa075cc3feb5ed",
+      "type": "library",
+      "name": "github.com/opencontainers/go-digest",
+      "version": "v1.0.0",
+      "cpe": "cpe:2.3:a:opencontainers:go-digest:v1.0.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/opencontainers/go-digest@v1.0.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:opencontainers:go_digest:v1.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/opencontainers/image-spec@v1.0.3-0.20211202183452-c5a74bcca799?package-id=508ae864c24daca4",
+      "type": "library",
+      "name": "github.com/opencontainers/image-spec",
+      "version": "v1.0.3-0.20211202183452-c5a74bcca799",
+      "cpe": "cpe:2.3:a:opencontainers:image-spec:v1.0.3-0.20211202183452-c5a74bcca799:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/opencontainers/image-spec@v1.0.3-0.20211202183452-c5a74bcca799",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:opencontainers:image_spec:v1.0.3-0.20211202183452-c5a74bcca799:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/pkg/errors@v0.9.1?package-id=3791bcb33672fe81",
+      "type": "library",
+      "name": "github.com/pkg/errors",
+      "version": "v0.9.1",
+      "cpe": "cpe:2.3:a:pkg:errors:v0.9.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/pkg/errors@v0.9.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/sirupsen/logrus@v1.8.1?package-id=6cc652574c8227d4",
+      "type": "library",
+      "name": "github.com/sirupsen/logrus",
+      "version": "v1.8.1",
+      "cpe": "cpe:2.3:a:sirupsen:logrus:v1.8.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/sirupsen/logrus@v1.8.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/tonistiigi/fsutil@v0.0.0-20220115021204-b19f7f9cb274?package-id=f3edc6d2ea6717",
+      "type": "library",
+      "name": "github.com/tonistiigi/fsutil",
+      "version": "v0.0.0-20220115021204-b19f7f9cb274",
+      "cpe": "cpe:2.3:a:tonistiigi:fsutil:v0.0.0-20220115021204-b19f7f9cb274:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/tonistiigi/fsutil@v0.0.0-20220115021204-b19f7f9cb274",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/go.opentelemetry.io/otel@v1.4.1?package-id=9bea91c4e261b7a9",
+      "type": "library",
+      "name": "go.opentelemetry.io/otel",
+      "version": "v1.4.1",
+      "purl": "pkg:golang/go.opentelemetry.io/otel@v1.4.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/go.opentelemetry.io/otel/trace@v1.4.1?package-id=5755bd0335fa5c6d",
+      "type": "library",
+      "name": "go.opentelemetry.io/otel/trace",
+      "version": "v1.4.1",
+      "cpe": "cpe:2.3:a:otel:trace:v1.4.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/go.opentelemetry.io/otel/trace@v1.4.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/crypto@v0.0.0-20211202192323-5770296d904e?package-id=eb703cb0b7c1d29d",
+      "type": "library",
+      "name": "golang.org/x/crypto",
+      "version": "v0.0.0-20211202192323-5770296d904e",
+      "cpe": "cpe:2.3:a:golang:x\\/crypto:v0.0.0-20211202192323-5770296d904e:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/crypto@v0.0.0-20211202192323-5770296d904e",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/net@v0.0.0-20211216030914-fe4d6282115f?package-id=55c91f21dc0ee4cc",
+      "type": "library",
+      "name": "golang.org/x/net",
+      "version": "v0.0.0-20211216030914-fe4d6282115f",
+      "cpe": "cpe:2.3:a:golang:x\\/net:v0.0.0-20211216030914-fe4d6282115f:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/net@v0.0.0-20211216030914-fe4d6282115f",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/sync@v0.0.0-20210220032951-036812b2e83c?package-id=c9a7b45f256ac140",
+      "type": "library",
+      "name": "golang.org/x/sync",
+      "version": "v0.0.0-20210220032951-036812b2e83c",
+      "cpe": "cpe:2.3:a:golang:x\\/sync:v0.0.0-20210220032951-036812b2e83c:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/sync@v0.0.0-20210220032951-036812b2e83c",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/sys@v0.0.0-20220114195835-da31bd327af9?package-id=58f30ee48e70cb21",
+      "type": "library",
+      "name": "golang.org/x/sys",
+      "version": "v0.0.0-20220114195835-da31bd327af9",
+      "cpe": "cpe:2.3:a:golang:x\\/sys:v0.0.0-20220114195835-da31bd327af9:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/sys@v0.0.0-20220114195835-da31bd327af9",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/text@v0.3.7?package-id=a601c2cc05368e25",
+      "type": "library",
+      "name": "golang.org/x/text",
+      "version": "v0.3.7",
+      "cpe": "cpe:2.3:a:golang:x\\/text:v0.3.7:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/text@v0.3.7",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/google.golang.org/genproto@v0.0.0-20211208223120-3a66f561d7aa?package-id=296f4f139c34fa27",
+      "type": "library",
+      "name": "google.golang.org/genproto",
+      "version": "v0.0.0-20211208223120-3a66f561d7aa",
+      "cpe": "cpe:2.3:a:google:genproto:v0.0.0-20211208223120-3a66f561d7aa:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/google.golang.org/genproto@v0.0.0-20211208223120-3a66f561d7aa",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/google.golang.org/grpc@v1.45.0?package-id=38da836308677a62",
+      "type": "library",
+      "name": "google.golang.org/grpc",
+      "version": "v1.45.0",
+      "cpe": "cpe:2.3:a:google:grpc:v1.45.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/google.golang.org/grpc@v1.45.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/google.golang.org/protobuf@v1.27.1?package-id=ed9c5f11a3dc5648",
+      "type": "library",
+      "name": "google.golang.org/protobuf",
+      "version": "v1.27.1",
+      "cpe": "cpe:2.3:a:google:protobuf:v1.27.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/google.golang.org/protobuf@v1.27.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:6633d4120d75c1ddf05d7d5e9eb0b61b47c3fcc2652b570b4416329269ce7599"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/bin/dockerfile-frontend"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.13"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/moby/buildkit"
+        }
+      ]
+    }
+  ]
+}

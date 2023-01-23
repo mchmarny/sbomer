@@ -1,0 +1,5130 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:711ae911-0b35-41b3-8823-2b25d8fc530d",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-01-23T13:03:20+00:00",
+    "tools": [
+      {
+        "vendor": "aquasecurity",
+        "name": "trivy",
+        "version": "0.36.1"
+      }
+    ],
+    "component": {
+      "bom-ref": "pkg:oci/docker-dd-agent@sha256:0228b88d2e09aac6d33bcc886285dd9731b67e0614cd6588b42b0c978d0b89ad?repository_url=index.docker.io%2Fdatadog%2Fdocker-dd-agent\u0026arch=amd64",
+      "type": "container",
+      "name": "datadog/docker-dd-agent",
+      "purl": "pkg:oci/docker-dd-agent@sha256:0228b88d2e09aac6d33bcc886285dd9731b67e0614cd6588b42b0c978d0b89ad?repository_url=index.docker.io%2Fdatadog%2Fdocker-dd-agent\u0026arch=amd64",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SchemaVersion",
+          "value": "2"
+        },
+        {
+          "name": "aquasecurity:trivy:ImageID",
+          "value": "sha256:c6cd2b93b7afda0747234cb21227375f77afe8145de00d3ccd634449f15f4fcc"
+        },
+        {
+          "name": "aquasecurity:trivy:RepoDigest",
+          "value": "datadog/docker-dd-agent@sha256:0228b88d2e09aac6d33bcc886285dd9731b67e0614cd6588b42b0c978d0b89ad"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:69fb2e87f086bb595fab135ca7bfdc198164bf2f72582b8b03783ba7efc16654"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:7a5bf91ec7cb7a5465b188272f9c6b59c07bcf591523710e2476f48c108f9da9"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:3211cc4cff808aec09abe10278c3480c64bf98df437f2f7f0c00876796536cc9"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:65da41b6a7310ce5b61f661377130dc1675e3b2521b4b808bca13dfc7d33c846"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:65731136c6ebdc2d2f9b418fee077838147fc10fac0ff7f3a5bba6a29d7dc477"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:ee08b310c465965137a6a1f06ddc2edcd0aaa9a8c94a227b1f47ae3f44ef0206"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:753b18bf2f796f3943264e17cbfdb1e73893bb7dcc7f778eb42682e2d9ee9870"
+        },
+        {
+          "name": "aquasecurity:trivy:RepoTag",
+          "value": "datadog/docker-dd-agent:latest"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "pkg:deb/debian/adduser@3.118?distro=debian-10.5",
+      "type": "library",
+      "name": "adduser",
+      "version": "3.118",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/adduser@3.118?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "adduser@3.118"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "adduser"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.118"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/apt@1.8.2.1?distro=debian-10.5",
+      "type": "library",
+      "name": "apt",
+      "version": "1.8.2.1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/apt@1.8.2.1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "apt@1.8.2.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "apt"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.8.2.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/base-files@10.3+deb10u5?distro=debian-10.5",
+      "type": "library",
+      "name": "base-files",
+      "version": "10.3+deb10u5",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/base-files@10.3+deb10u5?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "base-files@10.3+deb10u5"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "base-files"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "10.3+deb10u5"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/base-passwd@3.5.46?distro=debian-10.5",
+      "type": "library",
+      "name": "base-passwd",
+      "version": "3.5.46",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "PD"
+        }
+      ],
+      "purl": "pkg:deb/debian/base-passwd@3.5.46?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "base-passwd@3.5.46"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "base-passwd"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.5.46"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/bash@5.0-4?distro=debian-10.5",
+      "type": "library",
+      "name": "bash",
+      "version": "5.0-4",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/bash@5.0-4?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "bash@5.0-4"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "bash"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "5.0-4"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/bsdutils@1:2.33.1-0.1?distro=debian-10.5",
+      "type": "library",
+      "name": "bsdutils",
+      "version": "1:2.33.1-0.1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "public-domain"
+        },
+        {
+          "expression": "BSD-4-Clause"
+        },
+        {
+          "expression": "MIT"
+        },
+        {
+          "expression": "BSD-2-Clause"
+        },
+        {
+          "expression": "BSD-3-Clause"
+        },
+        {
+          "expression": "LGPL-2.0"
+        },
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/bsdutils@1:2.33.1-0.1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "bsdutils@1:2.33.1-0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "util-linux"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.33.1-0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/ca-certificates@20200601~deb10u1?distro=debian-10.5",
+      "type": "library",
+      "name": "ca-certificates",
+      "version": "20200601~deb10u1",
+      "licenses": [
+        {
+          "expression": "..."
+        }
+      ],
+      "purl": "pkg:deb/debian/ca-certificates@20200601~deb10u1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "ca-certificates@20200601~deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "ca-certificates"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "20200601~deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e1711c4678158ed8fc31b0b238068b4ddba82dcbb3372d1a2c793aee398e9023"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:7a5bf91ec7cb7a5465b188272f9c6b59c07bcf591523710e2476f48c108f9da9"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/coreutils@8.30-3?distro=debian-10.5",
+      "type": "library",
+      "name": "coreutils",
+      "version": "8.30-3",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/coreutils@8.30-3?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "coreutils@8.30-3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "coreutils"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "8.30-3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/dash@0.5.10.2-5?distro=debian-10.5",
+      "type": "library",
+      "name": "dash",
+      "version": "0.5.10.2-5",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/dash@0.5.10.2-5?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "dash@0.5.10.2-5"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "dash"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "0.5.10.2-5"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/datadog-agent@1:5.32.8-1?distro=debian-10.5",
+      "type": "library",
+      "name": "datadog-agent",
+      "version": "1:5.32.8-1",
+      "purl": "pkg:deb/debian/datadog-agent@1:5.32.8-1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "datadog-agent@1:5.32.8-1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "datadog-agent"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1:5.32.8-1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e1711c4678158ed8fc31b0b238068b4ddba82dcbb3372d1a2c793aee398e9023"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:7a5bf91ec7cb7a5465b188272f9c6b59c07bcf591523710e2476f48c108f9da9"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/debconf@1.5.71?distro=debian-10.5",
+      "type": "library",
+      "name": "debconf",
+      "version": "1.5.71",
+      "licenses": [
+        {
+          "expression": "BSD-2-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/debconf@1.5.71?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "debconf@1.5.71"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "debconf"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.5.71"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/debian-archive-keyring@2019.1?distro=debian-10.5",
+      "type": "library",
+      "name": "debian-archive-keyring",
+      "version": "2019.1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/debian-archive-keyring@2019.1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "debian-archive-keyring@2019.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "debian-archive-keyring"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2019.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/debianutils@4.8.6.1?distro=debian-10.5",
+      "type": "library",
+      "name": "debianutils",
+      "version": "4.8.6.1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/debianutils@4.8.6.1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "debianutils@4.8.6.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "debianutils"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "4.8.6.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/diffutils@1:3.7-3?distro=debian-10.5",
+      "type": "library",
+      "name": "diffutils",
+      "version": "1:3.7-3",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "GFDL"
+        }
+      ],
+      "purl": "pkg:deb/debian/diffutils@1:3.7-3?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "diffutils@1:3.7-3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "diffutils"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1:3.7-3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/dirmngr@2.2.12-1+deb10u1?distro=debian-10.5",
+      "type": "library",
+      "name": "dirmngr",
+      "version": "2.2.12-1+deb10u1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "permissive"
+        },
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "Expat"
+        },
+        {
+          "expression": "BSD-3-Clause"
+        },
+        {
+          "expression": "LGPL-3.0"
+        },
+        {
+          "expression": "RFC-Reference"
+        },
+        {
+          "expression": "TinySCHEME"
+        },
+        {
+          "expression": "CC0-1.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/dirmngr@2.2.12-1+deb10u1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "dirmngr@2.2.12-1+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "gnupg2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.2.12-1+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e1711c4678158ed8fc31b0b238068b4ddba82dcbb3372d1a2c793aee398e9023"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:7a5bf91ec7cb7a5465b188272f9c6b59c07bcf591523710e2476f48c108f9da9"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/dpkg@1.19.7?distro=debian-10.5",
+      "type": "library",
+      "name": "dpkg",
+      "version": "1.19.7",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "BSD-2-Clause"
+        },
+        {
+          "expression": "public-domain-s-s-d"
+        },
+        {
+          "expression": "public-domain-md5"
+        }
+      ],
+      "purl": "pkg:deb/debian/dpkg@1.19.7?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "dpkg@1.19.7"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "dpkg"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.19.7"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/e2fsprogs@1.44.5-1+deb10u3?distro=debian-10.5",
+      "type": "library",
+      "name": "e2fsprogs",
+      "version": "1.44.5-1+deb10u3",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "LGPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/e2fsprogs@1.44.5-1+deb10u3?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "e2fsprogs@1.44.5-1+deb10u3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "e2fsprogs"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.44.5-1+deb10u3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/fdisk@2.33.1-0.1?distro=debian-10.5",
+      "type": "library",
+      "name": "fdisk",
+      "version": "2.33.1-0.1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "public-domain"
+        },
+        {
+          "expression": "BSD-4-Clause"
+        },
+        {
+          "expression": "MIT"
+        },
+        {
+          "expression": "BSD-2-Clause"
+        },
+        {
+          "expression": "BSD-3-Clause"
+        },
+        {
+          "expression": "LGPL-2.0"
+        },
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/fdisk@2.33.1-0.1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "fdisk@2.33.1-0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "util-linux"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.33.1-0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/findutils@4.6.0+git+20190209-2?distro=debian-10.5",
+      "type": "library",
+      "name": "findutils",
+      "version": "4.6.0+git+20190209-2",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "GFDL-1.3"
+        }
+      ],
+      "purl": "pkg:deb/debian/findutils@4.6.0+git+20190209-2?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "findutils@4.6.0+git+20190209-2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "findutils"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "4.6.0+git+20190209-2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gcc-8-base@8.3.0-6?distro=debian-10.5",
+      "type": "library",
+      "name": "gcc-8-base",
+      "version": "8.3.0-6",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "GFDL-1.2"
+        },
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "Artistic"
+        },
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/gcc-8-base@8.3.0-6?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "gcc-8-base@8.3.0-6"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "gcc-8"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "8.3.0-6"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gnupg@2.2.12-1+deb10u1?distro=debian-10.5",
+      "type": "library",
+      "name": "gnupg",
+      "version": "2.2.12-1+deb10u1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "permissive"
+        },
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "Expat"
+        },
+        {
+          "expression": "BSD-3-Clause"
+        },
+        {
+          "expression": "LGPL-3.0"
+        },
+        {
+          "expression": "RFC-Reference"
+        },
+        {
+          "expression": "TinySCHEME"
+        },
+        {
+          "expression": "CC0-1.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/gnupg@2.2.12-1+deb10u1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "gnupg@2.2.12-1+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "gnupg2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.2.12-1+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e1711c4678158ed8fc31b0b238068b4ddba82dcbb3372d1a2c793aee398e9023"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:7a5bf91ec7cb7a5465b188272f9c6b59c07bcf591523710e2476f48c108f9da9"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gnupg-l10n@2.2.12-1+deb10u1?distro=debian-10.5",
+      "type": "library",
+      "name": "gnupg-l10n",
+      "version": "2.2.12-1+deb10u1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "permissive"
+        },
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "Expat"
+        },
+        {
+          "expression": "BSD-3-Clause"
+        },
+        {
+          "expression": "LGPL-3.0"
+        },
+        {
+          "expression": "RFC-Reference"
+        },
+        {
+          "expression": "TinySCHEME"
+        },
+        {
+          "expression": "CC0-1.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/gnupg-l10n@2.2.12-1+deb10u1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "gnupg-l10n@2.2.12-1+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "gnupg2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.2.12-1+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e1711c4678158ed8fc31b0b238068b4ddba82dcbb3372d1a2c793aee398e9023"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:7a5bf91ec7cb7a5465b188272f9c6b59c07bcf591523710e2476f48c108f9da9"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gnupg-utils@2.2.12-1+deb10u1?distro=debian-10.5",
+      "type": "library",
+      "name": "gnupg-utils",
+      "version": "2.2.12-1+deb10u1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "permissive"
+        },
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "Expat"
+        },
+        {
+          "expression": "BSD-3-Clause"
+        },
+        {
+          "expression": "LGPL-3.0"
+        },
+        {
+          "expression": "RFC-Reference"
+        },
+        {
+          "expression": "TinySCHEME"
+        },
+        {
+          "expression": "CC0-1.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/gnupg-utils@2.2.12-1+deb10u1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "gnupg-utils@2.2.12-1+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "gnupg2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.2.12-1+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e1711c4678158ed8fc31b0b238068b4ddba82dcbb3372d1a2c793aee398e9023"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:7a5bf91ec7cb7a5465b188272f9c6b59c07bcf591523710e2476f48c108f9da9"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gpg@2.2.12-1+deb10u1?distro=debian-10.5",
+      "type": "library",
+      "name": "gpg",
+      "version": "2.2.12-1+deb10u1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "permissive"
+        },
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "Expat"
+        },
+        {
+          "expression": "BSD-3-Clause"
+        },
+        {
+          "expression": "LGPL-3.0"
+        },
+        {
+          "expression": "RFC-Reference"
+        },
+        {
+          "expression": "TinySCHEME"
+        },
+        {
+          "expression": "CC0-1.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/gpg@2.2.12-1+deb10u1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "gpg@2.2.12-1+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "gnupg2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.2.12-1+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e1711c4678158ed8fc31b0b238068b4ddba82dcbb3372d1a2c793aee398e9023"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:7a5bf91ec7cb7a5465b188272f9c6b59c07bcf591523710e2476f48c108f9da9"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gpg-agent@2.2.12-1+deb10u1?distro=debian-10.5",
+      "type": "library",
+      "name": "gpg-agent",
+      "version": "2.2.12-1+deb10u1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "permissive"
+        },
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "Expat"
+        },
+        {
+          "expression": "BSD-3-Clause"
+        },
+        {
+          "expression": "LGPL-3.0"
+        },
+        {
+          "expression": "RFC-Reference"
+        },
+        {
+          "expression": "TinySCHEME"
+        },
+        {
+          "expression": "CC0-1.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/gpg-agent@2.2.12-1+deb10u1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "gpg-agent@2.2.12-1+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "gnupg2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.2.12-1+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e1711c4678158ed8fc31b0b238068b4ddba82dcbb3372d1a2c793aee398e9023"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:7a5bf91ec7cb7a5465b188272f9c6b59c07bcf591523710e2476f48c108f9da9"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gpg-wks-client@2.2.12-1+deb10u1?distro=debian-10.5",
+      "type": "library",
+      "name": "gpg-wks-client",
+      "version": "2.2.12-1+deb10u1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "permissive"
+        },
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "Expat"
+        },
+        {
+          "expression": "BSD-3-Clause"
+        },
+        {
+          "expression": "LGPL-3.0"
+        },
+        {
+          "expression": "RFC-Reference"
+        },
+        {
+          "expression": "TinySCHEME"
+        },
+        {
+          "expression": "CC0-1.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/gpg-wks-client@2.2.12-1+deb10u1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "gpg-wks-client@2.2.12-1+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "gnupg2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.2.12-1+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e1711c4678158ed8fc31b0b238068b4ddba82dcbb3372d1a2c793aee398e9023"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:7a5bf91ec7cb7a5465b188272f9c6b59c07bcf591523710e2476f48c108f9da9"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gpg-wks-server@2.2.12-1+deb10u1?distro=debian-10.5",
+      "type": "library",
+      "name": "gpg-wks-server",
+      "version": "2.2.12-1+deb10u1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "permissive"
+        },
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "Expat"
+        },
+        {
+          "expression": "BSD-3-Clause"
+        },
+        {
+          "expression": "LGPL-3.0"
+        },
+        {
+          "expression": "RFC-Reference"
+        },
+        {
+          "expression": "TinySCHEME"
+        },
+        {
+          "expression": "CC0-1.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/gpg-wks-server@2.2.12-1+deb10u1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "gpg-wks-server@2.2.12-1+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "gnupg2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.2.12-1+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e1711c4678158ed8fc31b0b238068b4ddba82dcbb3372d1a2c793aee398e9023"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:7a5bf91ec7cb7a5465b188272f9c6b59c07bcf591523710e2476f48c108f9da9"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gpgconf@2.2.12-1+deb10u1?distro=debian-10.5",
+      "type": "library",
+      "name": "gpgconf",
+      "version": "2.2.12-1+deb10u1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "permissive"
+        },
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "Expat"
+        },
+        {
+          "expression": "BSD-3-Clause"
+        },
+        {
+          "expression": "LGPL-3.0"
+        },
+        {
+          "expression": "RFC-Reference"
+        },
+        {
+          "expression": "TinySCHEME"
+        },
+        {
+          "expression": "CC0-1.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/gpgconf@2.2.12-1+deb10u1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "gpgconf@2.2.12-1+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "gnupg2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.2.12-1+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e1711c4678158ed8fc31b0b238068b4ddba82dcbb3372d1a2c793aee398e9023"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:7a5bf91ec7cb7a5465b188272f9c6b59c07bcf591523710e2476f48c108f9da9"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gpgsm@2.2.12-1+deb10u1?distro=debian-10.5",
+      "type": "library",
+      "name": "gpgsm",
+      "version": "2.2.12-1+deb10u1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "permissive"
+        },
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "Expat"
+        },
+        {
+          "expression": "BSD-3-Clause"
+        },
+        {
+          "expression": "LGPL-3.0"
+        },
+        {
+          "expression": "RFC-Reference"
+        },
+        {
+          "expression": "TinySCHEME"
+        },
+        {
+          "expression": "CC0-1.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/gpgsm@2.2.12-1+deb10u1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "gpgsm@2.2.12-1+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "gnupg2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.2.12-1+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e1711c4678158ed8fc31b0b238068b4ddba82dcbb3372d1a2c793aee398e9023"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:7a5bf91ec7cb7a5465b188272f9c6b59c07bcf591523710e2476f48c108f9da9"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gpgv@2.2.12-1+deb10u1?distro=debian-10.5",
+      "type": "library",
+      "name": "gpgv",
+      "version": "2.2.12-1+deb10u1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "permissive"
+        },
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "Expat"
+        },
+        {
+          "expression": "BSD-3-Clause"
+        },
+        {
+          "expression": "LGPL-3.0"
+        },
+        {
+          "expression": "RFC-Reference"
+        },
+        {
+          "expression": "TinySCHEME"
+        },
+        {
+          "expression": "CC0-1.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/gpgv@2.2.12-1+deb10u1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "gpgv@2.2.12-1+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "gnupg2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.2.12-1+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/grep@3.3-1?distro=debian-10.5",
+      "type": "library",
+      "name": "grep",
+      "version": "3.3-1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/grep@3.3-1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "grep@3.3-1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "grep"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.3-1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/gzip@1.9-3?distro=debian-10.5",
+      "type": "library",
+      "name": "gzip",
+      "version": "1.9-3",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/gzip@1.9-3?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "gzip@1.9-3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "gzip"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.9-3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/hostname@3.21?distro=debian-10.5",
+      "type": "library",
+      "name": "hostname",
+      "version": "3.21",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/hostname@3.21?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "hostname@3.21"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "hostname"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.21"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/init-system-helpers@1.56+nmu1?distro=debian-10.5",
+      "type": "library",
+      "name": "init-system-helpers",
+      "version": "1.56+nmu1",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        },
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/init-system-helpers@1.56+nmu1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "init-system-helpers@1.56+nmu1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "init-system-helpers"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.56+nmu1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libacl1@2.2.53-4?distro=debian-10.5",
+      "type": "library",
+      "name": "libacl1",
+      "version": "2.2.53-4",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "LGPL-2.0"
+        },
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libacl1@2.2.53-4?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libacl1@2.2.53-4"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "acl"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.2.53-4"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libapt-pkg5.0@1.8.2.1?distro=debian-10.5",
+      "type": "library",
+      "name": "libapt-pkg5.0",
+      "version": "1.8.2.1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libapt-pkg5.0@1.8.2.1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libapt-pkg5.0@1.8.2.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "apt"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.8.2.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libassuan0@2.5.2-1?distro=debian-10.5",
+      "type": "library",
+      "name": "libassuan0",
+      "version": "2.5.2-1",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "GAP~FSF"
+        },
+        {
+          "expression": "LGPL-3.0"
+        },
+        {
+          "expression": "GPL-2+ with libtool exception"
+        },
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "GAP"
+        }
+      ],
+      "purl": "pkg:deb/debian/libassuan0@2.5.2-1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libassuan0@2.5.2-1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libassuan"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.5.2-1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e1711c4678158ed8fc31b0b238068b4ddba82dcbb3372d1a2c793aee398e9023"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:7a5bf91ec7cb7a5465b188272f9c6b59c07bcf591523710e2476f48c108f9da9"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libattr1@1:2.4.48-4?distro=debian-10.5",
+      "type": "library",
+      "name": "libattr1",
+      "version": "1:2.4.48-4",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "LGPL-2.0"
+        },
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libattr1@1:2.4.48-4?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libattr1@1:2.4.48-4"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "attr"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1:2.4.48-4"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libaudit-common@1:2.8.4-3?distro=debian-10.5",
+      "type": "library",
+      "name": "libaudit-common",
+      "version": "1:2.8.4-3",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "GPL-1.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libaudit-common@1:2.8.4-3?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libaudit-common@1:2.8.4-3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "audit"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1:2.8.4-3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libaudit1@1:2.8.4-3?distro=debian-10.5",
+      "type": "library",
+      "name": "libaudit1",
+      "version": "1:2.8.4-3",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "GPL-1.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libaudit1@1:2.8.4-3?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libaudit1@1:2.8.4-3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "audit"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1:2.8.4-3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libblkid1@2.33.1-0.1?distro=debian-10.5",
+      "type": "library",
+      "name": "libblkid1",
+      "version": "2.33.1-0.1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "public-domain"
+        },
+        {
+          "expression": "BSD-4-Clause"
+        },
+        {
+          "expression": "MIT"
+        },
+        {
+          "expression": "BSD-2-Clause"
+        },
+        {
+          "expression": "BSD-3-Clause"
+        },
+        {
+          "expression": "LGPL-2.0"
+        },
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libblkid1@2.33.1-0.1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libblkid1@2.33.1-0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "util-linux"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.33.1-0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libbz2-1.0@1.0.6-9.2~deb10u1?distro=debian-10.5",
+      "type": "library",
+      "name": "libbz2-1.0",
+      "version": "1.0.6-9.2~deb10u1",
+      "licenses": [
+        {
+          "expression": "BSD-variant"
+        },
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libbz2-1.0@1.0.6-9.2~deb10u1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libbz2-1.0@1.0.6-9.2~deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "bzip2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.0.6-9.2~deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libc-bin@2.28-10?distro=debian-10.5",
+      "type": "library",
+      "name": "libc-bin",
+      "version": "2.28-10",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libc-bin@2.28-10?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libc-bin@2.28-10"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "glibc"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.28-10"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libc6@2.28-10?distro=debian-10.5",
+      "type": "library",
+      "name": "libc6",
+      "version": "2.28-10",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libc6@2.28-10?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libc6@2.28-10"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "glibc"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.28-10"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libcap-ng0@0.7.9-2?distro=debian-10.5",
+      "type": "library",
+      "name": "libcap-ng0",
+      "version": "0.7.9-2",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libcap-ng0@0.7.9-2?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libcap-ng0@0.7.9-2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libcap-ng"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "0.7.9-2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libcom-err2@1.44.5-1+deb10u3?distro=debian-10.5",
+      "type": "library",
+      "name": "libcom-err2",
+      "version": "1.44.5-1+deb10u3",
+      "purl": "pkg:deb/debian/libcom-err2@1.44.5-1+deb10u3?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libcom-err2@1.44.5-1+deb10u3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "e2fsprogs"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.44.5-1+deb10u3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libdb5.3@5.3.28+dfsg1-0.5?distro=debian-10.5",
+      "type": "library",
+      "name": "libdb5.3",
+      "version": "5.3.28+dfsg1-0.5",
+      "purl": "pkg:deb/debian/libdb5.3@5.3.28+dfsg1-0.5?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libdb5.3@5.3.28+dfsg1-0.5"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "db5.3"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "5.3.28+dfsg1-0.5"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libdebconfclient0@0.249?distro=debian-10.5",
+      "type": "library",
+      "name": "libdebconfclient0",
+      "version": "0.249",
+      "purl": "pkg:deb/debian/libdebconfclient0@0.249?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libdebconfclient0@0.249"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "cdebconf"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "0.249"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libext2fs2@1.44.5-1+deb10u3?distro=debian-10.5",
+      "type": "library",
+      "name": "libext2fs2",
+      "version": "1.44.5-1+deb10u3",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "LGPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libext2fs2@1.44.5-1+deb10u3?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libext2fs2@1.44.5-1+deb10u3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "e2fsprogs"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.44.5-1+deb10u3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libfdisk1@2.33.1-0.1?distro=debian-10.5",
+      "type": "library",
+      "name": "libfdisk1",
+      "version": "2.33.1-0.1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "public-domain"
+        },
+        {
+          "expression": "BSD-4-Clause"
+        },
+        {
+          "expression": "MIT"
+        },
+        {
+          "expression": "BSD-2-Clause"
+        },
+        {
+          "expression": "BSD-3-Clause"
+        },
+        {
+          "expression": "LGPL-2.0"
+        },
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libfdisk1@2.33.1-0.1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libfdisk1@2.33.1-0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "util-linux"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.33.1-0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libffi6@3.2.1-9?distro=debian-10.5",
+      "type": "library",
+      "name": "libffi6",
+      "version": "3.2.1-9",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libffi6@3.2.1-9?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libffi6@3.2.1-9"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libffi"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.2.1-9"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgcc1@1:8.3.0-6?distro=debian-10.5",
+      "type": "library",
+      "name": "libgcc1",
+      "version": "1:8.3.0-6",
+      "purl": "pkg:deb/debian/libgcc1@1:8.3.0-6?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libgcc1@1:8.3.0-6"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "gcc-8"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "8.3.0-6"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgcrypt20@1.8.4-5?distro=debian-10.5",
+      "type": "library",
+      "name": "libgcrypt20",
+      "version": "1.8.4-5",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        },
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libgcrypt20@1.8.4-5?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libgcrypt20@1.8.4-5"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libgcrypt20"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.8.4-5"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgmp10@2:6.1.2+dfsg-4?distro=debian-10.5",
+      "type": "library",
+      "name": "libgmp10",
+      "version": "2:6.1.2+dfsg-4",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        },
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libgmp10@2:6.1.2+dfsg-4?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libgmp10@2:6.1.2+dfsg-4"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "gmp"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2:6.1.2+dfsg-4"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgnutls30@3.6.7-4+deb10u5?distro=debian-10.5",
+      "type": "library",
+      "name": "libgnutls30",
+      "version": "3.6.7-4+deb10u5",
+      "licenses": [
+        {
+          "expression": "The main library is licensed under GNU Lesser"
+        },
+        {
+          "expression": "LGPL-3.0"
+        },
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "GFDL-1.3"
+        },
+        {
+          "expression": "CC0 license"
+        },
+        {
+          "expression": "The MIT License (MIT)"
+        },
+        {
+          "expression": "LGPLv3+"
+        },
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "Apache-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libgnutls30@3.6.7-4+deb10u5?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libgnutls30@3.6.7-4+deb10u5"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "gnutls28"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.6.7-4+deb10u5"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgpg-error0@1.35-1?distro=debian-10.5",
+      "type": "library",
+      "name": "libgpg-error0",
+      "version": "1.35-1",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "BSD-3-Clause"
+        },
+        {
+          "expression": "g10-permissive"
+        },
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libgpg-error0@1.35-1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libgpg-error0@1.35-1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libgpg-error"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.35-1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libhogweed4@3.4.1-1?distro=debian-10.5",
+      "type": "library",
+      "name": "libhogweed4",
+      "version": "3.4.1-1",
+      "purl": "pkg:deb/debian/libhogweed4@3.4.1-1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libhogweed4@3.4.1-1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "nettle"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.4.1-1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libidn2-0@2.0.5-1+deb10u1?distro=debian-10.5",
+      "type": "library",
+      "name": "libidn2-0",
+      "version": "2.0.5-1+deb10u1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "LGPL-3.0"
+        },
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "Unicode"
+        }
+      ],
+      "purl": "pkg:deb/debian/libidn2-0@2.0.5-1+deb10u1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libidn2-0@2.0.5-1+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libidn2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.0.5-1+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libksba8@1.3.5-2?distro=debian-10.5",
+      "type": "library",
+      "name": "libksba8",
+      "version": "1.3.5-2",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libksba8@1.3.5-2?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libksba8@1.3.5-2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libksba"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.3.5-2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e1711c4678158ed8fc31b0b238068b4ddba82dcbb3372d1a2c793aee398e9023"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:7a5bf91ec7cb7a5465b188272f9c6b59c07bcf591523710e2476f48c108f9da9"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libldap-2.4-2@2.4.47+dfsg-3+deb10u2?distro=debian-10.5",
+      "type": "library",
+      "name": "libldap-2.4-2",
+      "version": "2.4.47+dfsg-3+deb10u2",
+      "purl": "pkg:deb/debian/libldap-2.4-2@2.4.47+dfsg-3+deb10u2?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libldap-2.4-2@2.4.47+dfsg-3+deb10u2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "openldap"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.4.47+dfsg-3+deb10u2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e1711c4678158ed8fc31b0b238068b4ddba82dcbb3372d1a2c793aee398e9023"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:7a5bf91ec7cb7a5465b188272f9c6b59c07bcf591523710e2476f48c108f9da9"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libldap-common@2.4.47+dfsg-3+deb10u2?distro=debian-10.5",
+      "type": "library",
+      "name": "libldap-common",
+      "version": "2.4.47+dfsg-3+deb10u2",
+      "purl": "pkg:deb/debian/libldap-common@2.4.47+dfsg-3+deb10u2?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libldap-common@2.4.47+dfsg-3+deb10u2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "openldap"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.4.47+dfsg-3+deb10u2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e1711c4678158ed8fc31b0b238068b4ddba82dcbb3372d1a2c793aee398e9023"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:7a5bf91ec7cb7a5465b188272f9c6b59c07bcf591523710e2476f48c108f9da9"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/liblz4-1@1.8.3-1?distro=debian-10.5",
+      "type": "library",
+      "name": "liblz4-1",
+      "version": "1.8.3-1",
+      "licenses": [
+        {
+          "expression": "BSD-2-Clause"
+        },
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/liblz4-1@1.8.3-1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "liblz4-1@1.8.3-1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "lz4"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.8.3-1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/liblzma5@5.2.4-1?distro=debian-10.5",
+      "type": "library",
+      "name": "liblzma5",
+      "version": "5.2.4-1",
+      "licenses": [
+        {
+          "expression": "PD"
+        },
+        {
+          "expression": "probably-PD"
+        },
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "permissive-fsf"
+        },
+        {
+          "expression": "Autoconf"
+        },
+        {
+          "expression": "permissive-nowarranty"
+        },
+        {
+          "expression": "none"
+        },
+        {
+          "expression": "config-h"
+        },
+        {
+          "expression": "LGPL-2.0"
+        },
+        {
+          "expression": "noderivs"
+        },
+        {
+          "expression": "PD-debian"
+        },
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/liblzma5@5.2.4-1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "liblzma5@5.2.4-1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "xz-utils"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "5.2.4-1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libmount1@2.33.1-0.1?distro=debian-10.5",
+      "type": "library",
+      "name": "libmount1",
+      "version": "2.33.1-0.1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "public-domain"
+        },
+        {
+          "expression": "BSD-4-Clause"
+        },
+        {
+          "expression": "MIT"
+        },
+        {
+          "expression": "BSD-2-Clause"
+        },
+        {
+          "expression": "BSD-3-Clause"
+        },
+        {
+          "expression": "LGPL-2.0"
+        },
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libmount1@2.33.1-0.1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libmount1@2.33.1-0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "util-linux"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.33.1-0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libncursesw6@6.1+20181013-2+deb10u2?distro=debian-10.5",
+      "type": "library",
+      "name": "libncursesw6",
+      "version": "6.1+20181013-2+deb10u2",
+      "purl": "pkg:deb/debian/libncursesw6@6.1+20181013-2+deb10u2?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libncursesw6@6.1+20181013-2+deb10u2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "ncurses"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "6.1+20181013-2+deb10u2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libnettle6@3.4.1-1?distro=debian-10.5",
+      "type": "library",
+      "name": "libnettle6",
+      "version": "3.4.1-1",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "LGPL-2.0"
+        },
+        {
+          "expression": "other"
+        },
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "GPL-2.0-with-autoconf-exception"
+        },
+        {
+          "expression": "public-domain"
+        },
+        {
+          "expression": "GAP"
+        },
+        {
+          "expression": "LGPL-3.0"
+        },
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libnettle6@3.4.1-1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libnettle6@3.4.1-1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "nettle"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.4.1-1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libnpth0@1.6-1?distro=debian-10.5",
+      "type": "library",
+      "name": "libnpth0",
+      "version": "1.6-1",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libnpth0@1.6-1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libnpth0@1.6-1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "npth"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.6-1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e1711c4678158ed8fc31b0b238068b4ddba82dcbb3372d1a2c793aee398e9023"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:7a5bf91ec7cb7a5465b188272f9c6b59c07bcf591523710e2476f48c108f9da9"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libp11-kit0@0.23.15-2?distro=debian-10.5",
+      "type": "library",
+      "name": "libp11-kit0",
+      "version": "0.23.15-2",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        },
+        {
+          "expression": "permissive-like-automake-output"
+        },
+        {
+          "expression": "ISC"
+        },
+        {
+          "expression": "ISC+IBM"
+        },
+        {
+          "expression": "same-as-rest-of-p11kit"
+        }
+      ],
+      "purl": "pkg:deb/debian/libp11-kit0@0.23.15-2?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libp11-kit0@0.23.15-2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "p11-kit"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "0.23.15-2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libpam-modules@1.3.1-5?distro=debian-10.5",
+      "type": "library",
+      "name": "libpam-modules",
+      "version": "1.3.1-5",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libpam-modules@1.3.1-5?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libpam-modules@1.3.1-5"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "pam"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.3.1-5"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libpam-modules-bin@1.3.1-5?distro=debian-10.5",
+      "type": "library",
+      "name": "libpam-modules-bin",
+      "version": "1.3.1-5",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libpam-modules-bin@1.3.1-5?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libpam-modules-bin@1.3.1-5"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "pam"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.3.1-5"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libpam-runtime@1.3.1-5?distro=debian-10.5",
+      "type": "library",
+      "name": "libpam-runtime",
+      "version": "1.3.1-5",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libpam-runtime@1.3.1-5?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libpam-runtime@1.3.1-5"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "pam"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.3.1-5"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libpam0g@1.3.1-5?distro=debian-10.5",
+      "type": "library",
+      "name": "libpam0g",
+      "version": "1.3.1-5",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libpam0g@1.3.1-5?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libpam0g@1.3.1-5"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "pam"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.3.1-5"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libpcre3@2:8.39-12?distro=debian-10.5",
+      "type": "library",
+      "name": "libpcre3",
+      "version": "2:8.39-12",
+      "purl": "pkg:deb/debian/libpcre3@2:8.39-12?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libpcre3@2:8.39-12"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "pcre3"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2:8.39-12"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libreadline7@7.0-5?distro=debian-10.5",
+      "type": "library",
+      "name": "libreadline7",
+      "version": "7.0-5",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "GFDL"
+        }
+      ],
+      "purl": "pkg:deb/debian/libreadline7@7.0-5?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libreadline7@7.0-5"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "readline"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "7.0-5"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e1711c4678158ed8fc31b0b238068b4ddba82dcbb3372d1a2c793aee398e9023"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:7a5bf91ec7cb7a5465b188272f9c6b59c07bcf591523710e2476f48c108f9da9"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libsasl2-2@2.1.27+dfsg-1+deb10u1?distro=debian-10.5",
+      "type": "library",
+      "name": "libsasl2-2",
+      "version": "2.1.27+dfsg-1+deb10u1",
+      "licenses": [
+        {
+          "expression": "BSD-4-Clause"
+        },
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libsasl2-2@2.1.27+dfsg-1+deb10u1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libsasl2-2@2.1.27+dfsg-1+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "cyrus-sasl2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.1.27+dfsg-1+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e1711c4678158ed8fc31b0b238068b4ddba82dcbb3372d1a2c793aee398e9023"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:7a5bf91ec7cb7a5465b188272f9c6b59c07bcf591523710e2476f48c108f9da9"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libsasl2-modules-db@2.1.27+dfsg-1+deb10u1?distro=debian-10.5",
+      "type": "library",
+      "name": "libsasl2-modules-db",
+      "version": "2.1.27+dfsg-1+deb10u1",
+      "licenses": [
+        {
+          "expression": "BSD-4-Clause"
+        },
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libsasl2-modules-db@2.1.27+dfsg-1+deb10u1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libsasl2-modules-db@2.1.27+dfsg-1+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "cyrus-sasl2"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.1.27+dfsg-1+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e1711c4678158ed8fc31b0b238068b4ddba82dcbb3372d1a2c793aee398e9023"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:7a5bf91ec7cb7a5465b188272f9c6b59c07bcf591523710e2476f48c108f9da9"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libseccomp2@2.3.3-4?distro=debian-10.5",
+      "type": "library",
+      "name": "libseccomp2",
+      "version": "2.3.3-4",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        }
+      ],
+      "purl": "pkg:deb/debian/libseccomp2@2.3.3-4?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libseccomp2@2.3.3-4"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libseccomp"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.3.3-4"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libselinux1@2.8-1+b1?distro=debian-10.5",
+      "type": "library",
+      "name": "libselinux1",
+      "version": "2.8-1+b1",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libselinux1@2.8-1+b1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libselinux1@2.8-1+b1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libselinux"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.8-1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libsemanage-common@2.8-2?distro=debian-10.5",
+      "type": "library",
+      "name": "libsemanage-common",
+      "version": "2.8-2",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        },
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libsemanage-common@2.8-2?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libsemanage-common@2.8-2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libsemanage"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.8-2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libsemanage1@2.8-2?distro=debian-10.5",
+      "type": "library",
+      "name": "libsemanage1",
+      "version": "2.8-2",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        },
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libsemanage1@2.8-2?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libsemanage1@2.8-2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libsemanage"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.8-2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libsepol1@2.8-1?distro=debian-10.5",
+      "type": "library",
+      "name": "libsepol1",
+      "version": "2.8-1",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        },
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libsepol1@2.8-1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libsepol1@2.8-1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libsepol"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.8-1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libsmartcols1@2.33.1-0.1?distro=debian-10.5",
+      "type": "library",
+      "name": "libsmartcols1",
+      "version": "2.33.1-0.1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "public-domain"
+        },
+        {
+          "expression": "BSD-4-Clause"
+        },
+        {
+          "expression": "MIT"
+        },
+        {
+          "expression": "BSD-2-Clause"
+        },
+        {
+          "expression": "BSD-3-Clause"
+        },
+        {
+          "expression": "LGPL-2.0"
+        },
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libsmartcols1@2.33.1-0.1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libsmartcols1@2.33.1-0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "util-linux"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.33.1-0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libsqlite3-0@3.27.2-3?distro=debian-10.5",
+      "type": "library",
+      "name": "libsqlite3-0",
+      "version": "3.27.2-3",
+      "licenses": [
+        {
+          "expression": "public-domain"
+        },
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libsqlite3-0@3.27.2-3?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libsqlite3-0@3.27.2-3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "sqlite3"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "3.27.2-3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e1711c4678158ed8fc31b0b238068b4ddba82dcbb3372d1a2c793aee398e9023"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:7a5bf91ec7cb7a5465b188272f9c6b59c07bcf591523710e2476f48c108f9da9"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libss2@1.44.5-1+deb10u3?distro=debian-10.5",
+      "type": "library",
+      "name": "libss2",
+      "version": "1.44.5-1+deb10u3",
+      "purl": "pkg:deb/debian/libss2@1.44.5-1+deb10u3?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libss2@1.44.5-1+deb10u3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "e2fsprogs"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.44.5-1+deb10u3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libssl1.1@1.1.1d-0+deb10u3?distro=debian-10.5",
+      "type": "library",
+      "name": "libssl1.1",
+      "version": "1.1.1d-0+deb10u3",
+      "purl": "pkg:deb/debian/libssl1.1@1.1.1d-0+deb10u3?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libssl1.1@1.1.1d-0+deb10u3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "openssl"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.1.1d-0+deb10u3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e1711c4678158ed8fc31b0b238068b4ddba82dcbb3372d1a2c793aee398e9023"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:7a5bf91ec7cb7a5465b188272f9c6b59c07bcf591523710e2476f48c108f9da9"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libstdc++6@8.3.0-6?distro=debian-10.5",
+      "type": "library",
+      "name": "libstdc++6",
+      "version": "8.3.0-6",
+      "purl": "pkg:deb/debian/libstdc++6@8.3.0-6?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libstdc++6@8.3.0-6"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "gcc-8"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "8.3.0-6"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libsystemd0@241-7~deb10u4?distro=debian-10.5",
+      "type": "library",
+      "name": "libsystemd0",
+      "version": "241-7~deb10u4",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "CC0-1.0"
+        },
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "Expat"
+        },
+        {
+          "expression": "public-domain"
+        }
+      ],
+      "purl": "pkg:deb/debian/libsystemd0@241-7~deb10u4?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libsystemd0@241-7~deb10u4"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "systemd"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "241-7~deb10u4"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libtasn1-6@4.13-3?distro=debian-10.5",
+      "type": "library",
+      "name": "libtasn1-6",
+      "version": "4.13-3",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        },
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "GFDL-1.3"
+        }
+      ],
+      "purl": "pkg:deb/debian/libtasn1-6@4.13-3?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libtasn1-6@4.13-3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libtasn1-6"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "4.13-3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libtinfo6@6.1+20181013-2+deb10u2?distro=debian-10.5",
+      "type": "library",
+      "name": "libtinfo6",
+      "version": "6.1+20181013-2+deb10u2",
+      "purl": "pkg:deb/debian/libtinfo6@6.1+20181013-2+deb10u2?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libtinfo6@6.1+20181013-2+deb10u2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "ncurses"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "6.1+20181013-2+deb10u2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libudev1@241-7~deb10u4?distro=debian-10.5",
+      "type": "library",
+      "name": "libudev1",
+      "version": "241-7~deb10u4",
+      "licenses": [
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "CC0-1.0"
+        },
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "Expat"
+        },
+        {
+          "expression": "public-domain"
+        }
+      ],
+      "purl": "pkg:deb/debian/libudev1@241-7~deb10u4?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libudev1@241-7~deb10u4"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "systemd"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "241-7~deb10u4"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libunistring2@0.9.10-1?distro=debian-10.5",
+      "type": "library",
+      "name": "libunistring2",
+      "version": "0.9.10-1",
+      "licenses": [
+        {
+          "expression": "LGPL-3.0"
+        },
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "FreeSoftware"
+        },
+        {
+          "expression": "GPL-2+ with distribution exception"
+        },
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "GFDL-1.2+"
+        },
+        {
+          "expression": "MIT"
+        },
+        {
+          "expression": "GFDL-1.2"
+        }
+      ],
+      "purl": "pkg:deb/debian/libunistring2@0.9.10-1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libunistring2@0.9.10-1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libunistring"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "0.9.10-1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libuuid1@2.33.1-0.1?distro=debian-10.5",
+      "type": "library",
+      "name": "libuuid1",
+      "version": "2.33.1-0.1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "public-domain"
+        },
+        {
+          "expression": "BSD-4-Clause"
+        },
+        {
+          "expression": "MIT"
+        },
+        {
+          "expression": "BSD-2-Clause"
+        },
+        {
+          "expression": "BSD-3-Clause"
+        },
+        {
+          "expression": "LGPL-2.0"
+        },
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/libuuid1@2.33.1-0.1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libuuid1@2.33.1-0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "util-linux"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.33.1-0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libzstd1@1.3.8+dfsg-3?distro=debian-10.5",
+      "type": "library",
+      "name": "libzstd1",
+      "version": "1.3.8+dfsg-3",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        },
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "Zlib"
+        },
+        {
+          "expression": "Expat"
+        }
+      ],
+      "purl": "pkg:deb/debian/libzstd1@1.3.8+dfsg-3?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libzstd1@1.3.8+dfsg-3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "libzstd"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.3.8+dfsg-3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/login@1:4.5-1.1?distro=debian-10.5",
+      "type": "library",
+      "name": "login",
+      "version": "1:4.5-1.1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/login@1:4.5-1.1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "login@1:4.5-1.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "shadow"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1:4.5-1.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/lsb-base@10.2019051400?distro=debian-10.5",
+      "type": "library",
+      "name": "lsb-base",
+      "version": "10.2019051400",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
+      "purl": "pkg:deb/debian/lsb-base@10.2019051400?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "lsb-base@10.2019051400"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "lsb"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "10.2019051400"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e1711c4678158ed8fc31b0b238068b4ddba82dcbb3372d1a2c793aee398e9023"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:7a5bf91ec7cb7a5465b188272f9c6b59c07bcf591523710e2476f48c108f9da9"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/mawk@1.3.3-17+b3?distro=debian-10.5",
+      "type": "library",
+      "name": "mawk",
+      "version": "1.3.3-17+b3",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/mawk@1.3.3-17+b3?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "mawk@1.3.3-17+b3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "mawk"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.3.3-17"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/mount@2.33.1-0.1?distro=debian-10.5",
+      "type": "library",
+      "name": "mount",
+      "version": "2.33.1-0.1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "public-domain"
+        },
+        {
+          "expression": "BSD-4-Clause"
+        },
+        {
+          "expression": "MIT"
+        },
+        {
+          "expression": "BSD-2-Clause"
+        },
+        {
+          "expression": "BSD-3-Clause"
+        },
+        {
+          "expression": "LGPL-2.0"
+        },
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/mount@2.33.1-0.1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "mount@2.33.1-0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "util-linux"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.33.1-0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/ncurses-base@6.1+20181013-2+deb10u2?distro=debian-10.5",
+      "type": "library",
+      "name": "ncurses-base",
+      "version": "6.1+20181013-2+deb10u2",
+      "purl": "pkg:deb/debian/ncurses-base@6.1+20181013-2+deb10u2?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "ncurses-base@6.1+20181013-2+deb10u2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "ncurses"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "6.1+20181013-2+deb10u2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/ncurses-bin@6.1+20181013-2+deb10u2?distro=debian-10.5",
+      "type": "library",
+      "name": "ncurses-bin",
+      "version": "6.1+20181013-2+deb10u2",
+      "purl": "pkg:deb/debian/ncurses-bin@6.1+20181013-2+deb10u2?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "ncurses-bin@6.1+20181013-2+deb10u2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "ncurses"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "6.1+20181013-2+deb10u2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/openssl@1.1.1d-0+deb10u3?distro=debian-10.5",
+      "type": "library",
+      "name": "openssl",
+      "version": "1.1.1d-0+deb10u3",
+      "purl": "pkg:deb/debian/openssl@1.1.1d-0+deb10u3?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "openssl@1.1.1d-0+deb10u3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "openssl"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.1.1d-0+deb10u3"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e1711c4678158ed8fc31b0b238068b4ddba82dcbb3372d1a2c793aee398e9023"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:7a5bf91ec7cb7a5465b188272f9c6b59c07bcf591523710e2476f48c108f9da9"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/passwd@1:4.5-1.1?distro=debian-10.5",
+      "type": "library",
+      "name": "passwd",
+      "version": "1:4.5-1.1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/passwd@1:4.5-1.1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "passwd@1:4.5-1.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "shadow"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1:4.5-1.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/perl-base@5.28.1-6+deb10u1?distro=debian-10.5",
+      "type": "library",
+      "name": "perl-base",
+      "version": "5.28.1-6+deb10u1",
+      "purl": "pkg:deb/debian/perl-base@5.28.1-6+deb10u1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "perl-base@5.28.1-6+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "perl"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "5.28.1-6+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/pinentry-curses@1.1.0-2?distro=debian-10.5",
+      "type": "library",
+      "name": "pinentry-curses",
+      "version": "1.1.0-2",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "X11"
+        },
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/pinentry-curses@1.1.0-2?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "pinentry-curses@1.1.0-2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "pinentry"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.1.0-2"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e1711c4678158ed8fc31b0b238068b4ddba82dcbb3372d1a2c793aee398e9023"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:7a5bf91ec7cb7a5465b188272f9c6b59c07bcf591523710e2476f48c108f9da9"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/readline-common@7.0-5?distro=debian-10.5",
+      "type": "library",
+      "name": "readline-common",
+      "version": "7.0-5",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "GFDL"
+        }
+      ],
+      "purl": "pkg:deb/debian/readline-common@7.0-5?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "readline-common@7.0-5"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "readline"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "7.0-5"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:e1711c4678158ed8fc31b0b238068b4ddba82dcbb3372d1a2c793aee398e9023"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:7a5bf91ec7cb7a5465b188272f9c6b59c07bcf591523710e2476f48c108f9da9"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/sed@4.7-1?distro=debian-10.5",
+      "type": "library",
+      "name": "sed",
+      "version": "4.7-1",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/sed@4.7-1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "sed@4.7-1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "sed"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "4.7-1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/sysvinit-utils@2.93-8?distro=debian-10.5",
+      "type": "library",
+      "name": "sysvinit-utils",
+      "version": "2.93-8",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/sysvinit-utils@2.93-8?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "sysvinit-utils@2.93-8"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "sysvinit"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.93-8"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/tar@1.30+dfsg-6?distro=debian-10.5",
+      "type": "library",
+      "name": "tar",
+      "version": "1.30+dfsg-6",
+      "licenses": [
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "GPL-2.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/tar@1.30+dfsg-6?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "tar@1.30+dfsg-6"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "tar"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.30+dfsg-6"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/tzdata@2020a-0+deb10u1?distro=debian-10.5",
+      "type": "library",
+      "name": "tzdata",
+      "version": "2020a-0+deb10u1",
+      "purl": "pkg:deb/debian/tzdata@2020a-0+deb10u1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "tzdata@2020a-0+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "tzdata"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2020a-0+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/util-linux@2.33.1-0.1?distro=debian-10.5",
+      "type": "library",
+      "name": "util-linux",
+      "version": "2.33.1-0.1",
+      "licenses": [
+        {
+          "expression": "GPL-2.0"
+        },
+        {
+          "expression": "public-domain"
+        },
+        {
+          "expression": "BSD-4-Clause"
+        },
+        {
+          "expression": "MIT"
+        },
+        {
+          "expression": "BSD-2-Clause"
+        },
+        {
+          "expression": "BSD-3-Clause"
+        },
+        {
+          "expression": "LGPL-2.0"
+        },
+        {
+          "expression": "LGPL-2.1"
+        },
+        {
+          "expression": "GPL-3.0"
+        },
+        {
+          "expression": "LGPL-3.0"
+        }
+      ],
+      "purl": "pkg:deb/debian/util-linux@2.33.1-0.1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "util-linux@2.33.1-0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "util-linux"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.33.1-0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/zlib1g@1:1.2.11.dfsg-1?distro=debian-10.5",
+      "type": "library",
+      "name": "zlib1g",
+      "version": "1:1.2.11.dfsg-1",
+      "licenses": [
+        {
+          "expression": "Zlib"
+        }
+      ],
+      "purl": "pkg:deb/debian/zlib1g@1:1.2.11.dfsg-1?distro=debian-10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "zlib1g@1:1.2.11.dfsg-1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "zlib"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1:1.2.11.dfsg-1"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:bf59529304463f62efa7179fa1a32718a611528cc4ce9f30c0d1bbc6724ec3fb"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:d0f104dc0a1f9c744b65b23b3fd4d4d3236b4656e67f776fe13f8ad8423b955c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5f268e76-4ae1-490a-8bc6-44317566a11d",
+      "type": "operating-system",
+      "name": "debian",
+      "version": "10.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "os-pkgs"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "5f268e76-4ae1-490a-8bc6-44317566a11d",
+      "dependsOn": [
+        "pkg:deb/debian/adduser@3.118?distro=debian-10.5",
+        "pkg:deb/debian/apt@1.8.2.1?distro=debian-10.5",
+        "pkg:deb/debian/base-files@10.3+deb10u5?distro=debian-10.5",
+        "pkg:deb/debian/base-passwd@3.5.46?distro=debian-10.5",
+        "pkg:deb/debian/bash@5.0-4?distro=debian-10.5",
+        "pkg:deb/debian/bsdutils@1:2.33.1-0.1?distro=debian-10.5",
+        "pkg:deb/debian/ca-certificates@20200601~deb10u1?distro=debian-10.5",
+        "pkg:deb/debian/coreutils@8.30-3?distro=debian-10.5",
+        "pkg:deb/debian/dash@0.5.10.2-5?distro=debian-10.5",
+        "pkg:deb/debian/datadog-agent@1:5.32.8-1?distro=debian-10.5",
+        "pkg:deb/debian/debconf@1.5.71?distro=debian-10.5",
+        "pkg:deb/debian/debian-archive-keyring@2019.1?distro=debian-10.5",
+        "pkg:deb/debian/debianutils@4.8.6.1?distro=debian-10.5",
+        "pkg:deb/debian/diffutils@1:3.7-3?distro=debian-10.5",
+        "pkg:deb/debian/dirmngr@2.2.12-1+deb10u1?distro=debian-10.5",
+        "pkg:deb/debian/dpkg@1.19.7?distro=debian-10.5",
+        "pkg:deb/debian/e2fsprogs@1.44.5-1+deb10u3?distro=debian-10.5",
+        "pkg:deb/debian/fdisk@2.33.1-0.1?distro=debian-10.5",
+        "pkg:deb/debian/findutils@4.6.0+git+20190209-2?distro=debian-10.5",
+        "pkg:deb/debian/gcc-8-base@8.3.0-6?distro=debian-10.5",
+        "pkg:deb/debian/gnupg@2.2.12-1+deb10u1?distro=debian-10.5",
+        "pkg:deb/debian/gnupg-l10n@2.2.12-1+deb10u1?distro=debian-10.5",
+        "pkg:deb/debian/gnupg-utils@2.2.12-1+deb10u1?distro=debian-10.5",
+        "pkg:deb/debian/gpg@2.2.12-1+deb10u1?distro=debian-10.5",
+        "pkg:deb/debian/gpg-agent@2.2.12-1+deb10u1?distro=debian-10.5",
+        "pkg:deb/debian/gpg-wks-client@2.2.12-1+deb10u1?distro=debian-10.5",
+        "pkg:deb/debian/gpg-wks-server@2.2.12-1+deb10u1?distro=debian-10.5",
+        "pkg:deb/debian/gpgconf@2.2.12-1+deb10u1?distro=debian-10.5",
+        "pkg:deb/debian/gpgsm@2.2.12-1+deb10u1?distro=debian-10.5",
+        "pkg:deb/debian/gpgv@2.2.12-1+deb10u1?distro=debian-10.5",
+        "pkg:deb/debian/grep@3.3-1?distro=debian-10.5",
+        "pkg:deb/debian/gzip@1.9-3?distro=debian-10.5",
+        "pkg:deb/debian/hostname@3.21?distro=debian-10.5",
+        "pkg:deb/debian/init-system-helpers@1.56+nmu1?distro=debian-10.5",
+        "pkg:deb/debian/libacl1@2.2.53-4?distro=debian-10.5",
+        "pkg:deb/debian/libapt-pkg5.0@1.8.2.1?distro=debian-10.5",
+        "pkg:deb/debian/libassuan0@2.5.2-1?distro=debian-10.5",
+        "pkg:deb/debian/libattr1@1:2.4.48-4?distro=debian-10.5",
+        "pkg:deb/debian/libaudit-common@1:2.8.4-3?distro=debian-10.5",
+        "pkg:deb/debian/libaudit1@1:2.8.4-3?distro=debian-10.5",
+        "pkg:deb/debian/libblkid1@2.33.1-0.1?distro=debian-10.5",
+        "pkg:deb/debian/libbz2-1.0@1.0.6-9.2~deb10u1?distro=debian-10.5",
+        "pkg:deb/debian/libc-bin@2.28-10?distro=debian-10.5",
+        "pkg:deb/debian/libc6@2.28-10?distro=debian-10.5",
+        "pkg:deb/debian/libcap-ng0@0.7.9-2?distro=debian-10.5",
+        "pkg:deb/debian/libcom-err2@1.44.5-1+deb10u3?distro=debian-10.5",
+        "pkg:deb/debian/libdb5.3@5.3.28+dfsg1-0.5?distro=debian-10.5",
+        "pkg:deb/debian/libdebconfclient0@0.249?distro=debian-10.5",
+        "pkg:deb/debian/libext2fs2@1.44.5-1+deb10u3?distro=debian-10.5",
+        "pkg:deb/debian/libfdisk1@2.33.1-0.1?distro=debian-10.5",
+        "pkg:deb/debian/libffi6@3.2.1-9?distro=debian-10.5",
+        "pkg:deb/debian/libgcc1@1:8.3.0-6?distro=debian-10.5",
+        "pkg:deb/debian/libgcrypt20@1.8.4-5?distro=debian-10.5",
+        "pkg:deb/debian/libgmp10@2:6.1.2+dfsg-4?distro=debian-10.5",
+        "pkg:deb/debian/libgnutls30@3.6.7-4+deb10u5?distro=debian-10.5",
+        "pkg:deb/debian/libgpg-error0@1.35-1?distro=debian-10.5",
+        "pkg:deb/debian/libhogweed4@3.4.1-1?distro=debian-10.5",
+        "pkg:deb/debian/libidn2-0@2.0.5-1+deb10u1?distro=debian-10.5",
+        "pkg:deb/debian/libksba8@1.3.5-2?distro=debian-10.5",
+        "pkg:deb/debian/libldap-2.4-2@2.4.47+dfsg-3+deb10u2?distro=debian-10.5",
+        "pkg:deb/debian/libldap-common@2.4.47+dfsg-3+deb10u2?distro=debian-10.5",
+        "pkg:deb/debian/liblz4-1@1.8.3-1?distro=debian-10.5",
+        "pkg:deb/debian/liblzma5@5.2.4-1?distro=debian-10.5",
+        "pkg:deb/debian/libmount1@2.33.1-0.1?distro=debian-10.5",
+        "pkg:deb/debian/libncursesw6@6.1+20181013-2+deb10u2?distro=debian-10.5",
+        "pkg:deb/debian/libnettle6@3.4.1-1?distro=debian-10.5",
+        "pkg:deb/debian/libnpth0@1.6-1?distro=debian-10.5",
+        "pkg:deb/debian/libp11-kit0@0.23.15-2?distro=debian-10.5",
+        "pkg:deb/debian/libpam-modules@1.3.1-5?distro=debian-10.5",
+        "pkg:deb/debian/libpam-modules-bin@1.3.1-5?distro=debian-10.5",
+        "pkg:deb/debian/libpam-runtime@1.3.1-5?distro=debian-10.5",
+        "pkg:deb/debian/libpam0g@1.3.1-5?distro=debian-10.5",
+        "pkg:deb/debian/libpcre3@2:8.39-12?distro=debian-10.5",
+        "pkg:deb/debian/libreadline7@7.0-5?distro=debian-10.5",
+        "pkg:deb/debian/libsasl2-2@2.1.27+dfsg-1+deb10u1?distro=debian-10.5",
+        "pkg:deb/debian/libsasl2-modules-db@2.1.27+dfsg-1+deb10u1?distro=debian-10.5",
+        "pkg:deb/debian/libseccomp2@2.3.3-4?distro=debian-10.5",
+        "pkg:deb/debian/libselinux1@2.8-1+b1?distro=debian-10.5",
+        "pkg:deb/debian/libsemanage-common@2.8-2?distro=debian-10.5",
+        "pkg:deb/debian/libsemanage1@2.8-2?distro=debian-10.5",
+        "pkg:deb/debian/libsepol1@2.8-1?distro=debian-10.5",
+        "pkg:deb/debian/libsmartcols1@2.33.1-0.1?distro=debian-10.5",
+        "pkg:deb/debian/libsqlite3-0@3.27.2-3?distro=debian-10.5",
+        "pkg:deb/debian/libss2@1.44.5-1+deb10u3?distro=debian-10.5",
+        "pkg:deb/debian/libssl1.1@1.1.1d-0+deb10u3?distro=debian-10.5",
+        "pkg:deb/debian/libstdc++6@8.3.0-6?distro=debian-10.5",
+        "pkg:deb/debian/libsystemd0@241-7~deb10u4?distro=debian-10.5",
+        "pkg:deb/debian/libtasn1-6@4.13-3?distro=debian-10.5",
+        "pkg:deb/debian/libtinfo6@6.1+20181013-2+deb10u2?distro=debian-10.5",
+        "pkg:deb/debian/libudev1@241-7~deb10u4?distro=debian-10.5",
+        "pkg:deb/debian/libunistring2@0.9.10-1?distro=debian-10.5",
+        "pkg:deb/debian/libuuid1@2.33.1-0.1?distro=debian-10.5",
+        "pkg:deb/debian/libzstd1@1.3.8+dfsg-3?distro=debian-10.5",
+        "pkg:deb/debian/login@1:4.5-1.1?distro=debian-10.5",
+        "pkg:deb/debian/lsb-base@10.2019051400?distro=debian-10.5",
+        "pkg:deb/debian/mawk@1.3.3-17+b3?distro=debian-10.5",
+        "pkg:deb/debian/mount@2.33.1-0.1?distro=debian-10.5",
+        "pkg:deb/debian/ncurses-base@6.1+20181013-2+deb10u2?distro=debian-10.5",
+        "pkg:deb/debian/ncurses-bin@6.1+20181013-2+deb10u2?distro=debian-10.5",
+        "pkg:deb/debian/openssl@1.1.1d-0+deb10u3?distro=debian-10.5",
+        "pkg:deb/debian/passwd@1:4.5-1.1?distro=debian-10.5",
+        "pkg:deb/debian/perl-base@5.28.1-6+deb10u1?distro=debian-10.5",
+        "pkg:deb/debian/pinentry-curses@1.1.0-2?distro=debian-10.5",
+        "pkg:deb/debian/readline-common@7.0-5?distro=debian-10.5",
+        "pkg:deb/debian/sed@4.7-1?distro=debian-10.5",
+        "pkg:deb/debian/sysvinit-utils@2.93-8?distro=debian-10.5",
+        "pkg:deb/debian/tar@1.30+dfsg-6?distro=debian-10.5",
+        "pkg:deb/debian/tzdata@2020a-0+deb10u1?distro=debian-10.5",
+        "pkg:deb/debian/util-linux@2.33.1-0.1?distro=debian-10.5",
+        "pkg:deb/debian/zlib1g@1:1.2.11.dfsg-1?distro=debian-10.5"
+      ]
+    },
+    {
+      "ref": "pkg:oci/docker-dd-agent@sha256:0228b88d2e09aac6d33bcc886285dd9731b67e0614cd6588b42b0c978d0b89ad?repository_url=index.docker.io%2Fdatadog%2Fdocker-dd-agent\u0026arch=amd64",
+      "dependsOn": [
+        "5f268e76-4ae1-490a-8bc6-44317566a11d"
+      ]
+    }
+  ],
+  "vulnerabilities": []
+}

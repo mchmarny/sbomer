@@ -1,0 +1,4740 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:18dabf8e-26bc-479b-a612-63cfff17d860",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-01-23T05:27:57-08:00",
+    "tools": [
+      {
+        "vendor": "anchore",
+        "name": "syft",
+        "version": "0.66.2"
+      }
+    ],
+    "component": {
+      "bom-ref": "ef80d5a4afca4b80",
+      "type": "container",
+      "name": "grafana/fluent-bit-plugin-loki",
+      "version": "sha256:b29f08d9210a11dd5d9e0e6a29a82fd548adb581d3a6a17e4449098fec25c530"
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "pkg:deb/debian/base-files@10.3+deb10u11?arch=amd64&distro=debian-10&package-id=1e5c037eebb6b83c",
+      "type": "library",
+      "publisher": "Santiago Vila <sanvila@debian.org>",
+      "name": "base-files",
+      "version": "10.3+deb10u11",
+      "cpe": "cpe:2.3:a:base-files:base-files:10.3\\+deb10u11:*:*:*:*:*:*:*",
+      "purl": "pkg:deb/debian/base-files@10.3+deb10u11?arch=amd64&distro=debian-10",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "dpkgdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "DpkgMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "deb"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:base-files:base_files:10.3\\+deb10u11:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:base_files:base-files:10.3\\+deb10u11:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:base_files:base_files:10.3\\+deb10u11:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:base:base-files:10.3\\+deb10u11:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:base:base_files:10.3\\+deb10u11:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:f562a175088911ee4a8a226a9b45c156e0f9e8d2669712ec422e69e4df64bfc9"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/usr/share/doc/base-files/copyright"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:f562a175088911ee4a8a226a9b45c156e0f9e8d2669712ec422e69e4df64bfc9"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/var/lib/dpkg/status.d/base"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "340"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/armon/go-metrics@v0.3.9?package-id=96e5fb0d59998a04",
+      "type": "library",
+      "name": "github.com/armon/go-metrics",
+      "version": "v0.3.9",
+      "cpe": "cpe:2.3:a:armon:go-metrics:v0.3.9:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/armon/go-metrics@v0.3.9",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:armon:go_metrics:v0.3.9:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/beorn7/perks@v1.0.1?package-id=3d4c6a730a286c81",
+      "type": "library",
+      "name": "github.com/beorn7/perks",
+      "version": "v1.0.1",
+      "cpe": "cpe:2.3:a:beorn7:perks:v1.0.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/beorn7/perks@v1.0.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/c2h5oh/datasize@v0.0.0-20200112174442-28bbd4740fee?package-id=b1c80fe6e29df009",
+      "type": "library",
+      "name": "github.com/c2h5oh/datasize",
+      "version": "v0.0.0-20200112174442-28bbd4740fee",
+      "cpe": "cpe:2.3:a:c2h5oh:datasize:v0.0.0-20200112174442-28bbd4740fee:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/c2h5oh/datasize@v0.0.0-20200112174442-28bbd4740fee",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/cespare/xxhash/v2@v2.1.2?package-id=5e15b88a6e49ca4d",
+      "type": "library",
+      "name": "github.com/cespare/xxhash/v2",
+      "version": "v2.1.2",
+      "cpe": "cpe:2.3:a:cespare:xxhash\\/v2:v2.1.2:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/cespare/xxhash/v2@v2.1.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/coreos/etcd@v3.3.25+incompatible?package-id=3a1fa4d70bed6c72",
+      "type": "library",
+      "name": "github.com/coreos/etcd",
+      "version": "v3.3.25+incompatible",
+      "cpe": "cpe:2.3:a:coreos:etcd:v3.3.25\\+incompatible:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/coreos/etcd@v3.3.25+incompatible",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/coreos/go-semver@v0.3.0?package-id=814ae4c79c9dee14",
+      "type": "library",
+      "name": "github.com/coreos/go-semver",
+      "version": "v0.3.0",
+      "cpe": "cpe:2.3:a:coreos:go-semver:v0.3.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/coreos/go-semver@v0.3.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:coreos:go_semver:v0.3.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/coreos/go-systemd@v0.0.0-20191104093116-d3cd4ed1dbcf?package-id=4ce71c36e9fdb9b",
+      "type": "library",
+      "name": "github.com/coreos/go-systemd",
+      "version": "v0.0.0-20191104093116-d3cd4ed1dbcf",
+      "cpe": "cpe:2.3:a:coreos:go-systemd:v0.0.0-20191104093116-d3cd4ed1dbcf:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/coreos/go-systemd@v0.0.0-20191104093116-d3cd4ed1dbcf",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:coreos:go_systemd:v0.0.0-20191104093116-d3cd4ed1dbcf:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/coreos/go-systemd/v22@v22.3.2?package-id=65cf90e7eabd5cc5",
+      "type": "library",
+      "name": "github.com/coreos/go-systemd/v22",
+      "version": "v22.3.2",
+      "cpe": "cpe:2.3:a:coreos:go-systemd\\/v22:v22.3.2:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/coreos/go-systemd/v22@v22.3.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:coreos:go_systemd\\/v22:v22.3.2:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/coreos/pkg@v0.0.0-20180928190104-399ea9e2e55f?package-id=2a63399540fc3881",
+      "type": "library",
+      "name": "github.com/coreos/pkg",
+      "version": "v0.0.0-20180928190104-399ea9e2e55f",
+      "cpe": "cpe:2.3:a:coreos:pkg:v0.0.0-20180928190104-399ea9e2e55f:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/coreos/pkg@v0.0.0-20180928190104-399ea9e2e55f",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/cortexproject/cortex@v1.10.1-0.20211104100946-3f329a21cad4?package-id=b87e063653a4b900",
+      "type": "library",
+      "name": "github.com/cortexproject/cortex",
+      "version": "v1.10.1-0.20211104100946-3f329a21cad4",
+      "cpe": "cpe:2.3:a:cortexproject:cortex:v1.10.1-0.20211104100946-3f329a21cad4:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/cortexproject/cortex@v1.10.1-0.20211104100946-3f329a21cad4",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/davecgh/go-spew@v1.1.1?package-id=f92e58699f79003a",
+      "type": "library",
+      "name": "github.com/davecgh/go-spew",
+      "version": "v1.1.1",
+      "cpe": "cpe:2.3:a:davecgh:go-spew:v1.1.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/davecgh/go-spew@v1.1.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:davecgh:go_spew:v1.1.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/fatih/color@v1.12.0?package-id=a3a3e0a7b0caa3d1",
+      "type": "library",
+      "name": "github.com/fatih/color",
+      "version": "v1.12.0",
+      "cpe": "cpe:2.3:a:fatih:color:v1.12.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/fatih/color@v1.12.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/felixge/httpsnoop@v1.0.1?package-id=103b3138cc7ab680",
+      "type": "library",
+      "name": "github.com/felixge/httpsnoop",
+      "version": "v1.0.1",
+      "cpe": "cpe:2.3:a:felixge:httpsnoop:v1.0.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/felixge/httpsnoop@v1.0.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/fluent/fluent-bit-go@v0.0.0-20190925192703-ea13c021720c?package-id=788d6c1d85c2099c",
+      "type": "library",
+      "name": "github.com/fluent/fluent-bit-go",
+      "version": "v0.0.0-20190925192703-ea13c021720c",
+      "cpe": "cpe:2.3:a:fluent:fluent-bit-go:v0.0.0-20190925192703-ea13c021720c:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/fluent/fluent-bit-go@v0.0.0-20190925192703-ea13c021720c",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:fluent:fluent_bit_go:v0.0.0-20190925192703-ea13c021720c:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/go-kit/log@v0.2.0?package-id=971343f6fd2db9e6",
+      "type": "library",
+      "name": "github.com/go-kit/log",
+      "version": "v0.2.0",
+      "cpe": "cpe:2.3:a:go-kit:log:v0.2.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/go-kit/log@v0.2.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go_kit:log:v0.2.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go:log:v0.2.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/go-logfmt/logfmt@v0.5.1?package-id=2a0c893617866cc6",
+      "type": "library",
+      "name": "github.com/go-logfmt/logfmt",
+      "version": "v0.5.1",
+      "cpe": "cpe:2.3:a:go-logfmt:logfmt:v0.5.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/go-logfmt/logfmt@v0.5.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go_logfmt:logfmt:v0.5.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go:logfmt:v0.5.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/gofrs/flock@v0.7.1?package-id=38a35405057bbc5a",
+      "type": "library",
+      "name": "github.com/gofrs/flock",
+      "version": "v0.7.1",
+      "cpe": "cpe:2.3:a:gofrs:flock:v0.7.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/gofrs/flock@v0.7.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/gogo/googleapis@v1.4.0?package-id=ac6842eb66c255df",
+      "type": "library",
+      "name": "github.com/gogo/googleapis",
+      "version": "v1.4.0",
+      "cpe": "cpe:2.3:a:gogo:googleapis:v1.4.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/gogo/googleapis@v1.4.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/gogo/protobuf@v1.3.2?package-id=55e6bd5c757219d",
+      "type": "library",
+      "name": "github.com/gogo/protobuf",
+      "version": "v1.3.2",
+      "cpe": "cpe:2.3:a:gogo:protobuf:v1.3.2:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/gogo/protobuf@v1.3.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/gogo/status@v1.1.0?package-id=d3f48adc56f3df4d",
+      "type": "library",
+      "name": "github.com/gogo/status",
+      "version": "v1.1.0",
+      "cpe": "cpe:2.3:a:gogo:status:v1.1.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/gogo/status@v1.1.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/golang/protobuf@v1.5.2?package-id=d47eeaad546663b4",
+      "type": "library",
+      "name": "github.com/golang/protobuf",
+      "version": "v1.5.2",
+      "cpe": "cpe:2.3:a:golang:protobuf:v1.5.2:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/golang/protobuf@v1.5.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/golang/snappy@v0.0.4?package-id=2f7b06b42ebb4f3c",
+      "type": "library",
+      "name": "github.com/golang/snappy",
+      "version": "v0.0.4",
+      "cpe": "cpe:2.3:a:golang:snappy:v0.0.4:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/golang/snappy@v0.0.4",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/google/btree@v1.0.1?package-id=29f9bcb44519cf63",
+      "type": "library",
+      "name": "github.com/google/btree",
+      "version": "v1.0.1",
+      "cpe": "cpe:2.3:a:google:btree:v1.0.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/google/btree@v1.0.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/gorilla/mux@v1.8.0?package-id=c381df36fd61805f",
+      "type": "library",
+      "name": "github.com/gorilla/mux",
+      "version": "v1.8.0",
+      "cpe": "cpe:2.3:a:gorilla:mux:v1.8.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/gorilla/mux@v1.8.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/grafana/dskit@v0.0.0-20211021180445-3bd016e9d7f1?package-id=8eaf93599bfa3571",
+      "type": "library",
+      "name": "github.com/grafana/dskit",
+      "version": "v0.0.0-20211021180445-3bd016e9d7f1",
+      "cpe": "cpe:2.3:a:grafana:dskit:v0.0.0-20211021180445-3bd016e9d7f1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/grafana/dskit@v0.0.0-20211021180445-3bd016e9d7f1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/grafana/loki@(devel)?package-id=c9456e6bd9027e7a",
+      "type": "library",
+      "name": "github.com/grafana/loki",
+      "version": "(devel)",
+      "cpe": "cpe:2.3:a:grafana:loki:\\(devel\\):*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/grafana/loki@(devel)",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/grpc-ecosystem/go-grpc-middleware@v1.3.0?package-id=8871e4d90ee7db26",
+      "type": "library",
+      "name": "github.com/grpc-ecosystem/go-grpc-middleware",
+      "version": "v1.3.0",
+      "cpe": "cpe:2.3:a:grpc-ecosystem:go-grpc-middleware:v1.3.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/grpc-ecosystem/go-grpc-middleware@v1.3.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:grpc-ecosystem:go_grpc_middleware:v1.3.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:grpc_ecosystem:go-grpc-middleware:v1.3.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:grpc_ecosystem:go_grpc_middleware:v1.3.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:grpc:go-grpc-middleware:v1.3.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:grpc:go_grpc_middleware:v1.3.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/hashicorp/consul/api@v1.10.1?package-id=4e96e503e233238b",
+      "type": "library",
+      "name": "github.com/hashicorp/consul/api",
+      "version": "v1.10.1",
+      "cpe": "cpe:2.3:a:hashicorp:consul\\/api:v1.10.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/hashicorp/consul/api@v1.10.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/hashicorp/errwrap@v1.0.0?package-id=f937059281ab76cd",
+      "type": "library",
+      "name": "github.com/hashicorp/errwrap",
+      "version": "v1.0.0",
+      "cpe": "cpe:2.3:a:hashicorp:errwrap:v1.0.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/hashicorp/errwrap@v1.0.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/hashicorp/go-cleanhttp@v0.5.2?package-id=33d759993cb3bb39",
+      "type": "library",
+      "name": "github.com/hashicorp/go-cleanhttp",
+      "version": "v0.5.2",
+      "cpe": "cpe:2.3:a:hashicorp:go-cleanhttp:v0.5.2:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/hashicorp/go-cleanhttp@v0.5.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:hashicorp:go_cleanhttp:v0.5.2:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/hashicorp/go-hclog@v0.16.2?package-id=6e492d65551c46e4",
+      "type": "library",
+      "name": "github.com/hashicorp/go-hclog",
+      "version": "v0.16.2",
+      "cpe": "cpe:2.3:a:hashicorp:go-hclog:v0.16.2:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/hashicorp/go-hclog@v0.16.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:hashicorp:go_hclog:v0.16.2:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/hashicorp/go-immutable-radix@v1.3.1?package-id=8cd11d3894031ad3",
+      "type": "library",
+      "name": "github.com/hashicorp/go-immutable-radix",
+      "version": "v1.3.1",
+      "cpe": "cpe:2.3:a:hashicorp:go-immutable-radix:v1.3.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/hashicorp/go-immutable-radix@v1.3.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:hashicorp:go_immutable_radix:v1.3.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/hashicorp/go-msgpack@v0.5.5?package-id=addcfbf18968a524",
+      "type": "library",
+      "name": "github.com/hashicorp/go-msgpack",
+      "version": "v0.5.5",
+      "cpe": "cpe:2.3:a:hashicorp:go-msgpack:v0.5.5:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/hashicorp/go-msgpack@v0.5.5",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:hashicorp:go_msgpack:v0.5.5:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/hashicorp/go-multierror@v1.1.0?package-id=fba32336e43c5f6c",
+      "type": "library",
+      "name": "github.com/hashicorp/go-multierror",
+      "version": "v1.1.0",
+      "cpe": "cpe:2.3:a:hashicorp:go-multierror:v1.1.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/hashicorp/go-multierror@v1.1.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:hashicorp:go_multierror:v1.1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/hashicorp/go-rootcerts@v1.0.2?package-id=617848f414e7dab6",
+      "type": "library",
+      "name": "github.com/hashicorp/go-rootcerts",
+      "version": "v1.0.2",
+      "cpe": "cpe:2.3:a:hashicorp:go-rootcerts:v1.0.2:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/hashicorp/go-rootcerts@v1.0.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:hashicorp:go_rootcerts:v1.0.2:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/hashicorp/go-sockaddr@v1.0.2?package-id=d8e484a5fea0a8fe",
+      "type": "library",
+      "name": "github.com/hashicorp/go-sockaddr",
+      "version": "v1.0.2",
+      "cpe": "cpe:2.3:a:hashicorp:go-sockaddr:v1.0.2:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/hashicorp/go-sockaddr@v1.0.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:hashicorp:go_sockaddr:v1.0.2:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/hashicorp/golang-lru@v0.5.4?package-id=55889e574958447d",
+      "type": "library",
+      "name": "github.com/hashicorp/golang-lru",
+      "version": "v0.5.4",
+      "cpe": "cpe:2.3:a:hashicorp:golang-lru:v0.5.4:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/hashicorp/golang-lru@v0.5.4",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:hashicorp:golang_lru:v0.5.4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/hashicorp/memberlist@v0.2.4?package-id=293d7f40d331e0f3",
+      "type": "library",
+      "name": "github.com/hashicorp/memberlist",
+      "version": "v0.2.4",
+      "cpe": "cpe:2.3:a:hashicorp:memberlist:v0.2.4:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/hashicorp/memberlist@v0.2.4",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/hashicorp/serf@v0.9.5?package-id=158180bb7f47f74d",
+      "type": "library",
+      "name": "github.com/hashicorp/serf",
+      "version": "v0.9.5",
+      "cpe": "cpe:2.3:a:hashicorp:serf:v0.9.5:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/hashicorp/serf@v0.9.5",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/joncrlsn/dque@v2.2.1-0.20200515025108-956d14155fa2+incompatible?package-id=2c99092581500f44",
+      "type": "library",
+      "name": "github.com/joncrlsn/dque",
+      "version": "v2.2.1-0.20200515025108-956d14155fa2+incompatible",
+      "cpe": "cpe:2.3:a:joncrlsn:dque:v2.2.1-0.20200515025108-956d14155fa2\\+incompatible:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/joncrlsn/dque@v2.2.1-0.20200515025108-956d14155fa2+incompatible",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/jpillora/backoff@v1.0.0?package-id=aefe72c6b2b5ffc7",
+      "type": "library",
+      "name": "github.com/jpillora/backoff",
+      "version": "v1.0.0",
+      "cpe": "cpe:2.3:a:jpillora:backoff:v1.0.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/jpillora/backoff@v1.0.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/json-iterator/go@v1.1.12?package-id=efbad55a0289756",
+      "type": "library",
+      "name": "github.com/json-iterator/go",
+      "version": "v1.1.12",
+      "cpe": "cpe:2.3:a:json-iterator:go:v1.1.12:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/json-iterator/go@v1.1.12",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:json_iterator:go:v1.1.12:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:json:go:v1.1.12:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/mattn/go-colorable@v0.1.8?package-id=75ad2eab8918c31d",
+      "type": "library",
+      "name": "github.com/mattn/go-colorable",
+      "version": "v0.1.8",
+      "cpe": "cpe:2.3:a:mattn:go-colorable:v0.1.8:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/mattn/go-colorable@v0.1.8",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:mattn:go_colorable:v0.1.8:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/mattn/go-isatty@v0.0.14?package-id=737a1172c5caffbb",
+      "type": "library",
+      "name": "github.com/mattn/go-isatty",
+      "version": "v0.0.14",
+      "cpe": "cpe:2.3:a:mattn:go-isatty:v0.0.14:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/mattn/go-isatty@v0.0.14",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:mattn:go_isatty:v0.0.14:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/matttproud/golang_protobuf_extensions@v1.0.2-0.20181231171920-c182affec369?package-id=e2223fc7fb4acc09",
+      "type": "library",
+      "name": "github.com/matttproud/golang_protobuf_extensions",
+      "version": "v1.0.2-0.20181231171920-c182affec369",
+      "cpe": "cpe:2.3:a:matttproud:golang-protobuf-extensions:v1.0.2-0.20181231171920-c182affec369:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/matttproud/golang_protobuf_extensions@v1.0.2-0.20181231171920-c182affec369",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:matttproud:golang_protobuf_extensions:v1.0.2-0.20181231171920-c182affec369:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/miekg/dns@v1.1.43?package-id=f55f26ae466d6e1a",
+      "type": "library",
+      "name": "github.com/miekg/dns",
+      "version": "v1.1.43",
+      "cpe": "cpe:2.3:a:miekg:dns:v1.1.43:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/miekg/dns@v1.1.43",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/mitchellh/mapstructure@v1.4.2?package-id=ad87aad12e2c058d",
+      "type": "library",
+      "name": "github.com/mitchellh/mapstructure",
+      "version": "v1.4.2",
+      "cpe": "cpe:2.3:a:mitchellh:mapstructure:v1.4.2:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/mitchellh/mapstructure@v1.4.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/modern-go/concurrent@v0.0.0-20180306012644-bacd9c7ef1dd?package-id=4132114f20f85a8b",
+      "type": "library",
+      "name": "github.com/modern-go/concurrent",
+      "version": "v0.0.0-20180306012644-bacd9c7ef1dd",
+      "cpe": "cpe:2.3:a:modern-go:concurrent:v0.0.0-20180306012644-bacd9c7ef1dd:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/modern-go/concurrent@v0.0.0-20180306012644-bacd9c7ef1dd",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:modern_go:concurrent:v0.0.0-20180306012644-bacd9c7ef1dd:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:modern:concurrent:v0.0.0-20180306012644-bacd9c7ef1dd:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/modern-go/reflect2@v1.0.2?package-id=40b8ec85c05de127",
+      "type": "library",
+      "name": "github.com/modern-go/reflect2",
+      "version": "v1.0.2",
+      "cpe": "cpe:2.3:a:modern-go:reflect2:v1.0.2:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/modern-go/reflect2@v1.0.2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:modern_go:reflect2:v1.0.2:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:modern:reflect2:v1.0.2:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/mwitkow/go-conntrack@v0.0.0-20190716064945-2f068394615f?package-id=f61bc9fbe35ac965",
+      "type": "library",
+      "name": "github.com/mwitkow/go-conntrack",
+      "version": "v0.0.0-20190716064945-2f068394615f",
+      "cpe": "cpe:2.3:a:mwitkow:go-conntrack:v0.0.0-20190716064945-2f068394615f:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/mwitkow/go-conntrack@v0.0.0-20190716064945-2f068394615f",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:mwitkow:go_conntrack:v0.0.0-20190716064945-2f068394615f:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/opentracing-contrib/go-grpc@v0.0.0-20210225150812-73cb765af46e?package-id=ba0789898f17a75b",
+      "type": "library",
+      "name": "github.com/opentracing-contrib/go-grpc",
+      "version": "v0.0.0-20210225150812-73cb765af46e",
+      "cpe": "cpe:2.3:a:opentracing-contrib:go-grpc:v0.0.0-20210225150812-73cb765af46e:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/opentracing-contrib/go-grpc@v0.0.0-20210225150812-73cb765af46e",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:opentracing-contrib:go_grpc:v0.0.0-20210225150812-73cb765af46e:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:opentracing_contrib:go-grpc:v0.0.0-20210225150812-73cb765af46e:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:opentracing_contrib:go_grpc:v0.0.0-20210225150812-73cb765af46e:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:opentracing:go-grpc:v0.0.0-20210225150812-73cb765af46e:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:opentracing:go_grpc:v0.0.0-20210225150812-73cb765af46e:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/opentracing-contrib/go-stdlib@v1.0.0?package-id=acbb87b864b701ce",
+      "type": "library",
+      "name": "github.com/opentracing-contrib/go-stdlib",
+      "version": "v1.0.0",
+      "cpe": "cpe:2.3:a:opentracing-contrib:go-stdlib:v1.0.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/opentracing-contrib/go-stdlib@v1.0.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:opentracing-contrib:go_stdlib:v1.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:opentracing_contrib:go-stdlib:v1.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:opentracing_contrib:go_stdlib:v1.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:opentracing:go-stdlib:v1.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:opentracing:go_stdlib:v1.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/opentracing/opentracing-go@v1.2.0?package-id=3f282b8d982eb4e9",
+      "type": "library",
+      "name": "github.com/opentracing/opentracing-go",
+      "version": "v1.2.0",
+      "cpe": "cpe:2.3:a:opentracing:opentracing-go:v1.2.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/opentracing/opentracing-go@v1.2.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:opentracing:opentracing_go:v1.2.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/pkg/errors@v0.9.1?package-id=e86ac76085d70b4b",
+      "type": "library",
+      "name": "github.com/pkg/errors",
+      "version": "v0.9.1",
+      "cpe": "cpe:2.3:a:pkg:errors:v0.9.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/pkg/errors@v0.9.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/pmezard/go-difflib@v1.0.0?package-id=6a510aaa48064989",
+      "type": "library",
+      "name": "github.com/pmezard/go-difflib",
+      "version": "v1.0.0",
+      "cpe": "cpe:2.3:a:pmezard:go-difflib:v1.0.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/pmezard/go-difflib@v1.0.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:pmezard:go_difflib:v1.0.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/prometheus/client_golang@v1.11.0?package-id=737902b3ce6792ec",
+      "type": "library",
+      "name": "github.com/prometheus/client_golang",
+      "version": "v1.11.0",
+      "cpe": "cpe:2.3:a:prometheus:client-golang:v1.11.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/prometheus/client_golang@v1.11.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:prometheus:client_golang:v1.11.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/prometheus/client_model@v0.2.0?package-id=1d95545c45196c8b",
+      "type": "library",
+      "name": "github.com/prometheus/client_model",
+      "version": "v0.2.0",
+      "cpe": "cpe:2.3:a:prometheus:client-model:v0.2.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/prometheus/client_model@v0.2.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:prometheus:client_model:v0.2.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/prometheus/common@v0.31.1?package-id=33c6b3b3520262a7",
+      "type": "library",
+      "name": "github.com/prometheus/common",
+      "version": "v0.31.1",
+      "cpe": "cpe:2.3:a:prometheus:common:v0.31.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/prometheus/common@v0.31.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/prometheus/node_exporter@v1.0.0-rc.0.0.20200428091818-01054558c289?package-id=d6c88a1aa557dc1",
+      "type": "library",
+      "name": "github.com/prometheus/node_exporter",
+      "version": "v1.0.0-rc.0.0.20200428091818-01054558c289",
+      "cpe": "cpe:2.3:a:prometheus:node-exporter:v1.0.0-rc.0.0.20200428091818-01054558c289:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/prometheus/node_exporter@v1.0.0-rc.0.0.20200428091818-01054558c289",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:prometheus:node_exporter:v1.0.0-rc.0.0.20200428091818-01054558c289:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/prometheus/procfs@v0.7.3?package-id=4441ff937625d955",
+      "type": "library",
+      "name": "github.com/prometheus/procfs",
+      "version": "v0.7.3",
+      "cpe": "cpe:2.3:a:prometheus:procfs:v0.7.3:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/prometheus/procfs@v0.7.3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/prometheus/prometheus@v1.8.2-0.20211011171444-354d8d2ecfac?package-id=ca84cb0fd6d4fd76",
+      "type": "library",
+      "name": "github.com/prometheus/prometheus",
+      "version": "v1.8.2-0.20211011171444-354d8d2ecfac",
+      "cpe": "cpe:2.3:a:prometheus:prometheus:v1.8.2-0.20211011171444-354d8d2ecfac:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/prometheus/prometheus@v1.8.2-0.20211011171444-354d8d2ecfac",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/sean-/seed@v0.0.0-20170313163322-e2103e2c3529?package-id=fcfb26577a299e5f",
+      "type": "library",
+      "name": "github.com/sean-/seed",
+      "version": "v0.0.0-20170313163322-e2103e2c3529",
+      "cpe": "cpe:2.3:a:sean-:seed:v0.0.0-20170313163322-e2103e2c3529:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/sean-/seed@v0.0.0-20170313163322-e2103e2c3529",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:sean_:seed:v0.0.0-20170313163322-e2103e2c3529:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:sean:seed:v0.0.0-20170313163322-e2103e2c3529:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/sercand/kuberesolver@v2.4.0+incompatible?package-id=29e1ca930c3f6c3a",
+      "type": "library",
+      "name": "github.com/sercand/kuberesolver",
+      "version": "v2.4.0+incompatible",
+      "cpe": "cpe:2.3:a:sercand:kuberesolver:v2.4.0\\+incompatible:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/sercand/kuberesolver@v2.4.0+incompatible",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/sirupsen/logrus@v1.8.1?package-id=ebdbc52ded52f0ff",
+      "type": "library",
+      "name": "github.com/sirupsen/logrus",
+      "version": "v1.8.1",
+      "cpe": "cpe:2.3:a:sirupsen:logrus:v1.8.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/sirupsen/logrus@v1.8.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/stretchr/objx@v0.2.0?package-id=18880d6fe5ffbbeb",
+      "type": "library",
+      "name": "github.com/stretchr/objx",
+      "version": "v0.2.0",
+      "cpe": "cpe:2.3:a:stretchr:objx:v0.2.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/stretchr/objx@v0.2.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/stretchr/testify@v1.7.0?package-id=60439c8c0c7755c4",
+      "type": "library",
+      "name": "github.com/stretchr/testify",
+      "version": "v1.7.0",
+      "cpe": "cpe:2.3:a:stretchr:testify:v1.7.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/stretchr/testify@v1.7.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/uber/jaeger-client-go@v2.29.1+incompatible?package-id=18345a54af3efe91",
+      "type": "library",
+      "name": "github.com/uber/jaeger-client-go",
+      "version": "v2.29.1+incompatible",
+      "cpe": "cpe:2.3:a:uber:jaeger-client-go:v2.29.1\\+incompatible:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/uber/jaeger-client-go@v2.29.1+incompatible",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:uber:jaeger_client_go:v2.29.1\\+incompatible:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/uber/jaeger-lib@v2.4.1+incompatible?package-id=de9986a8ea22a99e",
+      "type": "library",
+      "name": "github.com/uber/jaeger-lib",
+      "version": "v2.4.1+incompatible",
+      "cpe": "cpe:2.3:a:uber:jaeger-lib:v2.4.1\\+incompatible:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/uber/jaeger-lib@v2.4.1+incompatible",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:uber:jaeger_lib:v2.4.1\\+incompatible:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/ugorji/go/codec@v1.1.7?package-id=eab694b5f86c3dc3",
+      "type": "library",
+      "name": "github.com/ugorji/go/codec",
+      "version": "v1.1.7",
+      "cpe": "cpe:2.3:a:ugorji:go\\/codec:v1.1.7:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/ugorji/go/codec@v1.1.7",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/weaveworks/common@v0.0.0-20211015155308-ebe5bdc2c89e?package-id=33c230b3468e469e",
+      "type": "library",
+      "name": "github.com/weaveworks/common",
+      "version": "v0.0.0-20211015155308-ebe5bdc2c89e",
+      "cpe": "cpe:2.3:a:weaveworks:common:v0.0.0-20211015155308-ebe5bdc2c89e:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/weaveworks/common@v0.0.0-20211015155308-ebe5bdc2c89e",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/weaveworks/promrus@v1.2.0?package-id=81ccf9d5d7e442d5",
+      "type": "library",
+      "name": "github.com/weaveworks/promrus",
+      "version": "v1.2.0",
+      "cpe": "cpe:2.3:a:weaveworks:promrus:v1.2.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/weaveworks/promrus@v1.2.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/go.etcd.io/etcd@v3.3.25+incompatible?package-id=dd9121aeb5aba181",
+      "type": "library",
+      "name": "go.etcd.io/etcd",
+      "version": "v3.3.25+incompatible",
+      "purl": "pkg:golang/go.etcd.io/etcd@v3.3.25+incompatible",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/go.etcd.io/etcd/api/v3@v3.5.0?package-id=93bf56e3e859b6b4",
+      "type": "library",
+      "name": "go.etcd.io/etcd/api/v3",
+      "version": "v3.5.0",
+      "cpe": "cpe:2.3:a:etcd:api\\/v3:v3.5.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/go.etcd.io/etcd/api/v3@v3.5.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/go.etcd.io/etcd/client/pkg/v3@v3.5.0?package-id=8704783a420404cb",
+      "type": "library",
+      "name": "go.etcd.io/etcd/client/pkg/v3",
+      "version": "v3.5.0",
+      "cpe": "cpe:2.3:a:etcd:client\\/pkg\\/v3:v3.5.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/go.etcd.io/etcd/client/pkg/v3@v3.5.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/go.etcd.io/etcd/client/v3@v3.5.0?package-id=40b1bc48607f3974",
+      "type": "library",
+      "name": "go.etcd.io/etcd/client/v3",
+      "version": "v3.5.0",
+      "cpe": "cpe:2.3:a:etcd:client\\/v3:v3.5.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/go.etcd.io/etcd/client/v3@v3.5.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/go.uber.org/atomic@v1.9.0?package-id=e4650c9cf0c7914d",
+      "type": "library",
+      "name": "go.uber.org/atomic",
+      "version": "v1.9.0",
+      "purl": "pkg:golang/go.uber.org/atomic@v1.9.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/go.uber.org/multierr@v1.7.0?package-id=9510514108b5da0d",
+      "type": "library",
+      "name": "go.uber.org/multierr",
+      "version": "v1.7.0",
+      "purl": "pkg:golang/go.uber.org/multierr@v1.7.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/go.uber.org/zap@v1.19.1?package-id=4e5372a336907b48",
+      "type": "library",
+      "name": "go.uber.org/zap",
+      "version": "v1.19.1",
+      "purl": "pkg:golang/go.uber.org/zap@v1.19.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/net@v0.0.0-20211101193420-4a448f8816b3?package-id=576101131581a3b0",
+      "type": "library",
+      "name": "golang.org/x/net",
+      "version": "v0.0.0-20211101193420-4a448f8816b3",
+      "cpe": "cpe:2.3:a:golang:x\\/net:v0.0.0-20211101193420-4a448f8816b3:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/net@v0.0.0-20211101193420-4a448f8816b3",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/oauth2@v0.0.0-20210819190943-2bc19b11175f?package-id=7b4ef6edd8e44eef",
+      "type": "library",
+      "name": "golang.org/x/oauth2",
+      "version": "v0.0.0-20210819190943-2bc19b11175f",
+      "cpe": "cpe:2.3:a:golang:x\\/oauth2:v0.0.0-20210819190943-2bc19b11175f:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/oauth2@v0.0.0-20210819190943-2bc19b11175f",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/sys@v0.0.0-20210917161153-d61c044b1678?package-id=3660183299e16515",
+      "type": "library",
+      "name": "golang.org/x/sys",
+      "version": "v0.0.0-20210917161153-d61c044b1678",
+      "cpe": "cpe:2.3:a:golang:x\\/sys:v0.0.0-20210917161153-d61c044b1678:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/sys@v0.0.0-20210917161153-d61c044b1678",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/text@v0.3.7?package-id=27f8f2bcba7436d5",
+      "type": "library",
+      "name": "golang.org/x/text",
+      "version": "v0.3.7",
+      "cpe": "cpe:2.3:a:golang:x\\/text:v0.3.7:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/text@v0.3.7",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/time@v0.0.0-20210723032227-1f47c861a9ac?package-id=c21d4ad1b0a7340b",
+      "type": "library",
+      "name": "golang.org/x/time",
+      "version": "v0.0.0-20210723032227-1f47c861a9ac",
+      "cpe": "cpe:2.3:a:golang:x\\/time:v0.0.0-20210723032227-1f47c861a9ac:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/time@v0.0.0-20210723032227-1f47c861a9ac",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/google.golang.org/genproto@v0.0.0-20210921142501-181ce0d877f6?package-id=aae62f428a1a5b03",
+      "type": "library",
+      "name": "google.golang.org/genproto",
+      "version": "v0.0.0-20210921142501-181ce0d877f6",
+      "cpe": "cpe:2.3:a:google:genproto:v0.0.0-20210921142501-181ce0d877f6:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/google.golang.org/genproto@v0.0.0-20210921142501-181ce0d877f6",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/google.golang.org/grpc@v1.40.0?package-id=a5512e75e24922a4",
+      "type": "library",
+      "name": "google.golang.org/grpc",
+      "version": "v1.40.0",
+      "cpe": "cpe:2.3:a:google:grpc:v1.40.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/google.golang.org/grpc@v1.40.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/google.golang.org/protobuf@v1.27.1?package-id=1cdbd87a29936707",
+      "type": "library",
+      "name": "google.golang.org/protobuf",
+      "version": "v1.27.1",
+      "cpe": "cpe:2.3:a:google:protobuf:v1.27.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/google.golang.org/protobuf@v1.27.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/gopkg.in/yaml.v2@v2.4.0?package-id=814e5b7491f1e789",
+      "type": "library",
+      "name": "gopkg.in/yaml.v2",
+      "version": "v2.4.0",
+      "purl": "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/gopkg.in/yaml.v3@v3.0.0-20210107192922-496545a6307b?package-id=f08e8832c05555f",
+      "type": "library",
+      "name": "gopkg.in/yaml.v3",
+      "version": "v3.0.0-20210107192922-496545a6307b",
+      "purl": "pkg:golang/gopkg.in/yaml.v3@v3.0.0-20210107192922-496545a6307b",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "GolangBinMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:dabe8a18286be1cdefa7d0b6f7baa8f3bc84f7f96638d8b459f2072185c4451b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/fluent-bit/bin/out_grafana_loki.so"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.17.2"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "github.com/grafana/loki"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libc6@2.28-10?arch=amd64&upstream=glibc&distro=debian-10&package-id=74ac5ee7adfb6a2d",
+      "type": "library",
+      "publisher": "GNU Libc Maintainers <debian-glibc@lists.debian.org>",
+      "name": "libc6",
+      "version": "2.28-10",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:libc6:libc6:2.28-10:*:*:*:*:*:*:*",
+      "purl": "pkg:deb/debian/libc6@2.28-10?arch=amd64&upstream=glibc&distro=debian-10",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "dpkgdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "DpkgMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "deb"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:43656e43813a6559e595b5f0bbf758229b5fd6de80a0c6f439db880294469d41"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/usr/share/doc/libc6/copyright"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:43656e43813a6559e595b5f0bbf758229b5fd6de80a0c6f439db880294469d41"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/var/lib/dpkg/status.d/libc6"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "12337"
+        },
+        {
+          "name": "syft:metadata:source",
+          "value": "glibc"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgcc1@1:8.3.0-6?arch=amd64&upstream=gcc-8%408.3.0-6&distro=debian-10&package-id=9e5c3a9a3fdaa002",
+      "type": "library",
+      "publisher": "Debian GCC Maintainers <debian-gcc@lists.debian.org>",
+      "name": "libgcc1",
+      "version": "1:8.3.0-6",
+      "cpe": "cpe:2.3:a:libgcc1:libgcc1:1\\:8.3.0-6:*:*:*:*:*:*:*",
+      "purl": "pkg:deb/debian/libgcc1@1:8.3.0-6?arch=amd64&upstream=gcc-8%408.3.0-6&distro=debian-10",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "dpkgdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "DpkgMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "deb"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:5edb48d3f4fcdf92f0747e7d77609d2053abcab81e4a2843d3dacff6fc4cf9ef"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/var/lib/dpkg/status.d/libgcc1"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "116"
+        },
+        {
+          "name": "syft:metadata:source",
+          "value": "gcc-8"
+        },
+        {
+          "name": "syft:metadata:sourceVersion",
+          "value": "8.3.0-6"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libgomp1@8.3.0-6?arch=amd64&upstream=gcc-8&distro=debian-10&package-id=73a146f101c1d0eb",
+      "type": "library",
+      "publisher": "Debian GCC Maintainers <debian-gcc@lists.debian.org>",
+      "name": "libgomp1",
+      "version": "8.3.0-6",
+      "cpe": "cpe:2.3:a:libgomp1:libgomp1:8.3.0-6:*:*:*:*:*:*:*",
+      "purl": "pkg:deb/debian/libgomp1@8.3.0-6?arch=amd64&upstream=gcc-8&distro=debian-10",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "dpkgdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "DpkgMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "deb"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:5edb48d3f4fcdf92f0747e7d77609d2053abcab81e4a2843d3dacff6fc4cf9ef"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/var/lib/dpkg/status.d/libgomp1"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "215"
+        },
+        {
+          "name": "syft:metadata:source",
+          "value": "gcc-8"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libssl1.1@1.1.1d-0+deb10u7?arch=amd64&upstream=openssl&distro=debian-10&package-id=f6188855246f87b7",
+      "type": "library",
+      "publisher": "Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>",
+      "name": "libssl1.1",
+      "version": "1.1.1d-0+deb10u7",
+      "cpe": "cpe:2.3:a:libssl1.1:libssl1.1:1.1.1d-0\\+deb10u7:*:*:*:*:*:*:*",
+      "purl": "pkg:deb/debian/libssl1.1@1.1.1d-0+deb10u7?arch=amd64&upstream=openssl&distro=debian-10",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "dpkgdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "DpkgMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "deb"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:43656e43813a6559e595b5f0bbf758229b5fd6de80a0c6f439db880294469d41"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/usr/share/doc/libssl1.1/copyright"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:43656e43813a6559e595b5f0bbf758229b5fd6de80a0c6f439db880294469d41"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/var/lib/dpkg/status.d/libssl1"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "4078"
+        },
+        {
+          "name": "syft:metadata:source",
+          "value": "openssl"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libstdc++6@8.3.0-6?arch=amd64&upstream=gcc-8&distro=debian-10&package-id=501bc7265905407a",
+      "type": "library",
+      "publisher": "Debian GCC Maintainers <debian-gcc@lists.debian.org>",
+      "name": "libstdc++6",
+      "version": "8.3.0-6",
+      "cpe": "cpe:2.3:a:libstdc\\+\\+6:libstdc\\+\\+6:8.3.0-6:*:*:*:*:*:*:*",
+      "purl": "pkg:deb/debian/libstdc++6@8.3.0-6?arch=amd64&upstream=gcc-8&distro=debian-10",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "dpkgdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "DpkgMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "deb"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:5edb48d3f4fcdf92f0747e7d77609d2053abcab81e4a2843d3dacff6fc4cf9ef"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/var/lib/dpkg/status.d/libstdc"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "2017"
+        },
+        {
+          "name": "syft:metadata:source",
+          "value": "gcc-8"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/netbase@5.6?arch=all&distro=debian-10&package-id=b55e51dca4eba9a6",
+      "type": "library",
+      "publisher": "Marco d'Itri <md@linux.it>",
+      "name": "netbase",
+      "version": "5.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:netbase:netbase:5.6:*:*:*:*:*:*:*",
+      "purl": "pkg:deb/debian/netbase@5.6?arch=all&distro=debian-10",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "dpkgdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "DpkgMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "deb"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:f562a175088911ee4a8a226a9b45c156e0f9e8d2669712ec422e69e4df64bfc9"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/usr/share/doc/netbase/copyright"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:f562a175088911ee4a8a226a9b45c156e0f9e8d2669712ec422e69e4df64bfc9"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/var/lib/dpkg/status.d/netbase"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "44"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/openssl@1.1.1d-0+deb10u7?arch=amd64&distro=debian-10&package-id=8f3eb2c0c13a4d35",
+      "type": "library",
+      "publisher": "Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>",
+      "name": "openssl",
+      "version": "1.1.1d-0+deb10u7",
+      "cpe": "cpe:2.3:a:openssl:openssl:1.1.1d-0\\+deb10u7:*:*:*:*:*:*:*",
+      "purl": "pkg:deb/debian/openssl@1.1.1d-0+deb10u7?arch=amd64&distro=debian-10",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "dpkgdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "DpkgMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "deb"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:43656e43813a6559e595b5f0bbf758229b5fd6de80a0c6f439db880294469d41"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/usr/share/doc/openssl/copyright"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:43656e43813a6559e595b5f0bbf758229b5fd6de80a0c6f439db880294469d41"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/var/lib/dpkg/status.d/openssl"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "1461"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/tzdata@2021a-0+deb10u3?arch=all&distro=debian-10&package-id=edf8aaa3a9432f20",
+      "type": "library",
+      "publisher": "GNU Libc Maintainers <debian-glibc@lists.debian.org>",
+      "name": "tzdata",
+      "version": "2021a-0+deb10u3",
+      "cpe": "cpe:2.3:a:tzdata:tzdata:2021a-0\\+deb10u3:*:*:*:*:*:*:*",
+      "purl": "pkg:deb/debian/tzdata@2021a-0+deb10u3?arch=all&distro=debian-10",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "dpkgdb-cataloger"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "DpkgMetadata"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "deb"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:f562a175088911ee4a8a226a9b45c156e0f9e8d2669712ec422e69e4df64bfc9"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/usr/share/doc/tzdata/copyright"
+        },
+        {
+          "name": "syft:location:1:layerID",
+          "value": "sha256:f562a175088911ee4a8a226a9b45c156e0f9e8d2669712ec422e69e4df64bfc9"
+        },
+        {
+          "name": "syft:location:1:path",
+          "value": "/var/lib/dpkg/status.d/tzdata"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "3039"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "name": "debian",
+      "version": "10",
+      "description": "Distroless",
+      "swid": {
+        "tagId": "debian",
+        "name": "debian",
+        "version": "10"
+      },
+      "externalReferences": [
+        {
+          "url": "https://github.com/GoogleContainerTools/distroless/issues/new",
+          "type": "issue-tracker"
+        },
+        {
+          "url": "https://github.com/GoogleContainerTools/distroless",
+          "type": "website"
+        },
+        {
+          "url": "https://github.com/GoogleContainerTools/distroless/blob/master/README.md",
+          "comment": "support",
+          "type": "other"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:distro:id",
+          "value": "debian"
+        },
+        {
+          "name": "syft:distro:prettyName",
+          "value": "Distroless"
+        },
+        {
+          "name": "syft:distro:versionID",
+          "value": "10"
+        }
+      ]
+    }
+  ]
+}
