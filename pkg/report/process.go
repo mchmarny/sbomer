@@ -4,6 +4,7 @@ import (
 	"context"
 	"os"
 	"strings"
+	"time"
 
 	"github.com/mchmarny/sbomer/pkg/out"
 	"github.com/mchmarny/sbomer/pkg/sbom"
@@ -18,6 +19,11 @@ const (
 	sbomFormatSPDX = "spdx"
 	sbomFormatCDX  = "cdx"
 )
+
+type templateData struct {
+	GeneratedOn string
+	Items       []*sbom.ReportResult
+}
 
 func Process(ctx context.Context, req *Request) error {
 	log.Debug().Msg("processing request...")
@@ -68,7 +74,12 @@ func Process(ctx context.Context, req *Request) error {
 
 	log.Debug().Msgf("found %d items in %s", len(list), req.Path)
 
-	if err := out.Write(req.Target, list); err != nil {
+	d := &templateData{
+		GeneratedOn: time.Now().Format(time.RFC1123),
+		Items:       list,
+	}
+
+	if err := out.WriteTemplate(req.Target, out.ReportTemplate, d); err != nil {
 		return errors.Wrapf(err, "error writing output to %s", req.Target)
 	}
 

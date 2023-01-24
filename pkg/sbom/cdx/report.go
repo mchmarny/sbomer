@@ -2,11 +2,10 @@ package cdx
 
 import (
 	"bytes"
-	"fmt"
-	"strings"
 
 	cdx "github.com/CycloneDX/cyclonedx-go"
 	"github.com/mchmarny/sbomer/pkg/sbom"
+	"github.com/rs/zerolog/log"
 )
 
 type CycloneDXReport struct {
@@ -29,70 +28,55 @@ func (r *CycloneDXReport) GetName() string {
 	return r.name
 }
 
-func (r *CycloneDXReport) Report() string {
-	var sb strings.Builder
-	sb.WriteString(fmt.Sprintf("%d total packages\n", r.totalPackages))
-
-	sb.WriteString(fmt.Sprintf("%d%% have versions.\n", sbom.PrettyPercent(r.hasPackVersion, r.totalPackages)))
-	sb.WriteString(fmt.Sprintf("%d%% have licenses.\n", sbom.PrettyPercent(r.hasLicense, r.totalPackages)))
-	sb.WriteString(fmt.Sprintf("%d%% have package digest.\n", sbom.PrettyPercent(r.hasPackDigest, r.totalPackages)))
-	sb.WriteString(fmt.Sprintf("%d%% have purls.\n", sbom.PrettyPercent(r.hasPurl, r.totalPackages)))
-	sb.WriteString(fmt.Sprintf("%d%% have CPEs.\n", sbom.PrettyPercent(r.hasCPE, r.totalPackages)))
-
-	sb.WriteString(fmt.Sprintf("Has creation info? %v\n", r.hasCreationInfo()))
-	sb.WriteString(fmt.Sprintf("Spec valid? %v\n", r.valid))
-	return sb.String()
-}
-
-func (r *CycloneDXReport) hasCreationInfo() bool {
-	return r.creationToolName > 0 &&
-		r.creationToolVersion > 0 &&
-		r.creationToolName == r.creationToolVersion
-}
-
-func (r *CycloneDXReport) IsSpecCompliant() sbom.ReportValue {
+func (r *CycloneDXReport) IsSpecCompliant() *sbom.ReportValue {
 	if r.docError != nil {
-		return sbom.ReportValue{
-			Ratio:     0,
-			Reasoning: r.docError.Error(),
+		log.Error().Err(r.docError).Msg("Invalid CycloneDX document")
+		return &sbom.ReportValue{
+			Ratio: 0,
+			Value: "No",
 		}
 	}
-	return sbom.ReportValue{Ratio: 1}
+	return &sbom.ReportValue{
+		Ratio: 1,
+		Value: "Yes",
+	}
 }
 
 const rationPrecision = 2
 
-func (r *CycloneDXReport) PackageIdentification() sbom.ReportValue {
-	purlPercent := sbom.PrettyPercent(r.hasPurl, r.totalPackages)
-	cpePercent := sbom.PrettyPercent(r.hasCPE, r.totalPackages)
-	return sbom.ReportValue{
-		// What percentage has both Purl & CPEs?
-		Ratio:     float32(r.hasPurl+r.hasCPE) / float32(r.totalPackages*rationPrecision),
-		Reasoning: fmt.Sprintf("%d%% have purls and %d%% have CPEs", purlPercent, cpePercent),
+func (r *CycloneDXReport) PackageIdentification() *sbom.ReportValue {
+	return sbom.PrettyPercent(r.hasPurl+r.hasCPE, r.totalPackages*rationPrecision)
+}
+
+func (r *CycloneDXReport) PackageCPE() *sbom.ReportValue {
+	return sbom.PrettyPercent(r.hasCPE, r.totalPackages)
+}
+
+func (r *CycloneDXReport) PackagePURL() *sbom.ReportValue {
+	return sbom.PrettyPercent(r.hasPurl, r.totalPackages)
+}
+
+func (r *CycloneDXReport) PackageVersions() *sbom.ReportValue {
+	return sbom.PrettyPercent(r.hasPackVersion, r.totalPackages)
+}
+
+func (r *CycloneDXReport) PackageDigests() *sbom.ReportValue {
+	return sbom.PrettyPercent(r.hasPackDigest, r.totalPackages)
+}
+
+func (r *CycloneDXReport) PackageLicenses() *sbom.ReportValue {
+	return sbom.PrettyPercent(r.hasLicense, r.totalPackages)
+}
+
+func (r *CycloneDXReport) CreationInfo() *sbom.ReportValue {
+	return &sbom.ReportValue{
+		Ratio: 1,
+		Value: "100%",
 	}
 }
 
-func (r *CycloneDXReport) PackageVersions() sbom.ReportValue {
-	return sbom.ReportValue{
-		Ratio: float32(r.hasPackVersion) / float32(r.totalPackages),
-	}
-}
-
-func (r *CycloneDXReport) PackageDigests() sbom.ReportValue {
-	return sbom.ReportValue{
-		Ratio: float32(r.hasPackDigest) / float32(r.totalPackages),
-	}
-}
-
-func (r *CycloneDXReport) PackageLicenses() sbom.ReportValue {
-	return sbom.ReportValue{
-		Ratio: float32(r.hasLicense) / float32(r.totalPackages),
-	}
-}
-
-func (r *CycloneDXReport) CreationInfo() sbom.ReportValue {
-	// @@@
-	return sbom.ReportValue{Ratio: 1}
+func (r *CycloneDXReport) GetTotalPackages() int {
+	return r.totalPackages
 }
 
 func GetCycloneDXReport(b []byte) sbom.SbomReport {
