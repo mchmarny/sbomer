@@ -48,6 +48,8 @@ func GetReport(sr SbomReport) ReportResult {
 	return rr
 }
 
+const percent100 = 100.0
+
 func PrettyPercent(num, denom int) *ReportValue {
 	r := &ReportValue{}
 	if denom == 0 {
@@ -55,7 +57,7 @@ func PrettyPercent(num, denom int) *ReportValue {
 	}
 	r.Ratio = float32(100 * (1.0 * num) / denom)
 
-	f := ((float64(num) / float64(denom)) * float64(100))
+	f := ((float64(num) / float64(denom)) * percent100)
 	r.Value = fmt.Sprintf("%.0f%%", f)
 
 	return r

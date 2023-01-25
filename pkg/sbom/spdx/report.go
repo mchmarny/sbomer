@@ -52,7 +52,6 @@ func (r *SpdxReport) PackageIdentification() *sbom.ReportValue {
 		return &missingPackages
 	}
 	return sbom.PrettyPercent(r.hasPurl+r.hasCPE, r.totalPackages*rationPrecision)
-
 }
 
 func (r *SpdxReport) PackageCPE() *sbom.ReportValue {
