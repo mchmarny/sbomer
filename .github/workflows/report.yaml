@@ -86,4 +86,9 @@ jobs:
 
     - name: Generate Report
       run: |
-        bin/sbomer report -s ./data/ -o ./test.json
+        bin/sbomer report -s ./data/ -o ./list.md
+
+    - uses: EndBug/add-and-commit@61a88be553afe4206585b31aa72387c64295d08b  # v9
+      with:
+        add: list.md
+        commit: --signoff
