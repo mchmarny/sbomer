@@ -8,7 +8,7 @@ on:
       - main
 
 env:
-  image_count: 3
+  image_count: 20
 
 jobs:
   report:
