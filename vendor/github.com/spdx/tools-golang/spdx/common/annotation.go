@@ -15,7 +15,7 @@ type Annotator struct {
 }
 
 // UnmarshalJSON takes an annotator in the typical one-line format and parses it into an Annotator struct.
-// This function is also used when unmarshaling YAML
+// This function is also used when unmarshalling YAML
 func (a *Annotator) UnmarshalJSON(data []byte) error {
 	// annotator will simply be a string
 	annotatorStr := string(data)
@@ -34,7 +34,7 @@ func (a *Annotator) UnmarshalJSON(data []byte) error {
 }
 
 // MarshalJSON converts the receiver into a slice of bytes representing an Annotator in string form.
-// This function is also used when marshaling to YAML
+// This function is also used when marshalling to YAML
 func (a Annotator) MarshalJSON() ([]byte, error) {
 	if a.Annotator != "" {
 		return json.Marshal(fmt.Sprintf("%s: %s", a.AnnotatorType, a.Annotator))
