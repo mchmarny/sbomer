@@ -15,7 +15,7 @@ github.com/mattn/go-isatty
 # github.com/pkg/errors v0.9.1
 ## explicit
 github.com/pkg/errors
-# github.com/rs/zerolog v1.28.0
+# github.com/rs/zerolog v1.29.0
 ## explicit; go 1.15
 github.com/rs/zerolog
 github.com/rs/zerolog/internal/cbor
