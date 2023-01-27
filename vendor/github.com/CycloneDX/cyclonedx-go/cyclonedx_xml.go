@@ -24,7 +24,7 @@ import (
 	"io"
 )
 
-// bomReferenceXML is temporarily used for marshaling and marshaling
+// bomReferenceXML is temporarily used for marshalling and unmarshalling
 // BOMReference instances to and from XML.
 type bomReferenceXML struct {
 	Ref string `json:"-" xml:"ref,attr"`
@@ -56,7 +56,7 @@ func (c *Copyright) UnmarshalXML(d *xml.Decoder, start xml.StartElement) error {
 	return nil
 }
 
-// dependencyXML is temporarily used for marshaling and marshaling
+// dependencyXML is temporarily used for marshalling and unmarshalling
 // Dependency instances to and from XML.
 type dependencyXML struct {
 	Ref          string           `xml:"ref,attr"`
