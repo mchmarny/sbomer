@@ -1,6 +1,6 @@
 # SBOM Report 
 
-> Generated: Wed, 25 Jan 2023 16:54:31 UTC
+> Generated: Fri, 27 Jan 2023 00:20:02 UTC
 
 
 ### amazon/amazon-ecs-agent
@@ -64,7 +64,7 @@
 * Compliant SBOM: Yes
 * SBOM Creation Info: 100%
 
-| Package Data     | Ratio of 213 packages |
+| Package Data     | Ratio of 214 packages |
 | ---------------- | ----------------------------------- |
 | Id (CPE & PURL)  | 100%       |
 | With CPE         | 100%                  |
@@ -92,7 +92,7 @@
 * Compliant SBOM: Yes
 * SBOM Creation Info: 100%
 
-| Package Data     | Ratio of 212 packages |
+| Package Data     | Ratio of 213 packages |
 | ---------------- | ----------------------------------- |
 | Id (CPE & PURL)  | 100%       |
 | With CPE         | 100%                  |
@@ -120,13 +120,13 @@
 * Compliant SBOM: Yes
 * SBOM Creation Info: 100%
 
-| Package Data     | Ratio of 125 packages |
+| Package Data     | Ratio of 126 packages |
 | ---------------- | ----------------------------------- |
 | Id (CPE & PURL)  | 99%       |
 | With CPE         | 99%                  |
 | With PURL        | 99%                 |
 | With Version     | 100%              |
-| With License     | 14%              |
+| With License     | 13%              |
 
 
 ### amazon/aws-xray-daemon
@@ -148,7 +148,7 @@
 * Compliant SBOM: Yes
 * SBOM Creation Info: 100%
 
-| Package Data     | Ratio of 124 packages |
+| Package Data     | Ratio of 125 packages |
 | ---------------- | ----------------------------------- |
 | Id (CPE & PURL)  | 100%       |
 | With CPE         | 99%                  |
@@ -456,13 +456,13 @@
 * Compliant SBOM: Yes
 * SBOM Creation Info: 100%
 
-| Package Data     | Ratio of 106 packages |
+| Package Data     | Ratio of 107 packages |
 | ---------------- | ----------------------------------- |
 | Id (CPE & PURL)  | 99%       |
 | With CPE         | 99%                  |
 | With PURL        | 99%                 |
 | With Version     | 100%              |
-| With License     | 75%              |
+| With License     | 74%              |
 
 
 ### bitnami/redis
@@ -484,7 +484,7 @@
 * Compliant SBOM: Yes
 * SBOM Creation Info: 100%
 
-| Package Data     | Ratio of 105 packages |
+| Package Data     | Ratio of 106 packages |
 | ---------------- | ----------------------------------- |
 | Id (CPE & PURL)  | 100%       |
 | With CPE         | 100%                  |
@@ -512,7 +512,7 @@
 * Compliant SBOM: Yes
 * SBOM Creation Info: 100%
 
-| Package Data     | Ratio of 1583 packages |
+| Package Data     | Ratio of 1585 packages |
 | ---------------- | ----------------------------------- |
 | Id (CPE & PURL)  | 95%       |
 | With CPE         | 90%                  |
@@ -540,7 +540,7 @@
 * Compliant SBOM: Yes
 * SBOM Creation Info: 100%
 
-| Package Data     | Ratio of 1582 packages |
+| Package Data     | Ratio of 1584 packages |
 | ---------------- | ----------------------------------- |
 | Id (CPE & PURL)  | 95%       |
 | With CPE         | 90%                  |
@@ -568,13 +568,13 @@
 * Compliant SBOM: Yes
 * SBOM Creation Info: 100%
 
-| Package Data     | Ratio of 45 packages |
+| Package Data     | Ratio of 46 packages |
 | ---------------- | ----------------------------------- |
-| Id (CPE & PURL)  | 98%       |
+| Id (CPE & PURL)  | 97%       |
 | With CPE         | 98%                  |
-| With PURL        | 98%                 |
+| With PURL        | 96%                 |
 | With Version     | 100%              |
-| With License     | 29%              |
+| With License     | 28%              |
 
 
 ### google/cadvisor
@@ -596,13 +596,13 @@
 * Compliant SBOM: Yes
 * SBOM Creation Info: 100%
 
-| Package Data     | Ratio of 44 packages |
+| Package Data     | Ratio of 45 packages |
 | ---------------- | ----------------------------------- |
-| Id (CPE & PURL)  | 100%       |
+| Id (CPE & PURL)  | 99%       |
 | With CPE         | 100%                  |
-| With PURL        | 100%                 |
+| With PURL        | 98%                 |
 | With Version     | 100%              |
-| With License     | 30%              |
+| With License     | 29%              |
 
 
 ### google/cadvisor
@@ -624,9 +624,9 @@
 * Compliant SBOM: Yes
 * SBOM Creation Info: 100%
 
-| Package Data     | Ratio of 572 packages |
+| Package Data     | Ratio of 573 packages |
 | ---------------- | ----------------------------------- |
-| Id (CPE & PURL)  | 97%       |
+| Id (CPE & PURL)  | 96%       |
 | With CPE         | 93%                  |
 | With PURL        | 100%                 |
 | With Version     | 100%              |
@@ -652,7 +652,7 @@
 * Compliant SBOM: Yes
 * SBOM Creation Info: 100%
 
-| Package Data     | Ratio of 571 packages |
+| Package Data     | Ratio of 572 packages |
 | ---------------- | ----------------------------------- |
 | Id (CPE & PURL)  | 97%       |
 | With CPE         | 93%                  |
@@ -680,11 +680,11 @@
 * Compliant SBOM: Yes
 * SBOM Creation Info: 100%
 
-| Package Data     | Ratio of 220 packages |
+| Package Data     | Ratio of 221 packages |
 | ---------------- | ----------------------------------- |
 | Id (CPE & PURL)  | 96%       |
 | With CPE         | 92%                  |
-| With PURL        | 100%                 |
+| With PURL        | 99%                 |
 | With Version     | 100%              |
 | With License     | 7%              |
 
@@ -708,7 +708,7 @@
 * Compliant SBOM: Yes
 * SBOM Creation Info: 100%
 
-| Package Data     | Ratio of 219 packages |
+| Package Data     | Ratio of 220 packages |
 | ---------------- | ----------------------------------- |
 | Id (CPE & PURL)  | 96%       |
 | With CPE         | 93%                  |
