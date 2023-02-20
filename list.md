@@ -1,6 +1,6 @@
 # SBOM Report 
 
-> Generated: Fri, 27 Jan 2023 00:20:02 UTC
+> Generated: Mon, 20 Feb 2023 21:25:59 UTC
 
 
 ### amazon/amazon-ecs-agent
@@ -512,7 +512,7 @@
 * Compliant SBOM: Yes
 * SBOM Creation Info: 100%
 
-| Package Data     | Ratio of 1585 packages |
+| Package Data     | Ratio of 1590 packages |
 | ---------------- | ----------------------------------- |
 | Id (CPE & PURL)  | 95%       |
 | With CPE         | 90%                  |
@@ -526,7 +526,7 @@
 * Compliant SBOM: Yes
 * SBOM Creation Info: 100%
 
-| Package Data     | Ratio of 716 packages |
+| Package Data     | Ratio of 721 packages |
 | ---------------- | ----------------------------------- |
 | Id (CPE & PURL)  | 50%       |
 | With CPE         | 0%                  |
@@ -540,7 +540,7 @@
 * Compliant SBOM: Yes
 * SBOM Creation Info: 100%
 
-| Package Data     | Ratio of 1584 packages |
+| Package Data     | Ratio of 1589 packages |
 | ---------------- | ----------------------------------- |
 | Id (CPE & PURL)  | 95%       |
 | With CPE         | 90%                  |
@@ -554,7 +554,7 @@
 * Compliant SBOM: Yes
 * SBOM Creation Info: 20%
 
-| Package Data     | Ratio of 718 packages |
+| Package Data     | Ratio of 723 packages |
 | ---------------- | ----------------------------------- |
 | Id (CPE & PURL)  | 50%       |
 | With CPE         | 0%                  |
@@ -792,10 +792,10 @@
 * Compliant SBOM: Yes
 * SBOM Creation Info: 100%
 
-| Package Data     | Ratio of 198 packages |
+| Package Data     | Ratio of 230 packages |
 | ---------------- | ----------------------------------- |
 | Id (CPE & PURL)  | 96%       |
-| With CPE         | 92%                  |
+| With CPE         | 91%                  |
 | With PURL        | 100%                 |
 | With Version     | 100%              |
 | With License     | 0%              |
@@ -806,12 +806,12 @@
 * Compliant SBOM: Yes
 * SBOM Creation Info: 100%
 
-| Package Data     | Ratio of 174 packages |
+| Package Data     | Ratio of 205 packages |
 | ---------------- | ----------------------------------- |
 | Id (CPE & PURL)  | 49%       |
 | With CPE         | 0%                  |
-| With PURL        | 98%                 |
-| With Version     | 98%              |
+| With PURL        | 99%                 |
+| With Version     | 99%              |
 | With License     | 0%              |
 
 
@@ -820,10 +820,10 @@
 * Compliant SBOM: Yes
 * SBOM Creation Info: 100%
 
-| Package Data     | Ratio of 198 packages |
+| Package Data     | Ratio of 230 packages |
 | ---------------- | ----------------------------------- |
 | Id (CPE & PURL)  | 96%       |
-| With CPE         | 92%                  |
+| With CPE         | 91%                  |
 | With PURL        | 100%                 |
 | With Version     | 100%              |
 | With License     | 0%              |
@@ -834,11 +834,11 @@
 * Compliant SBOM: Yes
 * SBOM Creation Info: 20%
 
-| Package Data     | Ratio of 175 packages |
+| Package Data     | Ratio of 206 packages |
 | ---------------- | ----------------------------------- |
 | Id (CPE & PURL)  | 49%       |
 | With CPE         | 0%                  |
-| With PURL        | 98%                 |
+| With PURL        | 99%                 |
 | With Version     | 98%              |
 | With License     | 0%              |
 
@@ -848,7 +848,7 @@
 * Compliant SBOM: Yes
 * SBOM Creation Info: 100%
 
-| Package Data     | Ratio of 408 packages |
+| Package Data     | Ratio of 391 packages |
 | ---------------- | ----------------------------------- |
 | Id (CPE & PURL)  | 95%       |
 | With CPE         | 90%                  |
@@ -862,9 +862,9 @@
 * Compliant SBOM: Yes
 * SBOM Creation Info: 100%
 
-| Package Data     | Ratio of 326 packages |
+| Package Data     | Ratio of 309 packages |
 | ---------------- | ----------------------------------- |
-| Id (CPE & PURL)  | 49%       |
+| Id (CPE & PURL)  | 50%       |
 | With CPE         | 0%                  |
 | With PURL        | 99%                 |
 | With Version     | 99%              |
@@ -876,7 +876,7 @@
 * Compliant SBOM: Yes
 * SBOM Creation Info: 100%
 
-| Package Data     | Ratio of 408 packages |
+| Package Data     | Ratio of 391 packages |
 | ---------------- | ----------------------------------- |
 | Id (CPE & PURL)  | 95%       |
 | With CPE         | 90%                  |
@@ -890,12 +890,12 @@
 * Compliant SBOM: Yes
 * SBOM Creation Info: 20%
 
-| Package Data     | Ratio of 327 packages |
+| Package Data     | Ratio of 310 packages |
 | ---------------- | ----------------------------------- |
-| Id (CPE & PURL)  | 49%       |
+| Id (CPE & PURL)  | 50%       |
 | With CPE         | 0%                  |
 | With PURL        | 99%                 |
-| With Version     | 98%              |
+| With Version     | 99%              |
 | With License     | 0%              |
 
 
