@@ -37,3 +37,10 @@ tmp
 # DB
 *.db
 test.md
+
+# Terraform
+*.tfstate
+*.tfvars
+*.hcl
+.terraform
+*.backup

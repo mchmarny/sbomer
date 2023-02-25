@@ -21,6 +21,20 @@ tagless: ## Delete the current release tag
 	git tag -d $(RELEASE_VERSION)
 	git push --delete origin $(RELEASE_VERSION)
 
+
+.PHONY: setup
+setup: ## Creates the GCP resources 
+	terraform -chdir=./setup init
+	terraform -chdir=./setup apply -auto-approve
+
+.PHONY: apply
+apply: ## Applies Terraform
+	terraform -chdir=./setup apply -auto-approve
+
+.PHONY: destroy
+destroy: ## Destroy all resources created by Terraform
+	terraform -chdir=./setup destroy
+
 .PHONY: help
 help: ## Display available commands
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk \

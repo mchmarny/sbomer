@@ -5,11 +5,17 @@ on:
         description: 'Image to process'
         required: true
 
+env:
+  auth_provider: "projects/865303606864/locations/global/workloadIdentityPools/sbomer-github-pool/providers/github-provider"
+  auth_account: "sbomer-github-actions-user@cloudy-labz.iam.gserviceaccount.com"
+  target_bucket: "sbomer-cloudy-labz"
+
 jobs:
   process:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      id-token: write
     steps:
 
     - name: Install Syft
@@ -24,20 +30,37 @@ jobs:
         echo "IMG_NAME=$name" >> $GITHUB_ENV
 
     - name: Make SBOM
+      id: sbom
       run: |-
         set -euo pipefail
-        syft packages -q -o spdx-json \
-          --file "sbom-${{ env.IMG_NAME }}.json" \
-          ${{ inputs.image }} || true
+        file="sbom-${{ env.IMG_NAME }}.json"
+        syft packages -q -o spdx-json --file "$file" ${{ inputs.image }} || true
+        echo "file=$file\n" >> $GITHUB_OUTPUT
 
     - name: Make VULN
+      id: vuln
       run: |-
         set -euo pipefail
-        grype -q --add-cpes-if-none -s AllLayers -o json \
-          --file "vuln-${{ env.IMG_NAME }}.json" \
-          ${{ inputs.image }} || true
+        file="vuln-${{ env.IMG_NAME }}.json"
+        grype -q --add-cpes-if-none -s AllLayers -o json --file "$file" ${{ inputs.image }} || true
+        echo "file=$file\n" >> $GITHUB_OUTPUT
 
-    - name: List Results
+    - id: auth
+      name: Auth GCP
+      uses: google-github-actions/auth@v1  # v1.0.0
+      with:
+        workload_identity_provider: ${{ env.auth_provider }}
+        service_account: ${{ env.auth_account }}
+
+    - name: Install gcloud
+      uses: google-github-actions/setup-gcloud@v1
+      with:
+        version: '>= 418.0.0'
+
+    - name: Upload Files 
       run: |-
         set -euo pipefail
-        ls -al
+        ls *.json
+        d=$(date +%Y-%m-%d)
+        gcloud storage cp ${{ steps.sbom.outputs.file }} "gs://${{ env.target_bucket }}/$d/"
+        gcloud storage cp ${{ steps.vuln.outputs.file }} "gs://${{ env.target_bucket }}/$d/"
