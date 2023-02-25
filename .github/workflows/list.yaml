@@ -23,20 +23,20 @@ jobs:
         echo "IMG_URL=$url" >> $GITHUB_ENV
 
     - name: Execute Search
-      run: |
+      run: |-
         curl -sS ${{ env.IMG_URL }} >> images.json
-        ls -al
 
     - name: List Images
       uses: sergeysova/jq-action@v2
       id: images
       with:
-        cmd: 'jq .summaries[].name images.json -r'
+        cmd: "jq -r '.summaries[].name' images.json"
         multiline: true
 
     - name: Process Images
-      run: |
+      run: |-
         images="${{ steps.images.outputs.value }}"
+        jq --version
         for img in $images; do
           echo "image: $img"
           gh workflow run process.yaml -f image="$img"
