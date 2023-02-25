@@ -29,5 +29,5 @@ jobs:
       run: |-
         curl -sS "${{ env.IMG_URL }}" | jq -r '.summaries[].name' | while read img; do
           echo "image: $img"
-          gh workflow run process.yaml -f image="$img"
+          gh workflow run .github/workflows/process.yaml -f image="$img"
         done
