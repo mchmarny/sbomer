@@ -24,7 +24,8 @@ jobs:
 
     - name: Execute Search
       run: |
-        curl -sS ${{ env.IMG_URL }} > images.json
+        curl -sS ${{ env.IMG_URL }} >> images.json
+        ls -al
 
     - name: List Images
       uses: sergeysova/jq-action@v2
