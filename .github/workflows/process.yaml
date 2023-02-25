@@ -35,7 +35,7 @@ jobs:
         set -euo pipefail
         file="sbom-${{ env.IMG_NAME }}.json"
         syft packages -q -o spdx-json --file "$file" ${{ inputs.image }} || true
-        echo "file=$file\n" >> $GITHUB_OUTPUT
+        echo "file=$file" >> $GITHUB_OUTPUT
 
     - name: Make VULN
       id: vuln
@@ -43,7 +43,7 @@ jobs:
         set -euo pipefail
         file="vuln-${{ env.IMG_NAME }}.json"
         grype -q --add-cpes-if-none -s AllLayers -o json --file "$file" ${{ inputs.image }} || true
-        echo "file=$file\n" >> $GITHUB_OUTPUT
+        echo "file=$file" >> $GITHUB_OUTPUT
 
     - id: auth
       name: Auth GCP
@@ -61,6 +61,6 @@ jobs:
       run: |-
         set -euo pipefail
         ls *.json
-        d=$(date +%Y-%m-%d)
-        gcloud storage cp ${{ steps.sbom.outputs.file }} "gs://${{ env.target_bucket }}/$d/"
-        gcloud storage cp ${{ steps.vuln.outputs.file }} "gs://${{ env.target_bucket }}/$d/"
+        bucket="gs://${{ env.target_bucket }}/$(date +%Y-%m-%d)/"
+        gcloud storage cp ${{ steps.sbom.outputs.file }} $bucket
+        gcloud storage cp ${{ steps.vuln.outputs.file }} $bucket
