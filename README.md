@@ -1,12 +1,5 @@
 # sbomer 
 
-Utility to generate SBOM reports
-
-Open source projects used to build `sbomer`
-
-* [eBay/sbom-scorecard](https://github.com/eBay/sbom-scorecard)
-* [syft](https://github.com/anchore/syft) for SBOM generation 
-* [trivy](https://github.com/aquasecurity/trivy) for vulnerability scans 
 
 
 ## Disclaimer

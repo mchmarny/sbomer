@@ -22,11 +22,15 @@ jobs:
         url="https://hub.docker.com/api/content/v1/products/search?page=1&page_size=${{ env.image_count }}&q=%2B&source=community&type=image%2Cbundle"
         echo "IMG_URL=$url" >> $GITHUB_ENV
 
-    - id: images
-      name: Get Images
+    - name: Execute Search
+      run: |
+        curl -sS ${{ env.IMG_URL }} > images.json
+
+    - name: List Images
       uses: sergeysova/jq-action@v2
+      id: images
       with:
-        cmd: "curl -sS ${{ env.IMG_URL }} | jq -r '.summaries[].name'"
+        cmd: 'jq .summaries[].name images.json -r'
         multiline: true
 
     - name: Process Images
