@@ -22,22 +22,10 @@ jobs:
         url="https://hub.docker.com/api/content/v1/products/search?page=1&page_size=${{ env.image_count }}&q=%2B&source=community&type=image%2Cbundle"
         echo "IMG_URL=$url" >> $GITHUB_ENV
 
+    - uses: sergeysova/jq-action@v2
     - name: Execute Search
       run: |-
-        curl -sS ${{ env.IMG_URL }} >> images.json
-
-    - name: List Images
-      uses: sergeysova/jq-action@v2
-      id: images
-      with:
-        cmd: "jq -r '.summaries[].name' images.json"
-        multiline: true
-
-    - name: Process Images
-      run: |-
-        images="${{ steps.images.outputs.value }}"
-        jq --version
-        for img in $images; do
+        curl -sS "${{ env.IMG_URL }}" | jq -r '.summaries[].name' | while read img; do
           echo "image: $img"
           gh workflow run process.yaml -f image="$img"
         done
