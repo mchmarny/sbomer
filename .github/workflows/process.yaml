@@ -1,0 +1,43 @@
+on:
+  workflow_dispatch:
+    inputs:
+      image:
+        description: 'Image to process'
+        required: true
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+
+    - name: Install Syft
+      uses: anchore/sbom-action/download-syft@07978da  # v0.13.3
+
+    - name: Install Grype
+      uses: anchore/scan-action/download-grype@dafbc97  # v3.3.4
+
+    - name: Clean Image Name
+      run: |-
+        name=$(echo ${{ inputs.image }} | sed -e 's/[^A-Za-z0-9._-]/-/g')
+        echo "IMG_NAME=$name" >> $GITHUB_ENV
+
+    - name: Make SBOM
+      run: |-
+        set -euo pipefail
+        syft packages -q -o spdx-json \
+          --file "sbom-${{ env.IMG_NAME }}.json" \
+          ${{ inputs.image }} || true
+
+    - name: Make VULN
+      run: |-
+        set -euo pipefail
+        grype -q --add-cpes-if-none -s AllLayers -o json \
+          --file "vuln-${{ env.IMG_NAME }}.json" \
+          ${{ inputs.image }} || true
+
+    - name: List Results
+      run: |-
+        set -euo pipefail
+        ls -al

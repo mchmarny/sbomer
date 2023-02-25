@@ -1,20 +1,19 @@
 #!/bin/bash
 
-# sbompop generates Software Bill of Materials (SBOM) for 
+# generates SBOM and Vulnerability report for the top
 # 100 most popular images in the Docker Hub.
-# usage: sbompop
 
 set -eo pipefail
 
-# number of images to generate sbom for (default: 3)
+# number of top images to process (default: 3)
 num="${1:-3}"
 
 # constants
 url="https://hub.docker.com/api/content/v1/products/search?page=1&page_size=${num}&q=%2B&source=community&type=image%2Cbundle"
 
 # main
-echo "generating sbom for $num community images from Docker Hub..."
+echo "generating sbom and vuln report for $num community images from Docker Hub..."
 curl -sS "$url" | jq -r '.summaries[].name' | while read img; do
 	echo "image: $img"
-	tools/sbom $img
+	tools/report $img
 done

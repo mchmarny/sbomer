@@ -29,13 +29,10 @@ crash.*.log
 # Test binaries
 *.test
 tmp
+/data
 
 # Coverage
 *.out
-
-# terminalizer 
-/config.yml
-/sbomer.yml
 
 # DB
 *.db
