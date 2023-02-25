@@ -13,10 +13,10 @@ jobs:
     steps:
 
     - name: Install Syft
-      uses: anchore/sbom-action/download-syft@07978da  # v0.13.3
+      uses: anchore/sbom-action/download-syft@07978da4bdb4faa726e52dfc6b1bed63d4b56479  # v0.13.3
 
     - name: Install Grype
-      uses: anchore/scan-action/download-grype@dafbc97  # v3.3.4
+      uses: anchore/scan-action/download-grype@dafbc97d7259af88b61bd260f2fde565d0668a72  # v3.3.4
 
     - name: Clean Image Name
       run: |-
