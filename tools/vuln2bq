@@ -9,16 +9,19 @@ f=$1
 
 # dependencies
 jq=$(which jq) || ( echo "jq not installed" && exit 1 )
+bq=$(which bq) || ( echo "bq not installed" && exit 1 )
 
 d=$(date +%Y-%m-%d)
 n=$(basename $f .json)
 
 cat $f | jq -r --arg d "$d" '. as $root | .matches[] | [ $root.source.target.userInput, $root.source.target.manifestDigest, $d, .vulnerability.id, .vulnerability.dataSource, .vulnerability.severity, .vulnerability.fix.state, .artifact.name, .artifact.version, .artifact.language, (.artifact.cpes | join(",")), .artifact.purl, (.artifact.metadata | join(",")) ] | @csv' >> "${n}.csv"
 
-bq load \
-    --project_id cloudy-labz \
-    --source_format CSV \
-    --time_partitioning_type MONTH \
-    sbomer.vul \
-    "${n}.csv" \
-    setup/schema/vul.json
+if [ -s "${n}.csv" ];then
+    bq load \
+        --project_id cloudy-labz \
+        --source_format CSV \
+        --time_partitioning_type MONTH \
+        sbomer.vul \
+        "${n}.csv" \
+        setup/schema/vul.json
+fi

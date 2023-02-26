@@ -25,28 +25,29 @@ jobs:
       uses: anchore/scan-action/download-grype@dafbc97d7259af88b61bd260f2fde565d0668a72  # v3.3.4
 
     - name: Clean Image Name
+      id: image
       run: |-
         name=$(echo ${{ inputs.image }} | sed -e 's/[^A-Za-z0-9._-]/-/g')
-        echo "IMG_NAME=$name" >> $GITHUB_ENV
+        echo "name=$name" >> $GITHUB_OUTPUT
 
-    - name: Make SBOM
+    - name: Make SBOM file
       id: sbom
       run: |-
         set -euo pipefail
-        file="sbom-${{ env.IMG_NAME }}.json"
+        file="sbom-${{ steps.image.outputs.name }}.json"
         syft packages -q -o spdx-json --file "$file" ${{ inputs.image }} || true
         echo "file=$file" >> $GITHUB_OUTPUT
 
-    - name: Make VULN
+    - name: Make Vulnerability file
       id: vuln
       run: |-
         set -euo pipefail
-        file="vuln-${{ env.IMG_NAME }}.json"
+        file="vuln-${{ steps.image.outputs.name }}.json"
         grype -q --add-cpes-if-none -s AllLayers -o json --file "$file" ${{ inputs.image }} || true
         echo "file=$file" >> $GITHUB_OUTPUT
 
-    - id: auth
-      name: Auth GCP
+    - name: Auth GCP
+      id: auth
       uses: google-github-actions/auth@v1  # v1.0.0
       with:
         workload_identity_provider: ${{ env.auth_provider }}
@@ -57,14 +58,20 @@ jobs:
       with:
         version: '>= 418.0.0'
 
-    - name: Install gcloud components
+    - name: Install bq
       run: |-
         gcloud components install bq
 
-    - name: Upload Files 
+    - name: Upload Files to GCS
       run: |-
         set -euo pipefail
         ls *.json
         bucket="gs://${{ env.target_bucket }}/$(date +%Y-%m-%d)/"
         gcloud storage cp ${{ steps.sbom.outputs.file }} $bucket
         gcloud storage cp ${{ steps.vuln.outputs.file }} $bucket
+
+    - name: Import data to BigQuery
+      run: |-
+        set -euo pipefail
+        tools/sbom2bq ${{ steps.sbom.outputs.file }}
+        tools/vuln2bq ${{ steps.vuln.outputs.file }}
