@@ -1,0 +1,29 @@
+#!/bin/bash
+
+set -euo pipefail
+
+f=$1
+
+# input validation
+[ -z "$f" ] && echo "sbom file not provided\n" && exit 1
+
+# dependencies
+jq=$(which jq) || ( echo "jq not installed" && exit 1 )
+
+d=$(date +%Y-%m-%d)
+n=$(basename $f .json)
+
+cat $f | jq -r --arg d "$d" '. as $root | .packages[] as $pkg | .packages[].externalRefs[] | [ $root.name, $pkg.SPDXID, $d, $root.creationInfo.created, ($root.creationInfo.creators | join(",")), $pkg.name, $pkg.versionInfo, $pkg.licenseConcluded, .referenceCategory, .referenceType, .referenceLocator ] | @csv' >> "${n}.csv"
+
+# output columns:
+# src_img
+# pkg_id
+# gen_day
+# gen_time
+# gen_by
+# pkg_name
+# pkg_version
+# pkg_license
+# ref_cat
+# ref_type
+# ref_locator

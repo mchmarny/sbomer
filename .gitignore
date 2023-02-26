@@ -30,6 +30,7 @@ crash.*.log
 *.test
 tmp
 /data
+*.csv
 
 # Coverage
 *.out

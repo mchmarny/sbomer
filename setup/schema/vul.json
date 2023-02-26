@@ -1,0 +1,67 @@
+[
+    {
+        "name": "src_img",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "src_sha",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "gen_day",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "vul_id",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "vul_src",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "vul_sev",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "vul_state",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "art_name",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "art_version",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "arg_lang",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "art_cpes",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "art_purl",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "art_meta",
+        "type": "TIMESTAMP",
+        "mode": "REQUIRED"
+    }
+]

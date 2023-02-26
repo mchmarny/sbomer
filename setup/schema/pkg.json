@@ -1,0 +1,57 @@
+[
+    {
+        "name": "src_img",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "pkg_id",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "gen_day",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "gen_time",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "gen_by",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "pkg_name",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "pkg_version",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "pkg_license",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "ref_cat",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "ref_type",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "ref_locator",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    }
+]

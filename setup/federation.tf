@@ -6,6 +6,8 @@ locals {
   ci_roles = toset([
     "roles/cloudfunctions.developer",
     "roles/iam.serviceAccountUser",
+    "roles/iam.serviceAccountTokenCreator",
+    "roles/bigquery.user",
   ])
 }
 

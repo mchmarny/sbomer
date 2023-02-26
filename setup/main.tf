@@ -4,6 +4,7 @@
 locals {
   services = [
     "artifactregistry.googleapis.com",
+    "bigquery.googleapis.com",
     "cloudresourcemanager.googleapis.com",
     "container.googleapis.com",
     "containerregistry.googleapis.com",
@@ -12,6 +13,7 @@ locals {
     "iamcredentials.googleapis.com",
     "servicecontrol.googleapis.com",
     "servicemanagement.googleapis.com",
+    "storage-api.googleapis.com",
   ]
 }
 
