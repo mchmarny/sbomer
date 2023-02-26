@@ -8,9 +8,6 @@ on:
   schedule:
     - cron: '30 */8 * * *'
 
-env:
-  image_src: ./images
-
 jobs:
   list:
     runs-on: ubuntu-latest
@@ -29,7 +26,7 @@ jobs:
       env:
         GH_TOKEN: ${{ github.token }}
       run: |-
-        for img in ${{ env.image_src}}
+        for img in ./images
         do
           echo "image: $img"
           gh workflow run .github/workflows/process.yaml -f image="$img"
