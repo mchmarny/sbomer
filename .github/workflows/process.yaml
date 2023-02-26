@@ -57,6 +57,10 @@ jobs:
       with:
         version: '>= 418.0.0'
 
+    - name: Install gcloud components
+      run: |-
+        gcloud components install bq
+
     - name: Upload Files 
       run: |-
         set -euo pipefail

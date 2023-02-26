@@ -12,7 +12,7 @@
     {
         "name": "gen_day",
         "type": "STRING",
-        "mode": "NULLABLE"
+        "mode": "REQUIRED"
     },
     {
         "name": "vul_id",
@@ -22,32 +22,32 @@
     {
         "name": "vul_src",
         "type": "STRING",
-        "mode": "NULLABLE"
+        "mode": "REQUIRED"
     },
     {
         "name": "vul_sev",
         "type": "STRING",
-        "mode": "NULLABLE"
+        "mode": "REQUIRED"
     },
     {
         "name": "vul_state",
         "type": "STRING",
-        "mode": "NULLABLE"
+        "mode": "REQUIRED"
     },
     {
         "name": "art_name",
         "type": "STRING",
-        "mode": "NULLABLE"
+        "mode": "REQUIRED"
     },
     {
         "name": "art_version",
         "type": "STRING",
-        "mode": "NULLABLE"
+        "mode": "REQUIRED"
     },
     {
         "name": "arg_lang",
         "type": "STRING",
-        "mode": "NULLABLE"
+        "mode": "REQUIRED"
     },
     {
         "name": "art_cpes",
@@ -57,11 +57,11 @@
     {
         "name": "art_purl",
         "type": "STRING",
-        "mode": "NULLABLE"
+        "mode": "REQUIRED"
     },
     {
         "name": "art_meta",
-        "type": "TIMESTAMP",
+        "type": "STRING",
         "mode": "REQUIRED"
     }
 ]

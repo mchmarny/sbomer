@@ -42,12 +42,12 @@
     {
         "name": "ref_cat",
         "type": "STRING",
-        "mode": "NULLABLE"
+        "mode": "REQUIRED"
     },
     {
         "name": "ref_type",
         "type": "STRING",
-        "mode": "NULLABLE"
+        "mode": "REQUIRED"
     },
     {
         "name": "ref_locator",
