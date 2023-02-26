@@ -21,6 +21,7 @@ if [ -s "${n}.csv" ];then
         --project_id cloudy-labz \
         --source_format CSV \
         --time_partitioning_type MONTH \
+        --max_bad_records 1000 \
         sbomer.vul \
         "${n}.csv" \
         setup/schema/vul.json

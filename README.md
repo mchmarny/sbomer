@@ -60,6 +60,46 @@ curl \
   -d '{"ref":"main", "inputs": { "image":"redis" }}'
 ```
 
+## data
+
+The data from SBOM and vulnerability report for each image is saved into two tables in BigQuery:
+
+### pkg 
+
+The [setup/schema/pkg.json](setup/schema/pkg.json) file containers complete schema used to create `pkg` table.
+
+| field | type  | required |
+| ----- | ----- | ------- |
+| src_img	| STRING | Y |
+| pkg_id	| STRING |	Y |			
+| gen_day	| STRING |	Y |			
+| gen_time	| STRING |	Y |			
+| gen_by	| STRING |	Y |			
+| pkg_name	| STRING |	Y |			
+| pkg_version	| STRING |	Y |			
+| pkg_license	| STRING |	Y |			
+| ref_cat	| STRING |	Y |			
+| ref_type	| STRING |	Y |			
+| ref_locator	| STRING |	Y |
+
+### vul 
+
+The [setup/schema/vul.json](setup/schema/vul.json) file containers complete schema used to create `vul` table.
+
+| field | type  | required |
+| ----- | ----- | ------- |
+| src_img	| STRING |	Y |			
+| src_sha	| STRING |	Y |
+| gen_day	| STRING |	Y |		
+| vul_id	| STRING |	Y |		
+| vul_src	| STRING |	Y |		
+| vul_sev	| STRING |	Y |	
+| vul_state	| STRING |	Y |		
+| art_name	| STRING |	Y |		
+| art_version	| STRING |	Y |		
+| arg_lang	| STRING |	Y |		
+| art_purl	| STRING |	Y |
+
 ## cleanup
 
 To delete all the resources created by Terraform in your GCP project: 
