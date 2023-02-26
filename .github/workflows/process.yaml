@@ -30,7 +30,7 @@ jobs:
     - name: Clean Image Name
       id: image
       run: |-
-        name=$(echo ${{ inputs.image }} | sed -e 's/[^A-Za-z0-9._-]/-/g')
+        name=$(echo ${{ inputs.image }} | sed -e 's/[^A-Za-z0-9-]/-/g')
         echo "name=$name" >> $GITHUB_OUTPUT
 
     - name: Make SBOM file

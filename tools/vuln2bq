@@ -14,7 +14,7 @@ bq=$(which bq) || ( echo "bq not installed" && exit 1 )
 d=$(date +%Y-%m-%d)
 n=$(basename $f .json)
 
-cat $f | jq -r --arg d "$d" '. as $root | .matches[] | [ $root.source.target.userInput, $root.source.target.manifestDigest, $d, .vulnerability.id, .vulnerability.dataSource, .vulnerability.severity, .vulnerability.fix.state, .artifact.name, .artifact.version, .artifact.language, .artifact.purl ] | @csv' >> "${n}.csv"
+cat $f | jq -r --arg d "$d" '. as $root | .matches[] | [ $root.source.target.userInput, $root.source.target.manifestDigest, $d, .vulnerability.id, .vulnerability.dataSource, .vulnerability.severity, .vulnerability.fix.state, .artifact.name, .artifact.version, .artifact.language, .artifact.purl ] | @csv' > "${n}.csv"
 
 if [ -s "${n}.csv" ];then
     bq load \
