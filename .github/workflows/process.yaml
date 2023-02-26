@@ -67,14 +67,14 @@ jobs:
 
     - name: Upload Files to GCS
       run: |-
-        set -euo pipefail
-        ls *.json
         bucket="gs://${{ env.target_bucket }}/$(date +%Y-%m-%d)/"
         gcloud storage cp ${{ steps.sbom.outputs.file }} $bucket
         gcloud storage cp ${{ steps.vuln.outputs.file }} $bucket
 
-    - name: Import data to BigQuery
+    - name: Import SBOM to BigQuery
       run: |-
-        set -euo pipefail
         tools/sbom2bq ${{ steps.sbom.outputs.file }}
+
+    - name: Import Vuln to BigQuery
+      run: |-
         tools/vuln2bq ${{ steps.vuln.outputs.file }}

@@ -50,17 +50,7 @@
         "mode": "REQUIRED"
     },
     {
-        "name": "art_cpes",
-        "type": "STRING",
-        "mode": "REQUIRED"
-    },
-    {
         "name": "art_purl",
-        "type": "STRING",
-        "mode": "REQUIRED"
-    },
-    {
-        "name": "art_meta",
         "type": "STRING",
         "mode": "REQUIRED"
     }
