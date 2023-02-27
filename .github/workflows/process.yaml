@@ -9,8 +9,6 @@ env:
   auth_provider: "projects/865303606864/locations/global/workloadIdentityPools/sbomer-github-pool/providers/github-provider"
   auth_account: "sbomer-github-actions-user@cloudy-labz.iam.gserviceaccount.com"
   target_bucket: "sbomer-cloudy-labz"
-  syft_version: v0.73.0
-  grype_version: v0.57.1
 
 jobs:
   process:
@@ -25,13 +23,9 @@ jobs:
 
     - name: Install Syft
       uses: anchore/sbom-action/download-syft@v0.13.3
-      with:
-        syft-version: ${{ env.syft_version }}}
 
     - name: Install Grype
       uses: anchore/scan-action/download-grype@v3.3.4
-      with:
-        grype-version: ${{ env.grype_version}}
 
     - name: Clean Image Name
       id: image
