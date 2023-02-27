@@ -14,7 +14,21 @@ bq=$(which bq) || ( echo "bq not installed" && exit 1 )
 d=$(date +%Y-%m-%d)
 n=$(basename $f .json)
 
-cat $f | jq -r --arg d "$d" '. as $root | .matches[] | [ $root.source.target.userInput, $root.source.target.manifestDigest, $d, .vulnerability.id, .vulnerability.dataSource, .vulnerability.severity, .vulnerability.fix.state, .artifact.name, .artifact.version, .artifact.language, .artifact.purl ] | @csv' > "${n}.csv"
+cat $f | jq -r \
+    --arg d "$d" \
+    '. as $root | .matches[] | [ $root.source.target.userInput, .artifact.name, .artifact.version, .artifact.purl, .vulnerability.id, .vulnerability.severity, .vulnerability.fix.state, $d, ($root.descriptor.name + " " + $root.descriptor.version) ] | @csv' > "${n}.csv"
+
+# output
+# src_img - "bitnami/external-dns"
+# pkg_name - "tar"
+# pkg_version - "1.34+dfsg-1"
+# pkg_purl - "pkg:deb/debian/tar@1.34+dfsg-1?arch=amd64&distro=debian-11"
+# cve_id - "CVE-2005-2541"
+# vul_sev - "Negligible"
+# vul_state - "not-fixed"
+# gen_on - "2023-02-27"
+# gen_by - "grype 0.73.0"
+
 
 if [ -s "${n}.csv" ];then
     bq load \

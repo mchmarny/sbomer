@@ -1,30 +1,5 @@
 [
     {
-        "name": "src_img",
-        "type": "STRING",
-        "mode": "REQUIRED"
-    },
-    {
-        "name": "pkg_id",
-        "type": "STRING",
-        "mode": "REQUIRED"
-    },
-    {
-        "name": "gen_day",
-        "type": "STRING",
-        "mode": "REQUIRED"
-    },
-    {
-        "name": "gen_time",
-        "type": "STRING",
-        "mode": "REQUIRED"
-    },
-    {
-        "name": "gen_by",
-        "type": "STRING",
-        "mode": "REQUIRED"
-    },
-    {
         "name": "pkg_name",
         "type": "STRING",
         "mode": "REQUIRED"
@@ -35,22 +10,32 @@
         "mode": "REQUIRED"
     },
     {
+        "name": "pkg_id",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "pkg_ref",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
         "name": "pkg_license",
         "type": "STRING",
         "mode": "REQUIRED"
     },
     {
-        "name": "ref_cat",
+        "name": "gen_on",
+        "type": "DATE",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "gen_by",
         "type": "STRING",
         "mode": "REQUIRED"
     },
     {
-        "name": "ref_type",
-        "type": "STRING",
-        "mode": "REQUIRED"
-    },
-    {
-        "name": "ref_locator",
+        "name": "gen_from",
         "type": "STRING",
         "mode": "REQUIRED"
     }

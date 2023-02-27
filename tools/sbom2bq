@@ -10,11 +10,27 @@ f=$1
 # dependencies
 jq=$(which jq) || ( echo "jq not installed" && exit 1 )
 bq=$(which bq) || ( echo "bq not installed" && exit 1 )
+bq=$(which syft) || ( echo "syft not installed" && exit 1 )
 
 d=$(date +%Y-%m-%d)
 n=$(basename $f .json)
+v=$(syft --version)
 
-cat $f | jq -r --arg d "$d" '. as $root | .packages[] as $pkg | .packages[].externalRefs[] | [ $root.name, $pkg.SPDXID, $d, $root.creationInfo.created, ($root.creationInfo.creators | join(",")), $pkg.name, ($pkg.versionInfo // "none"), $pkg.licenseConcluded, .referenceCategory, .referenceType, .referenceLocator ] | @csv' > "${n}.csv"
+cat $f | jq -r \
+    --arg d "$d" \
+    --arg v "$v" \
+    '. as $root | .packages[] | [ $root.name, .name, (.versionInfo // "none"), .SPDXID, (.externalRefs[] | select(.referenceCategory == "PACKAGE-MANAGER") | .referenceLocator), (.licenseConcluded // "none"), $d, $v, $root.spdxVersion ] | @csv' > "${n}.csv"
+
+# output
+# img - "bitnami/redis" 
+# pkg_name - "adduser"
+# pkg_version - "3.118"
+# pkg_id - "SPDXRef-Package-deb-adduser-3e9282034226b93f"
+# pkg_ref - "pkg:deb/debian/adduser@3.118?arch=all&distro=debian-11"
+# pkg_license - "GPL-2.0-only"
+# gen_on - "2023-02-27"
+# gen_by - "syft 0.73.0" 
+# gen_from - "SPDX-2.3"
 
 if [ -s "${n}.csv" ];then
     bq load \
