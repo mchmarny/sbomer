@@ -23,9 +23,13 @@ jobs:
 
     - name: Install Syft
       uses: anchore/sbom-action/download-syft@v0.13.3
+      with:
+        syft-version: v0.73.0
 
     - name: Install Grype
       uses: anchore/scan-action/download-grype@v3.3.4
+      with:
+        grype-version: v0.57.1
 
     - name: Clean Image Name
       id: image
