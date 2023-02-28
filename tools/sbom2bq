@@ -3,6 +3,7 @@
 set -euo pipefail
 
 f=$1
+g=${2:-latest}
 
 # input validation
 [ -z "$f" ] && echo "sbom file not provided\n" && exit 1
@@ -19,10 +20,12 @@ v=$(syft --version)
 cat $f | jq -r \
     --arg d "$d" \
     --arg v "$v" \
-    '. as $root | .packages[] | [ $root.name, .name, (.versionInfo // "none"), .SPDXID, (.externalRefs[] | select(.referenceCategory == "PACKAGE-MANAGER") | .referenceLocator), (.licenseConcluded // "none"), $d, $v, $root.spdxVersion ] | @csv' > "${n}.csv"
+    --arg g "$g" \
+    '. as $root | .packages[] | [ $root.name, $g, .name, .versionInfo // "none", .SPDXID, try(.externalRefs[] | select(.referenceCategory == "PACKAGE-MANAGER") | .referenceLocator), .licenseConcluded // "none", $d, $v, $root.spdxVersion ] | @csv' > "${n}.csv"
 
 # output
-# img - "bitnami/redis" 
+# img_name - "registry.hub.docker.com/bitnami/external-dns"
+# img_version - "sha256:8407139f6c18814a91d000cdaba3aea12b6f63bd9e6791db31d58190ce73c8c7"
 # pkg_name - "adduser"
 # pkg_version - "3.118"
 # pkg_id - "SPDXRef-Package-deb-adduser-3e9282034226b93f"

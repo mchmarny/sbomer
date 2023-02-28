@@ -1,3 +1,0 @@
-gcr.io/google-containers/addon-builder:latest
-gcr.io/google-containers/kubectl:v1.0.7
-gcr.io/google-containers/nginx:latest

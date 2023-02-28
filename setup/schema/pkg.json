@@ -1,5 +1,15 @@
 [
     {
+        "name": "img_name",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "img_version",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
         "name": "pkg_name",
         "type": "STRING",
         "mode": "REQUIRED"

@@ -21,38 +21,6 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v3.3.0
 
-    - name: Install Syft
-      uses: anchore/sbom-action/download-syft@v0.13.3
-      with:
-        syft-version: v0.73.0
-
-    - name: Install Grype
-      uses: anchore/scan-action/download-grype@v3.3.4
-      with:
-        grype-version: v0.57.1
-
-    - name: Clean Image Name
-      id: image
-      run: |-
-        name=$(echo ${{ inputs.image }} | sed -e 's/[^A-Za-z0-9-]/-/g')
-        echo "name=$name" >> $GITHUB_OUTPUT
-
-    - name: Make SBOM file
-      id: sbom
-      run: |-
-        set -euo pipefail
-        file="sbom-${{ steps.image.outputs.name }}.json"
-        syft packages -q -o spdx-json --file "$file" ${{ inputs.image }} || true
-        echo "file=$file" >> $GITHUB_OUTPUT
-
-    - name: Make Vulnerability file
-      id: vuln
-      run: |-
-        set -euo pipefail
-        file="vuln-${{ steps.image.outputs.name }}.json"
-        grype -q --add-cpes-if-none -s AllLayers -o json --file "$file" ${{ inputs.image }} || true
-        echo "file=$file" >> $GITHUB_OUTPUT
-
     - name: Auth GCP
       id: auth
       uses: google-github-actions/auth@v1  # v1.0.0
@@ -69,6 +37,41 @@ jobs:
       run: |-
         gcloud components install bq
 
+    - name: Install syft
+      uses: anchore/sbom-action/download-syft@v0.13.3
+      with:
+        syft-version: v0.73.0
+
+    - name: Install grype
+      uses: anchore/scan-action/download-grype@v3.3.4
+      with:
+        grype-version: v0.57.1
+
+
+    - name: Clean Name
+      id: image
+      run: |-
+        clean_name=$(echo ${{ inputs.image }} | sed -e 's/[^A-Za-z0-9-]/-/g')
+        echo "clean_name=$clean_name" >> $GITHUB_OUTPUT
+
+    - name: Make SBOM file
+      id: sbom
+      run: |-
+        set -euo pipefail
+        file="sbom-${{ steps.image.outputs.clean_name }}.json"
+        syft packages -q -o spdx-json --file "$file" ${{ inputs.image }} || true
+        echo "file=$file" >> $GITHUB_OUTPUT
+
+    - name: Make Vulnerability file
+      id: vuln
+      run: |-
+        set -euo pipefail
+        file="vuln-${{ steps.image.outputs.clean_name }}.json"
+        grype -q --add-cpes-if-none -s AllLayers -o json --file "$file" ${{ inputs.image }} || true
+        echo "file=$file" >> $GITHUB_OUTPUT
+        digest=$(cat "$file" | jq -r 'try(.source.target.repoDigests[0] | split("@") | .[1]) // "latest"')
+        echo "digest=$digest" >> $GITHUB_OUTPUT
+
     - name: Upload Files to GCS
       run: |-
         bucket="gs://${{ env.target_bucket }}/$(date +%Y-%m-%d)/"
@@ -77,7 +80,7 @@ jobs:
 
     - name: Import SBOM to BigQuery
       run: |-
-        tools/sbom2bq ${{ steps.sbom.outputs.file }}
+        tools/sbom2bq ${{ steps.sbom.outputs.file }} ${{ steps.vuln.outputs.digest }}
 
     - name: Import Vuln to BigQuery
       run: |-

@@ -29,4 +29,4 @@ jobs:
         while read img; do
           echo "image: $img"
           gh workflow run .github/workflows/process.yaml -f image="$img"
-        done < ./images
+        done < ./.images
