@@ -1,2 +1,12 @@
 gcr.io/google-containers/addon-builder
 gcr.io/google-containers/nginx
+us-central1-docker.pkg.dev/cloud-workstations-images/predefined/code-oss
+us-central1-docker.pkg.dev/cloud-workstations-images/predefined/base
+us-central1-docker.pkg.dev/cloud-workstations-images/predefined/clion
+us-central1-docker.pkg.dev/cloud-workstations-images/predefined/goland
+us-central1-docker.pkg.dev/cloud-workstations-images/predefined/intellij-ultimate
+us-central1-docker.pkg.dev/cloud-workstations-images/predefined/phpstorm
+us-central1-docker.pkg.dev/cloud-workstations-images/predefined/pycharm
+us-central1-docker.pkg.dev/cloud-workstations-images/predefined/rider
+us-central1-docker.pkg.dev/cloud-workstations-images/predefined/rubymine
+us-central1-docker.pkg.dev/cloud-workstations-images/predefined/webstorm
