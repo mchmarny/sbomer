@@ -2,6 +2,8 @@
 
 Generates daily SBOM (using [syft](https://github.com/anchore/syft)) and vulnerability reports (using [grype](https://github.com/anchore/grype)) for local list of images ([images](./images)) and N number of [most popular community images](https://hub.docker.com/api/content/v1/products/search?page=1&page_size=20&q=%2B&source=community&type=image%2Cbundle) on [Docker Hub](https://hub.docker.com/). The resulting files are saved to GCS bucket, and data is imported into BigQuery tables. GCP authentication implemented using [OIDC](https://cloud.google.com/identity-platform/docs/web/oidc). 
 
+![](images/dash.png)
+
 ## setup 
 
 To setup your own instance of `sbomer` first, fork this repo and clone it locally. Next, deploy the service account, GCS bucket, and OIDC provider to your GCP project: 
