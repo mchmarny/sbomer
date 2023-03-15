@@ -37,3 +37,23 @@ resource "google_bigquery_table" "pkg_table" {
 
   schema = data.template_file.schema_pkg.rendered
 }
+
+// Vulnerability View
+resource "google_bigquery_table" "v_vuln" {
+  dataset_id = google_bigquery_dataset.db.dataset_id
+  table_id   = "v_vuln"
+
+  view {
+    use_legacy_sql = false
+    query          = <<EOF
+SELECT DISTINCT
+  img_name,
+  gen_on,
+  cve_id,
+  vul_sev
+FROM `${google_bigquery_table.vul_table.project}.${google_bigquery_table.vul_table.dataset_id}.${google_bigquery_table.vul_table.table_id}` 
+WHERE _PARTITIONTIME IS NULL 
+OR DATE(_PARTITIONTIME) >= DATE_ADD(CURRENT_DATE(), INTERVAL -7 MONTH)
+EOF
+  }
+}
