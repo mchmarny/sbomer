@@ -10,3 +10,4 @@ us-central1-docker.pkg.dev/cloud-workstations-images/predefined/pycharm
 us-central1-docker.pkg.dev/cloud-workstations-images/predefined/rider
 us-central1-docker.pkg.dev/cloud-workstations-images/predefined/rubymine
 us-central1-docker.pkg.dev/cloud-workstations-images/predefined/webstorm
+gcr.io/apigee-release/hybrid/apigee-synchronizer
