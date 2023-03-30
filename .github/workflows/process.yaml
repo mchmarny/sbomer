@@ -43,7 +43,7 @@ jobs:
         syft-version: v0.73.0
 
     - name: Install grype
-      uses: anchore/scan-action/download-grype@v3.3.4
+      uses: anchore/scan-action/download-grype@v3.3.5
       with:
         grype-version: v0.57.1
 
