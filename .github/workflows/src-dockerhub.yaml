@@ -20,15 +20,12 @@ jobs:
     steps:
 
     - name: Checkout Code
-      uses: actions/checkout@v3.4.0  # v3.2.0
+      uses: actions/checkout@v3.5.2  # v3.2.0
 
     - name: Parse URL
       run: |-
         url="https://hub.docker.com/api/content/v1/products/search?page=1&page_size=${{ env.image_count }}&q=%2B&source=community&type=image%2Cbundle"
         echo "IMG_URL=$url" >> $GITHUB_ENV
-
-    - name: Install jq
-      uses: sergeysova/jq-action@v2
 
     - name: Execute Search
       env:
