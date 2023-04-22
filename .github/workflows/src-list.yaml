@@ -19,9 +19,6 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@755da8c3cf115ac066823e79a1e1788f8940201b  # v3.2.0
 
-    - name: Install jq
-      uses: sergeysova/jq-action@v2
-
     - name: Execute Search
       env:
         GH_TOKEN: ${{ github.token }}
