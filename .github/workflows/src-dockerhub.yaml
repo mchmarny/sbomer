@@ -27,9 +27,6 @@ jobs:
         url="https://hub.docker.com/api/content/v1/products/search?page=1&page_size=${{ env.image_count }}&q=%2B&source=community&type=image%2Cbundle"
         echo "IMG_URL=$url" >> $GITHUB_ENV
 
-    - name: Install jq
-      uses: sergeysova/jq-action@v2
-
     - name: Execute Search
       env:
         GH_TOKEN: ${{ github.token }}
