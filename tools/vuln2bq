@@ -33,7 +33,7 @@ cat $f | jq -r \
 
 if [ -s "${n}.csv" ];then
     bq load \
-        --project_id cloudy-labz \
+        --project_id s3cme1 \
         --source_format CSV \
         --time_partitioning_type MONTH \
         --max_bad_records 1000 \
