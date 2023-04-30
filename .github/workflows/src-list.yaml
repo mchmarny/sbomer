@@ -5,8 +5,8 @@ on:
   pull_request:
     branches:
       - main
-  # schedule:
-  #  - cron: '30 */8 * * *'
+  schedule:
+   - cron: '30 */8 * * *'
 
 jobs:
   list:
