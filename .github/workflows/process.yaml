@@ -6,9 +6,9 @@ on:
         required: true
 
 env:
-  auth_provider: "projects/865303606864/locations/global/workloadIdentityPools/sbomer-github-pool/providers/github-provider"
-  auth_account: "sbomer-github-actions-user@cloudy-labz.iam.gserviceaccount.com"
-  target_bucket: "sbomer-cloudy-labz"
+  auth_provider: "projects/595203407878/locations/global/workloadIdentityPools/sbomer-github-pool/providers/github-provider"
+  auth_account: "sbomer-github-actions-user@s3cme1.iam.gserviceaccount.com"
+  target_bucket: "sbomer-s3cme1"
 
 jobs:
   process:
