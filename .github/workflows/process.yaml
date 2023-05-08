@@ -38,7 +38,7 @@ jobs:
         gcloud components install bq
 
     - name: Install syft
-      uses: anchore/sbom-action/download-syft@v0.14.1
+      uses: anchore/sbom-action/download-syft@v0.14.2
       with:
         syft-version: v0.73.0
 
